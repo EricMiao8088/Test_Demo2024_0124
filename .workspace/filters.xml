@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FILTER-SETTINGS format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PROJECT-EDITOR>
+		<ELEMENT xsi:type="string">'test100'</ELEMENT>
+		<ELEMENT xsi:type="string">'test'</ELEMENT>
+	</PROJECT-EDITOR>
+	<WORKSPACE-EXPLORER>
+		<ELEMENT xsi:type="string">'Status' = 'Design' and 'Execution Priority' = 1</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Statu'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Stat'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Sta'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'St'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'S'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'Design'*&quot; and NAME = &quot;*and*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'Design'*&quot; and NAME = &quot;*an*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'Design'*&quot; and NAME = &quot;*a*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'Design'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'Desig'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'Desi'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'Des'*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*'Status'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'De'*&quot;</ELEMENT>
+	</WORKSPACE-EXPLORER>
+</FILTER-SETTINGS>

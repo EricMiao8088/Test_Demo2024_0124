@@ -1,0 +1,65 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          53.8GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 28.10.2023 22:16:37 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-28 22:16:37.230 5292 ManagedWorker-5 INFO:
+                        Start project 'New project2' with test case execution with sequential analysis job execution
+2023-10-28 22:16:37.535 5292 ManagedWorker-5*PE.Run() INFO:
+                        Test case "TEST_1027" started
+2023-10-28 22:16:37.584 5292 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-28 22:16:37.830 5292 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2023-10-28 22:16:37.847 5292 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 22:16:37.846 Simulation is started
+2023-10-28 22:16:38.050 5292 ToolLibs ERROR:
+                        tts.core.toolingFramework.networking.ToolServerConnector.PrintRemoteException: MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+??? 错误使用 ecuTest.simulation.Start
+Model can only be started, if it is stopped
+2023-10-28 22:16:38.049 5292 ManagedWorker-5*PE.Run() ERROR:
+                        tts.testExecution.testSteps.generic.TestStepJobExec.__Call: ToolError: Port MDL01 (@local): PortExecuteJob() failed: MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+??? 错误使用 ecuTest.simulation.Start
+Model can only be started, if it is stopped
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\TEST_1027.pkg"#3
+2023-10-28 22:16:38.163 5292 ManagedWorker-5*PE.Run() ERROR:
+                        Test step 3(Execute): "Port MDL01 (@local): PortExecuteJob() failed: MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+??? 错误使用 ecuTest.simulation.Start
+Model can only be started, if it is stopped
+"
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\TEST_1027.pkg"#3
+2023-10-28 22:16:38.166 5292 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: TTError: Port MDL01 (@local): PortExecuteJob() failed: MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+??? 错误使用 ecuTest.simulation.Start
+Model can only be started, if it is stopped
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\TEST_1027.pkg"#3
+2023-10-28 22:16:44.757 5292 MainThread ERROR:
+                        Manual test termination
+2023-10-28 22:16:44.767 5292 ManagedWorker-5*PE.Run() WARNING:
+                        Test case "TEST_1027" aborted
+2023-10-28 22:16:44.786 5292 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-28 22:16:44.935 5292 ManagedWorker-5*PE.Run() INFO:
+                        Test case "TEST_1027" completed
+2023-10-28 22:16:45.051 5292 ManagedWorker-5 INFO:
+                        Finalizing report 'New project2.trf'...

@@ -1,0 +1,37 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          45.6GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 08.12.2023 10:34:29 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-12-08 10:34:29.039 1912 ManagedWorker-2*PE.Run() INFO:
+                        Start package 'testDTC.pkg' with test case execution with sequential analysis job execution
+2023-12-08 10:34:29.059 1912 ManagedWorker-2*PE.Run() INFO:
+                        Test case "testDTC" started
+2023-12-08 10:34:29.060 1912 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-12-08 10:34:29.074 1912 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2023-12-08 10:34:29.085 1912 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-12-08 10:34:29.087 1912 ManagedWorker-2*PE.Run() INFO:
+                        Test case "testDTC" completed

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GLOBAL-CONSTANTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+		<NAME xsi:type="string">B</NAME>
+		<VALUE format-rev="2" xsi:type="valueBaseExpression">
+			<VALUE xsi:type="integer">1</VALUE>
+		</VALUE>
+	</GLOBAL-CONSTANT>
+	<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+		<NAME xsi:type="string">C</NAME>
+		<VALUE format-rev="2" xsi:type="valueBaseExpression">
+			<VALUE xsi:type="integer">2</VALUE>
+		</VALUE>
+	</GLOBAL-CONSTANT>
+</GLOBAL-CONSTANTS>

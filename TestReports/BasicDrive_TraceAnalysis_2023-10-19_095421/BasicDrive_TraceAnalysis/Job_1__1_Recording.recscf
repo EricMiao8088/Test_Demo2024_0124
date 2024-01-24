@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDING-SIDECAR-INFOS format-rev="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SIGNAL-INFOS>
+		<ELEMENT xsi:type="signalInfo">
+			<SIGNAL-NAME xsi:type="string">DISTANCE_100</SIGNAL-NAME>
+			<DATA-TYPE xsi:type="string">numeric</DATA-TYPE>
+		</ELEMENT>
+		<ELEMENT xsi:type="signalInfo">
+			<SIGNAL-NAME xsi:type="string">ACCELERATION_100</SIGNAL-NAME>
+			<DATA-TYPE xsi:type="string">numeric</DATA-TYPE>
+		</ELEMENT>
+	</SIGNAL-INFOS>
+</RECORDING-SIDECAR-INFOS>

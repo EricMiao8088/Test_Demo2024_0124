@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TOOLING format-rev="2" prog-version="2023.3.0.141374+8eeee403f0b5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+	<TOOL-HOSTS>
+		<TOOL-HOST xsi:type="toolHost">
+			<URL xsi:type="string">local</URL>
+			<PLATFORM xsi:type="string">Windows</PLATFORM>
+			<BASE-PATH xsi:type="string">&lt;workspace&gt;</BASE-PATH>
+		</TOOL-HOST>
+	</TOOL-HOSTS>
+	<TOOLS>
+		<TOOL id="CARSIM-201" xsi:type="tool">
+			<TOOL-HOST xsi:type="string">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="string">CARSIM_2</TOOL-NAME>
+			<START-OPTION xsi:type="integer">0</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="ProductName" propertyType="choiceGroup" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">CarSim</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</TOOL>
+	</TOOLS>
+	<PORTS>
+		<PORT format-rev="2" id="ENVSIM02" toolId="CARSIM-201" xsi:type="port">
+			<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+				<NAME xsi:type="string">ENVSIM</NAME>
+			</PORT-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet"/>
+		</PORT>
+	</PORTS>
+	<TOOL-DESCRIPTORS>
+		<TOOL-DESCRIPTOR dkey="CARSIM-201">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="string">CARSIM_2</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">ENVSIM</NAME>
+						</PORT-TYPE-ID>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ProductName</NAME>
+						<DISPLAY-NAME xsi:type="string">VehicleSim Product</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Specific VehicleSim product to use</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">CarSim</ELEMENT>
+							<ELEMENT xsi:type="string">TruckSim</ELEMENT>
+							<ELEMENT xsi:type="string">BikeSim</ELEMENT>
+							<ELEMENT xsi:type="string">SuspensionSim</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">CarSim</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReadValue</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Library</NAME>
+								<DISPLAY-NAME xsi:type="string">Library</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Library in which a value is to be read.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">CarSim Run Control</ELEMENT>
+									<ELEMENT xsi:type="string">Multiple Moving Objects</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">CarSim Run Control</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">ElementType</NAME>
+								<DISPLAY-NAME xsi:type="string">Element type</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Type of the element to read.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">MiscYellow</ELEMENT>
+									<ELEMENT xsi:type="string">Yellow</ELEMENT>
+									<ELEMENT xsi:type="string">BlueLink</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">MiscYellow</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Keyword</NAME>
+								<DISPLAY-NAME xsi:type="string">Keyword</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Keyword of the element from which a value is to be read (e.g. *TSTART).
+Tip: By holding down the right mouse button on the element in the CarSim interface, the keyword is displayed.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Reads the value of a YellowField, MiscYellowField or BlueLink element.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">WriteValue</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Library</NAME>
+								<DISPLAY-NAME xsi:type="string">Library</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Library, that contains the value to write.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">CarSim Run Control</ELEMENT>
+									<ELEMENT xsi:type="string">Multiple Moving Objects</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">CarSim Run Control</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">ElementType</NAME>
+								<DISPLAY-NAME xsi:type="string">Element type</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Type of the element to write.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">MiscYellow</ELEMENT>
+									<ELEMENT xsi:type="string">Yellow</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">MiscYellow</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Keyword</NAME>
+								<DISPLAY-NAME xsi:type="string">Keyword</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Keyword of the element from which a value is to be written (e.g. *TSTART).
+Tip: With the right mouse button pressed on the element in the CarSim interface, the keyword is displayed.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Value</NAME>
+								<DISPLAY-NAME xsi:type="string">Value</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Value that is to be written.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Writes the value of a YellowField or MiscYellowField element.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">WriteBlueLinkValue</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Library</NAME>
+								<DISPLAY-NAME xsi:type="string">Library</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Library, that contains the value to write.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">CarSim Run Control</ELEMENT>
+									<ELEMENT xsi:type="string">Multiple Moving Objects</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">CarSim Run Control</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Keyword</NAME>
+								<DISPLAY-NAME xsi:type="string">Keyword</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Keyword of the element whose value is to be written (e.g. #BlueLink2).
+Tip: By holding down the right mouse button on the element in the CarSim interface, the keyword will be displayed.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">NewLibrary</NAME>
+								<DISPLAY-NAME xsi:type="string">new library</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Name of the library that contains the DataSet for the new link (e.g. Procedures). If this field is left empty, the link will be deleted.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataSet</NAME>
+								<DISPLAY-NAME xsi:type="string">DataSet</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Name of the DataSet for the new link (e.g. DLC @ 120 km/h (Quick Start)). If this field is left empty, the link will be deleted.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Category</NAME>
+								<DISPLAY-NAME xsi:type="string">Category</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Name of the category of the DataSet for the new link (e.g. Handling Testing).</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Writes the value of a BlueLink element.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GotoLibrary</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Library</NAME>
+								<DISPLAY-NAME xsi:type="string">Library</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Library to switch to.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">CarSim Run Control</ELEMENT>
+									<ELEMENT xsi:type="string">Multiple Moving Objects</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">CarSim Run Control</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataSet</NAME>
+								<DISPLAY-NAME xsi:type="string">DataSet</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">DataSet name (e.g. DLC @ 120 km/h (Quick Start)) </DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Category</NAME>
+								<DISPLAY-NAME xsi:type="string">Category</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Category name of DataSet (e.g. Handling Testing).</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Switches to new library in order to read or write a bluelink that else may be ambiguous (because it is used in two libraries with same name).</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">WriteMixTableCellValue</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Library</NAME>
+								<DISPLAY-NAME xsi:type="string">Library</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Library, that contains the value to write.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">CarSim Run Control</ELEMENT>
+									<ELEMENT xsi:type="string">Multiple Moving Objects</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">CarSim Run Control</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">TableName</NAME>
+								<DISPLAY-NAME xsi:type="string">Table name</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Name of the table for which the value is to be set (e.g. #MIXTABLE0).
+Tip: By holding down the right mouse button on the element in the CarSim interface, the keyword is displayed.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">TableColumn</NAME>
+								<DISPLAY-NAME xsi:type="string">Table column</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Table column for which the cell value is to be set (e.g. 2).
+Tip: By holding down the right mouse button on the element in the CarSim interface, the ID of the corresponding data column is displayed.</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">TableRow</NAME>
+								<DISPLAY-NAME xsi:type="string">Table row</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Table row for which the cell value is to be set (index starting at 0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Value</NAME>
+								<DISPLAY-NAME xsi:type="string">Value</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Value to be set</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Sets the value of a table cell.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReadMixTableCellValue</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Library</NAME>
+								<DISPLAY-NAME xsi:type="string">Library</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Library from which the value is to be read.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">CarSim Run Control</ELEMENT>
+									<ELEMENT xsi:type="string">Multiple Moving Objects</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">CarSim Run Control</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">TableName</NAME>
+								<DISPLAY-NAME xsi:type="string">Table name</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Name of the table from which the value is to be read (e.g. #MIXTABLE0).
+Tip: By holding down the right mouse button on the element in the CarSim interface, the keyword is displayed.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">TableColumn</NAME>
+								<DISPLAY-NAME xsi:type="string">Table column</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Table column for which the cell value is to be read (e.g. 2).
+Tip: By holding down the right mouse button on the element in the CarSim interface, the ID of the corresponding data column is displayed.</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">TableRow</NAME>
+								<DISPLAY-NAME xsi:type="string">Table row</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Table row for which the cell value is to be read (index starting at 0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Reads the value of a table cell.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RunMathModel</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Starts the simulation in real-time mode.
+The job is blocking. This means that after the job is finished, the simulation is stopped and it is not possible to read signals during the simulation run.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RunSimulink</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StartMode</NAME>
+								<DISPLAY-NAME xsi:type="string">Start mode</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Determines the start mode (Run Control).
+E.g. directly run the model or send the model to Simulink.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">Run Now</ELEMENT>
+									<ELEMENT xsi:type="string">Send to Simulink</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">Send to Simulink</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StartLiveVideo</NAME>
+								<DISPLAY-NAME xsi:type="string">Start Live Video</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Start VS Visualizer to display a live video.</DESCRIPTION>
+								<TYPE xsi:type="string">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">False</ELEMENT>
+									<ELEMENT xsi:type="string">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">False</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Starts the simulation in real-time mode in a Simulink environment.
+The job is blocking. This means that after the job is finished, the simulation is stopped and it is not possible to read signals during the simulation run.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RunScalexio</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StartLiveVideo</NAME>
+								<DISPLAY-NAME xsi:type="string">Start Live Video</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Start VS Visualizer to display a live video.</DESCRIPTION>
+								<TYPE xsi:type="string">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">False</ELEMENT>
+									<ELEMENT xsi:type="string">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">False</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Starts the simulation in real-time mode in a Scalexio environment.
+The job is blocking. This means that after the job is finished, the simulation is stopped and it is not possible to read signals during the simulation run.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RunNIRealtime</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StartLiveVideo</NAME>
+								<DISPLAY-NAME xsi:type="string">Start Live Video</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Start VS Visualizer to display a live video.</DESCRIPTION>
+								<TYPE xsi:type="string">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">False</ELEMENT>
+									<ELEMENT xsi:type="string">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">False</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Starts the simulation in real-time mode in a NI-RT environment.
+The job is blocking. This means that after the job is finished, the simulation is stopped and it is not possible to read signals during the simulation run.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+	</TOOL-DESCRIPTORS>
+	<PORT-DESCRIPTORS>
+		<PORT-DESCRIPTOR dkey="ENVSIM02">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+					<NAME xsi:type="string">ENVSIM</NAME>
+				</PORT-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet"/>
+				<JOBS xsi:type="jobDescriptorSet"/>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+	</PORT-DESCRIPTORS>
+</TOOLING>

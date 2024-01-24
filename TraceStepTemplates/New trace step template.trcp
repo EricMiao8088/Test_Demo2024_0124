@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TRACE-STEP-PROTOTYPE format-rev="2" uuid="553290cd89da11eeb34f34cff6f2e990" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="trcpTimingDiagram">
+	<SIGNALS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="553290ce89da11eea71e34cff6f2e990" xsi:type="signalDescription">
+			<NAME xsi:type="string">Signal</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+	</SIGNALS>
+	<PARAMETERS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="5532b78189da11eebba834cff6f2e990" xsi:type="parameterDescription">
+			<NAME xsi:type="string">MinMaxSuccessfulInstances</NAME>
+			<DESCRIPTION xsi:type="string">Specifies how often the timing diagram must run successfully.
+The value can be a number or a range (two comma-separated values in parentheses).
+For value &quot;None&quot;, the appropriate boundary will not be checked.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">PYOBJECT</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="5532b78289da11ee9e8f34cff6f2e990" xsi:type="parameterDescription">
+			<NAME xsi:type="string">AllowFailedInstances</NAME>
+			<DESCRIPTION xsi:type="string">Specifies if the timing diagram can fail.
+The value has to be a boolean value (True or False). None is also valid here and means False.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">PYOBJECT</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="5532b78389da11ee988034cff6f2e990" xsi:type="parameterDescription">
+			<NAME xsi:type="string">MaxParallelInstances</NAME>
+			<DESCRIPTION xsi:type="string">Maximum number of diagram instances that can be evaluated in parallel. A value &lt;= 0 indicates no limitation. None is also valid here and means 1.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="5532b78489da11ee82e834cff6f2e990" xsi:type="parameterDescription">
+			<NAME xsi:type="string">param1</NAME>
+			<DESCRIPTION xsi:type="string">Description</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="5532b78589da11eeb8cc34cff6f2e990" xsi:type="parameterDescription">
+			<NAME xsi:type="string">param2</NAME>
+			<PARAMETER-TYPE xsi:type="string">FLOAT</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="5532b78689da11eebf2134cff6f2e990" xsi:type="parameterDescription">
+			<NAME xsi:type="string">param3</NAME>
+			<DESCRIPTION xsi:type="string">Description</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">FLOAT</PARAMETER-TYPE>
+		</PARAMETER>
+	</PARAMETERS>
+	<TDX xsi:type="tdxForEix">
+		<timingDiagram>
+			<version>1.2</version>
+			<timeUnits>SECONDS</timeUnits>
+			<description/>
+			<parameter>
+				<name>param1</name>
+				<description>Description</description>
+				<type>INTEGER</type>
+			</parameter>
+			<parameter>
+				<name>param2</name>
+				<description/>
+				<type>FLOAT</type>
+			</parameter>
+			<parameter>
+				<name>param3</name>
+				<description>Description</description>
+				<type>FLOAT</type>
+			</parameter>
+			<signal precondition="true">
+				<name>Signal</name>
+				<description/>
+				<waveForm>
+					<edge id="_2349749983344" precondition="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== ANY</expression>
+						</state>
+					</edge>
+					<edge id="_2349749990448" initial="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== param1</expression>
+						</state>
+					</edge>
+					<edge id="_2349749987568">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== param2</expression>
+						</state>
+					</edge>
+					<edge id="_2349749985408">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== param3</expression>
+						</state>
+					</edge>
+					<edge id="_2349749978064">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== ANY</expression>
+						</state>
+					</edge>
+				</waveForm>
+			</signal>
+		</timingDiagram>
+	</TDX>
+	<IMAGE-DATA xsi:type="string">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</IMAGE-DATA>
+</TRACE-STEP-PROTOTYPE>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HISTORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RECENT-TCFFILES>
+		<ELEMENT xsi:type="string">Configurations\SW_Ver_1.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\rrrrr.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\www.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\vector_xil.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Carsim.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\canoe.tcf</ELEMENT>
+	</RECENT-TCFFILES>
+	<LAST-TCF-SAVED xsi:type="boolean">True</LAST-TCF-SAVED>
+	<RECENT-TBC-FILES>
+		<ELEMENT xsi:type="string">Configurations\Testlab_HiL.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\yyy.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\IBN_HiL.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\qqqqq.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\vector_xil.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Carsim.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\canoe.tbc</ELEMENT>
+	</RECENT-TBC-FILES>
+	<LAST-TBC-SAVED xsi:type="boolean">True</LAST-TBC-SAVED>
+	<RECENT-PROJECTS-PACKAGES>
+		<ELEMENT xsi:type="string">Packages\BasicDrive.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\SW_Ver_1.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\tttt.prj</ELEMENT>
+		<ELEMENT xsi:type="string">TestReports\BasicDrive_2023-10-07_143133\BasicDrive.trf</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\testDTC.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\ET2023_1_0505\Configurations\TEST_0505 (reset).tcf</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\ET2023_1_0505\Configurations\TEST_0505.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\Desktop\Report_PASS\寻车功能_2023-09-06_104927\寻车功能.trf</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\Desktop\Report_PASS\行李箱_2023-09-06_161931\行李箱.trf</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\ET2023_1_0614\ET2023_1_0505\TestReports\车窗升降-总成开关-左前-手动_2023-06-13_142908\车窗升降-总成开关-左前-手动.trf</ELEMENT>
+	</RECENT-PROJECTS-PACKAGES>
+</HISTORY-SETTINGS>

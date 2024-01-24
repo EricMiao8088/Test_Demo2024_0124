@@ -1,0 +1,47 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          70.2GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 23.11.2023 16:26:26 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-11-23 16:26:26.137 4944 ManagedWorker-5*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2023-11-23 16:26:26.148 4944 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 1" started
+2023-11-23 16:26:26.149 4944 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-23 16:26:26.177 4944 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2023-11-23 16:26:26.185 4944 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-23 16:26:26.201 4944 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 1" completed
+2023-11-23 16:26:26.245 4944 ManagedWorker-5*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2023_3\2_ECU-TEST_Advanced\Packages\Package 1" -> "Trace analysis 1")
+2023-11-23 16:26:26.262 4944 ManagedWorker-5*PE.Run() DEBUG:
+                        Performing episode ...
+2023-11-23 16:26:26.265 4944 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2023-11-23 16:26:26.278 4944 ManagedWorker-5*PE.Run() DEBUG:
+                        Episode completed
+2023-11-23 16:26:26.281 4944 ManagedWorker-5*PE.Run() DEBUG:
+                        

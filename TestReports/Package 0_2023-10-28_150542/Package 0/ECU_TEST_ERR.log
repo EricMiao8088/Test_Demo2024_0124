@@ -1,0 +1,49 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          54.2GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 28.10.2023 15:05:48 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-28 15:05:48.807 5292 ToolLibs ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\networking\ToolServerConnector.py", line 329, in PrintRemoteException
+                          File "tts\core\toolingFramework\networking\ToollibProcessStarter.py", line 628, in __CallCommandErrback
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 504, in raiseException
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 244, in inContext
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 260, in <lambda>
+                          File ".\Lib\site-packages\twisted\python\context.py", line 117, in callWithContext
+                          File ".\Lib\site-packages\twisted\python\context.py", line 82, in callWithContext
+                          File "tts\tooling\tool\carSim2\CarSimLib2.py", line 577, in StepSimulation
+                          File "tts\tooling\tool\carSim2\SolverLoader.py", line 102, in Integrate
+                        TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+2023-10-28 15:05:48.957 5292 ManagedWorker-4*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 1002, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\wait\TsWaitExec.py", line 90, in Run
+                          File "tts\core\package\engine\PackageEngine.py", line 546, in Wait
+                          File "tts\core\package\engine\ExecutionModeManager.py", line 248, in Wait
+                          File "tts\core\package\engine\Clock.py", line 138, in Wait
+                          File "tts\tooling\tool\carSim2\CarSim2TimeSource.py", line 44, in StepSimulation
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 168, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 90, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 504, in raiseException
+                        tt._Exceptions_.TTError: TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'

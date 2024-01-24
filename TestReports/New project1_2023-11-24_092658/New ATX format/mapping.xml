@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>a3c936e2-8a68-11ee-89ef-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>a3c936e3-8a68-11ee-9bd6-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Job_1_Signals.astrace</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>a3c936e4-8a68-11ee-bd88-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>a3c936e5-8a68-11ee-950e-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>a3c936e6-8a68-11ee-84a2-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Job_1_Signals.astrace.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>a3c936e7-8a68-11ee-9596-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>New project1.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>a3c936e8-8a68-11ee-aadb-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Testlab_HiL.tbc</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936e9-8a68-11ee-bc64-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_68/step_69</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936ea-8a68-11ee-a8a2-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_70/step_71/step_72</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936eb-8a68-11ee-8ab3-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_70/step_73/step_74</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936ec-8a68-11ee-8f99-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_75/step_76/step_77</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936ed-8a68-11ee-b8a3-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_75/step_78/step_79</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936ee-8a68-11ee-8348-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_75/step_80/step_81</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936ef-8a68-11ee-b799-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_75/step_82/step_83</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936f0-8a68-11ee-acc8-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_84/step_85/step_86</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936f1-8a68-11ee-b52a-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_84/step_87/step_88</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936f2-8a68-11ee-98cc-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Newproject1/BasicDrive_0/step_4/step_67/step_89/step_90</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>a3c936f3-8a68-11ee-8309-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+</FILES>

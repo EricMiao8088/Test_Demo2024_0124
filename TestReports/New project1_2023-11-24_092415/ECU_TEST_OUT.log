@@ -1,0 +1,125 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          74.0GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 24.11.2023 09:24:15 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-11-24 09:24:15.105 8560 ManagedWorker-5 INFO:
+                        Start project 'New project1' with test case execution with sequential analysis job execution
+2023-11-24 09:24:15.517 8560 ManagedWorker-5*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2023-11-24 09:24:15.535 8560 ManagedWorker-5*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2023-11-24 09:24:15.537 8560 ManagedWorker-5*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2023-11-24 09:24:15.547 8560 ManagedWorker-5*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2023-11-24 09:24:15.585 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-24 09:24:15.586 8560 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2023-11-24 09:24:15.595 8560 ManagedWorker-5*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:24:15.604 8560 ManagedWorker-5*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:24:39.799 8560 ManagedWorker-5*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:24:39.801 8560 ManagedWorker-5*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:24:39.827 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-24 09:24:40.621 8560 ManagedWorker-5*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2023-11-24 09:24:40.740 8560 ManagedWorker-5*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg" -> "Basic Drive")
+2023-11-24 09:24:40.781 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        Performing episode ...
+2023-11-24 09:24:40.783 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2023-11-24 09:24:43.064 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        Episode completed
+2023-11-24 09:24:43.065 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2023-11-24 09:24:45.130 8560 ManagedWorker-5*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2023-11-24 09:24:45.141 8560 ManagedWorker-5*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2023-11-24 09:24:45.144 8560 ManagedWorker-5*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2023-11-24 09:24:45.154 8560 ManagedWorker-5*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2023-11-24 09:24:45.200 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-24 09:24:45.203 8560 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2023-11-24 09:24:45.212 8560 ManagedWorker-5*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:24:45.221 8560 ManagedWorker-5*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:25:09.425 8560 ManagedWorker-5*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:25:09.427 8560 ManagedWorker-5*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-11-24 09:25:09.453 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-24 09:25:10.396 8560 ManagedWorker-5*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2023-11-24 09:25:10.497 8560 ManagedWorker-5*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg" -> "Basic Drive")
+2023-11-24 09:25:10.543 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        Performing episode ...
+2023-11-24 09:25:10.545 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2023-11-24 09:25:10.588 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        Episode completed
+2023-11-24 09:25:10.590 8560 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2023-11-24 09:25:12.158 8560 ManagedWorker-5 INFO:
+                        Finalizing report 'tt.trf'...
+2023-11-24 09:25:14.442 8560 ManagedWorker-3 DEBUG:
+                        Creating ATX-document from report [C:\ET2023_3\2_ECU-TEST_Advanced\TestReports\New project1_2023-11-24_092415\tt\tt.trf] with generator v1.155.0-SNAPSHOT...: 
+2023-11-24 09:25:18.674 8560 ManagedWorker-3 DEBUG:
+                        Create Recordings
+2023-11-24 09:25:18.686 8560 ManagedWorker-3 DEBUG:
+                        Prepare 3 recording files for zip archiving
+2023-11-24 09:25:18.697 8560 ManagedWorker-3 DEBUG:
+                        Prepare 3 recording metadata files for zip archiving
+2023-11-24 09:25:18.851 8560 ManagedWorker-3 DEBUG:
+                        Create Recordings
+2023-11-24 09:25:18.864 8560 ManagedWorker-3 DEBUG:
+                        Prepare 3 recording files for zip archiving
+2023-11-24 09:25:18.875 8560 ManagedWorker-3 DEBUG:
+                        Prepare 3 recording metadata files for zip archiving
+2023-11-24 09:25:18.953 8560 ManagedWorker-3 DEBUG:
+                        Creating ATX-document from report [C:\ET2023_3\2_ECU-TEST_Advanced\TestReports\New project1_2023-11-24_092415\tt\tt.trf] with generator v1.155.0-SNAPSHOT finished (Duration: 0:00:04).: 
+2023-11-24 09:25:18.956 8560 ManagedWorker-3 DEBUG:
+                        TestEngine: Report document for C:\ET2023_3\2_ECU-TEST_Advanced\TestReports\New project1_2023-11-24_092415\tt\tt.trf generated in 7 s.
+2023-11-24 09:25:18.988 8560 ManagedWorker-5 INFO:
+                        Finalizing report 'New project1.trf'...

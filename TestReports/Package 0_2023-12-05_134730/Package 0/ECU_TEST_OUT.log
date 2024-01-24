@@ -1,0 +1,47 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          47.2GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 05.12.2023 13:47:31 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-12-05 13:47:31.184 9864 ManagedWorker-1*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2023-12-05 13:47:31.197 9864 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" started
+2023-12-05 13:47:31.212 9864 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-12-05 13:47:31.213 9864 ManagedWorker-1*PE.Run() WARNING:
+                        Port missing in the test bench configuration: BUS01
+2023-12-05 13:47:31.571 9864 ManagedWorker-1*PE.Run() INFO:
+                        System time mode activated
+2023-12-05 13:47:31.590 9864 ManagedWorker-1*PE.Run() ERROR:
+                        Test step 1(Write): "Invalid port id: BUS01"
+                        Package "Package 0"#1
+2023-12-05 13:47:31.602 9864 ManagedWorker-1*PE.Run() DEBUG_EXC_PRINT:
+                        tts.core.package.engine.ExecutionMappingSpaceManager.__CallRegisterXaObjects: TestbenchError: Invalid port id: BUS01
+                        Package "Package 0"#1
+2023-12-05 13:47:31.640 9864 ManagedWorker-1*PE.Run() WARNING:
+                        Test case "Package 0" aborted
+2023-12-05 13:47:31.641 9864 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-12-05 13:47:31.653 9864 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" completed

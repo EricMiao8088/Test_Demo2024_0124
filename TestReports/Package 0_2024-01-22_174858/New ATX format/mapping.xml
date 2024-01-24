@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package0/Package0_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.zip</FILENAME>
+    <REL-PATH>Package 0</REL-PATH>
+    <TEMP-DIR>7e328927-b90b-11ee-9c5a-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package0/Package0_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.metadata</FILENAME>
+    <REL-PATH>Package 0</REL-PATH>
+    <TEMP-DIR>7e328928-b90b-11ee-b8bc-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package0/Package0_0</ATX-REF-PATH>
+    <FILENAME>Package 0.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>7e328929-b90b-11ee-aab8-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package0/Package0_0</ATX-REF-PATH>
+    <FILENAME>Testlab_HiL.tbc</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>7e32892a-b90b-11ee-aed8-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+</FILES>

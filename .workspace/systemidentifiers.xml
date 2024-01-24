@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PREDEF_KEYS-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PREDEFINED-KEYS xsi:type="predefinedKeys">
+		<PREDEFINED-BUS-KEYS>
+			<ELEMENT xsi:type="string">EPT-CAN</ELEMENT>
+		</PREDEFINED-BUS-KEYS>
+		<PREDEFINED-ECU-KEYS>
+			<ELEMENT xsi:type="string">Engine-Control</ELEMENT>
+			<ELEMENT xsi:type="string">Battery-Control</ELEMENT>
+		</PREDEFINED-ECU-KEYS>
+		<PREDEFINED-MODEL-KEYS>
+			<ELEMENT xsi:type="string">Plant model</ELEMENT>
+			<ELEMENT xsi:type="string">Implementation</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">Umgebung</ELEMENT>
+			<ELEMENT xsi:type="string">Implementierung</ELEMENT>
+		</PREDEFINED-MODEL-KEYS>
+		<PREDEFINED-FAULTSIMULATION-KEYS>
+			<ELEMENT xsi:type="string">FIU-1</ELEMENT>
+			<ELEMENT xsi:type="string">FIU-2</ELEMENT>
+			<ELEMENT xsi:type="string">FIU-3</ELEMENT>
+			<ELEMENT xsi:type="string">FIU-4</ELEMENT>
+			<ELEMENT xsi:type="string">EES-1</ELEMENT>
+			<ELEMENT xsi:type="string">EES-2</ELEMENT>
+			<ELEMENT xsi:type="string">EES-3</ELEMENT>
+			<ELEMENT xsi:type="string">EES-4</ELEMENT>
+		</PREDEFINED-FAULTSIMULATION-KEYS>
+		<PREDEFINED-DEBUG-SUB-KEYS>
+			<ELEMENT xsi:type="string">APPLICATION</ELEMENT>
+			<ELEMENT xsi:type="string">BOOT</ELEMENT>
+			<ELEMENT xsi:type="string">PREBOOT</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-1</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-2</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-3</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-4</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-5</ELEMENT>
+		</PREDEFINED-DEBUG-SUB-KEYS>
+		<PREDEFINED-ENVSIM-KEYS>
+			<ELEMENT xsi:type="string">EnvironmentSimulation</ELEMENT>
+		</PREDEFINED-ENVSIM-KEYS>
+		<PREDEFINED-ENVCOM-KEYS>
+			<ELEMENT xsi:type="string">EnvironmentCommunication</ELEMENT>
+			<ELEMENT xsi:type="string">OSI</ELEMENT>
+		</PREDEFINED-ENVCOM-KEYS>
+	</PREDEFINED-KEYS>
+</PREDEF_KEYS-SETTINGS>

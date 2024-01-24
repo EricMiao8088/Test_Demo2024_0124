@@ -1,0 +1,46 @@
+<?xml-stylesheet type="text/xsl" href="tree-view.xsl"?> 
+<report>
+  <timeStart>1.0026</timeStart>
+  <timeEnd>4.00654</timeEnd>
+  <diagram id="0">
+    <comment>Instance failed at time 4.006540 (end of trace)
+Minimum samples not reached for end states: Signal/5(active: Signal/3)</comment>
+    <timeStart>4.00654</timeStart>
+    <timeEnd>4.00654</timeEnd>
+    <result>4</result>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>3</samples>
+        <time>3.00573</time>
+        <value>10.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>4.00654</time>
+        <value>10.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>4.00654</timeStart>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+</report>

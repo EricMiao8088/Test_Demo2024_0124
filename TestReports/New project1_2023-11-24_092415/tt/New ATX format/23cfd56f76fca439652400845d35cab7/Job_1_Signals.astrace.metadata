@@ -1,0 +1,1 @@
+{"$schema":"https://www.tracetronic.de/schemas/recording-1/schema.json","$generator":"ECU-TEST 2023.3 (ATX-Generator 1.155.0-SNAPSHOT)","fileName":"Job_1_Signals.astrace","md5Hash":"23cfd56f76fca439652400845d35cab7","created":true,"recordings":[{"mapping":{},"recordingType":"ASTRACE","signalGroup":""}],"mimeType":"application/x.tracetronic.autospy"}

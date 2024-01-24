@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIGURATION format-rev="9" prog-version="2023.4.0.143832+81f7f95c32e5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON xsi:type="commonData">
+		<HOST xsi:type="string">Eric</HOST>
+		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
+	</COMMON>
+	<REPORT format-rev="4" xsi:type="reportData">
+		<REPORT-FORMATES>
+			<ELEMENT format-rev="1" xsi:type="reportFormat">
+				<FORMAT-NAME xsi:type="string">HTML complete, separate package files</FORMAT-NAME>
+				<HANDLER-NAME xsi:type="string">HTML</HANDLER-NAME>
+				<FILTERS xsi:type="apiFilter"/>
+			</ELEMENT>
+			<ELEMENT format-rev="1" xsi:type="reportFormat">
+				<FORMAT-NAME xsi:type="string">New ATX format</FORMAT-NAME>
+				<HANDLER-NAME xsi:type="string">ATX</HANDLER-NAME>
+				<AUTO-GENERATE xsi:type="boolean">True</AUTO-GENERATE>
+				<FILTERS xsi:type="apiFilter"/>
+				<CONFIG>
+					<ELEMENT dkey="archiveFilesPerPackage">
+						<DVALUE xsi:type="string">*.asc</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="archiveRecordings">
+						<DVALUE xsi:type="string">True</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="archiveTbc">
+						<DVALUE xsi:type="string">True</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="archiveTrf">
+						<DVALUE xsi:type="string">True</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="coveredAttributes">
+						<DVALUE xsi:type="string">*</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="includeToolIdentifier">
+						<DVALUE xsi:type="string">Ture</DVALUE>
+					</ELEMENT>
+				</CONFIG>
+			</ELEMENT>
+		</REPORT-FORMATES>
+		<INCLUDE-APPLICATION-LOGS xsi:type="boolean">True</INCLUDE-APPLICATION-LOGS>
+	</REPORT>
+	<EXECUTION-DATA format-rev="2" xsi:type="executionData">
+		<BEHAVIOR-ON-ERROR xsi:type="string">Abort</BEHAVIOR-ON-ERROR>
+		<AUTO-RESET-MODE xsi:type="string">ALWAYS</AUTO-RESET-MODE>
+		<RESET-BY-USER xsi:type="boolean">False</RESET-BY-USER>
+		<GLOBAL-RETRY-COUNT xsi:type="integer">2</GLOBAL-RETRY-COUNT>
+		<GLOBAL-RETRY-COND xsi:type="compareOpBaseExpression">
+			<NAME xsi:type="string">in</NAME>
+			<FIRST-COMPONENT xsi:type="varBaseExpression">
+				<NAME xsi:type="string">result</NAME>
+			</FIRST-COMPONENT>
+			<SECOND-COMPONENT xsi:type="listOrTupleBaseExpression">
+				<IS-LIST xsi:type="boolean">True</IS-LIST>
+				<EXPRESSION-LIST>
+					<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">ERROR</VALUE>
+					</BASE-EXPRESSION>
+					<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">FAILED</VALUE>
+					</BASE-EXPRESSION>
+				</EXPRESSION-LIST>
+			</SECOND-COMPONENT>
+		</GLOBAL-RETRY-COND>
+		<ERROR-PKG-LEVEL xsi:type="integer">2</ERROR-PKG-LEVEL>
+	</EXECUTION-DATA>
+	<GLOBAL-CONSTANTS xsi:type="globalConstData">
+		<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+			<NAME xsi:type="string">A</NAME>
+			<VALUE format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">Prj1</VALUE>
+			</VALUE>
+		</GLOBAL-CONSTANT>
+		<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+			<NAME xsi:type="string">test</NAME>
+			<VALUE format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">1</VALUE>
+			</VALUE>
+		</GLOBAL-CONSTANT>
+		<REFERENCED-FILE xsi:type="string">Parameters/TEST1109.gcd</REFERENCED-FILE>
+	</GLOBAL-CONSTANTS>
+	<MODEL-ACCESS format-rev="1" xsi:type="modelAccessData">
+		<DATA dkey="Plant model">
+			<DVALUE format-rev="1" xsi:type="modelData">
+				<MODEL-DATA-SOURCE xsi:type="integer">0</MODEL-DATA-SOURCE>
+				<MODEL-ACCESS-PORT xsi:type="string">MDL01</MODEL-ACCESS-PORT>
+				<MODEL-FILE xsi:type="string">EV_HV_HiL.sdf</MODEL-FILE>
+				<MODEL-POSITION xsi:type="integer">1</MODEL-POSITION>
+			</DVALUE>
+		</DATA>
+	</MODEL-ACCESS>
+	<ECU-ACCESS format-rev="1" xsi:type="ecuAccessData">
+		<DATA dkey="Battery-Control">
+			<DVALUE format-rev="3" xsi:type="ecuData">
+				<APPLICATION-PORT xsi:type="string">APL02</APPLICATION-PORT>
+				<A2L-FILE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">ECU_Data/Battery-Control.a2l</PATH>
+				</A2L-FILE>
+				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings"/>
+				<ECU-POSITION xsi:type="integer">2</ECU-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="Engine-Control">
+			<DVALUE format-rev="3" xsi:type="ecuData">
+				<APPLICATION-PORT xsi:type="string">APL01</APPLICATION-PORT>
+				<A2L-FILE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">ECU_Data/Engine-Control.a2l</PATH>
+				</A2L-FILE>
+				<DIAGNOSTIC-DB xsi:type="string">C:/ET2022_4/1_Exercises/2_ECU-TEST_Advanced/CDD/diagnostic_data.cdd</DIAGNOSTIC-DB>
+				<DIAGNOSTIC-DB-ASSOCIATE xsi:type="string">&lt;EMPTY&gt;</DIAGNOSTIC-DB-ASSOCIATE>
+				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings"/>
+				<ECU-POSITION xsi:type="integer">1</ECU-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="Engine-Control_1">
+			<DVALUE format-rev="3" xsi:type="ecuData">
+				<A2L-FILE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">ECU_Data/LEC4GD_AR_LX04_D1p0_20231021.a2l</PATH>
+				</A2L-FILE>
+				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings"/>
+				<ECU-POSITION xsi:type="integer">3</ECU-POSITION>
+				<LOG-PORT xsi:type="string">offline</LOG-PORT>
+				<LOG-PROTOCOL xsi:type="string">DLT (non-verbose)</LOG-PROTOCOL>
+			</DVALUE>
+		</DATA>
+	</ECU-ACCESS>
+	<BUS-ACCESS format-rev="1" xsi:type="busAccessData">
+		<DATA dkey="EPT-CAN">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS01</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS01</BUS-ACCESS-PORT-SIMULATION>
+				<BUS-ACCESS-PORT-MONITORING xsi:type="string">BUS01</BUS-ACCESS-PORT-MONITORING>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Bus/Electric_V1.DBC</PATH>
+				</DATABASE>
+				<BUS-POSITION xsi:type="integer">1</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+	</BUS-ACCESS>
+</CONFIGURATION>

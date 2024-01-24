@@ -1,0 +1,65 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          56.3GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 19.10.2023 09:54:21 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-19 09:54:21.957 4912 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'BasicDrive_TraceAnalysis.pkg' with test case execution with sequential analysis job execution
+2023-10-19 09:54:21.985 4912 ManagedWorker-6*PE.Run() INFO:
+                        Test case "BasicDrive_TraceAnalysis" started
+2023-10-19 09:54:21.994 4912 ManagedWorker-6*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2023-10-19 09:54:21.997 4912 ManagedWorker-6*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2023-10-19 09:54:22.007 4912 ManagedWorker-6*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2023-10-19 09:54:22.036 4912 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-19 09:54:22.068 4912 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2023-10-19 09:54:22.069 4912 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\_Results\70_Advanced_TraceAnalysis\BasicDrive_TraceAnalysis.pkg"#0
+2023-10-19 09:54:22.080 4912 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\_Results\70_Advanced_TraceAnalysis\BasicDrive_TraceAnalysis.pkg"#0
+2023-10-19 09:54:44.271 4912 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\_Results\70_Advanced_TraceAnalysis\BasicDrive_TraceAnalysis.pkg"#0
+2023-10-19 09:54:44.273 4912 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\_Results\70_Advanced_TraceAnalysis\BasicDrive_TraceAnalysis.pkg"#0
+2023-10-19 09:54:44.305 4912 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-19 09:54:45.221 4912 ManagedWorker-6*PE.Run() INFO:
+                        Test case "BasicDrive_TraceAnalysis" completed
+2023-10-19 09:54:45.307 4912 ManagedWorker-6*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2023_3\2_ECU-TEST_Advanced\Packages\_Results\70_Advanced_TraceAnalysis\BasicDrive_TraceAnalysis.pkg" -> "Basic Drive")
+2023-10-19 09:54:45.363 4912 ManagedWorker-6*PE.Run() DEBUG:
+                        Performing episode ...
+2023-10-19 09:54:45.364 4912 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-10-19 09:54:46.276 4912 ManagedWorker-6*PE.Run() DEBUG:
+                        Episode completed
+2023-10-19 09:54:46.278 4912 ManagedWorker-6*PE.Run() DEBUG:
+                        

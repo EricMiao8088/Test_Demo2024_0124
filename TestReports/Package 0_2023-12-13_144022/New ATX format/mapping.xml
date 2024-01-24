@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package0/Package0_0</ATX-REF-PATH>
+    <FILENAME>Package 0.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>8562666b-9982-11ee-955c-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package0/Package0_0</ATX-REF-PATH>
+    <FILENAME>yyy.tbc</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>8562666c-9982-11ee-8aba-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+</FILES>

@@ -1,0 +1,89 @@
+<?xml-stylesheet type="text/xsl" href="tree-view.xsl"?> 
+<report>
+  <timeStart>0.0</timeStart>
+  <timeEnd>20.01592</timeEnd>
+  <diagram id="0">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>1.00227</timeStart>
+    <result>4</result>
+    <timeEnd>6.00531</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>1</samples>
+        <time>0.0</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>1.00227</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>1</samples>
+        <time>3.00399</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+  <diagram id="1">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>8.00765</timeStart>
+    <result>4</result>
+    <timeEnd>13.00974</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>4</samples>
+        <time>6.00531</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>8.00765</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>1</samples>
+        <time>10.0083</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+  <diagram id="2">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>15.01157</timeStart>
+    <result>4</result>
+    <timeEnd>20.01592</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>7</samples>
+        <time>13.00974</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>15.01157</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>1</samples>
+        <time>17.01363</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+</report>

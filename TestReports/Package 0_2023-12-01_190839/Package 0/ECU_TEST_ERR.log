@@ -1,0 +1,47 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.8GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 01.12.2023 19:08:39 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-12-01 19:08:39.879 7284 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 1366, in Evaluate
+                          File "tts\core\package\dataStructures\Complex.py", line 18, in CreateVector
+                        tt._Exceptions_.TTError: Can not create vector from ''# function...''!
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 147, in Call
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 1354, in Evaluate
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 963, in Evaluate
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 1370, in Evaluate
+                        tt._Exceptions_.TTError: An error occurred when calling "Vector(Unnamed)": Can not create vector from ''# function...''!
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 1002, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 208, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 151, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: An error occurred when calling "Vector(Unnamed)": Can not create vector from ''# function...''!

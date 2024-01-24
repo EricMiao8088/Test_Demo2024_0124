@@ -1,0 +1,49 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          54.2GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 28.10.2023 15:05:42 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-28 15:05:42.540 5292 ManagedWorker-4*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2023-10-28 15:05:42.551 5292 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" started
+2023-10-28 15:05:42.554 5292 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-28 15:05:42.565 5292 ManagedWorker-4*PE.Run() INFO:
+                        init SteppedSimulationClock
+2023-10-28 15:05:42.571 5292 ManagedWorker-4*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: ENVSIM01
+2023-10-28 15:05:42.871 5292 ToolLibs DEBUG:
+                        CarSimLib2: ToolLib time: 15:05:42.871 RunMathModel with GUI
+2023-10-28 15:05:48.807 5292 ToolLibs ERROR:
+                        tts.core.toolingFramework.networking.ToolServerConnector.PrintRemoteException: TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+2023-10-28 15:05:48.836 5292 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 6(Wait): "TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'"
+                        Package "Package 0"#6
+2023-10-28 15:05:48.957 5292 ManagedWorker-4*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: TTError: TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+                        Package "Package 0"#6
+2023-10-28 15:05:48.989 5292 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-28 15:05:49.576 5292 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" completed

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.3.0.141374+8eeee403f0b5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/currentTime</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">currentTime</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">flt(64,IEEE)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="b43befc2-91d0-4d4d-9f45-3d4af0d62bd3" name="TsWaitForUser" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ef">
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<MAX-WAIT-TIME format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">60000</VALUE>
+			</MAX-WAIT-TIME>
+			<INFO-TEXT format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string"/>
+			</INFO-TEXT>
+		</TESTSTEP>
+		<TESTSTEP id="abfc1b10-79a6-462d-84c9-eb22aa6cf782" xsi:type="tsRead">
+			<MAPPING-REF xsi:type="string">Plant model/currentTime</MAPPING-REF>
+			<EXPECTATION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="builtNumericExpression">
+					<RELATION xsi:type="string">==</RELATION>
+					<VALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</VALUE>
+				</EXPRESSION>
+			</EXPECTATION>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+			</METRIC>
+		</TESTSTEP>
+		<TESTSTEP id="e3daab04-d4a7-4033-b198-7c31259ebc07" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">2</VALUE>
+			</TIME>
+			<UNIT xsi:type="string">s</UNIT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

@@ -1,0 +1,43 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          55.7GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 20.10.2023 09:49:00 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-20 09:49:00.803 11932 ManagedWorker-7*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2023-10-20 09:49:00.814 11932 ManagedWorker-7*PE.Run() INFO:
+                        Test case "Package 1" started
+2023-10-20 09:49:00.821 11932 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-20 09:49:00.839 11932 ManagedWorker-7*PE.Run() INFO:
+                        System time mode activated
+2023-10-20 09:49:00.857 11932 ManagedWorker-7*PE.Run() ERROR:
+                        Test step 3(Calculation): "An error occurred when calling "user.test.ADD(Plant_model_currentTime, STATUS_BAT_StateOfCharge_Value)": unsupported operand type(s) for +: 'NotPresent' and 'float'"
+                        Package "Package 1"#3
+2023-10-20 09:49:00.859 11932 ManagedWorker-7*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: UserCodeException: An error occurred when calling "user.test.ADD(Plant_model_currentTime, STATUS_BAT_StateOfCharge_Value)": unsupported operand type(s) for +: 'NotPresent' and 'float'
+                        Package "Package 1"#3
+2023-10-20 09:49:00.883 11932 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-20 09:49:00.884 11932 ManagedWorker-7*PE.Run() INFO:
+                        Test case "Package 1" completed

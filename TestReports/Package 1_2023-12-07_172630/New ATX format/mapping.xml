@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package1/Package1_0</ATX-REF-PATH>
+    <FILENAME>Package 1.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>b8ad4fb0-94e2-11ee-9914-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+</FILES>

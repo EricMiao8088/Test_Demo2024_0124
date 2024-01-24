@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.3.0.141374+8eeee403f0b5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">BlueLink</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="function">
+				<CODE xsi:type="string">import win32com
+# function must be named 'func'
+def func(DateSet):
+    Carsim = win32com.client.Dispatch('Carsim.Application')
+    change = Carsim.BlueLink('#BlueLink28','Procedures',DateSet,'A')
+
+</CODE>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DateSet</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="texttable">
+				<DATA xsi:type="string">001</DATA>
+				<TEXT-LIST>
+					<ELEMENT xsi:type="string">001</ELEMENT>
+					<ELEMENT xsi:type="string">002</ELEMENT>
+					<ELEMENT xsi:type="string">003</ELEMENT>
+				</TEXT-LIST>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CARSIM-201.RunSimulink</ID>
+			<XACCESS xsi:type="xaJob">
+				<TOOL-ID xsi:type="string">CARSIM-201</TOOL-ID>
+				<JOB-NAME xsi:type="string">RunSimulink</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="45e119c6-bf67-4b71-ad68-1b1281df5040" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<FORMULA xsi:type="functionBaseExpression">
+				<COMPONENT xsi:type="varBaseExpression">
+					<NAME xsi:type="string">BlueLink</NAME>
+				</COMPONENT>
+				<ARGUMENTS>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DateSet</NAME>
+					</ARGUMENT>
+				</ARGUMENTS>
+			</FORMULA>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="2dba5cb8-204b-446e-a1ab-d993ba207fbb" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">CARSIM-201.RunSimulink</MAPPING-REF>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">StartLiveVideo</NAME>
+				<EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="boolean">False</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">StartMode</NAME>
+				<EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Send to Simulink</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

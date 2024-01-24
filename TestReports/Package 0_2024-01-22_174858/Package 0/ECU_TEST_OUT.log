@@ -1,0 +1,42 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          51.5GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 22.01.2024 17:48:58 (UTC +8:00) === ecu.test 2023.4.0.143832+81f7f95c32e5 143832+81f7f95c32e5 (2023/11/29 14:47:45) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] / wx: 4.2.1+tt.2
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 21-feb-2024
+         - licensed for: Turing
+
+
+2024-01-22 17:48:58.696 4104 ManagedWorker-6*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-01-22 17:48:58.706 4104 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-01-22 17:48:58.713 4104 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-01-22 17:48:58.727 4104 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2024-01-22 17:48:58.729 4104 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "Package 0"#0
+2024-01-22 17:48:59.740 4104 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "Package 0"#0
+2024-01-22 17:48:59.742 4104 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-01-22 17:48:59.761 4104 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 0" completed

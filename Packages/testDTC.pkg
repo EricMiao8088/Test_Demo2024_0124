@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.3.0.141374+8eeee403f0b5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Filter_DTC</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="function">
+				<CODE xsi:type="string">import openpyxl
+# function must be named 'func'
+def func(count,key_words1,key_words2=None):
+    '''
+    这个key_words是对excel表里面DTC的首字母进行的筛选，
+    比如想要筛选出‘C’开头的，就输入字符串C，'C',
+    如果有2个筛选规则，那就再添加一个参数即可
+    '''
+    excelpath = r'C:\Users\92126\Desktop\新建 Microsoft Excel 工作表 (3).xlsx'
+    wb = openpyxl.load_workbook(excelpath)
+    ws = wb['Sheet1']
+    Dtc_Column = 1
+    DTC_List = []
+    
+        
+    for i in range(ws.max_row-1):
+        DTC = ws.cell(row = i+1,column = Dtc_Column).value
+        '''
+        对DTC尽心规则筛选
+        
+        '''
+        if count == 1:
+            if key_words1 in DTC[0]:
+                DTC_List.append(DTC)
+        elif count == 2:
+            if key_words1 or key_words2 in DTC[0]:
+                DTC_List.append(DTC)
+    return DTC_List
+
+
+</CODE>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="0b82abf2-6711-4882-b59b-77fbd9b75580" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<FORMULA xsi:type="functionBaseExpression">
+				<COMPONENT xsi:type="varBaseExpression">
+					<NAME xsi:type="string">Filter_DTC</NAME>
+				</COMPONENT>
+				<ARGUMENTS>
+					<ARGUMENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1</VALUE>
+					</ARGUMENT>
+					<ARGUMENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">C</VALUE>
+					</ARGUMENT>
+				</ARGUMENTS>
+			</FORMULA>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

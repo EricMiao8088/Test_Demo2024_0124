@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>cf39a2f9-ba61-11ee-9abc-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>cf39c9f7-ba61-11ee-8b4c-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>cf39c9f8-ba61-11ee-8ab7-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>cf39c9f9-ba61-11ee-9992-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>BasicDrive.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>cf39c9fa-ba61-11ee-aee1-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT>24.01.2024 10:39 92126 [NONE] Test step execution was aborted by the user</COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Testlab_HiL.tbc</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>cf39c9fb-ba61-11ee-b9a0-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+</FILES>

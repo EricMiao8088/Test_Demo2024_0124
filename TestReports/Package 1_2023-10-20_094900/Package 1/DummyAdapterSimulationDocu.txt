@@ -1,0 +1,2 @@
+[-1ms Package 1:1]MODEL:-:currentTime<READ>   None
+[-1ms Package 1:2]MODEL:-:Model Root/STATUS_BAT/StateOfCharge [%]/Value<READ>   70.0

@@ -1,0 +1,73 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          53.8GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 28.10.2023 22:12:13 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-28 22:12:13.393 5292 ManagedWorker-2 INFO:
+                        Start project 'New project2' with test case execution with sequential analysis job execution
+2023-10-28 22:12:14.112 5292 ManagedWorker-2*PE.Run() INFO:
+                        Test case "TEST_1027" started
+2023-10-28 22:12:14.150 5292 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-28 22:12:14.209 5292 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2023-10-28 22:12:14.224 5292 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 22:12:14.223 Simulation is started
+2023-10-28 22:12:32.423 5292 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 22:12:32.421 Simulation is stopped
+2023-10-28 22:12:36.825 5292 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-28 22:12:36.936 5292 ManagedWorker-2*PE.Run() INFO:
+                        Test case "TEST_1027" completed
+2023-10-28 22:12:37.022 5292 ManagedWorker-2*PE.Run() INFO:
+                        Test case "TEST_1027" started
+2023-10-28 22:12:37.057 5292 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-28 22:12:37.114 5292 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2023-10-28 22:12:37.124 5292 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 22:12:37.123 Simulation is started
+2023-10-28 22:12:53.666 5292 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 22:12:53.664 Simulation is stopped
+2023-10-28 22:12:57.654 5292 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-28 22:12:57.755 5292 ManagedWorker-2*PE.Run() INFO:
+                        Test case "TEST_1027" completed
+2023-10-28 22:12:57.812 5292 ManagedWorker-2*PE.Run() INFO:
+                        Test case "TEST_1027" started
+2023-10-28 22:12:57.856 5292 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-28 22:12:57.914 5292 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2023-10-28 22:12:57.925 5292 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 22:12:57.924 Simulation is started
+2023-10-28 22:12:59.002 5292 MainThread ERROR:
+                        Manual test termination
+2023-10-28 22:12:59.134 5292 ManagedWorker-2*PE.Run() WARNING:
+                        Test case "TEST_1027" aborted
+2023-10-28 22:12:59.138 5292 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-28 22:12:59.269 5292 ManagedWorker-2*PE.Run() INFO:
+                        Test case "TEST_1027" completed
+2023-10-28 22:12:59.342 5292 ManagedWorker-2 INFO:
+                        Finalizing report 'New project2.trf'...

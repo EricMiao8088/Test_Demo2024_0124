@@ -1,0 +1,61 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          49.0GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 17.10.2023 12:49:54 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-17 12:49:54.393 1460 ManagedWorker-4*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2023-10-17 12:49:54.403 1460 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" started
+2023-10-17 12:49:54.406 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-17 12:49:54.440 1460 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2023-10-17 12:49:54.443 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        aaaaaa
+                        Package "Package 0"#1
+2023-10-17 12:49:54.452 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        
+                        Package "Package 0"#1
+2023-10-17 12:49:54.460 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        bbbbbb
+                        Package "Package 0"#1
+2023-10-17 12:49:54.470 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        
+                        Package "Package 0"#1
+2023-10-17 12:49:54.480 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        bbbbbbbb
+                        Package "Package 0"#2
+2023-10-17 12:49:54.489 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        
+                        Package "Package 0"#2
+2023-10-17 12:49:54.497 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        wwwww
+                        Package "Package 0"#2
+2023-10-17 12:49:54.507 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        
+                        Package "Package 0"#2
+2023-10-17 12:49:54.516 1460 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-17 12:49:54.524 1460 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" completed

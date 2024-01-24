@@ -1,0 +1,173 @@
+<?xml-stylesheet type="text/xsl" href="tree-view.xsl"?> 
+<report>
+  <timeStart>0.0</timeStart>
+  <timeEnd>20.04005</timeEnd>
+  <diagram id="0">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.50259</timeStart>
+    <result>4</result>
+    <timeEnd>4.00919</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>1</samples>
+        <time>0.0</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>2</samples>
+        <time>0.50259</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>2</samples>
+        <time>2.00638</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+  <diagram id="1">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>1.00402</timeStart>
+    <result>4</result>
+    <timeEnd>4.00919</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>2</samples>
+        <time>0.50259</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>1.00402</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>2</samples>
+        <time>2.00638</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+  <diagram id="2">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>7.51499</timeStart>
+    <result>4</result>
+    <timeEnd>11.0214</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>8</samples>
+        <time>6.0123</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>2</samples>
+        <time>7.51499</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>2</samples>
+        <time>9.01734</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+  <diagram id="3">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>8.01596</timeStart>
+    <result>4</result>
+    <timeEnd>11.0214</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>9</samples>
+        <time>7.51499</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>8.01596</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>2</samples>
+        <time>9.01734</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+  <diagram id="4">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>14.52906</timeStart>
+    <result>4</result>
+    <timeEnd>18.03664</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>15</samples>
+        <time>13.02441</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>2</samples>
+        <time>14.52906</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>2</samples>
+        <time>16.03233</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+  <diagram id="5">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>15.0305</timeStart>
+    <result>4</result>
+    <timeEnd>18.03664</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>16</samples>
+        <time>14.52906</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>15.0305</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>2</samples>
+        <time>16.03233</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+</report>

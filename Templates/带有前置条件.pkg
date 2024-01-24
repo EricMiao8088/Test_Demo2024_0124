@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.3.0.141374+8eeee403f0b5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/currentTime</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">currentTime</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">flt(64,IEEE)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="c0b89635-bdf5-447f-b48c-59ea8158347e" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">步骤：前置条件</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="4" id="2602d1fb-f467-43d2-ae90-40395543bcee" xsi:type="tsPackage">
+				<PACKAGE-REFERENCE xsi:type="expressionref">
+					<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">C:/ET2023_3/2_ECU-TEST_Advanced/Packages/test100.pkg</VALUE>
+					</PATH-EXPRESSION>
+				</PACKAGE-REFERENCE>
+				<PARAM-ASSIGNMENTS/>
+				<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+			</TESTSTEP>
+			<TESTSTEP id="70093faa-5761-40d4-9c78-e9cb45718a00" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Plant model/currentTime</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

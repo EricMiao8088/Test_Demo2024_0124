@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package2/Package2_0</ATX-REF-PATH>
+    <FILENAME>Recording_36(7).mdf.zip</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>e1c2a216-ba69-11ee-9192-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package2/Package2_0</ATX-REF-PATH>
+    <FILENAME>Job_1_Signals.astrace</FILENAME>
+    <REL-PATH>Package 2</REL-PATH>
+    <TEMP-DIR>e1c2a217-ba69-11ee-8589-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package2/Package2_0</ATX-REF-PATH>
+    <FILENAME>Recording_36(7).mdf.metadata</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>e1c2a218-ba69-11ee-9de9-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package2/Package2_0</ATX-REF-PATH>
+    <FILENAME>Job_1_Signals.astrace.metadata</FILENAME>
+    <REL-PATH>Package 2</REL-PATH>
+    <TEMP-DIR>e1c2a219-ba69-11ee-98bd-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package2/Package2_0</ATX-REF-PATH>
+    <FILENAME>Package 2.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>e1c2a21a-ba69-11ee-96b3-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package2/Package2_0</ATX-REF-PATH>
+    <FILENAME>Testlab_HiL.tbc</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>e1c2a21b-ba69-11ee-92b7-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/Package2/Package2_0/step_3/step_5/step_6</ATX-REF-PATH>
+    <FILENAME>Plot 0.png</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>e1c2a21c-ba69-11ee-b669-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-STEP</REF-PATH-TYPE>
+  </FILE>
+</FILES>

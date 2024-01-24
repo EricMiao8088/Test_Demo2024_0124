@@ -1,0 +1,75 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          53.8GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 28.10.2023 22:16:38 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-28 22:16:38.050 5292 ToolLibs ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\networking\ToolServerConnector.py", line 329, in PrintRemoteException
+                          File "tts\core\toolingFramework\networking\ToollibProcessStarter.py", line 628, in __CallCommandErrback
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 504, in raiseException
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 244, in inContext
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 260, in <lambda>
+                          File ".\Lib\site-packages\twisted\python\context.py", line 117, in callWithContext
+                          File ".\Lib\site-packages\twisted\python\context.py", line 82, in callWithContext
+                          File "tts\tooling\tool\MLSimulink\MLSimulinklib.py", line 490, in StartSimulation
+                          File "tts\tooling\tool\MLSimulink\common\MatlabApplication.py", line 316, in Call
+                          File "tts\tooling\tool\MLSimulink\common\MatlabApplication.py", line 356, in Execute
+                        tts.tooling.tool.MLSimulink.common.MatlabCommon.MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+                        ??? 错误使用 ecuTest.simulation.Start
+                        Model can only be started, if it is stopped
+                        
+2023-10-28 22:16:38.049 5292 ManagedWorker-5*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 57, in __call__
+                          File "tts\core\toolingFramework\interface\portTypes\AbstractPort.py", line 233, in ExecuteJob
+                          File "tts\tooling\tool\MLSimulink\MLSIMULINK.py", line 623, in JobStartSimulation
+                          File "tts\tooling\tool\MLSimulink\MLSIMULINK.py", line 744, in _StartSimulation
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 928, in <lambda>
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 168, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 90, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 504, in raiseException
+                        tt._Exceptions_.TTError: MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+                        ??? 错误使用 ecuTest.simulation.Start
+                        Model can only be started, if it is stopped
+                        
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 187, in __Call
+                          File "tts\core\mapping\xa\XAJobExec.py", line 71, in Call
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 76, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 96, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port MDL01 (@local): PortExecuteJob() failed: MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+                        ??? 错误使用 ecuTest.simulation.Start
+                        Model can only be started, if it is stopped
+                        
+2023-10-28 22:16:38.166 5292 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 1002, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 266, in Run
+                        tt._Exceptions_.TTError: Port MDL01 (@local): PortExecuteJob() failed: MLSimulinklibError: Error while executing MATLAB command '[ecuTestReturn308_0, ecuTestReturn308_1] = ecuTest.simulation.Start('Base_model00123', 2, false, false);'.
+                        ??? 错误使用 ecuTest.simulation.Start
+                        Model can only be started, if it is stopped
+                        

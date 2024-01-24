@@ -1,0 +1,45 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          35.1GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 13.12.2023 14:40:22 (UTC +8:00) === ecu.test 2023.4.0.143832+81f7f95c32e5 143832+81f7f95c32e5 (2023/11/29 14:47:45) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] / wx: 4.2.1+tt.2
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-12-13 14:40:22.293 8308 ManagedWorker-6*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2023-12-13 14:40:22.305 8308 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 0" started
+2023-12-13 14:40:22.315 8308 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-12-13 14:40:22.367 8308 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2023-12-13 14:40:22.382 8308 ManagedWorker-6*PE.Run() ERROR:
+                        Test step 2(Calculation): "An error occurred when calling "api.GlobalConstants.GetConstant('_trst')": 'GlobalConstants' has no attribute '_trst'"
+                        Package "Package 0"#2
+2023-12-13 14:40:22.384 8308 ManagedWorker-6*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: UserCodeException: An error occurred when calling "api.GlobalConstants.GetConstant('_trst')": 'GlobalConstants' has no attribute '_trst'
+                        Package "Package 0"#2
+2023-12-13 14:40:22.423 8308 ManagedWorker-6*PE.Run() WARNING:
+                        Test case "Package 0" aborted
+2023-12-13 14:40:22.425 8308 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-12-13 14:40:22.436 8308 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 0" completed

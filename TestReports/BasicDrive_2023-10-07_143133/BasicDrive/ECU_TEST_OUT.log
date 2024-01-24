@@ -1,0 +1,71 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          73.3GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 07.10.2023 14:31:33 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-07 14:31:33.308 26268 ManagedWorker-3*PE.Run() INFO:
+                        Start package 'BasicDrive.pkg' with test case execution with sequential analysis job execution
+2023-10-07 14:31:33.320 26268 ManagedWorker-3*PE.Run() WARNING:
+                        Invalid port id: APL01
+2023-10-07 14:31:33.321 26268 ManagedWorker-3*PE.Run() WARNING:
+                        Invalid port id: APL01
+2023-10-07 14:31:33.341 26268 ManagedWorker-3*PE.Run() WARNING:
+                        Invalid port id: APL01
+2023-10-07 14:31:33.351 26268 ManagedWorker-3*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2023-10-07 14:31:33.392 26268 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-07 14:31:33.393 26268 ManagedWorker-3*PE.Run() WARNING:
+                        Port missing in the test bench configuration: APL01
+2023-10-07 14:31:33.404 26268 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2023-10-07 14:31:33.408 26268 ManagedWorker-3*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-10-07 14:31:33.416 26268 ManagedWorker-3*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-10-07 14:31:33.423 26268 ManagedWorker-3*PE.Run() ERROR:
+                        tts.core.package.TestcaseExec.StartAutostartRecordings: RecordingStateFatalError: Recording group Recording group for Engine-Control: Signal group port: Invalid port id: APL01
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-10-07 14:31:36.737 26268 ManagedWorker-3*PE.Run() ERROR:
+                        Test step 6(Read): "Invalid port id: APL01"
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#6
+2023-10-07 14:31:36.739 26268 ManagedWorker-3*PE.Run() DEBUG_EXC_PRINT:
+                        tts.core.package.engine.ExecutionMappingSpaceManager.__CallRegisterXaObjects: TestbenchError: Invalid port id: APL01
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#6
+2023-10-07 14:31:36.772 26268 ManagedWorker-3*PE.Run() ERROR:
+                        Test step 22(Read): "Invalid port id: APL01"
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#22
+2023-10-07 14:31:36.774 26268 ManagedWorker-3*PE.Run() DEBUG_EXC_PRINT:
+                        tts.core.package.engine.ExecutionMappingSpaceManager._CalculateExecutionMappingSpaceFromTestSteps: TestbenchError: Invalid port id: APL01
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#22
+2023-10-07 14:31:40.066 26268 ManagedWorker-3*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "C:\ET2023_3\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg"#0
+2023-10-07 14:31:40.073 26268 ManagedWorker-3*PE.Run() WARNING:
+                        Test case "BasicDrive" aborted
+2023-10-07 14:31:40.081 26268 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-07 14:31:40.143 26268 ManagedWorker-3*PE.Run() INFO:
+                        Test case "BasicDrive" completed

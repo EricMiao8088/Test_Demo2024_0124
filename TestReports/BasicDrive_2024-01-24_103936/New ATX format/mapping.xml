@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>e0ed5a1c-ba61-11ee-b341-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>e0ed5a1d-ba61-11ee-bccf-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>e0ed5a1e-ba61-11ee-8961-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>e0ed5a1f-ba61-11ee-9fc4-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>BasicDrive.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>e0ed5a20-ba61-11ee-bb88-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/BasicDrive/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Testlab_HiL.tbc</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>e0ed5a21-ba61-11ee-b97f-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ecu.test 2023.4</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+</FILES>

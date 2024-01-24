@@ -1,0 +1,49 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          63.5GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 09.10.2023 16:23:28 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-09 16:23:28.114 21260 ManagedWorker-1*PE.Run() INFO:
+                        Start package 'open_camera.pkg' with test case execution with sequential analysis job execution
+2023-10-09 16:23:28.123 21260 ManagedWorker-1*PE.Run() INFO:
+                        Test case "open_camera" started
+2023-10-09 16:23:28.125 21260 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-10-09 16:23:28.139 21260 ManagedWorker-1*PE.Run() INFO:
+                        System time mode activated
+2023-10-09 16:23:32.704 21260 ManagedWorker-1*PE.Run() DEBUG:
+                        True
+                        Package "C:\ET2023_2\2_ECU-TEST_Advanced\Packages\open_camera.pkg"#2
+2023-10-09 16:23:32.706 21260 ManagedWorker-1*PE.Run() DEBUG:
+                        
+                        Package "C:\ET2023_2\2_ECU-TEST_Advanced\Packages\open_camera.pkg"#2
+2023-10-09 16:23:32.971 21260 ManagedWorker-1*PE.Run() ERROR:
+                        Test step 2(Calculation): "An error occurred when calling "OpenCamera(name, path)": Runtime error in function variable, line 10: FileNotFoundError, [Errno 2] No such file or directory: '%s\\%s.jpg'."
+                        Package "C:\ET2023_2\2_ECU-TEST_Advanced\Packages\open_camera.pkg"#2
+2023-10-09 16:23:32.980 21260 ManagedWorker-1*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: UserCodeException: An error occurred when calling "OpenCamera(name, path)": Runtime error in function variable, line 10: FileNotFoundError, [Errno 2] No such file or directory: '%s\\%s.jpg'.
+                        Package "C:\ET2023_2\2_ECU-TEST_Advanced\Packages\open_camera.pkg"#2
+2023-10-09 16:23:33.011 21260 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-10-09 16:23:33.013 21260 ManagedWorker-1*PE.Run() INFO:
+                        Test case "open_camera" completed

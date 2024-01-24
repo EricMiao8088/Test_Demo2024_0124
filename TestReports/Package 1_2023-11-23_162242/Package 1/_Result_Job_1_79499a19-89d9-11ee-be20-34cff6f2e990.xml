@@ -1,0 +1,381 @@
+<?xml-stylesheet type="text/xsl" href="tree-view.xsl"?> 
+<report>
+  <timeStart>0.0</timeStart>
+  <timeEnd>1.3</timeEnd>
+  <diagram id="0">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.05</timeStart>
+    <result>4</result>
+    <timeEnd>0.3</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>1</samples>
+        <time>0.0</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>2</samples>
+        <time>0.05</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>0.15</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>0.05</timeStart>
+      <timeEnd>0.15</timeEnd>
+      <duration>0.1</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>0.15</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+  <diagram id="1">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.1</timeStart>
+    <result>4</result>
+    <timeEnd>0.3</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>2</samples>
+        <time>0.05</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>0.1</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>0.15</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>0.1</timeStart>
+      <timeEnd>0.15</timeEnd>
+      <duration>0.05</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>0.15</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+  <diagram id="2">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.45</timeStart>
+    <result>4</result>
+    <timeEnd>0.75</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>9</samples>
+        <time>0.4</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>3</samples>
+        <time>0.45</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>0.6</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>0.45</timeStart>
+      <timeEnd>0.6</timeEnd>
+      <duration>0.15</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>0.6</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+  <diagram id="3">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.5</timeStart>
+    <result>4</result>
+    <timeEnd>0.75</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>10</samples>
+        <time>0.45</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>2</samples>
+        <time>0.5</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>0.6</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>0.5</timeStart>
+      <timeEnd>0.6</timeEnd>
+      <duration>0.1</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>0.6</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+  <diagram id="4">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.55</timeStart>
+    <result>4</result>
+    <timeEnd>0.75</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>11</samples>
+        <time>0.5</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>0.55</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>0.6</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>0.55</timeStart>
+      <timeEnd>0.6</timeEnd>
+      <duration>0.05</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>0.6</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+  <diagram id="5">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.9</timeStart>
+    <result>4</result>
+    <timeEnd>1.2</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>18</samples>
+        <time>0.85</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>3</samples>
+        <time>0.9</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>1.05</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>0.9</timeStart>
+      <timeEnd>1.05</timeEnd>
+      <duration>0.15</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>1.05</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+  <diagram id="6">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>0.95</timeStart>
+    <result>4</result>
+    <timeEnd>1.2</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>19</samples>
+        <time>0.9</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>2</samples>
+        <time>0.95</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>1.05</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>0.95</timeStart>
+      <timeEnd>1.05</timeEnd>
+      <duration>0.1</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>1.05</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+  <diagram id="7">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>1.0</timeStart>
+    <result>4</result>
+    <timeEnd>1.2</timeEnd>
+    <edge1>State "Signal/3"</edge1>
+    <edge2>State "Signal/4"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>20</samples>
+        <time>0.95</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>1.0</time>
+        <value>0.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>3</samples>
+        <time>1.05</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/5">
+        <samples>0</samples>
+      </edge>
+    </signal>
+    <relationship name="Signal/2 - Signal/3">
+      <source>Signal/2</source>
+      <target>Signal/3</target>
+      <timeStart>1.0</timeStart>
+      <timeEnd>1.05</timeEnd>
+      <duration>0.05</duration>
+    </relationship>
+    <relationship name="Signal/3 - Signal/4">
+      <source>Signal/3</source>
+      <target>Signal/4</target>
+      <timeStart>1.05</timeStart>
+    </relationship>
+    <relationship name="Signal/4 - Signal/5">
+      <source>Signal/4</source>
+      <target>Signal/5</target>
+    </relationship>
+  </diagram>
+</report>

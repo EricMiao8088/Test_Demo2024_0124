@@ -1,0 +1,37 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          54.5GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 24.01.2024 10:39:53 (UTC +8:00) === ecu.test 2023.4.0.143832+81f7f95c32e5 143832+81f7f95c32e5 (2023/11/29 14:47:45) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] / wx: 4.2.1+tt.2
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 21-feb-2024
+         - licensed for: Turing
+
+
+2024-01-24 10:39:53.784 14996 ManagedWorker-4*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 147, in Call
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 965, in Evaluate
+                        AttributeError: module 'user' has no attribute 'dengguang'
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 1005, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 208, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 151, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: module 'user' has no attribute 'dengguang'

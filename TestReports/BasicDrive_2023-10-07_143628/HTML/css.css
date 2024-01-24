@@ -1,0 +1,45 @@
+      body, td          { font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-size: 10px; }
+
+      h2                { margin: 8px 0; }
+      h3                { margin: 4px 0; }
+
+      a:link            { color:#000000;}
+      a:visited         { color:#000000;}
+
+      .header           { background-color:#BFBFBF; border-bottom: 1px solid #B4B4B4; font-weight:bold;}
+      .headerLine       { background-color:#ED8B00; border-bottom: 1px solid #B4B4B4; font-weight:bold;}
+
+      div.header        { width: auto; text-align: center; margin-bottom: 4px; padding: 4px; }
+      div.headerLine    { width: auto; text-align: center; margin-bottom: 4px; padding: 4px; }
+      div.footer        { color: #888888; text-align: right; }
+      div.sectionHeader { background-color: #BFBFBF; font-size: 2em; font-weight:bold;
+                            text-align: center; width: 200px; margin-bottom: 0; }
+      div.section       { border: 2px solid #BFBFBF; width: auto; padding: 0; margin: 0 0 10px 0; }
+      div.config        { background-color: #EEEEEE; padding: 6px;}
+
+      div.minPadding            {padding-left: 6px; padding-right:6px;}
+      div.imageNotFound         {padding-left: 6px; padding-right:6px;padding-top:6px;color:red;font-weight:bold}
+      div.minPaddingTableEntity {padding-left: 3px; padding-right:3px;}
+
+      td.result              { text-align:center; padding:-3px 0px -3px 0px; border: 1px solid #B4B4B4}
+      td.resultTraceAnalysis { text-align:center; padding: 0px; border: 1px solid #B4B4B4;}
+      td.resultTraceAnalysis div { text-align:center; padding:6px 6px 6px 6px;}
+
+      td.configHeader        { font-weight: bold; }
+      td.configSubHeader     { font-style: italic; }
+      td.configSubHeaderName { font-style: italic; padding-left: 10px;}
+      td.configName          { padding-left: 10px; }
+      td.configSubName       { padding-left: 20px; }
+
+      td.border         { border-top: 1px solid #B4B4B4; border-bottom: 1px solid #B4B4B4; }
+
+      .default          { background-color: #E5E5E5; }
+      .default:hover    { background-color: #F5F5F5; }
+
+      ul                { list-style-type:none; padding-left: 16px; font-size: 12px;}
+      li.open           { list-style-type:circle; }
+      li.close          { list-style-type:disc; }
+
+      pre               { font: inherit; padding: 0px; margin: 0px;}
+      
+      .reportImage       { max-width: 400px; }

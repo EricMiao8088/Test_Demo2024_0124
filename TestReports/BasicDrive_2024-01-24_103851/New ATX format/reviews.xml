@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REVIEWS>
+  <TESTCASE-REVIEW>
+    <VERDICT-REVALUATION>ERROR</VERDICT-REVALUATION>
+    <REVIEWER><![CDATA[92126]]></REVIEWER>
+    <COMMENT><![CDATA[#25 speed (MEAS-Read) -> NONE: Test step execution was aborted by the user]]></COMMENT>
+    <DATE>2024-01-24T02:39:30+00:00</DATE>
+    <REF DEST="TEST-CASE">/TestReports/BasicDrive/BasicDrive_0</REF>
+  </TESTCASE-REVIEW>
+</REVIEWS>

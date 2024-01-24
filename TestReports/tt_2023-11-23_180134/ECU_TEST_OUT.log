@@ -1,0 +1,49 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          62.2GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 23.11.2023 18:01:34 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-11-23 18:01:34.196 4944 ManagedWorker-4 INFO:
+                        Start project 'tt.prj' with test case execution with sequential analysis job execution
+2023-11-23 18:01:34.307 4944 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" started
+2023-11-23 18:01:34.310 4944 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-23 18:01:34.317 4944 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2023-11-23 18:01:36.330 4944 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-23 18:01:36.332 4944 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" completed
+2023-11-23 18:01:36.378 4944 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" started
+2023-11-23 18:01:36.380 4944 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-23 18:01:36.388 4944 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2023-11-23 18:01:38.399 4944 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-23 18:01:38.400 4944 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" completed
+2023-11-23 18:01:38.437 4944 ManagedWorker-4 INFO:
+                        Finalizing report 'tt.trf'...

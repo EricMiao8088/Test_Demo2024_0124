@@ -1,0 +1,38 @@
+2023-10-28 16:31:57: warning (line 0): Log.p (line 0): on: ECUTEST:GetSignalProperties
+2023-10-28 16:31:57: Log (line 0): ============= Enable Logging =============
+2023-10-28 16:32:00: OpenModelOrScript (line 0): ================================
+2023-10-28 16:32:00: OpenModelOrScript (line 0): "Base_model00123.mdl"
+2023-10-28 16:32:12: OpenModel (line 0): "Base_model00123.mdl"
+2023-10-28 16:32:15: Terminate (line 0): Terminate Time: 1.640740 -> Model did not terminate on time
+2023-10-28 16:32:20: warning (line 0): CacheManager.p (line 0): ECUTEST:CacheManager:GetOrInitCachedData: Failed to initialize model cache
+2023-10-28 16:32:20: warning (line 0): CacheManager.p (line 0): ECUTEST:CacheManager:GetOrInitCachedData: Caching disabled for Base_model00123
+2023-10-28 16:32:40: warning (line 0): Compile.p (line 0): MATLAB:ECUTEST: MATLAB:ECUTEST:Compile: Unable to compile model.
+MATLAB-Error: 错误使用 ecuTest.simulation.ExecuteSimulationCommand
+Error reported by S-function 'vs_sfv' in 'Base_model00123/CarSim S-Function_video':
+Error: Unable to find sim file: simfile.sim
+
+出错 ecuTest.simulation.Compile
+
+出错 ecuTest.tools.model.FindUsedVariables
+
+出错 ecuTest.GetApplicationData - Show complete stack trace
+MATLAB-File: C:\\Program Files\\ECU-TEST 2023.3\\matlab\\+ecuTest\\+simulation\\Compile.p
+2023-10-28 16:32:41: warning (line 0): Compile.p (line 0): MATLAB:ECUTEST: MATLAB:ECUTEST:Compile: Unable to compile model.
+MATLAB-Error: 错误使用 ecuTest.simulation.ExecuteSimulationCommand
+Error reported by S-function 'vs_sfv' in 'Base_model00123/CarSim S-Function_video':
+Error: Unable to find sim file: simfile.sim
+
+出错 ecuTest.simulation.Compile
+
+出错 ecuTest.tools.model.FindUsedVariables
+
+出错 ecuTest.GetApplicationData - Show complete stack trace
+MATLAB-File: C:\\Program Files\\ECU-TEST 2023.3\\matlab\\+ecuTest\\+simulation\\Compile.p
+2023-10-28 16:36:06: Terminate (line 0): Terminate Time: 0.320193 -> Already in state ERROR; Invalid Simulink object name: Base_model00123.
+2023-10-28 16:38:31: warning (line 0): Log.p (line 0): on: ECUTEST:GetSignalProperties
+2023-10-28 16:38:31: Log (line 0): ============= Enable Logging =============
+2023-10-28 16:38:31: OpenModelOrScript (line 0): ================================
+2023-10-28 16:38:31: OpenModelOrScript (line 0): "Base_model00123.mdl"
+2023-10-28 16:38:35: OpenModel (line 0): "Base_model00123.mdl"
+2023-10-28 16:38:36: Terminate (line 0): Terminate Time: 0.407058 -> Model did not terminate on time
+2023-10-28 16:38:38: CachedData.InitCachedData (line 0): No cached data for Base_model00123 found

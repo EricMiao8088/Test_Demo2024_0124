@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="tree-view.xsl"?> 
+<report>
+  <timeStart>1.00227</timeStart>
+  <timeEnd>6.00531</timeEnd>
+  <diagram id="0">
+    <comment>Current and next state are violated by value 10.0</comment>
+    <timeStart>3.00399</timeStart>
+    <result>4</result>
+    <timeEnd>6.00531</timeEnd>
+    <edge1>State "Signal/2"</edge1>
+    <edge2>State "Signal/3"</edge2>
+    <signal name="Signal">
+      <edge name="Signal/1">
+        <samples>1</samples>
+        <time>1.00227</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/2">
+        <samples>1</samples>
+        <time>3.00399</time>
+        <value>1.0</value>
+      </edge>
+      <edge name="Signal/3">
+        <samples>0</samples>
+      </edge>
+      <edge name="Signal/4">
+        <samples>0</samples>
+      </edge>
+    </signal>
+  </diagram>
+</report>

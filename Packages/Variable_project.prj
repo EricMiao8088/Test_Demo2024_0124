@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">722ff6a57ed111ee834e34cff6f2e990</ID>
+	<COMPONENTS/>
+</PROJECT>

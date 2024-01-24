@@ -1,0 +1,37 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          44.1GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 21.11.2023 14:43:56 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-11-21 14:43:56.798 19560 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\traceRecording\SyncConfigExec.py", line 242, in SynchronizeGroupedRecordingInfos
+                          File "tts\traceRecording\SyncConfigExec.py", line 412, in _SynchronizeRecording
+                          File "tts\traceRecording\SyncConfigExec.py", line 402, in _SynchronizeRecording
+                          File "tts\traceRecording\SynchronizationExec.py", line 497, in Synchronize
+                          File "tts\traceRecording\SynchronizationExec.py", line 488, in Synchronize
+                          File "tts\traceRecording\synchronizers\equalnessMatching\EqualnessMatchingSynchronizationExec.py", line 45, in _Synchronize
+                          File "tts\traceRecording\synchronizers\equalnessMatching\EqualnessMatchingSynchronizationExec.py", line 103, in FindEqualValues
+                          File "tts\traceRecording\SynchronizationExec.py", line 183, in ProceedToNextValueChange
+                          File "tts\traceRecording\SynchronizationExec.py", line 228, in HandleDataChangedEvent
+                        tts.traceRecording.SynchronizationExec.SyncEOFError: Synchronization of recording TC Variables with master Recording group for Plant model failed: No synchronization point found! Perhaps, TimeLimit and/or MaxDeltaT are too low.

@@ -1,0 +1,63 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          73.3GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 07.10.2023 14:31:33 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-10-07 14:31:33.423 26268 ManagedWorker-3*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\package\TestcaseExec.py", line 141, in StartAutostartRecordings
+                          File "tts\traceRecording\groups\SignalRecordingGroup.py", line 187, in StartRecording
+                          File "tts\traceRecording\groups\RecordingGroup.py", line 176, in CheckStart
+                          File "tts\traceRecording\groups\RecordingGroup.py", line 138, in CheckError
+                        tts.traceRecording.groups.RecordingGroup.RecordingStateFatalError: Recording group Recording group for Engine-Control: Signal group port: Invalid port id: APL01
+2023-10-07 14:31:36.739 26268 ManagedWorker-3*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\testbenchConfig\Testbench.py", line 1128, in Port
+                          File "tts\core\toolingFramework\toolAccess\Binding.py", line 452, in GetPort
+                          File "tts\core\toolingFramework\toolAccess\BindingBase.py", line 112, in GetPortBinding
+                        tts.core.toolingFramework.toolAccess.Exceptions.IdException: Invalid port-ID: APL01
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\core\package\engine\ExecutionMappingSpaceManager.py", line 534, in __CallRegisterXaObjects
+                          File "tts\testModule\measCalib\mapping\meas\XAMeasVariableExec.py", line 66, in PrepareRead
+                          File "tts\core\mapping\xa\XAVariableExec.py", line 91, in GetPort
+                          File "tts\core\toolingFramework\testbenchConfig\Testbench.py", line 1133, in Port
+                        tts.core.toolingFramework.testbenchConfig.Testbench.TestbenchError: Invalid port id: APL01
+2023-10-07 14:31:36.774 26268 ManagedWorker-3*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\testbenchConfig\Testbench.py", line 1128, in Port
+                          File "tts\core\toolingFramework\toolAccess\Binding.py", line 452, in GetPort
+                          File "tts\core\toolingFramework\toolAccess\BindingBase.py", line 112, in GetPortBinding
+                        tts.core.toolingFramework.toolAccess.Exceptions.IdException: Invalid port-ID: APL01
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\core\package\engine\ExecutionMappingSpaceManager.py", line 215, in _CalculateExecutionMappingSpaceFromTestSteps
+                          File "tts\testExecution\testSteps\generic\TestStepReadExec.py", line 577, in GetXaPrepare
+                          File "tts\testExecution\testSteps\generic\TestStepReadExec.py", line 337, in IsBoostModeAvailable
+                          File "tts\core\mapping\xa\XAVariableExec.py", line 91, in GetPort
+                          File "tts\core\toolingFramework\testbenchConfig\Testbench.py", line 1133, in Port
+                        tts.core.toolingFramework.testbenchConfig.Testbench.TestbenchError: Invalid port id: APL01

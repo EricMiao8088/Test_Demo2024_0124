@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ANALYSISEXEC-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ANALYSIS-EXECUTION xsi:type="analysisExecution">
+		<TIMESTAMP-FRACTIONAL-DIGITS xsi:type="integer">12</TIMESTAMP-FRACTIONAL-DIGITS>
+		<PARALLEL-EXECUTION xsi:type="parallelAnalysisExecution"/>
+		<REPORT xsi:type="analysisReport">
+			<TIMESTAMP-FRACTIONAL-DIGITS xsi:type="integer">10</TIMESTAMP-FRACTIONAL-DIGITS>
+		</REPORT>
+	</ANALYSIS-EXECUTION>
+</ANALYSISEXEC-SETTINGS>

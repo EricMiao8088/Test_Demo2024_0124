@@ -1,0 +1,829 @@
+﻿<!-- saved from url=(0013)about:internet -->
+<!-- ECU-TEST VERSION: 2023.3.0.141374+8eeee403f0b5 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="javascript.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css.css">    
+    <title> CheckVel - ECU-TEST package report </title>
+  </head>
+  <body>
+    <div class="header" style="font-size:30px;">ECU-TEST package report<br>
+    </div>
+    <div class="headerLine" style="font-size:12px;">
+      <table style="width: 100%;" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="border: 1px solid black; margin: 0; width:10px; height:8px" onclick="expandAll()"><a style="text-decoration:none;font-size:8px;color:black;" href="#None">+</a></td>
+          <td style="border: 1px solid black; margin: 0; width:10px; height:8px" onclick="collapseAll()"><a style="text-decoration:none;font-size:8px;color:black;" href="#None">&minus;</a></td>
+          <td>2023-11-14 11:42:56.129060 (UTC +8:00)</td>
+        </tr>
+      </table>
+    </div>
+    
+    
+    <h2>Evaluation:
+    <span style="color: #77FF5B;"> 
+        SUCCESS
+    </span></h2>
+    
+    <div class="sectionHeader">Details</div>
+    <div class="section">
+      
+  <div class="config">
+    <table style="padding: 2px;">
+      
+        <tr>
+          <td class="configHeader" colspan="3">Common</td>
+        </tr>
+
+         
+        <tr>
+          <td class="configName">Execution time</td>
+          <td colspan="3">0:00:08.29</td>
+        </tr>
+
+         
+        <tr>
+          <td class="configName">Path</td>
+          <td colspan="3">
+ 
+  <a href = "tracetronic://C:/ET2023_3/2_ECU-TEST_Advanced/Packages/Lib/CheckVel.pkg">C:/ET2023_3/2_ECU-TEST_Advanced/Packages/Lib/CheckVel.pkg</a>
+</td>
+        </tr>
+
+         
+        <tr>
+          <td class="configName">Computer</td>
+          <td colspan="3">Eric</td>
+        </tr>
+
+
+
+
+
+        
+        <tr>
+          <td class="configHeader" colspan="4">Parameter</td>
+        </tr>
+
+        
+        <tr>
+          <td class="configSubHeaderName">Name</td>
+          <td class="configSubHeader">Initial value</td>
+          <td class="configSubHeader">Origin</td>
+          <td class="configSubHeader">Description</td>
+        </tr>
+
+            
+        
+        <tr>
+          <td class="configName">timeout</td>
+          <td>9000</td>
+            <td>&quot;timeout&quot;</td>
+            <td></td>
+        </tr>
+
+            
+        
+        <tr>
+          <td class="configName">vehvel_min</td>
+          <td>50</td>
+            <td>&quot;vehvel_min&quot;</td>
+            <td></td>
+        </tr>
+
+        
+        <tr>
+          <td class="configHeader" colspan="3">Return values</td>
+        </tr>
+
+        
+        <tr>
+          <td class="configSubHeaderName">Name</td>
+          <td class="configSubHeader">Return value</td>
+          <td class="configSubHeader">Description</td>
+        </tr>
+
+        
+            
+        
+        <tr>
+          <td class="configName">vehvel_diff</td>
+          <td>0.9400000000000048</td>
+            <td colspan=2>None</td>
+        </tr>
+
+    </table>
+  </div>
+
+    </div>
+    
+    
+    
+    <div class="sectionHeader">Mapping</div>
+    <div class="section">
+      
+    
+    
+    <table style="width: 100%; margin: 0; text-align: left;" cellspacing="0" cellpadding="3" rules="groups">
+      <tr class="header">
+        <td style="width:9px;"></td>
+        <td style="width:9px;"></td>
+        <td>Name</td>
+        <td>Target</td>
+        <td>Type</td>
+        <td>Description</td>
+        <td>Origin</td>
+      </tr>
+        
+    
+    
+      <tbody class="default">
+        <tr>
+          <td></td>
+          <td colspan="2">ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY</td>
+          <td>EPT-CAN/ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY</td>
+          <td>BUS</td>
+          <td></td>
+          <td>CheckVel</td>
+        </tr>
+      </tbody>
+
+        
+    
+    
+      <tbody class="default">
+        <tr>
+          <td></td>
+          <td colspan="2">speed</td>
+          <td>Engine-Control/speed</td>
+          <td>MEAS</td>
+          <td></td>
+          <td>CheckVel</td>
+        </tr>
+      </tbody>
+
+        
+    
+    
+      <tbody class="default">
+        <tr>
+          <td></td>
+          <td colspan="2">STATUS_VEH/VehicleVelocity [kmh]/In1</td>
+          <td>Plant model/Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1</td>
+          <td>MODEL</td>
+          <td></td>
+          <td>CheckVel</td>
+        </tr>
+      </tbody>
+
+    </table>    
+
+    </div>
+    
+    
+    <div class="sectionHeader">Test case</div>
+    <div class="section">
+      
+    
+    
+    <table style="width: 100%; margin: 0; text-align: left;" cellspacing="0" cellpadding="0" rules="groups">
+      <tr class="header" height="20px" style="border-top: 1px solid black;">
+        <td width="15"></td>
+        <td width="80"><div class="minPadding">#</div></td>
+        <td><div class="minPadding"></div></td>
+        <td><div class="minPadding">Time [s]</div></td>
+        <td colspan="2"><div class="minPadding">Action</div></td>
+        <td><div class="minPadding">Name</div></td>
+        <td><div class="minPadding">Value</div></td>
+        <td><div class="minPadding">Expected value</div></td>
+        <td><div class="minPadding">Comment</div></td>
+      </tr>
+        
+    
+    <tbody class="default">
+      <tr id="item_28" ondblclick="expand('28')">
+        <td class="border" style="text-align:center; padding-left: 6px; padding-right:6px"><a href="#None" onclick="expand('28')">+</a></td>
+        <td class="result" style="background-color: #77FF5B; font-weight: bold; color: #2D7F2D; ">
+          <div style="">
+                12.1<br>
+            &nbsp;SUCCESS&nbsp;
+          </div>
+        </td>
+        <td class="border" style="text-align:center">
+          
+          
+        </td>
+        
+        <td class="border" style="text-align:left"><div class="minPadding"> 3.295 </div></td>
+        
+        <td class="border" colspan="2">
+        <div class="minPadding">
+        <!-- Relative Pfadangabe -->
+        <img src="images/702386044.png" style="vertical-align:middle" alt="Teststep-Icon"/>
+        UTILITY
+        </div></td>
+
+
+        <td class="border"><div class="minPadding">Multi-Check </div></td>
+        <td class="border"><div class="minPadding"> <pre>True for all test steps (Wait until true: 1366 trials [8280.843 ms])</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre>All TS</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre></pre> </div></td>
+      </tr>
+        
+
+
+    <tr style="display: none;">
+      <td colspan="4"></td>
+      <td colspan="6" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Chosen time option</b></pre></td>
+            <td><pre><b>Timeout</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>Wait until true</pre></td>
+                    <td><pre>timeout ms</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="4"></td>
+      <td colspan="6" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Test step</b></pre></td>
+            <td><pre><b>Value</b></pre></td>
+            <td><pre><b>Expected value</b></pre></td>
+            <td><pre><b>Expectation expression</b></pre></td>
+            <td><pre><b>Evaluation</b></pre></td>
+          </tr>
+          <tr>
+                    <td style="background-color: #c4e0be"><pre>MODEL-Read: STATUS_VEH/VehicleVelocity [kmh]/In1</pre></td>
+                    <td style="background-color: #c4e0be"><pre>50.92</pre></td>
+                    <td style="background-color: #c4e0be"><pre>value > vehvel_min</pre></td>
+                    <td style="background-color: #c4e0be"><pre>value > vehvel_min</pre></td>
+                    <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+          </tr>
+          <tr>
+                    <td style="background-color: #c4e0be"><pre>BUS-Read: ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY</pre></td>
+                    <td style="background-color: #c4e0be"><pre>50.01</pre></td>
+                    <td style="background-color: #c4e0be"><pre>value > vehvel_min</pre></td>
+                    <td style="background-color: #c4e0be"><pre>value > vehvel_min</pre></td>
+                    <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+          </tr>
+          <tr>
+                    <td style="background-color: #c4e0be"><pre>MEAS-Read: speed</pre></td>
+                    <td style="background-color: #c4e0be"><pre>50.95</pre></td>
+                    <td style="background-color: #c4e0be"><pre>value > vehvel_min</pre></td>
+                    <td style="background-color: #c4e0be"><pre>value > vehvel_min</pre></td>
+                    <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="4"></td>
+      <td colspan="6" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Variable</b></pre></td>
+            <td><pre><b>Value</b></pre></td>
+            <td><pre><b>Description</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>timeout</pre></td>
+                    <td><pre>9000</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_min</pre></td>
+                    <td><pre>50</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+    </tbody>
+
+        
+    
+    <tbody class="default">
+      <tr id="item_29" ondblclick="expand('29')">
+        <td class="border" style="text-align:center; padding-left: 6px; padding-right:6px"><a href="#None" onclick="expand('29')">+</a></td>
+        <td class="result" style="; font-weight: bold; color: #515151; ">
+          <div style="">
+                12.2<br>
+            &nbsp;&nbsp;
+          </div>
+        </td>
+        <td class="border" style="text-align:center">
+          
+          
+        </td>
+        
+        <td class="border" style="text-align:left"><div class="minPadding"> 3.295 </div></td>
+        <td class="border" style="width: 10px">&nbsp;</td>
+        
+        <td class="border" colspan="1">
+        <div class="minPadding">
+        <!-- Relative Pfadangabe -->
+        <img src="images/906901396.png" style="vertical-align:middle" alt="Teststep-Icon"/>
+        MODEL-Read
+        </div></td>
+
+
+        <td class="border"><div class="minPadding">STATUS_VEH/VehicleVelocity [kmh]/In1 </div></td>
+        <td class="border"><div class="minPadding"> <pre>50.92</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre>value > vehvel_min</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre>Read the vehicle velocity.</pre> </div></td>
+      </tr>
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Value</b></pre></td>
+            <td><pre><b>Expected value</b></pre></td>
+            <td><pre><b>Representation</b></pre></td>
+            <td><pre><b>Save in</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>50.92</pre></td>
+                    <td><pre>value > vehvel_min</pre></td>
+                    <td><pre>PHYS</pre></td>
+                    <td><pre>vehvel_mdl</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Save in</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_mdl</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>IMPL</b></pre></td>
+            <td><pre><b>RAW</b></pre></td>
+            <td><pre><b>PHYS</b></pre></td>
+            <td><pre><b>TEXT</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>~No Representation~</pre></td>
+                    <td><pre>~No Representation~</pre></td>
+                    <td><pre>50.92 (don't care)</pre></td>
+                    <td><pre>~No Representation~</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Variable</b></pre></td>
+            <td><pre><b>Value</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_min</pre></td>
+                    <td><pre>50</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+    </tbody>
+
+        
+    
+    <tbody class="default">
+      <tr id="item_30" ondblclick="expand('30')">
+        <td class="border" style="text-align:center; padding-left: 6px; padding-right:6px"><a href="#None" onclick="expand('30')">+</a></td>
+        <td class="result" style="; font-weight: bold; color: #515151; ">
+          <div style="">
+                12.3<br>
+            &nbsp;&nbsp;
+          </div>
+        </td>
+        <td class="border" style="text-align:center">
+          
+          
+        </td>
+        
+        <td class="border" style="text-align:left"><div class="minPadding"> 3.295 </div></td>
+        <td class="border" style="width: 10px">&nbsp;</td>
+        
+        <td class="border" colspan="1">
+        <div class="minPadding">
+        <!-- Relative Pfadangabe -->
+        <img src="images/136704580.png" style="vertical-align:middle" alt="Teststep-Icon"/>
+        BUS-Read
+        </div></td>
+
+
+        <td class="border"><div class="minPadding">ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY </div></td>
+        <td class="border"><div class="minPadding"> <pre>50.01</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre>value > vehvel_min</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre>Read the vehicle velocity.</pre> </div></td>
+      </tr>
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Value</b></pre></td>
+            <td><pre><b>Expected value</b></pre></td>
+            <td><pre><b>Representation</b></pre></td>
+            <td><pre><b>Unit</b></pre></td>
+            <td><pre><b>Save in</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>50.01</pre></td>
+                    <td><pre>value > vehvel_min</pre></td>
+                    <td><pre>PHYS</pre></td>
+                    <td><pre>km/h</pre></td>
+                    <td><pre>vehvel_bus</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Save in</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_bus</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>IMPL</b></pre></td>
+            <td><pre><b>RAW</b></pre></td>
+            <td><pre><b>PHYS</b></pre></td>
+            <td><pre><b>TEXT</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>BitStream(0x32, 16)</pre></td>
+                    <td><pre>50</pre></td>
+                    <td><pre>50.01 (km/h)</pre></td>
+                    <td><pre>~No Representation~</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Variable</b></pre></td>
+            <td><pre><b>Value</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_min</pre></td>
+                    <td><pre>50</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+    </tbody>
+
+        
+    
+    <tbody class="default">
+      <tr id="item_31" ondblclick="expand('31')">
+        <td class="border" style="text-align:center; padding-left: 6px; padding-right:6px"><a href="#None" onclick="expand('31')">+</a></td>
+        <td class="result" style="; font-weight: bold; color: #515151; ">
+          <div style="">
+                12.4<br>
+            &nbsp;&nbsp;
+          </div>
+        </td>
+        <td class="border" style="text-align:center">
+          
+          
+        </td>
+        
+        <td class="border" style="text-align:left"><div class="minPadding"> 3.295 </div></td>
+        <td class="border" style="width: 10px">&nbsp;</td>
+        
+        <td class="border" colspan="1">
+        <div class="minPadding">
+        <!-- Relative Pfadangabe -->
+        <img src="images/1710269569.png" style="vertical-align:middle" alt="Teststep-Icon"/>
+        MEAS-Read
+        </div></td>
+
+
+        <td class="border"><div class="minPadding">speed </div></td>
+        <td class="border"><div class="minPadding"> <pre>50.95</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre>value > vehvel_min</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre>Read the vehicle velocity.</pre> </div></td>
+      </tr>
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Value</b></pre></td>
+            <td><pre><b>Expected value</b></pre></td>
+            <td><pre><b>Representation</b></pre></td>
+            <td><pre><b>Save in</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>50.95</pre></td>
+                    <td><pre>value > vehvel_min</pre></td>
+                    <td><pre>PHYS</pre></td>
+                    <td><pre>vehvel_meas</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Save in</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_meas</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>IMPL</b></pre></td>
+            <td><pre><b>RAW</b></pre></td>
+            <td><pre><b>PHYS</b></pre></td>
+            <td><pre><b>TEXT</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>~No Representation~</pre></td>
+                    <td><pre>~No Representation~</pre></td>
+                    <td><pre>50.95 ( - )</pre></td>
+                    <td><pre>~No Representation~</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="5"></td>
+      <td colspan="5" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Variable</b></pre></td>
+            <td><pre><b>Value</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_min</pre></td>
+                    <td><pre>50</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+    </tbody>
+
+        
+    
+    <tbody class="default">
+      <tr id="item_32" ondblclick="expand('32')">
+        <td class="border" style="text-align:center; padding-left: 6px; padding-right:6px"><a href="#None" onclick="expand('32')">+</a></td>
+        <td class="result" style="; font-weight: bold; color: #515151; ">
+          <div style="">
+                12.5<br>
+            &nbsp;&nbsp;
+          </div>
+        </td>
+        <td class="border" style="text-align:center">
+          
+          
+        </td>
+        
+        <td class="border" style="text-align:left"><div class="minPadding"> 11.583 </div></td>
+        
+        <td class="border" colspan="2">
+        <div class="minPadding">
+        <!-- Relative Pfadangabe -->
+        <img src="images/4280515966.png" style="vertical-align:middle" alt="Teststep-Icon"/>
+        UTILITY
+        </div></td>
+
+
+        <td class="border"><div class="minPadding">Calculation </div></td>
+        <td class="border"><div class="minPadding"> <pre>max(vehvel_mdl, vehvel_bus, vehvel_meas) - min(vehvel_mdl, vehvel_bus, vehvel_meas) -> 0.9400000000000048 |-> vehvel_diff</pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre></pre> </div></td>
+        <td class="border"><div class="minPadding"> <pre></pre> </div></td>
+      </tr>
+        
+
+
+    <tr style="display: none;">
+      <td colspan="4"></td>
+      <td colspan="6" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Save in</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_diff</pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+        
+
+
+    <tr style="display: none;">
+      <td colspan="4"></td>
+      <td colspan="6" style="background-color: #F5F5F5;">
+       <div class="minPaddingTableEntity">
+        <table>
+          <tr>
+            <td><pre><b>Variable</b></pre></td>
+            <td><pre><b>Value</b></pre></td>
+            <td><pre><b>Description</b></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_mdl</pre></td>
+                    <td><pre>50.92</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_bus</pre></td>
+                    <td><pre>50.01</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>vehvel_meas</pre></td>
+                    <td><pre>50.95</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>max(vehvel_mdl, vehvel_bus, vehvel_meas)</pre></td>
+                    <td><pre>50.95</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+          <tr>
+                    <td><pre>min(vehvel_mdl, vehvel_bus, vehvel_meas)</pre></td>
+                    <td><pre>50.01</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+          <tr>
+                    <td><pre> -> </pre></td>
+                    <td><pre>0.9400000000000048</pre></td>
+                    <td><pre></pre></td>
+          </tr>
+        </table>
+       </div>
+      </td>
+    </tr>
+
+
+    </tbody>
+
+    </table>
+
+    </div>
+    
+    
+
+    
+
+    <div class="footer">
+         <b>ECU-TEST: 2023.3.0.141374+8eeee403f0b5</b>
+    </div>
+  </body>
+</html>

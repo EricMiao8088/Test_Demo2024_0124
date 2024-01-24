@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILES>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/tt/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>29ede433-8a68-11ee-b79d-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/tt/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.zip</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>29ede434-8a68-11ee-88b4-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/tt/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>29ede435-8a68-11ee-ab22-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/tt/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Recording_1.csv.metadata</FILENAME>
+    <REL-PATH>BasicDrive</REL-PATH>
+    <TEMP-DIR>29ede436-8a68-11ee-a28f-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/tt/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>tt.trf</FILENAME>
+    <REL-PATH></REL-PATH>
+    <TEMP-DIR>29ede437-8a68-11ee-8573-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+  <FILE>
+    <ATX-REF-PATH>/TestReports/tt/BasicDrive_0</ATX-REF-PATH>
+    <FILENAME>Testlab_HiL.tbc</FILENAME>
+    <REL-PATH/>
+    <TEMP-DIR>29ede438-8a68-11ee-bee8-34cff6f2e990</TEMP-DIR>
+    <UPLOADER>ECU-TEST 2023.3</UPLOADER>
+    <COMMENT></COMMENT>
+    <REF-PATH-TYPE>TEST-CASE</REF-PATH-TYPE>
+  </FILE>
+</FILES>

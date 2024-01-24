@@ -1,0 +1,13 @@
+[-1ms BasicDrive:3]MODEL:-:Model Root/STATUS_BAT/StateOfCharge [%]/Value<READ>   70.0
+[-1ms SetVehTrStby:1]MODEL:-:Model Root/STATUS_VEH/VehicleTractionStandby [0|1]/In1<READ>   0.0
+[-1ms SetVehTrStby:7]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   20
+[-1ms SetVehTrStby:8]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   1
+[-1ms SetVehTrStby:10]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   0
+[-1ms SetVehTrStby:12]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   0
+[-1ms BasicDrive:21]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   35
+[-1ms BasicDrive:24]MODEL:-:Model Root/CTRL_VEH/DriveMode [0|1|2|3|4]/Value<WRITE>   0
+[-1ms SetVehTrStby:1]MODEL:-:Model Root/STATUS_VEH/VehicleTractionStandby [0|1]/In1<READ>   1.0
+[-1ms SetVehTrStby:7]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   20
+[-1ms SetVehTrStby:8]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   -1
+[-1ms SetVehTrStby:10]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   0
+[-1ms SetVehTrStby:12]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   0

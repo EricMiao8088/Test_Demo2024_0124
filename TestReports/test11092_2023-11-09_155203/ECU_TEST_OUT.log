@@ -1,0 +1,61 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          54.5GB/475.7GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 09.11.2023 15:52:03 (UTC +8:00) === ECU-TEST 2023.3.0.141374+8eeee403f0b5 141374+8eeee403f0b5 (2023/09/19 16:45:04) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Eric
+
+
+2023-11-09 15:52:03.902 2280 ManagedWorker-4 INFO:
+                        Start project 'test11092.prj' with test case execution with sequential analysis job execution (execution in background)
+2023-11-09 15:52:04.038 2280 ManagedWorker-4*PE.Run() INFO:
+                        Test case "TestCase123" started
+2023-11-09 15:52:04.045 2280 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-09 15:52:04.047 2280 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2023-11-09 15:52:04.061 2280 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-09 15:52:04.069 2280 ManagedWorker-4*PE.Run() INFO:
+                        Test case "TestCase123" completed
+2023-11-09 15:52:04.124 2280 ManagedWorker-4*PE.Run() INFO:
+                        Test case "TestCase236" started
+2023-11-09 15:52:04.126 2280 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-09 15:52:04.133 2280 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2023-11-09 15:52:04.143 2280 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-09 15:52:04.149 2280 ManagedWorker-4*PE.Run() INFO:
+                        Test case "TestCase236" completed
+2023-11-09 15:52:04.188 2280 ManagedWorker-4*PE.Run() INFO:
+                        Test case "TestCase336" started
+2023-11-09 15:52:04.190 2280 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-11-09 15:52:04.199 2280 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2023-11-09 15:52:17.552 2280 ManagedWorker-4*PE.Run() WARNING:
+                        Test case "TestCase336" aborted
+2023-11-09 15:52:17.554 2280 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-11-09 15:52:17.562 2280 ManagedWorker-4*PE.Run() INFO:
+                        Test case "TestCase336" completed
+2023-11-09 15:52:17.618 2280 ManagedWorker-4 INFO:
+                        Finalizing report 'test11092.trf'...

@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ANALYSIS-PACKAGE prog-version="2023.3.0.141374+8eeee403f0b5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test analysisPackage.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">trigger_count</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CTRL_VEH/DriverRequest [%]/Value</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">STATUS_BAT/StateOfCharge [%]/Value</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">VehTrStby</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">speed</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-ANALYSIS format-rev="3" uuid="9b9f163a6e5711ee98c434cff6f2e990" xsi:type="traceAnalysis">
+		<NAME xsi:type="string">Basic Drive</NAME>
+		<ANALYSISITEM format-rev="1" uuid="9b9f163b6e5711eea2ab34cff6f2e990" xsi:type="episode">
+			<NAME xsi:type="string">FirstEpisode</NAME>
+			<ANALYSISITEM uuid="9b9f163c6e5711eea7fc34cff6f2e990" xsi:type="analysisBlock">
+				<NAME xsi:type="string">Plot all signals</NAME>
+				<ANALYSISITEM format-rev="4" uuid="9b9f163d6e5711ee837834cff6f2e990" xsi:type="plotItem">
+					<NAME xsi:type="string">plot all signals</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">DRVREQ</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">VEHVEL</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">VEHTRSTBY</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">SOC</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="1" uuid="9b9f163e6e5711ee9bff34cff6f2e990" xsi:type="triggerBlock">
+				<NAME xsi:type="string">Trigger block</NAME>
+				<ANALYSISITEM format-rev="3" poolRev="7" uuid="9b9f163f6e5711ee9c3e34cff6f2e990" xsi:type="referencingTraceStep">
+					<NAME xsi:type="string">CountTriggerRanges</NAME>
+					<SIGNAL-BINDING xsi:type="signalBinding"/>
+					<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+						<PARAM-ASSIGNMENTS>
+							<ASSIGNMENT dkey="TriggerRangeCount">
+								<DVALUE xsi:type="varBaseExpression">
+									<NAME xsi:type="string">trigger_count</NAME>
+								</DVALUE>
+							</ASSIGNMENT>
+						</PARAM-ASSIGNMENTS>
+					</PARAM-ASSIGNMENTS>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+					<TEMPLATE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_ADD</NAME>
+							<FIRST-COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="attributeBaseExpression">
+									<COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="string">libraries</NAME>
+									</COMPONENT>
+									<ATTR-NAME xsi:type="string">std</ATTR-NAME>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">traceStepTemplates</ATTR-NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Calculate/Statistics/CountTriggerRanges.py</VALUE>
+							</SECOND-COMPONENT>
+						</PATH-EXPRESSION>
+					</TEMPLATE-REF>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="4" uuid="9b9f16406e5711ee8ad634cff6f2e990" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">DRVREQ</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+				<START-CONDITION xsi:type="string">Edge(DRVREQ)</START-CONDITION>
+				<STOP-CONDITION xsi:type="string"/>
+				<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+					<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+					<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</COMPONENT>
+				</TRIGGER-START-OFFSET>
+				<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="float">1.0</VALUE>
+				</TRIGGER-STOP-OFFSET>
+				<TRIGGER-ONCE xsi:type="boolean">True</TRIGGER-ONCE>
+				<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+				<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">10</VALUE>
+				</REPORT-MAX-NUMBER>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="1" uuid="9b9f16416e5711ee9cc634cff6f2e990" xsi:type="triggerBlock">
+				<NAME xsi:type="string">筛选出车速上升过程</NAME>
+				<ANALYSISITEM format-rev="1" uuid="9b9f16426e5711ee803734cff6f2e990" xsi:type="assertion">
+					<NAME xsi:type="string">Assertion</NAME>
+					<ANALYSISITEM format-rev="1" uuid="9b9f16436e5711eeb90e34cff6f2e990" xsi:type="calculation">
+						<ANALYSISITEM format-rev="4" uuid="9b9f16446e5711ee807234cff6f2e990" xsi:type="plotItem">
+							<NAME xsi:type="string">Plot</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">VEHVEL</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">time</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">DRVREQ</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<UNUSED-SIGNALS/>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NONE</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<NAME xsi:type="string">Calculation</NAME>
+						<FORMULA xsi:type="string">StopTriggerTime()-StartTriggerTime()+VEHTRSTBY*0</FORMULA>
+						<SAVE-IN xsi:type="string">time</SAVE-IN>
+						<EXPECTATION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">8.28</VALUE>
+							</VALUE>
+							<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+								<VALUE format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.001</VALUE>
+								</VALUE>
+							</TOLERANCE>
+						</EXPECTATION>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+					</ANALYSISITEM>
+					<VERDICT-EXPR xsi:type="listOrTupleBaseExpression">
+						<IS-LIST xsi:type="boolean">False</IS-LIST>
+						<EXPRESSION-LIST>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">FAILED</VALUE>
+							</BASE-EXPRESSION>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">SUCCESS</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION-LIST>
+					</VERDICT-EXPR>
+				</ANALYSISITEM>
+				<START-CONDITION xsi:type="string">RisingEdge(VEHVEL) and DRVREQ==50</START-CONDITION>
+				<STOP-CONDITION xsi:type="string"/>
+				<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+					<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+					<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</COMPONENT>
+				</TRIGGER-START-OFFSET>
+				<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="float">1.0</VALUE>
+				</TRIGGER-STOP-OFFSET>
+				<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+				<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">10</VALUE>
+				</REPORT-MAX-NUMBER>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="3" poolRev="7" uuid="9b9f16456e5711eebd9c34cff6f2e990" xsi:type="referencingTraceStep">
+				<NAME xsi:type="string">PyPlotSignals</NAME>
+				<SIGNAL-BINDING xsi:type="signalBinding">
+					<PARAMETER dkey="Signal_0">
+						<DVALUE format-rev="1" xsi:type="signalParameter">
+							<REF-SIGNAL-NAME xsi:type="string">DRVREQ</REF-SIGNAL-NAME>
+						</DVALUE>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_1">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_10">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_11">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_12">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_13">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_14">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_15">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_16">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_17">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_18">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_19">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_2">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_20">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_3">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_4">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_5">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_6">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_7">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_8">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+					<PARAMETER dkey="Signal_9">
+						<DVALUE format-rev="1" xsi:type="signalParameter"/>
+					</PARAMETER>
+				</SIGNAL-BINDING>
+				<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+					<PARAM-ASSIGNMENTS>
+						<ASSIGNMENT dkey="connectActualSignalValuesLinearly">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="markActualSignalValues">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="plotOnlyActualSignalValues">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="plotScaleFactor">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="subPlots">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="xmax">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="xmin">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="ymax">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="ymin">
+							<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+						</ASSIGNMENT>
+					</PARAM-ASSIGNMENTS>
+				</PARAM-ASSIGNMENTS>
+				<REPORT-CONFIG xsi:type="trcpReportConfig">
+					<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+					<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+				</REPORT-CONFIG>
+				<TEMPLATE-REF xsi:type="expressionref">
+					<PATH-EXPRESSION xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_ADD</NAME>
+						<FIRST-COMPONENT xsi:type="attributeBaseExpression">
+							<COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">libraries</NAME>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">std</ATTR-NAME>
+							</COMPONENT>
+							<ATTR-NAME xsi:type="string">traceStepTemplates</ATTR-NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Display/PyPlotSignals.py</VALUE>
+						</SECOND-COMPONENT>
+					</PATH-EXPRESSION>
+				</TEMPLATE-REF>
+			</ANALYSISITEM>
+			<ANALYSISITEM uuid="9b9f16466e5711ee80ca34cff6f2e990" xsi:type="analysisBlock">
+				<NAME xsi:type="string">SoC basic check</NAME>
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="1" uuid="9b9f16476e5711eea9c534cff6f2e990" xsi:type="calculation">
+					<ANALYSISITEM format-rev="4" uuid="9b9f16486e5711ee93c934cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">plot SoC behaviour</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">SOC</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<NAME xsi:type="string">Expected SoC beaviour</NAME>
+					<FORMULA xsi:type="string">SOC &gt;= 20</FORMULA>
+					<EXPECTATION xsi:type="manualExpression">
+						<BASE-EXPRESSION xsi:type="varBaseExpression">
+							<NAME xsi:type="string">value</NAME>
+						</BASE-EXPRESSION>
+					</EXPECTATION>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM uuid="9b9f16496e5711eea0e434cff6f2e990" xsi:type="analysisBlock">
+				<NAME xsi:type="string">1.上升沿下降沿</NAME>
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="1" uuid="9b9f164a6e5711eea24b34cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">下降沿</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f164b6e5711ee9e3934cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">VEHVEL</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">FallingEdge(VEHVEL)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="9b9f164c6e5711eeb32d34cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">上升沿</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f164d6e5711ee80aa34cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">VEHVEL</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">RisingEdge(VEHVEL)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM uuid="9b9f164e6e5711ee9b2f34cff6f2e990" xsi:type="analysisBlock">
+				<NAME xsi:type="string">2.状态跳变Edge函数</NAME>
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="1" uuid="9b9f164f6e5711eebe9934cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">筛选全部的状态跳变</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f16506e5711ee854334cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">DRVREQ</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">Edge(DRVREQ)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="9b9f16516e5711eeb4b034cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">从0变为50的状态跳变</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f16526e5711ee96a734cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">DRVREQ</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">Edge(DRVREQ,0,50)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="9b9f16536e5711eeabb334cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">从大于33.89的状态跳变为33.89的时刻</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f16546e5711eea20c34cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">VEHVEL</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">Edge(VEHVEL,&quot;&gt;&quot;,33.89)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="9b9f16556e5711eeb43b34cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">小于33.89的状态跳到33.89</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f16566e5711eeb05834cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">VEHVEL</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">Edge(VEHVEL,'&lt;',45)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM uuid="9b9f16576e5711eebd8834cff6f2e990" xsi:type="analysisBlock">
+				<NAME xsi:type="string">Always</NAME>
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="1" uuid="9b9f16586e5711eeb2a634cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">2s内判断某个信号的持续状态</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f16596e5711eeb00834cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">DRVREQ</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">Always(DRVREQ==50,2)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="9b9f165a6e5711ee849334cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">Trigger block</NAME>
+					<ANALYSISITEM format-rev="4" uuid="9b9f165b6e5711ee9c6d34cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">DRVREQ</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">Always(not Edge(DRVREQ,0,50),2)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM uuid="9b9f165c6e5711ee9c4534cff6f2e990" xsi:type="analysisBlock">
+				<NAME xsi:type="string">Vehicle traction standby</NAME>
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="1" uuid="9b9f165d6e5711ee932a34cff6f2e990" xsi:type="calculation">
+					<ANALYSISITEM format-rev="4" uuid="9b9f165e6e5711eea3e734cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">plot VehTrStby</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">VEHTRSTBY</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<NAME xsi:type="string">Vehicle traction standby is reached</NAME>
+					<FORMULA xsi:type="string">VEHTRSTBY</FORMULA>
+					<EXPECTATION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</VALUE>
+					</EXPECTATION>
+					<EXPECTATION-MODE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">once</VALUE>
+					</EXPECTATION-MODE>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM uuid="9b9f165f6e5711eea1e534cff6f2e990" xsi:type="analysisBlock">
+				<NAME xsi:type="string">Velocity is greater 0</NAME>
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="1" uuid="9b9f16606e5711eead9034cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">Check VehVel &gt; 0</NAME>
+					<ANALYSISITEM format-rev="1" uuid="9b9f16616e5711eea66634cff6f2e990" xsi:type="calculation">
+						<ANALYSISITEM format-rev="4" uuid="9b9f16626e5711eeb82434cff6f2e990" xsi:type="plotItem">
+							<NAME xsi:type="string">plot trigger range</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">VEHVEL</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<UNUSED-SIGNALS/>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NONE</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<NAME xsi:type="string">Check Vehicle Velocity</NAME>
+						<FORMULA xsi:type="string">VEHVEL</FORMULA>
+						<EXPECTATION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">&gt;</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</VALUE>
+						</EXPECTATION>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">DRVREQ &gt; 0 and VEHTRSTBY == 1</START-CONDITION>
+					<IGNORE-FIRST-MODE xsi:type="string">manual</IGNORE-FIRST-MODE>
+					<IGNORE-FIRST-TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.1</VALUE>
+					</IGNORE-FIRST-TIME>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="1" uuid="9b9f16636e5711ee93d034cff6f2e990" xsi:type="calculation">
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="4" uuid="9b9f16646e5711ee95ba34cff6f2e990" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">VEHVEL</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+				<NAME xsi:type="string">Calculation</NAME>
+				<FORMULA xsi:type="string">CheckTiming(VEHVEL,0.01,0.1)</FORMULA>
+				<REPORT-CONFIG xsi:type="trcpReportConfig">
+					<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+					<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+				</REPORT-CONFIG>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="1" uuid="9b9f16656e5711eea2ff34cff6f2e990" xsi:type="triggerBlock">
+				<NAME xsi:type="string">Trigger block</NAME>
+				<VISIBLE xsi:type="boolean">False</VISIBLE>
+				<ANALYSISITEM format-rev="4" uuid="9b9f16666e5711eea3f734cff6f2e990" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">DRVREQ</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+				<START-CONDITION xsi:type="string">Edge(DRVREQ,50,0)</START-CONDITION>
+				<STOP-CONDITION xsi:type="string"/>
+				<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+					<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+					<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</COMPONENT>
+				</TRIGGER-START-OFFSET>
+				<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="float">1.0</VALUE>
+				</TRIGGER-STOP-OFFSET>
+				<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+				<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">10</VALUE>
+				</REPORT-MAX-NUMBER>
+			</ANALYSISITEM>
+		</ANALYSISITEM>
+		<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+			<VIRTUAL-SIGNALS>
+				<VIRTUAL-SIGNAL uuid="c21002de551a11e886775ce0c54afbfe" xsi:type="virtualSessionSignal">
+					<NAME xsi:type="string">DRVREQ</NAME>
+					<MAPPING-NAME xsi:type="string">CTRL_VEH/DriverRequest [%]/Value</MAPPING-NAME>
+					<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+				</VIRTUAL-SIGNAL>
+				<VIRTUAL-SIGNAL uuid="c2124ccf551a11e8b30e5ce0c54afbfe" xsi:type="virtualSessionSignal">
+					<NAME xsi:type="string">VEHVEL</NAME>
+					<MAPPING-NAME xsi:type="string">speed</MAPPING-NAME>
+					<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+				</VIRTUAL-SIGNAL>
+				<VIRTUAL-SIGNAL uuid="c222ee9e551a11e892105ce0c54afbfe" xsi:type="virtualSessionSignal">
+					<NAME xsi:type="string">VEHTRSTBY</NAME>
+					<MAPPING-NAME xsi:type="string">VehTrStby</MAPPING-NAME>
+					<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+				</VIRTUAL-SIGNAL>
+				<VIRTUAL-SIGNAL uuid="c2314680551a11e8991e5ce0c54afbfe" xsi:type="virtualSessionSignal">
+					<NAME xsi:type="string">SOC</NAME>
+					<MAPPING-NAME xsi:type="string">STATUS_BAT/StateOfCharge [%]/Value</MAPPING-NAME>
+					<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+				</VIRTUAL-SIGNAL>
+				<VIRTUAL-SIGNAL uuid="93728b0a6e5211ee9ae834cff6f2e990" xsi:type="virtualSessionSignal">
+					<NAME xsi:type="string">time</NAME>
+					<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+				</VIRTUAL-SIGNAL>
+			</VIRTUAL-SIGNALS>
+		</VIRTUAL-SIGNALS-MANAGER>
+	</TRACE-ANALYSIS>
+</ANALYSIS-PACKAGE>

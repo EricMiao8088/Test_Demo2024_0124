@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT-REPORT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PRJ-PATH xsi:type="string">\Packages\test11092.prj</PRJ-PATH>
+	<ROOT-NODE xsi:type="projectRootTreeNode">
+		<SOURCE-PATH xsi:type="string">C:/ET2023_3/2_ECU-TEST_Advanced/Packages/test11092.prj</SOURCE-PATH>
+		<NAME xsi:type="string">Project</NAME>
+		<RESULT-ID xsi:type="integer">4</RESULT-ID>
+		<CHILDREN>
+			<CHILD xsi:type="projectComponentPackageRef">
+				<SOURCE-PATH xsi:type="string">C:/ET2023_3/2_ECU-TEST_Advanced/Packages/Filter_pkg/TestCase123.pkg</SOURCE-PATH>
+				<NAME xsi:type="string">TestCase123</NAME>
+				<RESULT-ID xsi:type="integer">4</RESULT-ID>
+				<REPORT-REF-MANUALLY xsi:type="integer">5</REPORT-REF-MANUALLY>
+				<EXEC-STATE xsi:type="integer">3</EXEC-STATE>
+			</CHILD>
+			<CHILD xsi:type="projectComponentPackageRef">
+				<SOURCE-PATH xsi:type="string">C:/ET2023_3/2_ECU-TEST_Advanced/Packages/Filter_pkg/TestCase236.pkg</SOURCE-PATH>
+				<NAME xsi:type="string">TestCase236</NAME>
+				<RESULT-ID xsi:type="integer">1</RESULT-ID>
+				<REPORT-REF-MANUALLY xsi:type="integer">7</REPORT-REF-MANUALLY>
+				<EXEC-STATE xsi:type="integer">3</EXEC-STATE>
+			</CHILD>
+			<CHILD xsi:type="projectComponentPackageRef">
+				<SOURCE-PATH xsi:type="string">C:/ET2023_3/2_ECU-TEST_Advanced/Packages/Filter_pkg/TestCase336.pkg</SOURCE-PATH>
+				<NAME xsi:type="string">TestCase336</NAME>
+				<RESULT-ID xsi:type="integer">1</RESULT-ID>
+				<REPORT-REF-MANUALLY xsi:type="integer">11</REPORT-REF-MANUALLY>
+				<EXEC-STATE xsi:type="integer">3</EXEC-STATE>
+			</CHILD>
+		</CHILDREN>
+	</ROOT-NODE>
+	<TRF-PATH xsi:type="string">C:/ET2023_3/2_ECU-TEST_Advanced/TestReports/test11092_2023-11-09_153731/test11092.trf</TRF-PATH>
+</PROJECT-REPORT>

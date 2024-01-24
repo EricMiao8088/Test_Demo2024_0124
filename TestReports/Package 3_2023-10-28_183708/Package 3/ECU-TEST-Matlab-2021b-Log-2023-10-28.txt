@@ -1,0 +1,72 @@
+2023-10-28 16:31:57: warning (line 0): Log.p (line 0): on: ECUTEST:GetSignalProperties
+2023-10-28 16:31:57: Log (line 0): ============= Enable Logging =============
+2023-10-28 16:32:00: OpenModelOrScript (line 0): ================================
+2023-10-28 16:32:00: OpenModelOrScript (line 0): "Base_model00123.mdl"
+2023-10-28 16:32:12: OpenModel (line 0): "Base_model00123.mdl"
+2023-10-28 16:32:15: Terminate (line 0): Terminate Time: 1.640740 -> Model did not terminate on time
+2023-10-28 16:32:20: warning (line 0): CacheManager.p (line 0): ECUTEST:CacheManager:GetOrInitCachedData: Failed to initialize model cache
+2023-10-28 16:32:20: warning (line 0): CacheManager.p (line 0): ECUTEST:CacheManager:GetOrInitCachedData: Caching disabled for Base_model00123
+2023-10-28 16:32:40: warning (line 0): Compile.p (line 0): MATLAB:ECUTEST: MATLAB:ECUTEST:Compile: Unable to compile model.
+MATLAB-Error: 错误使用 ecuTest.simulation.ExecuteSimulationCommand
+Error reported by S-function 'vs_sfv' in 'Base_model00123/CarSim S-Function_video':
+Error: Unable to find sim file: simfile.sim
+
+出错 ecuTest.simulation.Compile
+
+出错 ecuTest.tools.model.FindUsedVariables
+
+出错 ecuTest.GetApplicationData - Show complete stack trace
+MATLAB-File: C:\\Program Files\\ECU-TEST 2023.3\\matlab\\+ecuTest\\+simulation\\Compile.p
+2023-10-28 16:32:41: warning (line 0): Compile.p (line 0): MATLAB:ECUTEST: MATLAB:ECUTEST:Compile: Unable to compile model.
+MATLAB-Error: 错误使用 ecuTest.simulation.ExecuteSimulationCommand
+Error reported by S-function 'vs_sfv' in 'Base_model00123/CarSim S-Function_video':
+Error: Unable to find sim file: simfile.sim
+
+出错 ecuTest.simulation.Compile
+
+出错 ecuTest.tools.model.FindUsedVariables
+
+出错 ecuTest.GetApplicationData - Show complete stack trace
+MATLAB-File: C:\\Program Files\\ECU-TEST 2023.3\\matlab\\+ecuTest\\+simulation\\Compile.p
+2023-10-28 16:36:06: Terminate (line 0): Terminate Time: 0.320193 -> Already in state ERROR; Invalid Simulink object name: Base_model00123.
+2023-10-28 16:38:31: warning (line 0): Log.p (line 0): on: ECUTEST:GetSignalProperties
+2023-10-28 16:38:31: Log (line 0): ============= Enable Logging =============
+2023-10-28 16:38:31: OpenModelOrScript (line 0): ================================
+2023-10-28 16:38:31: OpenModelOrScript (line 0): "Base_model00123.mdl"
+2023-10-28 16:38:35: OpenModel (line 0): "Base_model00123.mdl"
+2023-10-28 16:38:36: Terminate (line 0): Terminate Time: 0.407058 -> Model did not terminate on time
+2023-10-28 16:38:38: CachedData.InitCachedData (line 0): No cached data for Base_model00123 found
+2023-10-28 16:38:42: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:38:45: Compile (line 0): Compile Time: 0.310713 -> Set compilation state COMPILED; 
+2023-10-28 16:38:45: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:38:46: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:38:46: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:41:09: Terminate (line 0): Terminate Time: 0.091491 -> Set compilation state TERMINATED; 
+2023-10-28 16:41:10: Start (line 0): "Base_model00123"
+2023-10-28 16:41:31: Compile (line 0): Compile Time: 0.009159 -> Cannot update compilation state to COMPILED; Cannot change parameter 'state' of 'Base_model00123/ET_TERMINATE' while simulation is running because its sample time is constant (inf). Constant sample times generally occur when 'Configuration Parameters > Code Generation > Optimization > Default parameter behavior' is set to 'Inlined'.
+2023-10-28 16:41:31: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:41:38: Compile (line 0): Compile Time: 0.007595 -> Cannot update compilation state to COMPILED; Cannot change parameter 'state' of 'Base_model00123/ET_TERMINATE' while simulation is running because its sample time is constant (inf). Constant sample times generally occur when 'Configuration Parameters > Code Generation > Optimization > Default parameter behavior' is set to 'Inlined'.
+2023-10-28 16:41:38: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:41:50: Compile (line 0): Compile Time: 0.006195 -> Cannot update compilation state to COMPILED; Cannot change parameter 'state' of 'Base_model00123/ET_TERMINATE' while simulation is running because its sample time is constant (inf). Constant sample times generally occur when 'Configuration Parameters > Code Generation > Optimization > Default parameter behavior' is set to 'Inlined'.
+2023-10-28 16:41:50: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:43:01: Stop (line 0): "Base_model00123"
+2023-10-28 16:45:17: Compile (line 0): Compile Time: 0.625788 -> Set compilation state COMPILED; 
+2023-10-28 16:45:18: CachedData.Store (line 0): Stored cache data for Base_model00123 to C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat
+2023-10-28 16:52:25: Terminate (line 0): Terminate Time: 0.079088 -> Set compilation state TERMINATED; 
+2023-10-28 16:52:25: Start (line 0): "Base_model00123"
+2023-10-28 16:52:43: Stop (line 0): "Base_model00123"
+2023-10-28 16:52:45: Start (line 0): "Base_model00123"
+2023-10-28 16:53:05: Stop (line 0): "Base_model00123"
+2023-10-28 16:53:07: Start (line 0): "Base_model00123"
+2023-10-28 16:53:24: Stop (line 0): "Base_model00123"
+2023-10-28 16:53:26: Start (line 0): "Base_model00123"
+2023-10-28 16:53:43: Stop (line 0): "Base_model00123"
+2023-10-28 18:59:30: Terminate (line 0): Terminate Time: 0.003195 -> Already in state TERMINATED
+2023-10-28 18:59:54: warning (line 0): Log.p (line 0): on: ECUTEST:GetSignalProperties
+2023-10-28 18:59:55: Log (line 0): ============= Enable Logging =============
+2023-10-28 18:59:56: OpenModelOrScript (line 0): ================================
+2023-10-28 18:59:56: OpenModelOrScript (line 0): "Base_model00123.mdl"
+2023-10-28 18:59:58: OpenModel (line 0): "Base_model00123.mdl"
+2023-10-28 18:59:59: Terminate (line 0): Terminate Time: 0.062180 -> Already in state TERMINATED
+2023-10-28 18:59:59: CacheManager.UnloadModel (line 0): Unloading cached model Base_model00123
+2023-10-28 19:00:03: CachedData.InitCachedData (line 0): Loading cached data for Base_model00123 from C:\Users\92126\OneDrive\demo\Carsim_ET\.ecutest\Base_model00123\d1cb2a3767d0528c250fb790f58572da.mat

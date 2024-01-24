@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">f3799139756e11eeb56234cff6f2e990</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">TEST_1027</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">f9139f26756e11ee830434cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST1</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">16f155d7756f11eea48134cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures001</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST2</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">1f415561756f11ee963634cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures001</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST3</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">30d2aeff756f11ee89ce34cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures001</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST4</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">3976aafb756f11ee89d434cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">L2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures001</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">R2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">TEST_1027.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Change_Procedures</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">16fb7f7c759611ee8ab334cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">New parameter set</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">1ad46871759611ee98f634cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">DateSet</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">002</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Change_Procedures.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="7" xsi:type="configChange">
+			<NAME xsi:type="string">Change configuration</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">2f1a7bb6759611ee869634cff6f2e990</ID>
+			<ACTION xsi:type="string">START</ACTION>
+			<KEEP-TEST-CONFIG xsi:type="boolean">False</KEEP-TEST-CONFIG>
+			<LOAD-TEST-CONFIG xsi:type="string">Carsim.tcf</LOAD-TEST-CONFIG>
+			<KEEP-TEST-BENCH-CONFIG xsi:type="boolean">False</KEEP-TEST-BENCH-CONFIG>
+			<LOAD-TEST-BENCH-CONFIG xsi:type="string">Carsim.tbc</LOAD-TEST-BENCH-CONFIG>
+			<TOOL-TREATMENTS>
+				<TOOL-TREATMENT dkey="CARSIM-201">
+					<DVALUE xsi:type="integer">4</DVALUE>
+				</TOOL-TREATMENT>
+				<TOOL-TREATMENT dkey="MATLAB/Simulink01">
+					<DVALUE xsi:type="integer">1</DVALUE>
+				</TOOL-TREATMENT>
+			</TOOL-TREATMENTS>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">TEST_1027</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">5e25fded759611eeac6034cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST1</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">63265261759611ee98f034cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures002</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">steer</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">100</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST2</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">6c600f24759611ee895b34cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures002</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">steer</NAME>
+							<VALUE xsi:type="unaryOpBaseExpression">
+								<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+								<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">50</VALUE>
+								</COMPONENT>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">TEST_1027.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Change_Procedures</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">771449a3759611eeaf9e34cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">New parameter set</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">771449a2759611ee9ac534cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">DateSet</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">003</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Change_Procedures.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="7" xsi:type="configChange">
+			<NAME xsi:type="string">Change configuration</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">771449a5759611eea79e34cff6f2e990</ID>
+			<ACTION xsi:type="string">START</ACTION>
+			<KEEP-TEST-CONFIG xsi:type="boolean">False</KEEP-TEST-CONFIG>
+			<LOAD-TEST-CONFIG xsi:type="string">Carsim.tcf</LOAD-TEST-CONFIG>
+			<KEEP-TEST-BENCH-CONFIG xsi:type="boolean">False</KEEP-TEST-BENCH-CONFIG>
+			<LOAD-TEST-BENCH-CONFIG xsi:type="string">Carsim.tbc</LOAD-TEST-BENCH-CONFIG>
+			<TOOL-TREATMENTS>
+				<TOOL-TREATMENT dkey="CARSIM-201">
+					<DVALUE xsi:type="integer">4</DVALUE>
+				</TOOL-TREATMENT>
+				<TOOL-TREATMENT dkey="MATLAB/Simulink01">
+					<DVALUE xsi:type="integer">1</DVALUE>
+				</TOOL-TREATMENT>
+			</TOOL-TREATMENTS>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">TEST_1027</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">83c3d930759611ee83bb34cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST1</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">871739b2759611ee8c4534cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_L1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">600</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_L2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">600</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_R1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">600</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_R2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures003</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">TEST2</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">a4903004759611ee8c2934cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_L1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">600</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_L2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_R1</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">600</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">motor_R2</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">600</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">Procedure</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Procedures003</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">TEST_1027.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>
