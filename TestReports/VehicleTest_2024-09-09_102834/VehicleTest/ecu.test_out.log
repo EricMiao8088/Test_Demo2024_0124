@@ -1,0 +1,73 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          49.6GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 09.09.2024 10:28:35 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-26
+         - licensed for: Turing
+
+
+2024-09-09 10:28:35.278 4208 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'VehicleTest.pkg' with test case execution with sequential analysis job execution
+2024-09-09 10:28:35.289 4208 ManagedWorker-6*PE.Run() WARNING:
+                        Implementation/<STATE>/Engine/Integrator/CSTATE will not be registered as recording: Error during initialization: Variable path does not exist: <STATE>/Engine/Integrator/CSTATE
+2024-09-09 10:28:35.292 4208 ManagedWorker-6*PE.Run() INFO:
+                        Test case "VehicleTest" started
+2024-09-09 10:28:37.436 4208 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-09-09 10:28:38.366 4208 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 10:28:38.364 Simulation is started
+2024-09-09 10:28:40.691 4208 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2024-09-09 10:28:40.693 4208 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Implementation
+2024-09-09 10:28:41.107 4208 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Aufnahmegruppe von States
+2024-09-09 10:28:41.133 4208 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Test case variables
+2024-09-09 10:28:41.134 4208 ToolLibs ERROR:
+                        tts.core.toolingFramework.networking.ToolServerConnector.PrintRemoteException: MLSimulinklibError: Signal group States[0x2096ce6d690] was not initialized!
+2024-09-09 10:29:16.613 4208 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Implementation: Autostop
+2024-09-09 10:29:16.616 4208 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Test case variables: Autostop
+2024-09-09 10:29:16.642 4208 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-09-09 10:29:16.671 4208 ToolLibs DEBUG:
+                        MLSimulinklib: Simulation: ToolLib time: 10:29:16.670 Simulation is stopped
+2024-09-09 10:29:20.471 4208 ManagedWorker-6*PE.Run() WARNING:
+                        No recordings for recording group Aufnahmegruppe von States
+2024-09-09 10:29:20.508 4208 ManagedWorker-6*PE.Run() INFO:
+                        Test case "VehicleTest" completed
+2024-09-09 10:29:20.674 4208 ManagedWorker-6*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Simulink\VehicleTest.pkg" -> "Trace analysis 1")
+2024-09-09 10:29:20.687 4208 ManagedWorker-6*PE.Run() ERROR:
+                        Missing recording for generic signal 'rpm_state'.
+2024-09-09 10:29:21.305 4208 ManagedWorker-6*PE.Run() ERROR:
+                        tts.traceAnalysis.common.steps.plotItem.PlotItemExec.AddToSession: MissingSignalException: Signal "rpm_state" cannot be used because it is not provided by any recording or trace step of the episode.
+2024-09-09 10:29:21.314 4208 ManagedWorker-6*PE.Run() DEBUG:
+                        Performing episode ...
+2024-09-09 10:29:21.317 4208 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2024-09-09 10:29:21.379 4208 ManagedWorker-6*PE.Run() DEBUG:
+                        Episode completed
+2024-09-09 10:29:21.380 4208 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2024-09-09 10:29:23.236 4208 ManagedWorker-6*PE.Run() DEBUG_EXC_PRINT:
+                        tts.traceAnalysis.common.steps.calculation.CalculationExec.AddToSession: MissingSignalException: Signal "rpm_state" cannot be used because it is not provided by any recording or trace step of the episode.

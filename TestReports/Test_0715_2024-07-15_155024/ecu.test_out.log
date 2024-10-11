@@ -1,0 +1,29 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          70.3GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 15.07.2024 15:50:25 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Maximum. Additional logging active: default output, debug information (TOPIC_TOOLING, TOPIC_API)
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-10
+         - licensed for: Turing
+
+
+2024-07-15 15:50:25.022 3012 ManagedWorker-5 DEBUG:
+                        CheckProjectSupportsGroupedExecution: Abort: Not all ports support grouped execution
+2024-07-15 15:50:25.048 3012 ManagedWorker-5 INFO:
+                        Finalizing report 'Test_0715.prf'...

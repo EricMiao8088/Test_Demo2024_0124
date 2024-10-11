@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Unnamed_1</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="texttable">
+				<DATA xsi:type="string">Cell_4_Voltage</DATA>
+				<TEXT-LIST>
+					<ELEMENT xsi:type="string">Cell_4_Voltage</ELEMENT>
+					<ELEMENT xsi:type="string">Cell_5_Voltage</ELEMENT>
+				</TEXT-LIST>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Unnamed</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="enum">
+				<DATA xsi:type="integer">1</DATA>
+				<VALUE-MAP>
+					<ELEMENT xsi:type="enumEntry">
+						<NUMBER xsi:type="integer">1</NUMBER>
+						<TEXT xsi:type="string">1</TEXT>
+						<NUMBERSTRING xsi:type="string">1</NUMBERSTRING>
+					</ELEMENT>
+					<ELEMENT xsi:type="enumEntry">
+						<NUMBER xsi:type="integer">2</NUMBER>
+						<TEXT xsi:type="string">2</TEXT>
+						<NUMBERSTRING xsi:type="string">2</NUMBERSTRING>
+					</ELEMENT>
+				</VALUE-MAP>
+				<VALUE-SET xsi:type="boolean">True</VALUE-SET>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Cell_4_Voltage</ID>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Battery-Control</ECU-KEY>
+				<LABEL xsi:type="string">Cell_4_Voltage</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_2</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_2</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_3</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_3</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">VTD01.FetchRdbRecording</ID>
+			<XACCESS xsi:type="xaJob">
+				<TOOL-ID xsi:type="string">VTD01</TOOL-ID>
+				<JOB-NAME xsi:type="string">FetchRdbRecording</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">VehTrStby</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">VehTrStby</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">speed</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">speed</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_2</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_3</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">speed</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">VehTrStby</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for RDB_PKG_ID_VEHICLE_SYSTEMS</NAME>
+				<UUID xsi:type="string">a5098bc95ad411ef97d234cff6f2e990</UUID>
+				<RECORDINGS>
+					<ELEMENT format-rev="2" xsi:type="recordingInfo">
+						<RECORDING-TYPE xsi:type="string">VTD_RDB</RECORDING-TYPE>
+						<PATHS>
+							<PATH xsi:type="fileReference">
+								<PATH xsi:type="string">recording_48190_1641535697.rdb</PATH>
+								<PATH-TYPE xsi:type="string">relTraces</PATH-TYPE>
+							</PATH>
+						</PATHS>
+						<RECORDING-NAME xsi:type="string">Recording</RECORDING-NAME>
+					</ELEMENT>
+				</RECORDINGS>
+				<SIGNAL-GROUP-REF>RDB_PKG_ID_VEHICLE_SYSTEMS</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="4" id="9ddadba0-b854-4af9-b928-04414a3588f6" xsi:type="tsJob">
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<MAPPING-REF xsi:type="string">VTD01.FetchRdbRecording</MAPPING-REF>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">portNumber</NAME>
+			</JOB-PARAMETER>
+		</TESTSTEP>
+		<TESTSTEP id="84740447-0460-4af0-8b8b-f42282f9310b" name="TsStartSimulation" xsi:type="utility-d04bbf78-3b43-4765-891d-18d0b7f36c19">
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<MODEL_KEY xsi:type="string">EnvironmentSimulation</MODEL_KEY>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="8d6e868a-e75e-46ce-b40c-db18bfdc17d1" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<FORMULA xsi:type="varBaseExpression">
+				<NAME xsi:type="string">Unnamed</NAME>
+			</FORMULA>
+		</TESTSTEP>
+		<TESTSTEP id="4bfacc15-622b-45ce-b3a1-c827f8e9099e" xsi:type="tsRead">
+			<MAPPING-REF xsi:type="string">Cell_4_Voltage</MAPPING-REF>
+			<EXPECTATION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="builtNumericExpression">
+					<RELATION xsi:type="string">==</RELATION>
+					<VALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</VALUE>
+				</EXPRESSION>
+			</EXPECTATION>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<Z-UNIT xsi:type="string">u_none</Z-UNIT>
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+			</METRIC>
+		</TESTSTEP>
+		<TESTSTEP id="f2cebf7f-5bfe-4f2e-bd3f-f98d4f0d2a44" name="TsReadByReference" xsi:type="utility-c5b17340-266b-11dd-9948-001a6bc47c7f">
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">Unnamed</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<MAPPING-EXPRESSION xsi:type="varBaseExpression">
+				<NAME xsi:type="string">Unnamed_1</NAME>
+			</MAPPING-EXPRESSION>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string"/>
+			</METRIC>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="a2fa366b5ad411efbae034cff6f2e990" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="a2fa366c5ad411efae6e34cff6f2e990" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM format-rev="4" uuid="a4b242015ad411ef933134cff6f2e990" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS_element_0_spare_2</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES/>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="1b74b8d45ad911efb50b34cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">Trigger block</NAME>
+					<START-CONDITION xsi:type="string">speed&gt;30</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="4" uuid="a609263e5ad411ef85d534cff6f2e990" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS_element_0_spare_3</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES/>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="a50729a95ad411ef912934cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS_element_0_spare_2</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_2</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">a5098bc95ad411ef97d234cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="a65ab8395ad411ef990a34cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS_element_0_spare_3</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">RDB_PKG_ID_VEHICLE_SYSTEMS/element_0/spare_3</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">a5098bc95ad411ef97d234cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="1a176b5d5ad911efa53834cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">speed</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">speed</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">a5098bc95ad411ef97d234cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="293c28b15ad911efa7c434cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">VehTrStby</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">VehTrStby</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">a5098bc95ad411ef97d234cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>

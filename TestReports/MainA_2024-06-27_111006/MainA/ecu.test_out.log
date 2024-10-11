@@ -1,0 +1,37 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          77.4GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 27.06.2024 11:10:07 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-07-27
+         - licensed for: Turing
+
+
+2024-06-27 11:10:07.165 8140 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'MainA.pkg' with test case execution with sequential analysis job execution
+2024-06-27 11:10:07.178 8140 ManagedWorker-6*PE.Run() INFO:
+                        Test case "MainA" started
+2024-06-27 11:10:07.209 8140 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-06-27 11:10:07.233 8140 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2024-06-27 11:10:10.239 8140 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-06-27 11:10:10.240 8140 ManagedWorker-6*PE.Run() INFO:
+                        Test case "MainA" completed

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDING-SIDECAR-INFOS format-rev="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SIGNAL-INFOS>
+		<ELEMENT xsi:type="signalInfo">
+			<SIGNAL-NAME xsi:type="string">Targets/Controller/Simulation Models/Models/Engine Demo/Outports/RPM</SIGNAL-NAME>
+			<SIGNAL-ALIAS xsi:type="string">&lt;Aliases&gt;/ActualRPM</SIGNAL-ALIAS>
+		</ELEMENT>
+	</SIGNAL-INFOS>
+</RECORDING-SIDECAR-INFOS>

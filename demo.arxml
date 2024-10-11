@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk Release 2022-B (22.1p2)-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="dfb1c27b-8926-49bf-be09-a562ea537304">
+      <SHORT-NAME>Copy_VehThermMngtSrv_FD</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="5945a848-8a58-424e-b686-80a45becbb83">
+          <SHORT-NAME>Components</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="de3dcf76-d5a4-4bea-bd8e-d71bef401502">
+              <SHORT-NAME>VehThermMngtSrv_FD</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE UUID="9fb2da48-d5c8-4fdd-bcfc-48bad56c8066">
+                  <SHORT-NAME>TMS_AGS_Down_ntfSt</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Copy_VehThermMngtSrv_FD/SoftwareTypes/Interfaces/TMS_AGS_Down_ntfSt/DataElement_ntfSt</DATA-ELEMENT-REF>
+                      <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <INIT-VALUE>
+                        <RECORD-VALUE-SPECIFICATION>
+                          <FIELDS>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DTE_AGSCrtSt</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DTE_AGSCrtPosnSt</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DTE_AGSCrtBoostMode</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DTE_AGSCrtTorqueLevel</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DTE_AGSCalibrationSt</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DTE_AGSCalibrationFb</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </FIELDS>
+                        </RECORD-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Copy_VehThermMngtSrv_FD/SoftwareTypes/Interfaces/TMS_AGS_Down_ntfSt</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="b6d09f08-ee3f-4d30-8c29-459e10d5930b">
+                  <SHORT-NAME>VehThermMngtSrv_FD_IB</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Copy_VehThermMngtSrv_FD/DataTypeMappingSets/VehThermMngtSrv_FDDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Copy_VehThermMngtSrv_FD/DataTypeMappingSets/Data_Type_Mappings</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="7e2b8ac6-4b68-4e51-83e1-f35d3ec42455">
+                      <SHORT-NAME>Event_VehThermMngtSrv_FD_10ms</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Copy_VehThermMngtSrv_FD/Components/VehThermMngtSrv_FD/VehThermMngtSrv_FD_IB/VehThermMngtSrv_FD_10ms</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <INCLUDED-DATA-TYPE-SETS>
+                    <INCLUDED-DATA-TYPE-SET>
+                      <DATA-TYPE-REFS>
+                        <DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/ADT_TMS_ReturnCode</DATA-TYPE-REF>
+                      </DATA-TYPE-REFS>
+                    </INCLUDED-DATA-TYPE-SET>
+                  </INCLUDED-DATA-TYPE-SETS>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="65eecd44-1fef-4094-990a-3d5ee3848810">
+                      <SHORT-NAME>VehThermMngtSrv_FD_10ms</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                        <VARIABLE-ACCESS UUID="bf7e6b38-95c9-4634-aa1c-6dbdc254291b">
+                          <SHORT-NAME>TMS_AGS_Down_ntfSt_DataElement_ntfSt</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Copy_VehThermMngtSrv_FD/Components/VehThermMngtSrv_FD/TMS_AGS_Down_ntfSt</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Copy_VehThermMngtSrv_FD/SoftwareTypes/Interfaces/TMS_AGS_Down_ntfSt/DataElement_ntfSt</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                      <SYMBOL>VehThermMngtSrv_FD_10ms</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="c662f1ae-013f-40a1-b34c-bc2f10d6555b">
+          <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+          <ELEMENTS>
+            <DATA-TYPE-MAPPING-SET UUID="ec1e2a4b-e579-421b-ac0c-a29467fb7060">
+              <SHORT-NAME>Data_Type_Mappings</SHORT-NAME>
+              <DATA-TYPE-MAPS>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_TMS_AGSWorkSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_TMS_AGSWorkSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_TMS_AGSWorkSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_TMS_AGSWorkSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_TMS_AGSWorkSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_TMS_AGSWorkSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtPosnSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtPosnSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtPosnSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtPosnSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtPosnSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtPosnSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtBoostMode</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtBoostMode</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtBoostMode</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtBoostMode</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtBoostMode</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtBoostMode</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtTorqueLevel</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtTorqueLevel</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtTorqueLevel</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtTorqueLevel</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtTorqueLevel</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtTorqueLevel</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationFb</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationFb</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationFb</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationFb</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationFb</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationFb</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationEnable</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationEnable</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationEnable</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationEnable</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+              </DATA-TYPE-MAPS>
+            </DATA-TYPE-MAPPING-SET>
+            <DATA-TYPE-MAPPING-SET UUID="4dbd329e-3c28-425f-93d4-256c02ca22ea">
+              <SHORT-NAME>VehThermMngtSrv_FDDataTypeMappingsSet</SHORT-NAME>
+              <DATA-TYPE-MAPS>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtPosnSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtPosnSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtPosnSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtPosnSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtBoostMode</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtBoostMode</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtBoostMode</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtBoostMode</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtTorqueLevel</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtTorqueLevel</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtTorqueLevel</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtTorqueLevel</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationSt</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationSt</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationFb</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationFb</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationFb</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationFb</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+              </DATA-TYPE-MAPS>
+            </DATA-TYPE-MAPPING-SET>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="b195b38a-91f1-426b-be5b-54266cceae34">
+          <SHORT-NAME>DataTypes</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="94269044-9693-4c38-971f-83cd99c7ed51">
+              <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="90df57a4-c43c-41e1-99e4-74cec4010bf6">
+                  <SHORT-NAME>ADT_AGSCalibrationEnable</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅标定使能指令</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Copy_VehThermMngtSrv_FD/DataTypes/CompuMethods/CM_AGSCalibrationEnable</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Copy_VehThermMngtSrv_FD/DataTypes/DataConstraints/DC_AGSCalibrationEnable</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="d0670a6c-609a-4663-9072-6d23eb21f30a">
+                  <SHORT-NAME>ADT_AGSCalibrationFb</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅标定反馈</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Copy_VehThermMngtSrv_FD/DataTypes/CompuMethods/CM_AGSCalibrationFb</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Copy_VehThermMngtSrv_FD/DataTypes/DataConstraints/DC_AGSCalibrationFb</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="e95d6910-3724-4b74-b183-1f8506df7eca">
+                  <SHORT-NAME>ADT_AGSCalibrationSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅标定状态</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Copy_VehThermMngtSrv_FD/DataTypes/CompuMethods/CM_AGSCalibrationSt</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Copy_VehThermMngtSrv_FD/DataTypes/DataConstraints/DC_AGSCalibrationSt</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="def5ba77-3265-4e54-ba0c-dcd53c53d487">
+                  <SHORT-NAME>ADT_AGSCrtBoostMode</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前增压模式</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Copy_VehThermMngtSrv_FD/DataTypes/CompuMethods/CM_AGSCrtBoostMode</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Copy_VehThermMngtSrv_FD/DataTypes/DataConstraints/DC_AGSCrtBoostMode</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="4ff5f1af-c196-4e3e-b113-a6bbbde5641d">
+                  <SHORT-NAME>ADT_AGSCrtPosnSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前开度状态</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">16</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Copy_VehThermMngtSrv_FD/DataTypes/CompuMethods/CM_AGSCrtPosnSt</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Copy_VehThermMngtSrv_FD/DataTypes/DataConstraints/DC_AGSCrtPosnSt</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="fc4e6c87-da51-4805-8604-61a78dd5ee7f">
+                  <SHORT-NAME>ADT_AGSCrtSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前工作状态</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Copy_VehThermMngtSrv_FD/DataTypes/CompuMethods/CM_AGSCrtSt</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Copy_VehThermMngtSrv_FD/DataTypes/DataConstraints/DC_AGSCrtSt</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="a09ccb5f-de7a-4f38-b77a-432581b93393">
+                  <SHORT-NAME>ADT_AGSCrtTorqueLevel</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前扭矩等级</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Copy_VehThermMngtSrv_FD/DataTypes/CompuMethods/CM_AGSCrtTorqueLevel</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Copy_VehThermMngtSrv_FD/DataTypes/DataConstraints/DC_AGSCrtTorqueLevel</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-RECORD-DATA-TYPE UUID="799b628a-1622-4d86-abbf-bcdda623e72e">
+                  <SHORT-NAME>ADT_TMS_AGSWorkSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅运行状态</L-2>
+                  </DESC>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">64</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <ELEMENTS>
+                    <APPLICATION-RECORD-ELEMENT UUID="94e093e1-7e7d-4f0b-bf95-7ffd441bba25">
+                      <SHORT-NAME>DTE_AGSCrtSt</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前工作状态</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtSt</TYPE-TREF>
+                    </APPLICATION-RECORD-ELEMENT>
+                    <APPLICATION-RECORD-ELEMENT UUID="11298b93-ae1c-4816-b5d0-dcf8c5f4dbea">
+                      <SHORT-NAME>DTE_AGSCrtPosnSt</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前开度状态</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtPosnSt</TYPE-TREF>
+                    </APPLICATION-RECORD-ELEMENT>
+                    <APPLICATION-RECORD-ELEMENT UUID="0219cd1e-6229-4246-8713-31f8d6cdefd7">
+                      <SHORT-NAME>DTE_AGSCrtBoostMode</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前增压模式</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtBoostMode</TYPE-TREF>
+                    </APPLICATION-RECORD-ELEMENT>
+                    <APPLICATION-RECORD-ELEMENT UUID="c893d9e5-0945-4027-952b-036291d73ed8">
+                      <SHORT-NAME>DTE_AGSCrtTorqueLevel</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前扭矩等级</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCrtTorqueLevel</TYPE-TREF>
+                    </APPLICATION-RECORD-ELEMENT>
+                    <APPLICATION-RECORD-ELEMENT UUID="dbab0fc5-96fa-4d16-9fc4-b7033663d454">
+                      <SHORT-NAME>DTE_AGSCalibrationSt</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅标定状态</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationSt</TYPE-TREF>
+                    </APPLICATION-RECORD-ELEMENT>
+                    <APPLICATION-RECORD-ELEMENT UUID="b7c7d50a-1414-466f-b690-5eb92b6e7a39">
+                      <SHORT-NAME>DTE_AGSCalibrationFb</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅标定反馈</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_AGSCalibrationFb</TYPE-TREF>
+                    </APPLICATION-RECORD-ELEMENT>
+                  </ELEMENTS>
+                </APPLICATION-RECORD-DATA-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="54db8229-5803-4ccc-9f14-137a1c9156c5">
+              <SHORT-NAME>BaseTypes</SHORT-NAME>
+              <ELEMENTS>
+                <SW-BASE-TYPE UUID="63b220f9-5a65-4bed-b5ab-faa7209f460b">
+                  <SHORT-NAME>uint8</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">unsigned integer 8bit</L-4>
+                  </LONG-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <INTRODUCTION>
+                    <TRACE UUID="d247e9e2-dabc-4263-b728-20ada1d9bfcc">
+                      <SHORT-NAME>SWS_Platform_00013</SHORT-NAME>
+                      <CATEGORY>SPECIFICATION_ITEM</CATEGORY>
+                      <P>
+                        <L-1 L="EN">This standard AUTOSAR type shall be of 8 bit unsigned.</L-1>
+                      </P>
+                    </TRACE>
+                  </INTRODUCTION>
+                  <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                  <MEM-ALIGNMENT>8</MEM-ALIGNMENT>
+                  <NATIVE-DECLARATION>unsigned char</NATIVE-DECLARATION>
+                </SW-BASE-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="90715b65-246c-43fe-bf4e-e853579a2b87">
+              <SHORT-NAME>CompuMethods</SHORT-NAME>
+              <ELEMENTS>
+                <COMPU-METHOD UUID="09f32607-cbfa-49f9-9342-d8a6a502e60f">
+                  <SHORT-NAME>CM_AGSCalibrationEnable</SHORT-NAME>
+                  <CATEGORY>LINEAR</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>Conversion_AGSCalibrationEnable</SHORT-LABEL>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>1.0</UPPER-LIMIT>
+                        <COMPU-RATIONAL-COEFFS>
+                          <COMPU-NUMERATOR>
+                            <V>0.0</V>
+                            <V>1.0</V>
+                          </COMPU-NUMERATOR>
+                          <COMPU-DENOMINATOR>
+                            <V>1</V>
+                          </COMPU-DENOMINATOR>
+                        </COMPU-RATIONAL-COEFFS>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD UUID="48e1edca-7d0c-4d36-8334-5a3ca30913f5">
+                  <SHORT-NAME>CM_AGSCalibrationFb</SHORT-NAME>
+                  <CATEGORY>LINEAR</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>Conversion_AGSCalibrationFb</SHORT-LABEL>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                        <COMPU-RATIONAL-COEFFS>
+                          <COMPU-NUMERATOR>
+                            <V>0.0</V>
+                            <V>1.0</V>
+                          </COMPU-NUMERATOR>
+                          <COMPU-DENOMINATOR>
+                            <V>1</V>
+                          </COMPU-DENOMINATOR>
+                        </COMPU-RATIONAL-COEFFS>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD UUID="51eb646a-e89c-48f6-8138-776312dc8ad5">
+                  <SHORT-NAME>CM_AGSCalibrationSt</SHORT-NAME>
+                  <CATEGORY>LINEAR</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>Conversion_AGSCalibrationSt</SHORT-LABEL>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                        <COMPU-RATIONAL-COEFFS>
+                          <COMPU-NUMERATOR>
+                            <V>0.0</V>
+                            <V>1.0</V>
+                          </COMPU-NUMERATOR>
+                          <COMPU-DENOMINATOR>
+                            <V>1</V>
+                          </COMPU-DENOMINATOR>
+                        </COMPU-RATIONAL-COEFFS>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD UUID="639389c1-c58e-4869-bc2b-8f211feea758">
+                  <SHORT-NAME>CM_AGSCrtBoostMode</SHORT-NAME>
+                  <CATEGORY>LINEAR</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>Conversion_AGSCrtBoostMode</SHORT-LABEL>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                        <COMPU-RATIONAL-COEFFS>
+                          <COMPU-NUMERATOR>
+                            <V>0.0</V>
+                            <V>1.0</V>
+                          </COMPU-NUMERATOR>
+                          <COMPU-DENOMINATOR>
+                            <V>1</V>
+                          </COMPU-DENOMINATOR>
+                        </COMPU-RATIONAL-COEFFS>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD UUID="417ef8b6-ff5f-4e20-8f1b-4dbf3151b3b7">
+                  <SHORT-NAME>CM_AGSCrtPosnSt</SHORT-NAME>
+                  <CATEGORY>LINEAR</CATEGORY>
+                  <UNIT-REF DEST="UNIT">/Copy_VehThermMngtSrv_FD/DataTypes/Units/U_AGSCrtPosnSt</UNIT-REF>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>Conversion_AGSCrtPosnSt</SHORT-LABEL>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>6553.5</UPPER-LIMIT>
+                        <COMPU-RATIONAL-COEFFS>
+                          <COMPU-NUMERATOR>
+                            <V>0.0</V>
+                            <V>0.1</V>
+                          </COMPU-NUMERATOR>
+                          <COMPU-DENOMINATOR>
+                            <V>1</V>
+                          </COMPU-DENOMINATOR>
+                        </COMPU-RATIONAL-COEFFS>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD UUID="fb563a74-8bd5-4669-ac83-34114169d187">
+                  <SHORT-NAME>CM_AGSCrtSt</SHORT-NAME>
+                  <CATEGORY>LINEAR</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>Conversion_AGSCrtSt</SHORT-LABEL>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                        <COMPU-RATIONAL-COEFFS>
+                          <COMPU-NUMERATOR>
+                            <V>0.0</V>
+                            <V>1.0</V>
+                          </COMPU-NUMERATOR>
+                          <COMPU-DENOMINATOR>
+                            <V>1</V>
+                          </COMPU-DENOMINATOR>
+                        </COMPU-RATIONAL-COEFFS>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <COMPU-METHOD UUID="ff5b3a46-0289-48b1-bbfb-788c701df239">
+                  <SHORT-NAME>CM_AGSCrtTorqueLevel</SHORT-NAME>
+                  <CATEGORY>LINEAR</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>Conversion_AGSCrtTorqueLevel</SHORT-LABEL>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                        <COMPU-RATIONAL-COEFFS>
+                          <COMPU-NUMERATOR>
+                            <V>0.0</V>
+                            <V>1.0</V>
+                          </COMPU-NUMERATOR>
+                          <COMPU-DENOMINATOR>
+                            <V>1</V>
+                          </COMPU-DENOMINATOR>
+                        </COMPU-RATIONAL-COEFFS>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="0312f9fa-185c-4fcb-afd3-4f6a19cb5f2e">
+              <SHORT-NAME>DataConstraints</SHORT-NAME>
+              <ELEMENTS>
+                <DATA-CONSTR UUID="a2ec5a27-68d3-48fb-846b-2c1fda20e57d">
+                  <SHORT-NAME>DC_AGSCalibrationEnable</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>1.0</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR UUID="1bd60af9-be3a-41f7-9aed-74c336fbec16">
+                  <SHORT-NAME>DC_AGSCalibrationFb</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR UUID="b740ea76-10f9-4b6d-beb2-40ce55ba0981">
+                  <SHORT-NAME>DC_AGSCalibrationSt</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR UUID="86664b8f-3c4b-4b8b-9ce5-b18b9d641364">
+                  <SHORT-NAME>DC_AGSCrtBoostMode</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR UUID="f43f74f1-7eac-4ff5-a828-db7b81057adf">
+                  <SHORT-NAME>DC_AGSCrtPosnSt</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>6553.5</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR UUID="c7071d6a-03f6-4433-b4ad-bf5c2697a7d3">
+                  <SHORT-NAME>DC_AGSCrtSt</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <DATA-CONSTR UUID="4ac08330-e732-4480-8448-488ba6b697b3">
+                  <SHORT-NAME>DC_AGSCrtTorqueLevel</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <PHYS-CONSTRS>
+                        <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                        <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                      </PHYS-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="d4f7a3b3-2c09-4b24-879a-12fdcd22449d">
+              <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+              <ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE UUID="c09d2476-2131-4702-b654-d17d44b11346">
+                  <SHORT-NAME>ADT_TMS_ReturnCode</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="c8f1a238-6457-459f-aca9-41660086202e">
+                  <SHORT-NAME>IDT_AGSCalibrationEnable</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅标定使能指令</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/VOS_Platform/SwBaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="1adedca9-0890-4a56-8b9a-76317b14dbed">
+                  <SHORT-NAME>IDT_AGSCalibrationFb</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅标定反馈</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/VOS_Platform/SwBaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="540ef266-b554-4851-a7dc-9ac2d7e70a08">
+                  <SHORT-NAME>IDT_AGSCalibrationSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅标定状态</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/VOS_Platform/SwBaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="ca8f6d26-df18-4fe0-a086-058bf5b720bb">
+                  <SHORT-NAME>IDT_AGSCrtBoostMode</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前增压模式</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/VOS_Platform/SwBaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="193eb3b8-c186-4818-9de6-b9fae11ae9d9">
+                  <SHORT-NAME>IDT_AGSCrtPosnSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前开度状态</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">16</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/VOS_Platform/SwBaseTypes/uint16</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="503543ab-b0a6-42fb-858e-b0b0b4c57769">
+                  <SHORT-NAME>IDT_AGSCrtSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前工作状态</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/VOS_Platform/SwBaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="3f084375-6bb2-4372-b371-b9a946d9393b">
+                  <SHORT-NAME>IDT_AGSCrtTorqueLevel</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅当前扭矩等级</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">8</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Copy_VehThermMngtSrv_FD/VOS_Platform/SwBaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="b1a932a6-7457-40ef-a5be-adf0f674d576">
+                  <SHORT-NAME>IDT_TMS_AGSWorkSt</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">主动格栅运行状态</L-2>
+                  </DESC>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="SOA-SERVICE">
+                        <SD GID="LENGTH">64</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SUB-ELEMENTS>
+                    <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="1010254f-d2db-4e32-8925-39e50dfa3972">
+                      <SHORT-NAME>DTE_AGSCrtSt</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前工作状态</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtSt</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="fba58073-75db-46a8-8838-7eb55f5776e9">
+                      <SHORT-NAME>DTE_AGSCrtPosnSt</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前开度状态</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtPosnSt</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e6d11a5b-f058-46ed-955a-6b790fa0c773">
+                      <SHORT-NAME>DTE_AGSCrtBoostMode</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前增压模式</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtBoostMode</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="f88a74b2-3ccf-4d2c-9022-c2f816228655">
+                      <SHORT-NAME>DTE_AGSCrtTorqueLevel</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅当前扭矩等级</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCrtTorqueLevel</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="c3129fcd-978e-40cc-8b0a-02d4d9f53776">
+                      <SHORT-NAME>DTE_AGSCalibrationSt</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅标定状态</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationSt</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="cbbc81ae-1f34-4e2f-b6d8-853d459805ca">
+                      <SHORT-NAME>DTE_AGSCalibrationFb</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">主动格栅标定反馈</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ImplementationDataTypes/IDT_AGSCalibrationFb</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                </IMPLEMENTATION-DATA-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="adea4642-e3bf-46d5-bed9-86be27c856a7">
+              <SHORT-NAME>Units</SHORT-NAME>
+              <ELEMENTS>
+                <UNIT UUID="29e5bc06-e8b9-4b21-81a1-b9b504d9ea39">
+                  <SHORT-NAME>U_AGSCrtPosnSt</SHORT-NAME>
+                  <DISPLAY-NAME>%</DISPLAY-NAME>
+                </UNIT>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="a4c41e28-530c-4b21-a0e9-0458e0ebf9c8">
+          <SHORT-NAME>SoftwareTypes</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="2201074d-2963-496d-9fdf-a14200ad21bb">
+              <SHORT-NAME>Interfaces</SHORT-NAME>
+              <ELEMENTS>
+                <SENDER-RECEIVER-INTERFACE UUID="173a1086-d844-4077-9c8e-fc673268e7d2">
+                  <SHORT-NAME>TMS_AGS_Down_ntfSt</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="f5081910-f3a9-456d-af33-0877a8a16945">
+                      <SHORT-NAME>DataElement_ntfSt</SHORT-NAME>
+                      <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/Copy_VehThermMngtSrv_FD/DataTypes/ApplicationDataTypes/ADT_TMS_AGSWorkSt</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="0213456c-93c9-4dab-8fa1-5be45479e9a5">
+          <SHORT-NAME>VOS_Platform</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="bc776094-f024-4595-b5fb-f23073a044d0">
+              <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+              <ELEMENTS>
+                <SW-BASE-TYPE UUID="ddff8620-a9a3-4f79-a180-51c07a9252f5">
+                  <SHORT-NAME>uint16</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">unsigned integer 16bit</L-4>
+                  </LONG-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <INTRODUCTION>
+                    <TRACE UUID="674a5ecd-d083-417c-8f00-ad99c21c31a3">
+                      <SHORT-NAME>SWS_Platform_00014</SHORT-NAME>
+                      <CATEGORY>SPECIFICATION_ITEM</CATEGORY>
+                      <P>
+                        <L-1 L="EN">This standard AUTOSAR type shall be of 16 bit unsigned.</L-1>
+                      </P>
+                    </TRACE>
+                  </INTRODUCTION>
+                  <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                  <MEM-ALIGNMENT>16</MEM-ALIGNMENT>
+                  <NATIVE-DECLARATION>unsigned short</NATIVE-DECLARATION>
+                </SW-BASE-TYPE>
+                <SW-BASE-TYPE UUID="fe146483-8427-4ad7-b429-4240e21bedcd">
+                  <SHORT-NAME>uint8</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">unsigned integer 8bit</L-4>
+                  </LONG-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <INTRODUCTION>
+                    <TRACE UUID="758fe920-1ef3-4e85-bd76-5d6346377051">
+                      <SHORT-NAME>SWS_Platform_00013</SHORT-NAME>
+                      <CATEGORY>SPECIFICATION_ITEM</CATEGORY>
+                      <P>
+                        <L-1 L="EN">This standard AUTOSAR type shall be of 8 bit unsigned.</L-1>
+                      </P>
+                    </TRACE>
+                  </INTRODUCTION>
+                  <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                  <MEM-ALIGNMENT>8</MEM-ALIGNMENT>
+                  <NATIVE-DECLARATION>unsigned char</NATIVE-DECLARATION>
+                </SW-BASE-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

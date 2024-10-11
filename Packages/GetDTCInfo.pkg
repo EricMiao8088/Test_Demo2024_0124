@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="6" prog-version="6.6.1.68014" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="unicode"/>
+		<VERSION xsi:type="unicode"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="unicode"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="unicode"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="unicode">DiagnosisInfo</NAME>
+			<DESCRIPTION xsi:type="unicode">原始诊断响应信息</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="byteStream">
+					<CONTENT xsi:type="string">59:02:FF:CD:94:05:07:CD:94:57:07:21:E9:20:07:CD:8C:01:07:21:E9:2E:07:21:E9:2F:07:21:E9:33:07:21:E9:36:07:CD:94:5F:07:CD:94:61:07:CD:94:88:07:CD:94:2A:07:CD:94:58:07</CONTENT>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">LenOfBytes</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">StartOfBytes</NAME>
+			<DESCRIPTION xsi:type="unicode">DTC的起始字节位</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">StopOfBytes</NAME>
+			<DESCRIPTION xsi:type="unicode">DTC的结束字节位</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">DTC_HighByte</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="BitStream">
+					<DATA xsi:type="long">0</DATA>
+					<BIT-LENGTH xsi:type="integer">0</BIT-LENGTH>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">S9_1</NAME>
+			<DESCRIPTION xsi:type="unicode">用以判断P,C,B,U</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">DTC</NAME>
+			<DESCRIPTION xsi:type="unicode">DTC诊断码</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">DTC_Mid_Low_Byte</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">DTC_Types</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">S9_2</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">S9_3</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">DTC_Status</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" out="true" xsi:type="variable">
+			<NAME xsi:type="unicode">DTC_List</NAME>
+			<DESCRIPTION xsi:type="unicode">DTC: DTC_Status</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">{}</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="108" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="unicode">LenOfBytes</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<FORMULA xsi:type="functionBaseExpression">
+				<COMPONENT xsi:type="varBaseExpression">
+					<NAME xsi:type="unicode">len</NAME>
+				</COMPONENT>
+				<ARGUMENTS>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="unicode">DiagnosisInfo</NAME>
+					</ARGUMENT>
+				</ARGUMENTS>
+			</FORMULA>
+		</TESTSTEP>
+		<TESTSTEP id="2762209" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+			<TESTSTEP format-rev="3" id="2762217" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="unicode">StartOfBytes</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="unicode">BINARY_ADD</NAME>
+					<FIRST-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">3</VALUE>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="unicode">BINARY_MULTIPLY</NAME>
+						<FIRST-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4</VALUE>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="parentheses">
+							<COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="unicode">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="unicode">loopCounter</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</COMPONENT>
+						</SECOND-COMPONENT>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="2762225" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="unicode">StopOfBytes</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="unicode">BINARY_ADD</NAME>
+					<FIRST-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">6</VALUE>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="unicode">BINARY_MULTIPLY</NAME>
+						<FIRST-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4</VALUE>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="parentheses">
+							<COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="unicode">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="unicode">loopCounter</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</COMPONENT>
+						</SECOND-COMPONENT>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="2762930" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA/>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Get DTC</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP format-rev="3" id="2762202" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="unicode">DTC_HighByte</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="unicode">BINARY_SUBSCR</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">DiagnosisInfo</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">StartOfBytes</NAME>
+						</SECOND-COMPONENT>
+					</FORMULA>
+				</TESTSTEP>
+				<TESTSTEP format-rev="2" id="2762922" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<BLOCK-NAME xsi:type="I18NItem">
+						<MULTILANGDATA/>
+						<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+					</BLOCK-NAME>
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="en_US">
+								<DVALUE xsi:type="unicode">Process High_Byte</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP format-rev="3" id="2762315" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+						<VARIABLE-REFS>
+							<VARIABLE-NAME dkey="default">
+								<DVALUE xsi:type="unicode">S9_1</DVALUE>
+							</VARIABLE-NAME>
+						</VARIABLE-REFS>
+						<FORMULA xsi:type="functionBaseExpression">
+							<COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="sliceBaseExpression">
+									<COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">DTC_HighByte</NAME>
+									</COMPONENT>
+									<START format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">6</VALUE>
+									</START>
+									<STOP format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">8</VALUE>
+									</STOP>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">UInt</ATTR-NAME>
+							</COMPONENT>
+						</FORMULA>
+					</TESTSTEP>
+					<TESTSTEP id="2762355" name="TsSwitchCase" xsi:type="utility-83517ac0-9f53-11dd-9c62-001b24fa84be">
+						<TESTSTEP id="2762351" xsi:type="caseNode">
+							<TESTSTEP format-rev="3" id="2762553" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+								<VARIABLE-REFS>
+									<VARIABLE-NAME dkey="default">
+										<DVALUE xsi:type="unicode">DTC_Types</DVALUE>
+									</VARIABLE-NAME>
+								</VARIABLE-REFS>
+								<FORMULA format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="unicode">P</VALUE>
+								</FORMULA>
+							</TESTSTEP>
+							<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</CASE-VALUE>
+							<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+						</TESTSTEP>
+						<TESTSTEP id="2762352" xsi:type="caseNode">
+							<TESTSTEP format-rev="3" id="2762566" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+								<VARIABLE-REFS>
+									<VARIABLE-NAME dkey="default">
+										<DVALUE xsi:type="unicode">DTC_Types</DVALUE>
+									</VARIABLE-NAME>
+								</VARIABLE-REFS>
+								<FORMULA format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="unicode">C</VALUE>
+								</FORMULA>
+							</TESTSTEP>
+							<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</CASE-VALUE>
+							<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+						</TESTSTEP>
+						<TESTSTEP id="2762353" xsi:type="caseNode">
+							<TESTSTEP format-rev="3" id="2762571" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+								<VARIABLE-REFS>
+									<VARIABLE-NAME dkey="default">
+										<DVALUE xsi:type="unicode">DTC_Types</DVALUE>
+									</VARIABLE-NAME>
+								</VARIABLE-REFS>
+								<FORMULA format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="unicode">B</VALUE>
+								</FORMULA>
+							</TESTSTEP>
+							<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">2</VALUE>
+							</CASE-VALUE>
+							<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+						</TESTSTEP>
+						<TESTSTEP id="2762354" xsi:type="caseNode">
+							<TESTSTEP format-rev="3" id="2762576" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+								<VARIABLE-REFS>
+									<VARIABLE-NAME dkey="default">
+										<DVALUE xsi:type="unicode">DTC_Types</DVALUE>
+									</VARIABLE-NAME>
+								</VARIABLE-REFS>
+								<FORMULA format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="unicode">U</VALUE>
+								</FORMULA>
+							</TESTSTEP>
+							<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">3</VALUE>
+							</CASE-VALUE>
+							<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+						</TESTSTEP>
+						<TESTSTEP id="2762350" xsi:type="caseNode">
+							<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</CASE-VALUE>
+							<IS-DEFAULT xsi:type="boolean">True</IS-DEFAULT>
+						</TESTSTEP>
+						<SWITCH-VALUE xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">S9_1</NAME>
+						</SWITCH-VALUE>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="2762513" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="unicode">S9_2</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">str</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT xsi:type="functionBaseExpression">
+								<COMPONENT xsi:type="attributeBaseExpression">
+									<COMPONENT xsi:type="sliceBaseExpression">
+										<COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="unicode">DTC_HighByte</NAME>
+										</COMPONENT>
+										<START format-rev="1" xsi:type="valueBaseExpression">
+											<VALUE xsi:type="integer">4</VALUE>
+										</START>
+										<STOP format-rev="1" xsi:type="valueBaseExpression">
+											<VALUE xsi:type="integer">6</VALUE>
+										</STOP>
+									</COMPONENT>
+									<ATTR-NAME xsi:type="string">UInt</ATTR-NAME>
+								</COMPONENT>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</FORMULA>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="2762625" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="unicode">S9_3</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="unicode">BINARY_SUBSCR</NAME>
+						<FIRST-COMPONENT xsi:type="functionBaseExpression">
+							<COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="unicode">str</NAME>
+							</COMPONENT>
+							<ARGUMENTS>
+								<ARGUMENT xsi:type="sliceBaseExpression">
+									<COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">DiagnosisInfo</NAME>
+									</COMPONENT>
+									<START xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">StartOfBytes</NAME>
+									</START>
+									<STOP xsi:type="binaryOpBaseExpression">
+										<NAME xsi:type="unicode">BINARY_ADD</NAME>
+										<FIRST-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="unicode">StartOfBytes</NAME>
+										</FIRST-COMPONENT>
+										<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+											<VALUE xsi:type="integer">1</VALUE>
+										</SECOND-COMPONENT>
+									</STOP>
+								</ARGUMENT>
+							</ARGUMENTS>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</SECOND-COMPONENT>
+					</FORMULA>
+				</TESTSTEP>
+				<TESTSTEP format-rev="2" id="2762926" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<BLOCK-NAME xsi:type="I18NItem">
+						<MULTILANGDATA/>
+						<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+					</BLOCK-NAME>
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="en_US">
+								<DVALUE xsi:type="unicode">Process Mid_Low_Byte</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP format-rev="3" id="2762535" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+						<VARIABLE-REFS>
+							<VARIABLE-NAME dkey="default">
+								<DVALUE xsi:type="unicode">DTC_Mid_Low_Byte</DVALUE>
+							</VARIABLE-NAME>
+						</VARIABLE-REFS>
+						<FORMULA xsi:type="functionBaseExpression">
+							<COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="unicode">str</NAME>
+							</COMPONENT>
+							<ARGUMENTS>
+								<ARGUMENT xsi:type="sliceBaseExpression">
+									<COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">DiagnosisInfo</NAME>
+									</COMPONENT>
+									<START xsi:type="binaryOpBaseExpression">
+										<NAME xsi:type="unicode">BINARY_ADD</NAME>
+										<FIRST-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="unicode">StartOfBytes</NAME>
+										</FIRST-COMPONENT>
+										<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+											<VALUE xsi:type="integer">1</VALUE>
+										</SECOND-COMPONENT>
+									</START>
+									<STOP xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">StopOfBytes</NAME>
+									</STOP>
+								</ARGUMENT>
+							</ARGUMENTS>
+						</FORMULA>
+					</TESTSTEP>
+					<TESTSTEP format-rev="3" id="2762748" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+						<VARIABLE-REFS>
+							<VARIABLE-NAME dkey="default">
+								<DVALUE xsi:type="unicode">DTC_Mid_Low_Byte</DVALUE>
+							</VARIABLE-NAME>
+						</VARIABLE-REFS>
+						<FORMULA xsi:type="functionBaseExpression">
+							<COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="unicode">DTC_Mid_Low_Byte</NAME>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">replace</ATTR-NAME>
+							</COMPONENT>
+							<ARGUMENTS>
+								<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="unicode">:</VALUE>
+								</ARGUMENT>
+								<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="unicode"/>
+								</ARGUMENT>
+							</ARGUMENTS>
+						</FORMULA>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="2762723" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="unicode">DTC</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="attributeBaseExpression">
+							<COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="unicode"/>
+							</COMPONENT>
+							<ATTR-NAME xsi:type="string">join</ATTR-NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT xsi:type="listOrTupleBaseExpression">
+								<IS-LIST xsi:type="boolean">True</IS-LIST>
+								<EXPRESSION-LIST>
+									<BASE-EXPRESSION xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">DTC_Types</NAME>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">S9_2</NAME>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">S9_3</NAME>
+									</BASE-EXPRESSION>
+									<BASE-EXPRESSION xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">DTC_Mid_Low_Byte</NAME>
+									</BASE-EXPRESSION>
+								</EXPRESSION-LIST>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</FORMULA>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="2762917" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA/>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Get DTC status</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP format-rev="3" id="2762887" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="unicode">DTC_Status</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">str</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT xsi:type="sliceBaseExpression">
+								<COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="unicode">DiagnosisInfo</NAME>
+								</COMPONENT>
+								<START xsi:type="varBaseExpression">
+									<NAME xsi:type="unicode">StopOfBytes</NAME>
+								</START>
+								<STOP xsi:type="binaryOpBaseExpression">
+									<NAME xsi:type="unicode">BINARY_ADD</NAME>
+									<FIRST-COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">StopOfBytes</NAME>
+									</FIRST-COMPONENT>
+									<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">1</VALUE>
+									</SECOND-COMPONENT>
+								</STOP>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</FORMULA>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="2762890" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="unicode">DTC_List[DTC]</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="varBaseExpression">
+					<NAME xsi:type="unicode">DTC_Status</NAME>
+				</FORMULA>
+			</TESTSTEP>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="unicode">loopCounter</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<LOOP-COUNT xsi:type="binaryOpBaseExpression">
+				<NAME xsi:type="unicode">BINARY_DIVIDE</NAME>
+				<FIRST-COMPONENT xsi:type="parentheses">
+					<COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="unicode">BINARY_SUBTRACT</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">LenOfBytes</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">3</VALUE>
+						</SECOND-COMPONENT>
+					</COMPONENT>
+				</FIRST-COMPONENT>
+				<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">4</VALUE>
+				</SECOND-COMPONENT>
+			</LOOP-COUNT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIGURATION format-rev="9" prog-version="2024.1.0.147701+5773b28903a4" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON xsi:type="commonData">
+		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
+	</COMMON>
+	<REPORT format-rev="4" xsi:type="reportData">
+		<REPORT-FORMATES/>
+		<INCLUDE-APPLICATION-LOGS xsi:type="boolean">True</INCLUDE-APPLICATION-LOGS>
+	</REPORT>
+	<EXECUTION-DATA format-rev="2" xsi:type="executionData"/>
+	<ECU-ACCESS format-rev="1" xsi:type="ecuAccessData">
+		<DATA dkey="ARA1">
+			<DVALUE format-rev="3" xsi:type="ecuData">
+				<DIAGNOSTIC-DB xsi:type="string">UDS-ExampleEcu.170.odx</DIAGNOSTIC-DB>
+				<DIAGNOSTIC-DB-ASSOCIATE xsi:type="string">&lt;EMPTY&gt;</DIAGNOSTIC-DB-ASSOCIATE>
+				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings"/>
+				<ECU-POSITION xsi:type="integer">1</ECU-POSITION>
+				<LOG-DLT-FILTER-FILE xsi:type="string">DLT_Filter/SettingObjectDetection.dlf</LOG-DLT-FILTER-FILE>
+				<LOG-PORT xsi:type="string">LOG-DLT-VERBOSE01</LOG-PORT>
+				<LOG-PROTOCOL xsi:type="string">DLT (verbose)</LOG-PROTOCOL>
+				<LOG-ETHERNET-PROTOCOL xsi:type="string">TCP</LOG-ETHERNET-PROTOCOL>
+				<LOG-ETHERNET-IP xsi:type="string">192.168.7.2</LOG-ETHERNET-IP>
+				<LOG-ETHERNET-PORT xsi:type="string">3490</LOG-ETHERNET-PORT>
+			</DVALUE>
+		</DATA>
+	</ECU-ACCESS>
+	<BUS-ACCESS format-rev="1" xsi:type="busAccessData">
+		<DATA dkey="ETHERNET">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<ACCESS-PORT-SERVICE xsi:type="string">SERVICE-SERVICE-PCAP01</ACCESS-PORT-SERVICE>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">ARXML/radar_working/**/*.arxml</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string">theEthCluster:theEthPhysChannel1</CHANNEL>
+				<PROTOCOL xsi:type="string">ETHERNET</PROTOCOL>
+				<BUS-POSITION xsi:type="integer">1</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="PT-CAN">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS-CAN01</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS-CAN_MANIP01</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">C:/ET2023_4/2_ECU-TEST_Advanced/Bus/Electric_V1.DBC</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">2</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+	</BUS-ACCESS>
+</CONFIGURATION>

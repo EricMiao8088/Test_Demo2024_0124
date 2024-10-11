@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Playbook</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">d1a065e2022811eb808dfc7774225e38</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="11" xsi:type="subproject">
+			<NAME xsi:type="string">Setup</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">e6bba424022811ebb045fc7774225e38</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="7" xsi:type="configChange">
+					<NAME xsi:type="string">Change configuration</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">434e45ee879511efb63f34cff6f2e990</ID>
+					<ACTION xsi:type="string">START</ACTION>
+					<KEEP-TEST-CONFIG xsi:type="boolean">False</KEEP-TEST-CONFIG>
+					<LOAD-TEST-CONFIG xsi:type="string">SW_Ver_1.tcf</LOAD-TEST-CONFIG>
+					<KEEP-TEST-BENCH-CONFIG xsi:type="boolean">False</KEEP-TEST-BENCH-CONFIG>
+					<LOAD-TEST-BENCH-CONFIG xsi:type="string">Testlab_HiL.tbc</LOAD-TEST-BENCH-CONFIG>
+					<TOOL-TREATMENTS/>
+				</COMPONENT>
+			</COMPONENTS>
+		</COMPONENT>
+		<COMPONENT format-rev="11" xsi:type="subproject">
+			<NAME xsi:type="string">Tests</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">ef528efa022911eb9537fc7774225e38</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="6" xsi:type="packageTest">
+					<NAME xsi:type="string">BasicDrive</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">41e89b92879511efb90d34cff6f2e990</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">BasicDrive.pkg</VALUE>
+						</PATH-EXPRESSION>
+					</PACKAGE-REF>
+				</COMPONENT>
+			</COMPONENTS>
+		</COMPONENT>
+		<COMPONENT format-rev="11" xsi:type="subproject">
+			<NAME xsi:type="string">Teardown</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">30342d36022911eb9837fc7774225e38</ID>
+			<COMPONENTS/>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

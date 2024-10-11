@@ -1,0 +1,176 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.5GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 03.09.2024 20:32:20 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-26
+         - licensed for: Turing
+
+
+2024-09-03 20:32:20.473 7244 ManagedWorker-2*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 57, in __call__
+                          File "tts\core\toolingFramework\interface\portTypes\AbstractPort.py", line 237, in ExecuteJob
+                          File "tts\tooling\tool\selenium\Selenium.py", line 254, in JobOpenUrl
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 991, in <lambda>
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 168, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 90, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 505, in raiseException
+                        tt._Exceptions_.TTError: InvalidArgumentException: Message: invalid argument
+                          (Session info: MicrosoftEdge=128.0.2739.54)
+                        Stacktrace:
+                        	GetHandleVerifier [0x00007FF639C10602+11762]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+                        	(No symbol) [0x00007FF6399CFCD5]
+                        	(No symbol) [0x00007FF6399BB17C]
+                        	(No symbol) [0x00007FF6399B9A41]
+                        	(No symbol) [0x00007FF6399B9DCC]
+                        	(No symbol) [0x00007FF6399D2911]
+                        	(No symbol) [0x00007FF639A5003E]
+                        	(No symbol) [0x00007FF639A35F3A]
+                        	(No symbol) [0x00007FF639A0C2FD]
+                        	(No symbol) [0x00007FF639A4FA97]
+                        	(No symbol) [0x00007FF639A35BA3]
+                        	(No symbol) [0x00007FF639A0B80C]
+                        	(No symbol) [0x00007FF639A0ACED]
+                        	(No symbol) [0x00007FF639A0B3D1]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+                        	BaseThreadInitThunk [0x00007FFE7190257D+29]
+                        	RtlUserThreadStart [0x00007FFE7362AF28+40]
+                        
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 186, in __Call
+                          File "tts\core\mapping\xa\XAJobExec.py", line 83, in Call
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 76, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 96, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port IMG-DEFAULT01 (@local): PortExecuteJob() failed: InvalidArgumentException: Message: invalid argument
+                          (Session info: MicrosoftEdge=128.0.2739.54)
+                        Stacktrace:
+                        	GetHandleVerifier [0x00007FF639C10602+11762]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+                        	(No symbol) [0x00007FF6399CFCD5]
+                        	(No symbol) [0x00007FF6399BB17C]
+                        	(No symbol) [0x00007FF6399B9A41]
+                        	(No symbol) [0x00007FF6399B9DCC]
+                        	(No symbol) [0x00007FF6399D2911]
+                        	(No symbol) [0x00007FF639A5003E]
+                        	(No symbol) [0x00007FF639A35F3A]
+                        	(No symbol) [0x00007FF639A0C2FD]
+                        	(No symbol) [0x00007FF639A4FA97]
+                        	(No symbol) [0x00007FF639A35BA3]
+                        	(No symbol) [0x00007FF639A0B80C]
+                        	(No symbol) [0x00007FF639A0ACED]
+                        	(No symbol) [0x00007FF639A0B3D1]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+                        	BaseThreadInitThunk [0x00007FFE7190257D+29]
+                        	RtlUserThreadStart [0x00007FFE7362AF28+40]
+                        
+2024-09-03 20:32:20.474 7244 ToolLibs ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\networking\ToolServerConnector.py", line 353, in PrintRemoteException
+                          File "tts\core\toolingFramework\networking\ToollibProcessStarter.py", line 635, in __CallCommandErrback
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 505, in raiseException
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 269, in inContext
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 285, in <lambda>
+                          File ".\Lib\site-packages\twisted\python\context.py", line 117, in callWithContext
+                          File ".\Lib\site-packages\twisted\python\context.py", line 82, in callWithContext
+                          File "tts\tooling\tool\selenium\SeleniumLib.py", line 106, in OpenUrl
+                          File "tts\tooling\tool\selenium\browsers\AbstractBrowser.py", line 101, in OpenUrl
+                          File ".\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+                          File ".\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+                          File ".\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+                        selenium.common.exceptions.InvalidArgumentException: Message: invalid argument
+                          (Session info: MicrosoftEdge=128.0.2739.54)
+                        Stacktrace:
+                        	GetHandleVerifier [0x00007FF639C10602+11762]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+                        	(No symbol) [0x00007FF6399CFCD5]
+                        	(No symbol) [0x00007FF6399BB17C]
+                        	(No symbol) [0x00007FF6399B9A41]
+                        	(No symbol) [0x00007FF6399B9DCC]
+                        	(No symbol) [0x00007FF6399D2911]
+                        	(No symbol) [0x00007FF639A5003E]
+                        	(No symbol) [0x00007FF639A35F3A]
+                        	(No symbol) [0x00007FF639A0C2FD]
+                        	(No symbol) [0x00007FF639A4FA97]
+                        	(No symbol) [0x00007FF639A35BA3]
+                        	(No symbol) [0x00007FF639A0B80C]
+                        	(No symbol) [0x00007FF639A0ACED]
+                        	(No symbol) [0x00007FF639A0B3D1]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+                        	BaseThreadInitThunk [0x00007FFE7190257D+29]
+                        	RtlUserThreadStart [0x00007FFE7362AF28+40]
+                        
+2024-09-03 20:32:20.534 7244 ManagedWorker-2*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 921, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 265, in Run
+                        tt._Exceptions_.TTError: Port IMG-DEFAULT01 (@local): PortExecuteJob() failed: InvalidArgumentException: Message: invalid argument
+                          (Session info: MicrosoftEdge=128.0.2739.54)
+                        Stacktrace:
+                        	GetHandleVerifier [0x00007FF639C10602+11762]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+                        	(No symbol) [0x00007FF6399CFCD5]
+                        	(No symbol) [0x00007FF6399BB17C]
+                        	(No symbol) [0x00007FF6399B9A41]
+                        	(No symbol) [0x00007FF6399B9DCC]
+                        	(No symbol) [0x00007FF6399D2911]
+                        	(No symbol) [0x00007FF639A5003E]
+                        	(No symbol) [0x00007FF639A35F3A]
+                        	(No symbol) [0x00007FF639A0C2FD]
+                        	(No symbol) [0x00007FF639A4FA97]
+                        	(No symbol) [0x00007FF639A35BA3]
+                        	(No symbol) [0x00007FF639A0B80C]
+                        	(No symbol) [0x00007FF639A0ACED]
+                        	(No symbol) [0x00007FF639A0B3D1]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+                        	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+                        	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+                        	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+                        	BaseThreadInitThunk [0x00007FFE7190257D+29]
+                        	RtlUserThreadStart [0x00007FFE7362AF28+40]
+                        

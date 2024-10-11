@@ -1,0 +1,43 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          53.9GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 09.08.2024 09:40:21 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-04
+         - licensed for: Turing
+
+
+2024-08-09 09:40:21.431 11484 ManagedWorker-1*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-08-09 09:40:21.446 11484 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-08-09 09:40:21.449 11484 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-09 09:40:21.460 11484 ManagedWorker-1*PE.Run() INFO:
+                        System time mode activated
+2024-08-09 09:40:21.485 11484 ManagedWorker-1*PE.Run() ERROR:
+                        Test step 4(Calculation): "An error occurred when calling "ByteStream(hex(17))": ByteStream has an invalid format: 0x11. Only hex strings that are separated by colons and white spaces are allowed, e.g. ByteStream(''), ByteStream('acdc'), ByteStream('ac dc') or ByteStream('ac:dc')."
+                        Package "Package 0"#4
+2024-08-09 09:40:21.487 11484 ManagedWorker-1*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: UserCodeException: An error occurred when calling "ByteStream(hex(17))": ByteStream has an invalid format: 0x11. Only hex strings that are separated by colons and white spaces are allowed, e.g. ByteStream(''), ByteStream('acdc'), ByteStream('ac dc') or ByteStream('ac:dc').
+                        Package "Package 0"#4
+2024-08-09 09:40:21.514 11484 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-09 09:40:21.515 11484 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" completed

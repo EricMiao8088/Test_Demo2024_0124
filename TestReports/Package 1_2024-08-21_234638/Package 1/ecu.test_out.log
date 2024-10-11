@@ -1,0 +1,57 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          52.9GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 21.08.2024 23:46:38 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-04
+         - licensed for: Turing
+
+
+2024-08-21 23:46:38.588 21284 ManagedWorker-2*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-08-21 23:46:38.600 21284 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 1" started
+2024-08-21 23:46:38.607 21284 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-21 23:46:38.673 21284 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2024-08-21 23:46:38.675 21284 ManagedWorker-2*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for A-CAN
+2024-08-21 23:46:43.690 21284 ManagedWorker-2*PE.Run() INFO:
+                        1. Recording for Recording group for A-CAN: Autostop
+2024-08-21 23:46:43.701 21284 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-21 23:46:43.727 21284 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 1" completed
+2024-08-21 23:46:43.805 21284 ManagedWorker-2*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 1" -> "Trace analysis 1")
+2024-08-21 23:46:43.812 21284 ManagedWorker-2*PE.Run() WARNING:
+                        The ASC file does not contain any frames.
+2024-08-21 23:46:43.818 21284 ManagedWorker-2*PE.Run() WARNING:
+                        The ASC file does not contain any frames.
+2024-08-21 23:46:43.826 21284 ManagedWorker-2*PE.Run() WARNING:
+                        The ASC file does not contain any frames.
+2024-08-21 23:46:43.839 21284 ManagedWorker-2*PE.Run() DEBUG:
+                        Performing episode ...
+2024-08-21 23:46:43.845 21284 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-08-21 23:46:43.860 21284 ManagedWorker-2*PE.Run() DEBUG:
+                        Episode completed
+2024-08-21 23:46:43.869 21284 ManagedWorker-2*PE.Run() DEBUG:
+                        

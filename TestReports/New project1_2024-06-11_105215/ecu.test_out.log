@@ -1,0 +1,113 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          81.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 11.06.2024 10:52:15 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-07-07
+         - licensed for: Turing
+
+
+2024-06-11 10:52:15.514 15556 ManagedWorker-4 INFO:
+                        Start project 'New project1' with test case execution with sequential analysis job execution
+2024-06-11 10:52:16.009 15556 ManagedWorker-4 INFO:
+                        Obsolete synchronization of trace analysis automatically migrated.
+2024-06-11 10:52:16.688 15556 ManagedWorker-4*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2024-06-11 10:52:16.709 15556 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2024-06-11 10:52:16.711 15556 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2024-06-11 10:52:16.720 15556 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2024-06-11 10:52:16.742 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-06-11 10:52:16.752 15556 ToolLibs WARNING:
+                        ToolLib time: 10:52:16.750 VectorBusAccessLib: 
+File "C:\ET2024_2\2_ECU-TEST_Advanced\.workspace\protocol.xml", line 6, column 2
+Unknown xml element TO-FILE in LoggingData
+2024-06-11 10:52:16.753 15556 ToolLibs WARNING:
+                        ToolLib time: 10:52:16.752 VectorBusAccessLib: 
+File "C:\ET2024_2\2_ECU-TEST_Advanced\.workspace\protocol.xml", line 6, column 2
+Unknown xml element TO-FILE in LoggingData
+2024-06-11 10:52:16.762 15556 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2024-06-11 10:52:16.770 15556 ManagedWorker-4*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+2024-06-11 10:52:16.779 15556 ManagedWorker-4*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+2024-06-11 10:52:38.958 15556 ManagedWorker-4*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+2024-06-11 10:52:38.961 15556 ManagedWorker-4*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+2024-06-11 10:52:38.980 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-06-11 10:52:39.619 15556 ManagedWorker-4*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2024-06-11 10:52:40.782 15556 ManagedWorker-4*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg" -> "Basic Drive")
+2024-06-11 10:52:40.795 15556 ManagedWorker-4*PE.Run() WARNING:
+                        
+File "C:\ET2024_2\2_ECU-TEST_Advanced\.workspace\analysisexecution.xml", line 4, column 2
+Unknown xml element SUPPRESS-END-OF-FILE-ERRORS in AnalysisExecution
+2024-06-11 10:52:40.815 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        Performing episode ...
+2024-06-11 10:52:40.816 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2024-06-11 10:52:42.383 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        Episode completed
+2024-06-11 10:52:42.384 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2024-06-11 10:52:43.120 15556 ManagedWorker-4 INFO:
+                        Obsolete synchronization of trace analysis automatically migrated.
+2024-06-11 10:52:43.138 15556 ManagedWorker-4*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2024-06-11 10:52:43.143 15556 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2024-06-11 10:52:43.149 15556 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2024-06-11 10:52:43.158 15556 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2024-06-11 10:52:43.181 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-06-11 10:52:43.186 15556 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2024-06-11 10:52:43.192 15556 ManagedWorker-4*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+2024-06-11 10:52:43.200 15556 ManagedWorker-4*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+2024-06-11 10:53:05.384 15556 ManagedWorker-4*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+2024-06-11 10:53:05.385 15556 ManagedWorker-4*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+2024-06-11 10:53:05.405 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-06-11 10:53:06.093 15556 ManagedWorker-4*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2024-06-11 10:53:06.191 15556 ManagedWorker-4*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg" -> "Basic Drive")
+2024-06-11 10:53:06.212 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        Performing episode ...
+2024-06-11 10:53:06.213 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2024-06-11 10:53:06.658 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        Episode completed
+2024-06-11 10:53:06.658 15556 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2024-06-11 10:53:07.261 15556 ManagedWorker-4 INFO:
+                        Finalizing report 'New project1.trf'...

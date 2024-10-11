@@ -1,0 +1,157 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.5GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 03.09.2024 20:32:15 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-26
+         - licensed for: Turing
+
+
+2024-09-03 20:32:15.131 7244 ManagedWorker-2*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-09-03 20:32:15.144 7244 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 1" started
+2024-09-03 20:32:15.151 7244 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-09-03 20:32:15.183 7244 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2024-09-03 20:32:20.473 7244 ManagedWorker-2*PE.Run() ERROR:
+                        tts.testExecution.testSteps.generic.TestStepJobExec.__Call: ToolError: Port IMG-DEFAULT01 (@local): PortExecuteJob() failed: InvalidArgumentException: Message: invalid argument
+  (Session info: MicrosoftEdge=128.0.2739.54)
+Stacktrace:
+	GetHandleVerifier [0x00007FF639C10602+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+	(No symbol) [0x00007FF6399CFCD5]
+	(No symbol) [0x00007FF6399BB17C]
+	(No symbol) [0x00007FF6399B9A41]
+	(No symbol) [0x00007FF6399B9DCC]
+	(No symbol) [0x00007FF6399D2911]
+	(No symbol) [0x00007FF639A5003E]
+	(No symbol) [0x00007FF639A35F3A]
+	(No symbol) [0x00007FF639A0C2FD]
+	(No symbol) [0x00007FF639A4FA97]
+	(No symbol) [0x00007FF639A35BA3]
+	(No symbol) [0x00007FF639A0B80C]
+	(No symbol) [0x00007FF639A0ACED]
+	(No symbol) [0x00007FF639A0B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+	BaseThreadInitThunk [0x00007FFE7190257D+29]
+	RtlUserThreadStart [0x00007FFE7362AF28+40]
+                        Package "Package 1"#4
+2024-09-03 20:32:20.474 7244 ToolLibs ERROR:
+                        tts.core.toolingFramework.networking.ToolServerConnector.PrintRemoteException: InvalidArgumentException: Message: invalid argument
+  (Session info: MicrosoftEdge=128.0.2739.54)
+Stacktrace:
+	GetHandleVerifier [0x00007FF639C10602+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+	(No symbol) [0x00007FF6399CFCD5]
+	(No symbol) [0x00007FF6399BB17C]
+	(No symbol) [0x00007FF6399B9A41]
+	(No symbol) [0x00007FF6399B9DCC]
+	(No symbol) [0x00007FF6399D2911]
+	(No symbol) [0x00007FF639A5003E]
+	(No symbol) [0x00007FF639A35F3A]
+	(No symbol) [0x00007FF639A0C2FD]
+	(No symbol) [0x00007FF639A4FA97]
+	(No symbol) [0x00007FF639A35BA3]
+	(No symbol) [0x00007FF639A0B80C]
+	(No symbol) [0x00007FF639A0ACED]
+	(No symbol) [0x00007FF639A0B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+	BaseThreadInitThunk [0x00007FFE7190257D+29]
+	RtlUserThreadStart [0x00007FFE7362AF28+40]
+2024-09-03 20:32:20.531 7244 ManagedWorker-2*PE.Run() ERROR:
+                        Test step 4(Execute): "Port IMG-DEFAULT01 (@local): PortExecuteJob() failed: InvalidArgumentException: Message: invalid argument
+  (Session info: MicrosoftEdge=128.0.2739.54)
+Stacktrace:
+	GetHandleVerifier [0x00007FF639C10602+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+	(No symbol) [0x00007FF6399CFCD5]
+	(No symbol) [0x00007FF6399BB17C]
+	(No symbol) [0x00007FF6399B9A41]
+	(No symbol) [0x00007FF6399B9DCC]
+	(No symbol) [0x00007FF6399D2911]
+	(No symbol) [0x00007FF639A5003E]
+	(No symbol) [0x00007FF639A35F3A]
+	(No symbol) [0x00007FF639A0C2FD]
+	(No symbol) [0x00007FF639A4FA97]
+	(No symbol) [0x00007FF639A35BA3]
+	(No symbol) [0x00007FF639A0B80C]
+	(No symbol) [0x00007FF639A0ACED]
+	(No symbol) [0x00007FF639A0B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+	BaseThreadInitThunk [0x00007FFE7190257D+29]
+	RtlUserThreadStart [0x00007FFE7362AF28+40]
+"
+                        Package "Package 1"#4
+2024-09-03 20:32:20.534 7244 ManagedWorker-2*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: TTError: Port IMG-DEFAULT01 (@local): PortExecuteJob() failed: InvalidArgumentException: Message: invalid argument
+  (Session info: MicrosoftEdge=128.0.2739.54)
+Stacktrace:
+	GetHandleVerifier [0x00007FF639C10602+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB0949+271417]
+	(No symbol) [0x00007FF6399CFCD5]
+	(No symbol) [0x00007FF6399BB17C]
+	(No symbol) [0x00007FF6399B9A41]
+	(No symbol) [0x00007FF6399B9DCC]
+	(No symbol) [0x00007FF6399D2911]
+	(No symbol) [0x00007FF639A5003E]
+	(No symbol) [0x00007FF639A35F3A]
+	(No symbol) [0x00007FF639A0C2FD]
+	(No symbol) [0x00007FF639A4FA97]
+	(No symbol) [0x00007FF639A35BA3]
+	(No symbol) [0x00007FF639A0B80C]
+	(No symbol) [0x00007FF639A0ACED]
+	(No symbol) [0x00007FF639A0B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8B584+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B45D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF639B386E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF639D8A2DD+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB8541+303153]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4904+287732]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BB4A3B+288043]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF639BAC990+255104]
+	BaseThreadInitThunk [0x00007FFE7190257D+29]
+	RtlUserThreadStart [0x00007FFE7362AF28+40]
+                        Package "Package 1"#4
+2024-09-03 20:32:20.545 7244 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-09-03 20:32:20.547 7244 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 1" completed

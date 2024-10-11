@@ -1,0 +1,90 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          68.7GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 16.07.2024 15:32:23 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Maximum. Additional logging active: default output, debug information (TOPIC_TOOLING, TOPIC_API)
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-10
+         - licensed for: Turing
+
+
+2024-07-16 15:32:23.446 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/start.sti
+2024-07-16 15:32:23.469 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/starterButton.sti
+2024-07-16 15:32:23.474 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/stop.sti
+2024-07-16 15:32:23.487 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_1.sti
+2024-07-16 15:32:23.499 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_10.sti
+2024-07-16 15:32:23.511 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_20.sti
+2024-07-16 15:32:23.522 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_50.sti
+2024-07-16 15:32:23.533 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_80.sti
+2024-07-16 15:32:23.545 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_100.sti
+2024-07-16 15:32:23.557 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_1.sti
+2024-07-16 15:32:23.567 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_10.sti
+2024-07-16 15:32:23.582 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_20.sti
+2024-07-16 15:32:23.597 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_50.sti
+2024-07-16 15:32:23.619 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_80.sti
+2024-07-16 15:32:23.631 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_100.sti
+2024-07-16 15:32:23.641 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/deceleration_mid.sti
+2024-07-16 15:32:23.652 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/brake.sti
+2024-07-16 15:32:23.664 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroCable.sti
+2024-07-16 15:32:23.677 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroDoor.sti
+2024-07-16 15:32:23.687 3468 ManagedWorker-3*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-07-16 15:32:23.692 3468 ManagedWorker-3*PE.Run() INFO:
+                        Initialize variables...
+2024-07-16 15:32:23.702 3468 ManagedWorker-3*PE.Run() INFO:
+                        Initializing execution mapping...
+2024-07-16 15:32:23.711 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "HuaWei/Image" 1755038279184
+2024-07-16 15:32:23.722 3468 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 1" started
+2024-07-16 15:32:23.731 3468 ManagedWorker-3*PE.Run() INFO:
+                        Preprocess of test steps in Package 1
+2024-07-16 15:32:23.743 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-07-16 15:32:23.844 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2024-07-16 15:32:23.846 3468 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2024-07-16 15:32:24.439 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        SendCommand: ADB: ReadImage('IMG-DEFAULT01') --> 'C:\\Users\\92126\\AppData\\Local\\Temp\\ECU-TEST 2022.2\\ToolLibTemp\\ADB\\a12c0d3f-7f97-46cd-8e78-1fbf9b89272e.png'
+                        Package "Package 1"#1
+2024-07-16 15:32:24.981 3468 ManagedWorker-3*PE.Run() INFO:
+                        Post process of test steps in Package 1
+2024-07-16 15:32:24.982 3468 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-07-16 15:32:24.994 3468 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 1" completed

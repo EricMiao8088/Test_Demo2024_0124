@@ -1,0 +1,9670 @@
+
+/begin PROJECT Stim_buff3qh1_bypass 
+ "Generated from ASCET-SD Project Stim_buff3.1_bypass" 
+ /begin HEADER 
+  "Stim_buff3.1_bypass" 
+  VERSION "Stim_buff3.1_bypass"  PROJECT_NO ASCETSD 
+ /end HEADER 
+ /begin MODULE ASCETSD 
+  "Generated from ASCET-SD Project Stim_buff3.1_bypass" 
+  /begin MOD_PAR 
+   "" 
+   VERSION ""  
+   USER "Irene Pulido"  
+   CPU_TYPE "C167"  
+   NO_OF_INTERFACES 1 
+   MEMORY_LAYOUT PRG_CODE 0x800000 65535 -1 -1 -1 -1 -1 
+   MEMORY_LAYOUT PRG_CODE 0x820000 65535 -1 -1 -1 -1 -1 
+   MEMORY_LAYOUT PRG_CODE 0x830000 65535 -1 -1 -1 -1 -1 
+   MEMORY_LAYOUT PRG_CODE 0x840000 65535 -1 -1 -1 -1 -1 
+   MEMORY_LAYOUT PRG_DATA 0x810000 65535 -1 -1 -1 -1 -1 
+  /end MOD_PAR 
+  /begin MOD_COMMON 
+   "Common definitions" 
+   BYTE_ORDER BIG_ENDIAN 
+  /end MOD_COMMON 
+  /begin IF_DATA DIM_X 
+     VECTAB_ADDRESS 0x800000 /* Anfangsadresse der Vektortabelle */
+   TRGSEG_ADDRESS 0x380300 /* Triggersegment-Adresse 380300*/
+   DAT_MOD        1        /* Augabe-Modus (1-Byte, 2-Word) */
+   TRG_MOD        0x27     /* Trigger-Modus */
+   DISPLAY_TAB    12       /* Typ der Display-Tabelle */
+   DISPLAY_PAR    /* Display-Tabelle A */
+    0x810100      /* Adresse der Display-Tabelle A */
+    20            /* Laenge der Displaytabelle A */
+    0x380100      /* DPR-Adresse A */
+    0x380310      /* Trigger-Id A */
+    "RASTER_A"    /* Name A */
+    1             /* Ausgaberaster in ms fuer A */
+   DISPLAY_PAR    /* Display-Tabelle B */
+    0x810000      /* Adresse der Display-Tabelle B */
+    20            /* Laenge der Displaytabelle B */
+    0x380000      /* DPR-Adresse B */
+    0x380300      /* Trigger-Id B */
+    "RASTER_B"    /* Name B */
+    10            /* Ausgaberaster in ms fuer B */
+   DISPLAY_PAR    /* Display-Tabelle C */
+    0x810200      /* Adresse der Display-Tabelle C */
+    20            /* Laenge der Displaytabelle C */
+    0x380200      /* DPR-Adresse C */
+    0x380320      /* Trigger-Id C */
+    "RASTER_C"    /* Name C */
+    100           /* Ausgaberaster in ms fuer C */
+   MEMORY_LAYOUT PRG_EXRAM 0x380000 0x387fff -1 -1 -1 -1 -1 
+   ETK_CFG 0x0F 0xf0 0xff 0x03 0xfd 0xee 0xff 0x01
+/end IF_DATA 
+
+  /begin CHARACTERISTIC array_A1 
+   "" 
+   VAL_BLK 
+   0x811E90 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811E90 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_A2 
+   "" 
+   VAL_BLK 
+   0x811E9C 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811E9C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_A3 
+   "" 
+   VAL_BLK 
+   0x811EA8 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811EA8 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_A4 
+   "" 
+   VAL_BLK 
+   0x811EB4 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811EB4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_A5 
+   "" 
+   VAL_BLK 
+   0x811EC0 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811EC0 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_B1 
+   "" 
+   VAL_BLK 
+   0x811ECC 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811ECC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_B2 
+   "" 
+   VAL_BLK 
+   0x811EE4 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811EE4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_B3 
+   "" 
+   VAL_BLK 
+   0x811ED8 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811ED8 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_B4 
+   "" 
+   VAL_BLK 
+   0x811EF0 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811EF0 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_B5 
+   "" 
+   VAL_BLK 
+   0x811EFC 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811EFC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_C1 
+   "" 
+   VAL_BLK 
+   0x811F08 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811F08 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_C2 
+   "" 
+   VAL_BLK 
+   0x811F14 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811F14 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_C3 
+   "" 
+   VAL_BLK 
+   0x811F20 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811F20 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_C4 
+   "" 
+   VAL_BLK 
+   0x811F2C 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811F2C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_C5 
+   "" 
+   VAL_BLK 
+   0x811F38 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST stim_buff1qh2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811F38 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC array_PI 
+   "" 
+   VAL_BLK 
+   0x811E7C 
+   STANDARD_VALUE_S16 
+   65535 
+   OneToOne 
+   -32768 
+   32767 
+   FUNCTION_LIST PI2 
+   NUMBER 6 
+   IF_DATA DIM DIRECT 0x811E7C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ChannelT 
+   "" 
+   VAL_BLK 
+   0x810480 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   NUMBER 42 
+   IF_DATA DIM DIRECT 0x810480 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ChannelY 
+   "" 
+   VAL_BLK 
+   0x810400 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   NUMBER 42 
+   IF_DATA DIM DIRECT 0x810400 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC d 
+   "" 
+   VALUE 
+   0x811E8E 
+   STANDARD_VALUE_U16 
+   50.0 
+   x_div_512 
+   0.0 
+   50.0 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM DIRECT 0x811E8E 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC DEF_ADIN0 
+   "" 
+   VALUE 
+   0x811E44 
+   STANDARD_VALUE_U16 
+   65535 
+   OneToOne 
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM DIRECT 0x811E44 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC DEF_ADIN1 
+   "" 
+   VALUE 
+   0x811E78 
+   STANDARD_VALUE_U16 
+   65535 
+   OneToOne 
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM DIRECT 0x811E78 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRA11Ub 
+   "" 
+   VALUE 
+   0x8117EC 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117EC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRA12Uw 
+   "" 
+   VALUE 
+   0x8117F3 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117F3 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRA13Sb 
+   "" 
+   VALUE 
+   0x8117EF 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117EF 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRA14Sw_i 
+   "" 
+   VALUE 
+   0x8117F1 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117F1 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRB21Ub 
+   "" 
+   VALUE 
+   0x8117E4 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117E4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRB22Uw 
+   "" 
+   VALUE 
+   0x8117E8 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117E8 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRB23Sb 
+   "" 
+   VALUE 
+   0x8117E6 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117E6 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC ebenRB24Sw_i 
+   "" 
+   VALUE 
+   0x8117EA 
+   STANDARD_VALUE_S8 
+   1 
+   identity 
+   0 
+   1 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117EA 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRA11Ub 
+   "" 
+   VALUE 
+   0x8117ED 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117ED 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRA12Uw 
+   "" 
+   VALUE 
+   0x8117F0 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117F0 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRA13Sb 
+   "" 
+   VALUE 
+   0x8117EE 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117EE 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRA14Sw_i 
+   "" 
+   VALUE 
+   0x8117F2 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM DIRECT 0x8117F2 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRB21Ub 
+   "" 
+   VALUE 
+   0x8117E5 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117E5 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRB22Uw 
+   "" 
+   VALUE 
+   0x8117E9 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117E9 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRB23Sb 
+   "" 
+   VALUE 
+   0x8117E7 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117E7 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC eboffRB24Sw_i 
+   "" 
+   VALUE 
+   0x8117EB 
+   STANDARD_VALUE_U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM DIRECT 0x8117EB 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EE9 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EE9 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EF8 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF8 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EEB 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EEB 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EFA 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EFA 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EE8 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EE8 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EF7 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF7 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EEA 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EEA 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EF9 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF9 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EF0 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF0 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F00 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F00 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EF2 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF2 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F02 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F02 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EEF 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EEF 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EFF 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EFF 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EF1 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF1 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbSwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F01 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F01 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EE5 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EE5 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EF4 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EE7 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EE7 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EF6 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF6 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EE4 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EE4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EF3 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF3 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EE6 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EE6 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EF5 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EF5 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F23 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F23 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EFC 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EFC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EEE 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EEE 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EFE 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EFE 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EEC 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EEC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EFB 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EFB 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810EED 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EED 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSbUwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810EFD 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810EFD 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811416 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811416 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811417 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811417 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x81148C 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81148C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x81148D 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81148D 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x8113E8 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8113E8 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8113E9 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8113E9 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811444 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811444 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811445 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811445 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811608 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811608 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811609 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811609 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811688 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811688 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811689 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811689 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x8115D4 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8115D4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8115D5 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8115D5 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x81163C 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81163C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwSwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x81163D 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81163D 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x81132A 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81132A 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x81132B 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81132B 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x8113A0 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8113A0 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8113A1 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8113A1 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x8112FC 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8112FC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8112FD 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8112FD 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811358 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811358 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811359 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811359 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811508 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811508 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811509 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811509 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811588 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811588 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811589 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811589 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x8114D4 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8114D4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8114D5 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8114D5 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x81153C 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81153C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFSwUwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x81153D 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81153D 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F22 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F22 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FRMAX 
+"Obere Regelbereichsgrenze Lambda-Regler"
+   VALUE 
+   0x810F22 
+   STANDARD_VALUE_U8 
+   24 
+   R_FRMIN
+   0
+   2
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM DIRECT 0x810F22 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F10 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F10 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FRMIN 
+"Untere Regelbereichsgrenze Lambda-Regler"
+   VALUE 
+   0x810F10 
+   STANDARD_VALUE_U8 
+   24 
+   R_FRMIN
+   0
+   2
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM DIRECT 0x810F10 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F18 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F18 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F13 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F13 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F09 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F09 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F17 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F17 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F0B 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F0B 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F19 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F19 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F16 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F16 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F0C 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F0C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC USR 
+"Regelschwelle Lambda-Regler"
+   VALUE 
+   0x810F0C 
+   STANDARD_VALUE_U8 
+   24 
+   R_USR
+   0
+   2
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM DIRECT 0x810F0C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F05 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F05 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F08 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F08 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F07 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F07 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F1A 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F1A 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F0F 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F0F 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbSwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F0A 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F0A 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F0D 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F0D 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F1F 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F1F 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F1C 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F1C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F12 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F12 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F20 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F20 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F11 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F11 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F0E 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F0E 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F03 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F03 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F1D 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F1D 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F15 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F15 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F06 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F06 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F1B 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F1B 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F1E 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F1E 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F04 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F04 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F21 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F21 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUbUwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F14 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F14 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x81103E 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81103E 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x81103F 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81103F 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x8110B4 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8110B4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8110B5 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8110B5 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811010 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811010 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811011 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811011 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x81106C 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81106C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x81106D 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81106D 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwSb_ME7_x_in 
+   "" 
+   VALUE 
+   0x811230 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811230 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwSb_ME7_y_in 
+   "" 
+   VALUE 
+   0x811231 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811231 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x8112B0 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8112B0 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8112B1 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8112B1 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x8111FC 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8111FC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8111FD 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8111FD 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811264 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811264 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwSwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811265 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811265 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUWUbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F52 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F52 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUbSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F53 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F53 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810FC8 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810FC8 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUbSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810FC9 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810FC9 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F24 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F24 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUbUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F25 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F25 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x810F80 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F80 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUbUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x810F81 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x810F81 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811130 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811130 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwSb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811131 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811131 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x8111B0 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8111B0 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwSw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8111B1 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8111B1 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x8110FC 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8110FC 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwUb_ME7_Y_In 
+   "" 
+   VALUE 
+   0x8110FD 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8110FD 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811164 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811164 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KFUwUwUw_ME7_Y_In 
+   "" 
+   VALUE 
+   0x811165 
+   STANDARD_VALUE_U8 
+   24 
+   OneToOne 
+   11 
+   35 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811165 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC TLKL 
+"TL-Klopfschutzschwelle"
+   VALUE 
+   0x811165 
+   STANDARD_VALUE_U8 
+   24 
+   R_TLKL
+   0
+   4
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM DIRECT 0x811165 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811715 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811715 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x8116F2 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8116F2 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811747 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811747 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x8116F4 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8116F4 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811716 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811716 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSwSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811756 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811756 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811754 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811754 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLSwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811755 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811755 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUbSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811717 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811717 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUbSw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811746 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811746 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUbUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x8116F3 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8116F3 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUbUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811714 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811714 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUwSb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811758 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811758 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUwSw_ME7_X__In 
+   "" 
+   VALUE 
+   0x8117E2 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8117E2 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUwUb_ME7_X_In 
+   "" 
+   VALUE 
+   0x811706 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811706 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FW_KLUwUw_ME7_X_In 
+   "" 
+   VALUE 
+   0x811757 
+   STANDARD_VALUE_U8 
+   24.0 
+   OneToOne 
+   11.0 
+   35.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x811757 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC K 
+   "" 
+   VALUE 
+   0x811E7A 
+   STANDARD_VALUE_U16 
+   255.99219 
+   x_div_128 
+   0.0 
+   255.99219 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM DIRECT 0x811E7A 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KF1 
+   "" 
+   MAP 
+   0x811992 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   zuend1_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811992 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm_out1 
+    hfm1_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out1 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KFZW 
+"Zuendwinkel Grundkennfeld"
+   MAP 
+   0x811992 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   R_ZW
+   -40
+   80
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM DIRECT 0x811992 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   TL
+   R_TL
+    10 
+   0
+   20
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    11 
+   0
+   6500
+   /end AXIS_DESCR 
+   /end CHARACTERISTIC
+  /begin CHARACTERISTIC KF2 
+   "" 
+   MAP 
+   0x811A9C 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   zuend2_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811A9C 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm_out2 
+    hfm2_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out2 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KFZWMK 
+"Zuendwinkel Motor kalt"
+   MAP 
+   0x811A9C 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   R_ZW
+   -40
+   80
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM DIRECT 0x811A9C 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   TL
+   R_TL
+    10 
+   0
+   20
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    11 
+   0
+   6500
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC
+  /begin CHARACTERISTIC KF3 
+   "" 
+   MAP 
+   0x811BA6 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   zuend3_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811BA6 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm_out3 
+    hfm3_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out3 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KFZWMW 
+"Zuendwinkel Motor warm"
+   MAP 
+   0x811BA6 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   R_ZW
+   -40
+   80
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM DIRECT 0x811BA6 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   TL
+   R_TL
+    10 
+   0
+   20
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    11 
+   0
+   6500
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC
+  /begin CHARACTERISTIC KF4 
+   "" 
+   MAP 
+   0x811CB0 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   warml1_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811CB0 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot_out1 
+    tmot1_div32 
+    16 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out1 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+
+  /begin CHARACTERISTIC KF5 
+   "" 
+   MAP 
+   0x815992 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   zuend1_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x815992 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm_out1 
+    hfm1_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out1 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KFRP 
+"Lambda-Regler P-Anteil ueber gesamtem Betriebsbereich"
+   MAP 
+   0x815992 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   R_RP
+   0
+   1
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM DIRECT 0x815992 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    11 
+   0
+   6500
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   TL
+   R_TL
+    10 
+   0
+   20
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KF6 
+   "" 
+   MAP 
+   0x815A9C 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   zuend2_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x815A9C 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm_out2 
+    hfm2_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out2 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KFRI 
+"Lambda-Regler I-Anteil ueber gesamtem Betriebsbereich"
+   MAP 
+   0x815A9C 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   R_RI
+   0
+   1
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM DIRECT 0x815A9C 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    11 
+   0
+   6500
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   TL
+   R_TL
+    10 
+   0
+   20
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KF7 
+   "" 
+   MAP 
+   0x815BA6 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   zuend3_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x815BA6 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm_out3 
+    hfm3_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out3 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KFRTV 
+"TV-Kennfeld"
+   MAP 
+   0x815BA6 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   R_RTV
+   -2
+   2
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM DIRECT 0x815BA6 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    11 
+   0
+   6500
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   TL
+   R_TL
+    10 
+   0
+   20
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KF8 
+   "" 
+   MAP 
+   0x815CB0 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   warml1_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x815CB0 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot_out1 
+    tmot1_div32 
+    16 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out1 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC The_Only_MAP 
+"TV-Kennfeld"
+   MAP 
+   0x815CB0 
+   STANDARD_MAP_S16S16S16 
+   2047.0 
+   warml1_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM DIRECT 0x815CB0 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot_out1 
+    tmot1_div32 
+    16 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm_out1 
+    OneToOne 
+    10 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+
+
+
+
+  /begin CHARACTERISTIC KL_SwUw_ME7 
+   "" 
+   CURVE 
+   0x81176C 
+   STANDARD_CURVE_S16U16 
+   65535.0 
+   OneToOne 
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x81176C 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    KL_SwUw_in 
+    OneToOne 
+    5 
+    -32768.0 
+    32767.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL_UbSb_ME7 
+   "" 
+   CURVE 
+   0x8116D4 
+   STANDARD_CURVE_U8S8 
+   255.0 
+   OneToOne 
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8116D4 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    KL_UbSb_in 
+    OneToOne 
+    5 
+    0.0 
+    255.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL_UbUw_ME7 
+   "" 
+   CURVE 
+   0x8116F6 
+   STANDARD_CURVE_U8U16 
+   65535.0 
+   OneToOne 
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8116F6 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    KL_UbUw_in 
+    OneToOne 
+    5 
+    0.0 
+    255.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL_UwSb_ME7 
+   "" 
+   CURVE 
+   0x8116E0 
+   STANDARD_CURVE_U16S8 
+   255.0 
+   OneToOne 
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8116E0 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    KL_UwSb_in 
+    OneToOne 
+    5 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL_UwSw_ME7 
+   "" 
+   CURVE 
+   0x8117B6 
+   STANDARD_CURVE_U16S16 
+   65535.0 
+   OneToOne 
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8117B6 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    KL_UwSw_in 
+    OneToOne 
+    5 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL_UwUb_ME7 
+   "" 
+   CURVE 
+   0x8117A4 
+   STANDARD_CURVE_U16U8 
+   255.0 
+   OneToOne 
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8117A4 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    KL_UwUb_in 
+    OneToOne 
+    5 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL_UwUw_ME7 
+   "" 
+   CURVE 
+   0x8117CC 
+   STANDARD_CURVE_U16U16 
+   65535.0 
+   OneToOne 
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM DIRECT 0x8117CC 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    KL_UwUw_in 
+    OneToOne 
+    5 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL0 
+   "" 
+   CURVE 
+   0x811E48 
+   STANDARD_CURVE_U16U16 
+   65535 
+   OneToOne 
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM DIRECT 0x811E48 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    adIn0 
+    id 
+    11 
+    0 
+    65535 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL1 
+   "" 
+   CURVE 
+   0x811E16 
+   STANDARD_CURVE_U16U16 
+   65535 
+   OneToOne 
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM DIRECT 0x811E16 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    adIn1 
+    id 
+    11 
+    0 
+    65535 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL1_hfm 
+   "" 
+   CURVE 
+   0x811910 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   x_div_32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811910 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm 
+    OneToOne 
+    11 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL1_rpm 
+   "" 
+   CURVE 
+   0x81185C 
+   STANDARD_CURVE_U16S16 
+   65535.0 
+   OneToOne 
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x81185C 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm 
+    OneToOne 
+    10 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL1_tmot 
+   "" 
+   CURVE 
+   0x811800 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   tmot1_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811800 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot 
+    OneToOne 
+    11 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC FWTM 
+"Wichtungsfaktor fuer Kennfeldinterpolation"
+   CURVE 
+   0x811800 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   R_FWTM
+   0
+   1
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM DIRECT 0x811800 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   TMOT
+   R_TMOT
+    11 
+   -80
+   150
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL10 
+   "" 
+   CURVE 
+   0x811DBA 
+   STANDARD_CURVE_S16S16 
+   2047.0 
+   warml2_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811DBA 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot_out2 
+    tmot2_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL11 
+   "" 
+   CURVE 
+   0x811DE8 
+   STANDARD_CURVE_S16S16 
+   2047.0 
+   warml3_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811DE8 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot_out3 
+    tmot3_div32 
+    11 
+    -1024.0 
+    1023.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL2_hfm 
+   "" 
+   CURVE 
+   0x81182E 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   hfm2_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x81182E 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm 
+    OneToOne 
+    11 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL2_rpm 
+   "" 
+   CURVE 
+   0x81193E 
+   STANDARD_CURVE_U16S16 
+   65535.0 
+   OneToOne 
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x81193E 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm 
+    OneToOne 
+    10 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC WDLLN 
+"TL-Klopfschutzschwelle"
+   CURVE 
+   0x81193E 
+   STANDARD_CURVE_U16S16 
+   65535.0 
+   R_WDLLN
+   0
+   10
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM DIRECT 0x81193E 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    10 
+   0
+   6500
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL2_tmot 
+   "" 
+   CURVE 
+   0x811886 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   tmot2_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811886 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot 
+    OneToOne 
+    11 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL3_hfm 
+   "" 
+   CURVE 
+   0x8118E2 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   hfm3_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x8118E2 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    hfm 
+    OneToOne 
+    11 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL3_rpm 
+   "" 
+   CURVE 
+   0x811968 
+   STANDARD_CURVE_U16S16 
+   65535.0 
+   OneToOne 
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x811968 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    rpm 
+    OneToOne 
+    10 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC KL3_tmot 
+   "" 
+   CURVE 
+   0x8118B4 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   tmot3_div32 
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM DIRECT 0x8118B4 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+    tmot 
+    OneToOne 
+    11 
+    0.0 
+    65535.0 
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC TSPERN 
+"Sperrzeit P-Sprung"
+   CURVE 
+   0x8118B4 
+   STANDARD_CURVE_U16S16 
+   2047.0 
+   R_TSPERN
+   0
+   2
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM DIRECT 0x8118B4 
+   /begin AXIS_DESCR 
+    STD_AXIS 
+   N
+   R_N
+    11 
+   0
+   6500
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC Kp 
+   "" 
+   VALUE 
+   0x811E8C 
+   STANDARD_VALUE_U16 
+   511.99219 
+   x_div_128 
+   0.0 
+   511.99219 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM DIRECT 0x811E8C 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC MAX_ADIN0 
+   "" 
+   VALUE 
+   0x811E46 
+   STANDARD_VALUE_U16 
+   65535 
+   OneToOne 
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM DIRECT 0x811E46 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC MAX_ADIN1 
+   "" 
+   VALUE 
+   0x811E76 
+   STANDARD_VALUE_U16 
+   65535 
+   OneToOne 
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM DIRECT 0x811E76 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC OneD 
+   "" 
+   CURVE 
+   0x81053E 
+   STANDARD_FIXED_S16 
+   3.0 
+   x_div_4096 
+   -1.5 
+   1.5 
+   FUNCTION_LIST Sinus 
+   IF_DATA DIM DIRECT 0x81053E 
+   /begin AXIS_DESCR 
+    FIX_AXIS 
+    Sin_KN_in 
+    OneToOne 
+    360 
+    0.0 
+    361.0 
+    FIX_AXIS_PAR 0 0 360  
+   /end AXIS_DESCR 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC TI 
+   "" 
+   VALUE 
+   0x811E88 
+   STANDARD_VALUE_U16 
+   7.999872 
+   x_div_7812 
+   1.2800819e-004 
+   8.0 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM DIRECT 0x811E88 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC Tp 
+   "" 
+   VALUE 
+   0x811E8A 
+   STANDARD_VALUE_U16 
+   3.9990234 
+   x_div_4096 
+   9.765625e-004 
+   4.0 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM DIRECT 0x811E8A 
+  /end CHARACTERISTIC 
+  /begin CHARACTERISTIC wobble 
+   "" 
+   VALUE 
+   0x811F44 
+   STANDARD_VALUE_U8 
+   99 
+   OneToOne 
+   1 
+   100 
+   FUNCTION_LIST Taskmanager 
+   IF_DATA DIM DIRECT 0x811F44 
+  /end CHARACTERISTIC 
+  /begin MEASUREMENT adIn0 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer1_Ascan 
+   IF_DATA DIM 0xF64A INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT adIn1 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST ADC_Layer1_Ascan 
+   IF_DATA DIM 0xF64C INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT dT 
+   "" 
+   UWORD 
+   x_div_4096 
+   1 
+   100
+   0.0 
+   1.5 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF652 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT err_adIn0 
+   "" 
+   UBYTE 
+   identity 
+   1 
+   100
+   0 
+   1 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM 0xF648 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT err_adIn1 
+   "" 
+   UBYTE 
+   identity 
+   1 
+   100
+   0 
+   1 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM 0xF649 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hfm 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM 0xF644 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hfm_out1 
+   "" 
+   SWORD 
+   hfm1_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BBA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TL 
+   "Berechnete Last"
+   SWORD 
+   R_TL
+   1 
+   100
+   0
+   20
+   FUNCTION_LIST Zuendung
+   IF_DATA DIM 0x380BBA EXTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT hfm_out2 
+   "" 
+   SWORD 
+   hfm2_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BB2 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hfm_out3 
+   "" 
+   SWORD 
+   hfm3_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BBC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hilfsmessage 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -70000.0 
+   70000.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C8A EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hilfsmessage1 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C8E EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hilfsmessage2 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C92 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hilfsmessage3 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C96 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT hilfsmessage4 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C9A EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_11Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF656 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TEUKKL 
+   "Uek-te Kurz-,+Langzeitanteil vor FUKKL" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF656 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_11Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF68E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT DTVKA 
+   "Delta-tv fuer Katalysator-Ausraeumen"
+   SWORD 
+   TQ10OFP
+   1 
+   100
+   0
+   2
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF68E INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_11Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF668 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT ANZTIS 
+   "Anzahl ausgegebener TIs"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF668 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT ANZTIZ 
+   "Anzahl ausgegebener TIs"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF668 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_TIRED 
+   "dyn. Reduktion TI erlaubt"     
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF668 INTERN BYTE 
+   BIT_MASK 0x10
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_11Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF65E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_12Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF698 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TEUKKLM 
+   "Uek-te Kurz-,+Langzeitanteil nach FUKKL"
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF698 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT TEUKL 
+   " Zusatz-te Langzeitanteil"                                
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF698 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_12Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6A0 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT FLR_AP 
+   " add. Fettverschiebungs-Faktor "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF6A0 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_12Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF688 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_UKG 
+   "UKSEFI-internes Flag"  
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF688 INTERN BYTE 
+   BIT_MASK 0x20
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_12Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF666 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_13Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF694 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TEUKWM 
+   "Zusatz-te DK-Anteil"                            
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF694 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_13Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF69A INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT FR 
+   " Lambda-Regler "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF69A INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_13Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF68C INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT DTL 
+   "Last-Steigerung"       
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF68C INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_13Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF68A INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_14Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6B1 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_14Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6A8 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT FR2 
+   " Lambda-Regler "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF6A8 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_14Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF682 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT DTLW 
+   "Delta-Nebenlastsignal" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF682 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_14Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF69E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_15Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF670 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_15Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF654 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT FRPS 
+   " Speicher fuer FR+1 beim positiven Relaxationskoeffizienten "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF654 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_15Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF690 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_15Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6A6 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_21Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF67C INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_21Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF662 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TVLR 
+   " Summenwert fuer verzoegerte Reglerumschaltung tv "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF662 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_21Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6AB INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT E_DK 
+   "Drosselklappen-Poti defekt"   
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF6AB INTERN BYTE 
+   BIT_MASK 0x40
+  /end MEASUREMENT 
+  /begin MEASUREMENT SDTLW 
+   "DTLW-Speicher DK"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF6AB INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT SDWFK 
+   "Wandfilmspeicher Kurzzeitanteil"   
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF6AB INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_21Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF658 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TLW 
+   "Nebenlastsignal"                        
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF658 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT WF 
+   "akt. abs. Gesamt-Wandfilmmasse"
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF658 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_22Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF65A INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_22Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF66E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TVLR2 
+   " Summenwert fuer verzoegerte Reglerumschaltung tv "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF66E INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_22Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF67D INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_22Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6AE INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_23Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6AA INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_23Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF67A INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TVLRH 
+   " TV-Sperrzeit von Sonde hinter Kat "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF67A INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_23Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF65B INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_23Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6B4 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_24Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF65C INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_24Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF660 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TVLRH2 
+   " TV-Sperrzeit von Sonde hinter Kat "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF660 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_24Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF689 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_24Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6A2 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_25Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF664 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_25Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF680 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT USVK 
+   " Spannung Lambdasonde vor Kat, abgeglichen "
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0xF680 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_25Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6AC INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_25Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF672 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_31Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF69C INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_31Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF684 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_31Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF678 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT SDWFL 
+   "Wandfilmspeicher Langzeitanteil"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF678 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT TEUKG 
+   "Uek-te nach FUKM"                  
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF678 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT TEUKK 
+   "Zusatz-te Kurzzeitanteil"          
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST UKSEFI 
+   IF_DATA DIM 0xF678 INTERN BYTE 
+   BIT_MASK 0xFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_31Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6B6 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_32Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6B2 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_32Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF692 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_32Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6AD INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_32Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF686 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_33Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF674 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_33Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF66A INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_33Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF68D INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_33Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6A4 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_34Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6B8 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_34Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF67E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_34Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF6B0 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_34Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF66C INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_35Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF671 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_35Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF676 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_35Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF675 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT in_35Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0xF696 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT INPUT 
+   "" 
+   SWORD 
+   x256 
+   1 
+   100
+   -128.0 
+   127.99609 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM 0x380C4A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k1A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -70000.0 
+   70000.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C62 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k1B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C4E EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k1C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C76 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k2A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -70000.0 
+   70000.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C66 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k2B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C52 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k2C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C7A EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k3A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -70000.0 
+   70000.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C6A EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k3B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C56 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k3C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C7E EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k4A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -70000.0 
+   70000.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C6E EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k4B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C5A EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k4C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C82 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k5A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -70000.0 
+   70000.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C72 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k5B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C5E EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT k5C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C86 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal1A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381006 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal1B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x38100A EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal1C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x38100E EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal2A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381024 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal2B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381028 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal2C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x38102C EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal3A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381030 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal3B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381034 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal3C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381038 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal4A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF8 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal4B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FFC EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal4C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381000 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal5A 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381018 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal5B 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x38101C EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT kanal5C 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -8388608.0 
+   8388608.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381020 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbSb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B3 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbSb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B4 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbSw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B7 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbSw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B8 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbUb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B1 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbUb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B2 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbUw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B5 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSbUw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B6 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwSb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806CC EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwSb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806CE EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwSw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806D4 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwSw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806D6 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwUb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806C8 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwUb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806CA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwUw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806D0 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbSwUw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806D2 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbSb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806AB EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbSb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806AC EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbSw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806AF EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbSw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B0 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbUb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806A9 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbUb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806AA EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbUw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806AD EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUbUw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806AE EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwSb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806BC EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwSb_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806BE EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwSw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806C4 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwSw_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806C6 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwUb_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806B9 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwUb_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806BA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwUw_x_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806C0 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SbUwUw_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806C2 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbSb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38072C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbSb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38072E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbSw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380734 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbSw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380736 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbUb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380728 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbUb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38072A EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbUw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380730 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSbUw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380732 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwSb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38074C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwSb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38074E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwSw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380754 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwSw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380756 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwUb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380748 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwUb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38074A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwUw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380750 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwSwUw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380752 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbSb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38071C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbSb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38071E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbSw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380724 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbSw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380726 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbUb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380718 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbUb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38071A EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbUw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380720 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUbUw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380722 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwSb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38073C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwSb_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38073E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwSw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380744 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwSw_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380746 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwUb_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380738 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwUb_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38073A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwUw_x_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380740 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_SwUwUw_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380742 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbSb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38069E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbSb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380691 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbSw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38068D EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbSw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380689 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbUb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_FRMAX 
+   "Erstes FRMAX Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x80
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_FRMAX2 
+   "Zweites FRMAX Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x40
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_FRMIN 
+   "Erstes FRMIN Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x20
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_FRMIN2 
+   "Zweites FRMIN Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x10
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_LL 
+   "Leerlauf Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x80
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_SA 
+   "Schubabschalt Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x40
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_ST 
+   "Start Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x20
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_VL 
+   "Volllast Bit"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x10
+  /end MEASUREMENT 
+  /begin MEASUREMENT S_FS 
+   "Fahrstufen Schalter"
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380692 EXTERN BYTE 
+   BIT_MASK 0x80
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbUb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38068B EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_LR 
+   "Lamda-Regelung aktiv"
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x38068B EXTERN BYTE 
+   BIT_MASK 0x80
+  /end MEASUREMENT 
+  /begin MEASUREMENT B_LR2 
+   "Lamda-Regelung im Zwischenzustand"
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x38068B EXTERN BYTE 
+   BIT_MASK 0x40
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbUw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806A4 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSbUw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380683 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwSb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380685 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwSb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380696 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwSw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806A2 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwSw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380680 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwUb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38067C EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwUb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38069C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwUw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380684 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbSwUw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806A6 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbSb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806A8 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbSb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380682 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbSw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380690 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbSw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38068C EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbUb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380688 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbUb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380698 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbUw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380693 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUbUw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806A3 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwSb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38068E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwSb_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380686 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwSw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380694 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwSw_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806A0 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwUb_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38068F EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwUb_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38069A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwUw_x_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38068A EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UbUwUw_y_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38067E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbSb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806EC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbSb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806EE EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbSw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806F4 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbSw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806F6 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbUb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806E8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbUb_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806EA EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbUw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806F0 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSbUw_y_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806F2 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwSb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38070C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwSb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38070E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwSw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380714 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwSw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380716 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwUb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380708 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwUb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38070A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwUw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380710 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwSwUw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380712 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbSb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806DC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbSb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806DE EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbSw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806E4 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbSw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806E6 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbUb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806D8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbUb_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806DA EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbUw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806E0 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUbUw_y_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806E2 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwSb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806FC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwSb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806FE EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwSw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380704 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwSw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380706 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwUb_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806F8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwUb_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x3806FA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwUw_x_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380700 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KF_UwUwUw_y_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380702 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SbSb_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380758 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SbSw_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38075E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SbUb_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380765 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SbUw_in 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380763 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SwSb_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38075C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SwSw_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380768 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SwUb_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380766 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_SwUw_in 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38076A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UbSb_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380764 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UbSw_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38075A EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UbUb_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380759 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UbUw_in 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380762 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UwSb_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380760 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UwSw_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38076E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UwUb_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38076C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KL_UwUw_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380770 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT KN_in 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -200.0 
+   200.0 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381040 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT n 
+   "" 
+   UWORD 
+   id 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST engspeed_lev1 
+   IF_DATA DIM 0xF642 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT nr_of_rounds 
+   "" 
+   UWORD 
+   id 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST engspeed_lev2 
+   IF_DATA DIM 0xF63C INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT nr_rounds 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0xF636 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT OUTPUT 
+   "" 
+   SWORD 
+   x256 
+   1 
+   100
+   -128.0 
+   127.99609 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM 0x380C48 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT PI_in 
+   "" 
+   SWORD 
+   x256 
+   1 
+   100
+   -128.0 
+   127.99609 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM 0x380C42 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT PT2_in 
+   "" 
+   SLONG 
+   x256 
+   1 
+   100
+   -20000.0 
+   20000.0 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM 0x380C44 EXTERN LONG 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380627 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380628 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380626 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSbUw_Out_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF604 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38062F EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380632 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38062E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbSwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380630 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380621 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380624 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380620 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380622 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUwSb_Out_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF606 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38062C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380662 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSbUwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38062A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSbSb_Out_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF608 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380656 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380652 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380654 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38065D EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380660 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38065C EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwSwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38065E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38064D EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380650 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38064C EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38064E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380659 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38065A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380658 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFSwUwUw_Out_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF60A INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38060F EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RTV 
+   "RTV-Werte aus RTV-Kennfeld           "
+   SBYTE 
+   R_RTV
+   1 
+   100
+   -1
+   1
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x38060F EXTERN BYTE 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380612 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38060E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT LR_P_Anteil 
+   "Berechneter P-Anteil im Betriebspunkt"
+   UBYTE 
+   R_RP
+   1 
+   100
+   0
+   0
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x38060E EXTERN BYTE 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380610 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT LR_I_Anteil 
+   "Berechneter I_Anteil im Betriebspunkt"
+   UWORD 
+   R_RI
+   1 
+   100
+   0
+   1
+   FUNCTION_LIST LambdaRegelung 
+   IF_DATA DIM 0x380610 EXTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38061C EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38061A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSwUb_Out_i 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF602 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbSwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38061E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38060B EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUbSw_Out_i 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF600 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38060A EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38060C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380615 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380618 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380614 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUbUwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380616 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSbSb_Out_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF607 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38063E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38063A EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38063C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380645 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380648 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380644 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwSwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380646 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380635 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380638 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380634 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380636 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380641 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380642 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380640 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KFUwUwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38064A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380664 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380668 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38066F EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSbUw_Out_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF60E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSwSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380676 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38067A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380663 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLSwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380678 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUbSb_Out 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38066A EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUbSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380666 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUbUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38066E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUbUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x38066C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUwSb_Out_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0xF60C INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUwSw_Out 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380674 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUwUb_Out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380670 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT R_KLUwUw_Out 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST SignalmultiplexKF 
+   IF_DATA DIM 0x380672 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA11Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A58 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA11Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A5C EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA11Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A5E EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA11Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A5A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA12Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A67 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA12Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A6A EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA12Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A66 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA12Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A68 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA13Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A60 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA13Sw_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A64 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA13Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A5F EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA13Uw_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0x380A62 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA14Sb_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF62B INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA14Sw_i 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF62E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA14Ub_i 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF62A INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA14Uw_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF62C INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA15Sb_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF631 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA15Sw_i_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF634 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA15Ub_i 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF630 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RA15Uw_i_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferA 
+   IF_DATA DIM 0xF632 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB21Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x3808F7 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB21Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x3808FA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB21Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x3808F6 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB21Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x3808F8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB22Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF61D INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB22Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x380906 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB22Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x380902 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB22Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x380904 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB23Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF61C INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB23Sw_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x380900 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB23Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x3808FC EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB23Uw_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0x3808FE EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB24Sb_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF61F INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB24Sw_i 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF622 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB24Ub_i 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF61E INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB24Uw_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF620 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB25Sb_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF625 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB25Sw_i_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF628 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB25Ub_i 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF624 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RB25Uw_i_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferB 
+   IF_DATA DIM 0xF626 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC31Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807B5 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC31Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807B8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC31Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807B4 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC31Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807B6 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC32Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807C1 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC32Sw 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807C4 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC32Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807C0 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC32Uw 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807C2 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC33Sb 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807BB EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC33Sw_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807BE EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC33Ub 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807BA EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC33Uw_M 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0x3807BC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC34Sb_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF611 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC34Sw_i 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF614 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC34Ub_i 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF610 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC34Uw_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF612 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC35Sb_i 
+   "" 
+   SBYTE 
+   OneToOne 
+   1 
+   100
+   -128.0 
+   127.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF617 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC35Sw_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF61A INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC35Ub_i 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0.0 
+   255.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF616 INTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT RC35Uw_i 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST bufferC 
+   IF_DATA DIM 0xF618 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT rpm 
+   "" 
+   UWORD 
+   id 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST engspeed_lev2 
+   IF_DATA DIM 0xF63E INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT rpm_out1 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BB4 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT N 
+   "Motordrehzahl "
+   SWORD 
+   R_N
+   1 
+   100
+   0
+   6500
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380BB4 EXTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT rpm_out2 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BBE EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT rpm_out3 
+   "" 
+   SWORD 
+   OneToOne 
+   1 
+   100
+   -32768.0 
+   32767.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BC0 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc1 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CA8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc10 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CB0 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc11 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CB2 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc12 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CB4 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc13 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CB6 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc14 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CB8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc15 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CBA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc2 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CAA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc3 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CAC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc4 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CAE EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc5 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380C9E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc5_PI 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST PI2 
+   IF_DATA DIM 0x380C40 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc6 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CA0 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc7 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CA2 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc8 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CA4 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT sdisc9 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   1 
+   32768 
+   FUNCTION_LIST stim_buff1qh2 
+   IF_DATA DIM 0x380CA6 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT Sin_KN_in 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x38103E EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart1A 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x38103C EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart1B 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF6 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart1C 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381014 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart2A 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381005 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart2B 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF5 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart2C 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF2 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart3A 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF0 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart3B 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381004 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart3C 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381015 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart4A 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381012 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart4B 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF4 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart4C 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF1 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart5A 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x380FF3 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart5B 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381013 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT stimart5C 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Stim_buff3qh1_bypass 
+   IF_DATA DIM 0x381016 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT t 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   100 
+   FUNCTION_LIST Taskmanager 
+   IF_DATA DIM 0x380FE8 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT t_act 
+   "" 
+   UWORD 
+   id 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST engspeed_lev1 
+   IF_DATA DIM 0xF640 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT test_out 
+   "" 
+   UBYTE 
+   OneToOne 
+   1 
+   100
+   0 
+   255 
+   FUNCTION_LIST Taskmanager 
+   IF_DATA DIM 0x380FE9 EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT tmot_int 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0.0 
+   65535.0 
+   FUNCTION_LIST ADC_Layer2_Ascan 
+   IF_DATA DIM 0xF646 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT TMOT 
+   "Motortemperatur"   
+   UWORD 
+   R_TMOT
+   1 
+   100
+   -80
+   150
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0xF646 INTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT tmot_out1 
+   "" 
+   SWORD 
+   tmot1_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0xF638 INTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT tmot_out2 
+   "" 
+   SWORD 
+   tmot2_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BB6 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT tmot_out3 
+   "" 
+   SWORD 
+   tmot3_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BB8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT Warmlauf1 
+   "" 
+   SWORD 
+   warml1_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BC8 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT Warmlauf2 
+   "" 
+   SWORD 
+   warml2_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BCA EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT Warmlauf3 
+   "" 
+   SWORD 
+   warml3_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BCC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT x 
+   "" 
+   SBYTE 
+   identity 
+   1 
+   100
+   0 
+   1 
+   FUNCTION_LIST LED 
+   IF_DATA DIM 0x380BAE EXTERN BYTE 
+  /end MEASUREMENT 
+  /begin MEASUREMENT z_led 
+   "" 
+   UWORD 
+   OneToOne 
+   1 
+   100
+   0 
+   65535 
+   FUNCTION_LIST LED 
+   IF_DATA DIM 0x380BAC EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT Zuendwinkel1 
+   "" 
+   SWORD 
+   zuend1_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BC2 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT XWSTAT 
+   "Stationaerer Zuendwinkel"
+   SWORD 
+   R_ZW 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380BC2 EXTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT ZWOUT 
+   "Ausgegebener Zuendwinkel"
+   SWORD 
+   R_ZW 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST Zuendung 
+   IF_DATA DIM 0x380BC2 EXTERN WORD 
+   BIT_MASK 0xFFFF
+  /end MEASUREMENT 
+  /begin MEASUREMENT Zuendwinkel2 
+   "" 
+   SWORD 
+   zuend2_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BC4 EXTERN WORD 
+  /end MEASUREMENT 
+  /begin MEASUREMENT Zuendwinkel3 
+   "" 
+   SWORD 
+   zuend3_div32 
+   1 
+   100
+   -1024.0 
+   1023.0 
+   FUNCTION_LIST ignition_geb 
+   IF_DATA DIM 0x380BC6 EXTERN WORD 
+  /end MEASUREMENT 
+   /begin COMPU_METHOD TQ10OFP 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 100 128 0 0 1 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_N 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 1 0 0 0 1 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_TL 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 254 -254 0 0 1 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_RP 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 32767 0 0 0 16 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_RI 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 32767 0 0 0 10 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_RTV 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 1000 0 0 0 1 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_TSPERN 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 10000 0 0 0 1 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_USR 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 1000 406 0 0 6 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_FRMIN 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 32767 0 0 0 400 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_TLKL 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 10000 0 0 0 5038 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_WDLLN 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 10000 0 0 0 784 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_TMOT 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 1 50 0 0 1 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_ZW 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 9600 0 0 0 10 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_FWTM 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 10000 0 0 0 39 
+   /end COMPU_METHOD 
+   /begin COMPU_METHOD R_ONLY 
+   "" 
+   RAT_FUNC 
+   "%8.4"
+   "" 
+   COEFFS 0 1000 0 0 0 1 
+   /end COMPU_METHOD 
+  /begin COMPU_METHOD hfm1_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD hfm2_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD hfm3_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD id 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 1 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD identity 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 1 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD OneToOne 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 1 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD tmot1_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD tmot2_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD tmot3_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD warml1_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD warml2_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD warml3_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_1024 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 1024 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_128 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 128 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_32768 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32768 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_4096 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 4096 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_512 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 512 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_64 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 64 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_655 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 655 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_7812 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 7812 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_8 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 8 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x_div_8192 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 8192 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x100 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 100 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x1000 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 1000 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD x256 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 256 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD zuend1_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD zuend2_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin COMPU_METHOD zuend3_div32 
+   "" 
+   RAT_FUNC 
+   "%8.4" 
+   "" 
+   COEFFS 0 32 0 0 0 1 
+  /end COMPU_METHOD 
+  /begin FUNCTION ADC_Layer1_Ascan 
+   "ADC_Layer1_Ascan" 
+  /end FUNCTION 
+  /begin FUNCTION ADC_Layer2_Ascan 
+   "ADC_Layer2_Ascan" 
+  /end FUNCTION 
+  /begin FUNCTION bufferA 
+   "bufferA" 
+  /end FUNCTION 
+  /begin FUNCTION bufferB 
+   "bufferB" 
+  /end FUNCTION 
+  /begin FUNCTION bufferC 
+   "bufferC" 
+  /end FUNCTION 
+  /begin FUNCTION defbyKL1qh1 
+   "defbyKL1.1" 
+  /end FUNCTION 
+  /begin FUNCTION engspeed_lev1 
+   "engspeed_lev1" 
+  /end FUNCTION 
+  /begin FUNCTION engspeed_lev2 
+   "engspeed_lev2" 
+  /end FUNCTION 
+  /begin FUNCTION ignition_geb 
+   "ignition_geb" 
+  /end FUNCTION 
+  /begin FUNCTION LED 
+   "LED" 
+  /end FUNCTION 
+  /begin FUNCTION PI2 
+   "PI2" 
+  /end FUNCTION 
+  /begin FUNCTION SignalmultiplexKF 
+   "SignalmultiplexKF" 
+  /end FUNCTION 
+  /begin FUNCTION Sinus 
+   "Sinus" 
+  /end FUNCTION 
+  /begin FUNCTION stim_buff1qh2 
+   "stim_buff1.2" 
+  /end FUNCTION 
+  /begin FUNCTION Stim_buff3qh1_bypass 
+   "Stim_buff3.1_bypass" 
+  /end FUNCTION 
+  /begin FUNCTION Taskmanager 
+   "Taskmanager" 
+  /end FUNCTION 
+  /begin FUNCTION LambdaRegelung 
+    "Nicht kontinuierliche Lambda-Regelung mit einem Sensor"
+  /end FUNCTION
+  /begin FUNCTION Zuendung 
+    "Grundfunktion Zuendung"
+  /end FUNCTION
+  /begin FUNCTION UKSEFI 
+    "Uebergangskompensation fuer SEFI Wandfilmmodell"
+  /end FUNCTION
+  /begin RECORD_LAYOUT STANDARD_CURVE_S16S16 
+   FNC_VALUES 3 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_S16S8 
+   FNC_VALUES 3 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_S16U16 
+   FNC_VALUES 3 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_S16U8 
+   FNC_VALUES 3 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_S8S8 
+   FNC_VALUES 3 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_S8U16 
+   FNC_VALUES 3 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_S8U8 
+   FNC_VALUES 3 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U16S16 
+   FNC_VALUES 3 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U16S8 
+   FNC_VALUES 3 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U16U16 
+   FNC_VALUES 3 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U16U8 
+   FNC_VALUES 3 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U8S16 
+   FNC_VALUES 3 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U8S8 
+   FNC_VALUES 3 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U8U16 
+   FNC_VALUES 3 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_CURVE_U8U8 
+   FNC_VALUES 3 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 2 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_FIXED_S16 
+   FNC_VALUES 1 SWORD COLUMN_DIR DIRECT 
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16S8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S16U8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8S8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_S8U8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 SBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16S8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U16U8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UWORD INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8S8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 SBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U16S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U16S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U16U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U16U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UWORD INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U8S16 
+   FNC_VALUES 5 SWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U8S8 
+   FNC_VALUES 5 SBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U8U16 
+   FNC_VALUES 5 UWORD COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UWORD  
+   NO_AXIS_PTS_Y  2 UWORD  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_MAP_U8U8U8 
+   FNC_VALUES 5 UBYTE COLUMN_DIR DIRECT 
+   AXIS_PTS_X 3 UBYTE INDEX_INCR DIRECT 
+   AXIS_PTS_Y 4 UBYTE INDEX_INCR DIRECT 
+   NO_AXIS_PTS_X  1 UBYTE  
+   NO_AXIS_PTS_Y  2 UBYTE  
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_VALUE_S16 
+   FNC_VALUES 1 SWORD COLUMN_DIR DIRECT 
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_VALUE_S8 
+   FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT 
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_VALUE_U16 
+   FNC_VALUES 1 UWORD COLUMN_DIR DIRECT 
+  /end RECORD_LAYOUT 
+  /begin RECORD_LAYOUT STANDARD_VALUE_U8 
+   FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT 
+  /end RECORD_LAYOUT 
+ /end MODULE 
+/end PROJECT 

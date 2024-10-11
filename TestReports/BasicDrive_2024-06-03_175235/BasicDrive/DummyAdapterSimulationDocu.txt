@@ -1,0 +1,1 @@
+[-1ms BasicDrive:2]MODEL:-:Model Root/STATUS_BAT/StateOfCharge [%]/Value<READ>   70.0

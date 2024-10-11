@@ -1,0 +1,40 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          81.5GB/475.7GB
+Operating system:  Windows-10-10.0.22621
+Long path support: False
+-------------------------------------------------------------------------
+
+= 03.06.2024 17:52:36 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.2
+         - valid until: 2024-06-06
+         - licensed for: Eric
+         - Server: Eric
+
+
+2024-06-03 17:52:36.938 22460 ManagedWorker-3*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\package\engine\ExecutionMappingSpaceManager.py", line 525, in __CallRegisterXaObjects
+                        tt._Exceptions_.TTError: Error during initialization: Variable path 'Model Root/status_veh/vehicletractionstandby [0|1]/In1' does not exist!
+2024-06-03 17:52:37.010 22460 ManagedWorker-3*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 495, in FinalizeMainPackage
+                          File "tts\traceRecording\RecordingManager.py", line 1487, in FinishRecording
+                          File "tts\traceRecording\groups\SignalRecordingGroup.py", line 250, in FinishRecording
+                          File "tts\core\toolingFramework\interface\Recording.py", line 236, in FinishRecording
+                          File "tts\tooling\tool\ModelDummy\MODELDUMMY.py", line 559, in FinishRecording
+                          File "tts\core\toolingFramework\DummyAdapterSimulation.py", line 702, in FinishRecording
+                          File "tts\core\toolingFramework\DummyAdapterSimulation.py", line 716, in _CreateCsvRecording
+                        KeyError: 'Engine-Control[0x1a58c6d4850]'

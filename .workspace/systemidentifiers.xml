@@ -3,13 +3,19 @@
 	<PREDEFINED-KEYS xsi:type="predefinedKeys">
 		<PREDEFINED-BUS-KEYS>
 			<ELEMENT xsi:type="string">EPT-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">A-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">B-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">C-CAN</ELEMENT>
 		</PREDEFINED-BUS-KEYS>
 		<PREDEFINED-ECU-KEYS>
 			<ELEMENT xsi:type="string">Engine-Control</ELEMENT>
+			<ELEMENT xsi:type="string">test1</ELEMENT>
 			<ELEMENT xsi:type="string">Battery-Control</ELEMENT>
 		</PREDEFINED-ECU-KEYS>
 		<PREDEFINED-MODEL-KEYS>
 			<ELEMENT xsi:type="string">Plant model</ELEMENT>
+			<ELEMENT xsi:type="string">测试</ELEMENT>
 			<ELEMENT xsi:type="string">Implementation</ELEMENT>
 			<ELEMENT xsi:type="string">--------------------</ELEMENT>
 			<ELEMENT xsi:type="string">Umgebung</ELEMENT>

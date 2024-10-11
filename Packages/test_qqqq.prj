@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">afd794c73dbf11efaf5934cff6f2e990</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">BasicDrive</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">afd794c63dbf11efad3534cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 1</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">afe9469d3dbf11ef815634cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">50.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">8000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 2</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">afeb51d13dbf11ef8d2534cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">50.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">9000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 3</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">afed6c9a3dbf11ef802034cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">50.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">10000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 4</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">afeff0513dbf11efacf234cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">60.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">8000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 5</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">aff2105d3dbf11ef87fd34cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">60.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">9000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 6</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">aff43ce43dbf11ef80e234cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">60.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">10000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 7</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">aff866663dbf11efb51534cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">70.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">8000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 8</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">affaa4193dbf11ef910534cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">70.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">9000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+				<COMPONENT format-rev="4" xsi:type="paramRecord">
+					<NAME xsi:type="string">BasicDrive 9</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">affdbdd83dbf11efb2e334cff6f2e990</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">drvreq</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">70.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">timeout</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">10000.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">vehvel_tolerance</NAME>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">2.0</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">BasicDrive.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

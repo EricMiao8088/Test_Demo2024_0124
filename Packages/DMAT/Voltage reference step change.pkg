@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string">只运行数据分析模块</DESCRIPTION>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">SCR</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Active_Power</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Recative_Power</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">A</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">A</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Active_Po</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Reca_Po</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">SCR</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Segment signal</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">Segment signal</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Signal group</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Segment signal</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Signal group 2</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">A</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Signal group</NAME>
+				<UUID xsi:type="string">57f1ee5f701b11ef9f5534cff6f2e990</UUID>
+				<RECORDINGS>
+					<ELEMENT format-rev="2" xsi:type="recordingInfo">
+						<RECORDING-TYPE xsi:type="string">STZ</RECORDING-TYPE>
+						<PATHS>
+							<PATH xsi:type="fileReference">
+								<PATH xsi:type="string">Parameters/DMAT.stz</PATH>
+								<PATH-TYPE xsi:type="string">relTraces</PATH-TYPE>
+							</PATH>
+						</PATHS>
+						<RECORDING-NAME xsi:type="string">Recording</RECORDING-NAME>
+						<FORMAT-DETAILS xsi:type="string">50.0</FORMAT-DETAILS>
+					</ELEMENT>
+				</RECORDINGS>
+				<SIGNAL-GROUP-REF>Signal group</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Signal group 2</NAME>
+				<UUID xsi:type="string">b2b10e7c701b11ef9cab34cff6f2e990</UUID>
+				<RECORDINGS>
+					<ELEMENT format-rev="2" xsi:type="recordingInfo">
+						<RECORDING-TYPE xsi:type="string">CSV</RECORDING-TYPE>
+						<PATHS>
+							<PATH xsi:type="fileReference">
+								<PATH xsi:type="string">Parameters/Voltage reference step test.csv</PATH>
+								<PATH-TYPE xsi:type="string">relTraces</PATH-TYPE>
+							</PATH>
+						</PATHS>
+						<RECORDING-NAME xsi:type="string">default</RECORDING-NAME>
+						<FORMAT-DETAILS xsi:type="string">columnSeparator: ',', decimalSeparator: '.', thousandSeparator: ',', headLineNumber: '0', timeColumn: '0'</FORMAT-DETAILS>
+					</ELEMENT>
+				</RECORDINGS>
+				<SIGNAL-GROUP-REF>Signal group 2</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="424ecbda-db6f-4884-84f8-ff88b6c44d8d" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">X_R</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="032838aa-7085-4ac6-9003-c21d171b179d" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">SCR值</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="cffca4ae-44e2-4ef4-927c-e3b795fa648b" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">SCR</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">SCR</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="fa51d097-65da-4fea-a5b2-2ba78af4b64b" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">Active_Power</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="2a11bcfd-0fe0-4acd-898e-bf549b61b74e" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Active_Po</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Active_Power</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="642db4c8-54eb-4898-abfd-1def21451f2d" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">Recative_Power</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="6189f9d6-ada1-420f-b24f-82fc352a5968" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Reca_Po</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Recative_Power</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="ff7eb531701911efbaf434cff6f2e990" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="ff7eb532701911ef9afe34cff6f2e990" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM format-rev="4" uuid="bd43fba8701b11ef888734cff6f2e990" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">Voltage_reference_5_Percent</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">Target_Voltage_reference</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="b9e18fdc701b11efbec234cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Voltage_reference_5_Percent</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Segment signal</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">57f1ee5f701b11ef9f5534cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="ba090d68701b11efad2c34cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Target_Voltage_reference</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">A</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">b2b10e7c701b11ef9cab34cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2020.4.105605+9fffb455971e" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">sw</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">db</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">samedb1</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">samedb2</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">testValues_list</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">tolerance</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">CAN_Signal</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Flag_samedb2</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">block_name</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="8240cd98-dd92-402e-973d-b9ebc32437f1" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">{block_name}</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+		</TESTSTEP>
+		<TESTSTEP id="a43b0187-1ee8-4fa3-9e46-aafba8cc2577" name="TsWriteByReference" xsi:type="utility-327c608f-2728-11dd-874f-001a6bc47c7f">
+			<MAPPING-EXPRESSION xsi:type="varBaseExpression">
+				<NAME xsi:type="string">sw</NAME>
+			</MAPPING-EXPRESSION>
+			<VALUE xsi:type="expressionValue">
+				<DATA format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">1</VALUE>
+				</DATA>
+			</VALUE>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string"/>
+			</METRIC>
+		</TESTSTEP>
+		<TESTSTEP id="d7ec4b99-6434-4fad-bc78-f834ff0c31b3" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+			<TESTSTEP id="6de3a7f9-9777-4c2e-9e92-ffd7b24af40e" name="TsWriteByReference" xsi:type="utility-327c608f-2728-11dd-874f-001a6bc47c7f">
+				<MAPPING-EXPRESSION xsi:type="varBaseExpression">
+					<NAME xsi:type="string">db</NAME>
+				</MAPPING-EXPRESSION>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">testValues_list</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">loopCounter</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</SECOND-COMPONENT>
+						</SECOND-COMPONENT>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string"/>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="53175874-d599-4b17-a889-e48bd527d7ff" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">200</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="6fd61cb6-3d71-4fd6-bddd-1ba31f339ec5" name="TsReadByReference" xsi:type="utility-c5b17340-266b-11dd-9948-001a6bc47c7f">
+				<MAPPING-EXPRESSION xsi:type="varBaseExpression">
+					<NAME xsi:type="string">samedb1</NAME>
+				</MAPPING-EXPRESSION>
+				<EXPECTATION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">testValues_list</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">loopCounter</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</SECOND-COMPONENT>
+						</VALUE>
+						<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+							<VALUE xsi:type="varBaseExpression">
+								<NAME xsi:type="string">tolerance</NAME>
+							</VALUE>
+						</TOLERANCE>
+					</EXPRESSION>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string"/>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="dd7b2636-11d4-4596-acc8-2739ebd8f8c2" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+				<CONDITION xsi:type="compareOpBaseExpression">
+					<NAME xsi:type="string">==</NAME>
+					<FIRST-COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Flag_samedb2</NAME>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1</VALUE>
+					</SECOND-COMPONENT>
+				</CONDITION>
+				<THEN id="94132126-c043-4555-8a46-f7f623e2c214" xsi:type="ifThenElseNode">
+					<TESTSTEP id="abefc8ad-036a-42d4-853b-11b59e9003b2" name="TsReadByReference" xsi:type="utility-c5b17340-266b-11dd-9948-001a6bc47c7f">
+						<MAPPING-EXPRESSION xsi:type="varBaseExpression">
+							<NAME xsi:type="string">samedb2</NAME>
+						</MAPPING-EXPRESSION>
+						<EXPECTATION xsi:type="timelessOption">
+							<EXPRESSION xsi:type="builtNumericExpression">
+								<RELATION xsi:type="string">==</RELATION>
+								<VALUE xsi:type="binaryOpBaseExpression">
+									<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+									<FIRST-COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="string">testValues_list</NAME>
+									</FIRST-COMPONENT>
+									<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+										<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+										<FIRST-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">loopCounter</NAME>
+										</FIRST-COMPONENT>
+										<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+											<VALUE xsi:type="integer">1</VALUE>
+										</SECOND-COMPONENT>
+									</SECOND-COMPONENT>
+								</VALUE>
+								<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+									<VALUE xsi:type="varBaseExpression">
+										<NAME xsi:type="string">tolerance</NAME>
+									</VALUE>
+								</TOLERANCE>
+							</EXPRESSION>
+						</EXPECTATION>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string"/>
+						</METRIC>
+					</TESTSTEP>
+				</THEN>
+				<ELSE id="0fa9c3b3-577b-42b0-aa00-e011cb60cbe8" xsi:type="ifThenElseNode">
+					<TESTSTEP format-rev="3" id="e0e3696e-6aa9-4bd0-9359-ae3fc88243c6" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+						<ACTION xsi:type="I18NItem">
+							<MULTILANGDATA>
+								<ELEMENT dkey="en_US">
+									<DVALUE xsi:type="string">samedb2 is empty！</DVALUE>
+								</ELEMENT>
+							</MULTILANGDATA>
+							<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+						</ACTION>
+					</TESTSTEP>
+				</ELSE>
+			</TESTSTEP>
+			<TESTSTEP id="d95d111a-0602-44ec-baa7-3802fbc225bf" name="TsReadByReference" xsi:type="utility-c5b17340-266b-11dd-9948-001a6bc47c7f">
+				<MAPPING-EXPRESSION xsi:type="varBaseExpression">
+					<NAME xsi:type="string">CAN_Signal</NAME>
+				</MAPPING-EXPRESSION>
+				<EXPECTATION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">testValues_list</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">loopCounter</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</SECOND-COMPONENT>
+						</VALUE>
+						<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+							<VALUE xsi:type="varBaseExpression">
+								<NAME xsi:type="string">tolerance</NAME>
+							</VALUE>
+						</TOLERANCE>
+					</EXPRESSION>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string"/>
+				</METRIC>
+			</TESTSTEP>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">loopCounter</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<LOOP-COUNT xsi:type="functionBaseExpression">
+				<COMPONENT xsi:type="varBaseExpression">
+					<NAME xsi:type="string">len</NAME>
+				</COMPONENT>
+				<ARGUMENTS>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">testValues_list</NAME>
+					</ARGUMENT>
+				</ARGUMENTS>
+			</LOOP-COUNT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

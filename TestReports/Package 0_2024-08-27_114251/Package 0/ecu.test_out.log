@@ -1,0 +1,53 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 27.08.2024 11:42:51 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-26
+         - licensed for: Turing
+
+
+2024-08-27 11:42:51.580 7288 ManagedWorker-3*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-08-27 11:42:51.590 7288 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-08-27 11:42:51.593 7288 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-27 11:42:51.627 7288 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2024-08-27 11:42:51.637 7288 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-27 11:42:51.659 7288 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-08-27 11:42:51.707 7288 ManagedWorker-3*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 0" -> "Trace analysis 1")
+2024-08-27 11:42:51.728 7288 ManagedWorker-3*PE.Run() DEBUG:
+                        Performing episode ...
+2024-08-27 11:42:51.729 7288 ManagedWorker-3*PE.Run() DEBUG:
+                        
+2024-08-27 11:42:51.803 7288 ManagedWorker-3*PE.Run() ERROR:
+                        tts.traceAnalysis.common.steps.templates.trcpNumpy.TrcpNumpyExec.Eval: KeyError: Signal <'Signal_A'(out:False, bound:True, found:True, unit:rpm): ([4.77873400e-03 9.60716700e-03 1.46515900e-02 ... 6.87450938e+00
+ 6.87936978e+00 6.88455819e+00], [1509. 1509. 1509. ...   14.   14.   14.])>
+2024-08-27 11:42:51.818 7288 ManagedWorker-3*PE.Run() DEBUG:
+                        Episode completed
+2024-08-27 11:42:51.819 7288 ManagedWorker-3*PE.Run() DEBUG:
+                        
+2024-08-27 11:42:51.896 7288 ManagedWorker-3*PE.Run() ERROR:
+                        Runtime error in template method "Process", line 127: KeyError: Signal <'Signal_A'(out:False, bound:True, found:True, unit:rpm): ([4.77873400e-03 9.60716700e-03 1.46515900e-02 ... 6.87450938e+00
+ 6.87936978e+00 6.88455819e+00], [1509. 1509. 1509. ...   14.   14.   14.])>

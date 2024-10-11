@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="12fa14e0-f780-46d1-abca-0ef86ded06dc" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<FORMULA xsi:type="functionBaseExpression">
+				<COMPONENT xsi:type="varBaseExpression">
+					<NAME xsi:type="string">max</NAME>
+				</COMPONENT>
+				<ARGUMENTS>
+					<ARGUMENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1</VALUE>
+					</ARGUMENT>
+					<ARGUMENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">2</VALUE>
+					</ARGUMENT>
+					<ARGUMENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">3</VALUE>
+					</ARGUMENT>
+				</ARGUMENTS>
+			</FORMULA>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

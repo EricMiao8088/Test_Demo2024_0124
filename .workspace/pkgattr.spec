@@ -67,7 +67,7 @@
 				</ELEMENT>
 				<ELEMENT format-rev="1" xsi:type="anTreeNodeDef">
 					<VALUE-LIST>
-						<VALUE xsi:type="string">For Review_Test</VALUE>
+						<VALUE xsi:type="string">For Review</VALUE>
 					</VALUE-LIST>
 				</ELEMENT>
 				<ELEMENT format-rev="1" xsi:type="anTreeNodeDef">

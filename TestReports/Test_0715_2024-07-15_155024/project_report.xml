@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT-REPORT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PRJ-PATH xsi:type="string">\Packages\test\Test_0715.prj</PRJ-PATH>
+	<ROOT-NODE xsi:type="projectRootTreeNode">
+		<SOURCE-PATH xsi:type="string">C:/ET2024_2/2_ECU-TEST_Advanced/Packages/test/Test_0715.prj</SOURCE-PATH>
+		<NAME xsi:type="string">Project</NAME>
+		<RESULT-ID xsi:type="integer">4</RESULT-ID>
+		<CHILDREN>
+			<CHILD xsi:type="projectComponentPackageRef">
+				<SOURCE-PATH xsi:type="string">C:/ET2024_2/2_ECU-TEST_Advanced/Packages/test/Test_0715.pkg</SOURCE-PATH>
+				<NAME xsi:type="string">Test_0715</NAME>
+				<RESULT-ID xsi:type="integer">4</RESULT-ID>
+				<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+				<CHILDREN>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 1</NAME>
+						<RESULT-ID xsi:type="integer">4</RESULT-ID>
+						<EXEC-STATE xsi:type="integer">3</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 2</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 3</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 4</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 5</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 6</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 7</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 8</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 9</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 10</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 11</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 12</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 13</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 14</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 15</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 16</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 17</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 18</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 19</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+					<CHILD xsi:type="projectComponentParamaterSet">
+						<NAME xsi:type="string">Test_0715 20</NAME>
+						<EXEC-STATE xsi:type="integer">0</EXEC-STATE>
+					</CHILD>
+				</CHILDREN>
+			</CHILD>
+		</CHILDREN>
+	</ROOT-NODE>
+	<TRF-PATH xsi:type="string">C:/ET2024_2/2_ECU-TEST_Advanced/TestReports/Test_0715_2024-07-15_155024/Test_0715.prf</TRF-PATH>
+</PROJECT-REPORT>

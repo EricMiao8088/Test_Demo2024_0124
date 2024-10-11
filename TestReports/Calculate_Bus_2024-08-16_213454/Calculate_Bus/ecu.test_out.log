@@ -1,0 +1,61 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.1GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 16.08.2024 21:34:54 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-04
+         - licensed for: Turing
+
+
+2024-08-16 21:34:54.962 21552 ManagedWorker-3*PE.Run() INFO:
+                        Start package 'Calculate_Bus.pkg' with test case execution with sequential analysis job execution
+2024-08-16 21:34:55.011 21552 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Calculate_Bus" started
+2024-08-16 21:34:55.109 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-16 21:34:55.160 21552 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2024-08-16 21:34:55.170 21552 ManagedWorker-3*PE.Run() INFO:
+                        1. Recording for Recording group for B-CAN started
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Calculate_Bus.pkg"#1
+2024-08-16 21:35:03.459 21552 ManagedWorker-3*PE.Run() INFO:
+                        1. Recording for Recording group for B-CAN stopped
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Calculate_Bus.pkg"#4
+2024-08-16 21:35:03.523 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-16 21:35:03.619 21552 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Calculate_Bus" completed
+2024-08-16 21:35:03.710 21552 ManagedWorker-3*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Calculate_Bus.pkg" -> "Trace analysis 1")
+2024-08-16 21:35:03.724 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        Performing episode ...
+2024-08-16 21:35:03.725 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        
+2024-08-16 21:35:03.737 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        [100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201, 100, 201]
+2024-08-16 21:35:03.743 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        
+2024-08-16 21:35:03.752 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        69
+2024-08-16 21:35:03.760 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        
+2024-08-16 21:35:03.769 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        Episode completed
+2024-08-16 21:35:03.778 21552 ManagedWorker-3*PE.Run() DEBUG:
+                        

@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TOOLING format-rev="2" prog-version="2023.2.2.137691+20a8f1cbb54d" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+	<TOOL-HOSTS>
+		<TOOL-HOST xsi:type="toolHost">
+			<URL xsi:type="string">local</URL>
+			<PLATFORM xsi:type="string">Windows</PLATFORM>
+			<BASE-PATH xsi:type="string">&lt;workspace&gt;</BASE-PATH>
+		</TOOL-HOST>
+	</TOOL-HOSTS>
+	<TOOLS>
+		<TOOL id="VECTOR-HW01" xsi:type="tool">
+			<TOOL-HOST xsi:type="string">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="string">VECTOR-HW</TOOL-NAME>
+			<START-OPTION xsi:type="integer">2</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet"/>
+		</TOOL>
+	</TOOLS>
+	<PORTS>
+		<PORT format-rev="2" id="DIAG-DOIP01" toolId="VECTOR-HW01" xsi:type="port">
+			<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+				<NAME xsi:type="string">DIAGNOSTICS</NAME>
+			</PORT-TYPE-ID>
+			<IMPL-TYPE-ID xsi:type="string">DOIP</IMPL-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="cliMac" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">B4:45:06:40:2C:7B</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="devGw" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">0.0.0.0</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="devIp" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">172.17.8.31</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="devPrefixLength" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">16</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="port" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">Ethernet1:Port13</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</PORT>
+	</PORTS>
+	<TOOL-DESCRIPTORS>
+		<TOOL-DESCRIPTOR dkey="VECTOR-HW01">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="string">VECTOR-HW</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">BUSACCESS</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CAN</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW access to CAN</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CAN_MANIP</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW-manipulation for CAN</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CAN-FD</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW access to CAN FD</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CAN-FD_MANIP</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW-manipulation for CAN</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">LIN</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW access to LIN</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">LIN_MANIP</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW-manipulation for LIN</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">FLX</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW access to FLX</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">FLX_MANIP</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW manipulation on FLX</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">SOCKET-ADAPTOR</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Read access to AUTOSAR PDUs transmitted via SocketAdaptor.</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">DIAGNOSTICS</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CAN</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW Diagnostics</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CAN-FD_TOLERANT</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW diagnostics with CAN frames on a CAN FD bus</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CAN-FD</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW Diagnostics</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">FLX</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW Diagnostics</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">J1939</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">VECTOR-HW access to J1939 via CAN. Component of the ECU-TEST diagnostics add-on</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">DOIP</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Diagnostic port based on the DoIP protocol via a VN56xx device Component of the ECU-TEST diagnostics add-on</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">ELECTRICERRORSIM</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">CANWAY</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">CAN-Controller for CANWAY-FIU</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">SERVICEACCESS</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">ETHERNET-RAW</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">ETHERNET OSI layer 2 communication</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">SERVICE</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Port to actively support Ethernet services based on a LwIP-based network stack</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">SERVICE-PASSIVE</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Port for passive support of ethernet services</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">ARP</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Responds on ARP requests</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">UDP-SOCKET</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">UDP network stack based on LwIP</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">TCP-SERVER-SOCKET</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">TCP server network stack based on LwIP</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">TCP-CLIENT-SOCKET</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">TCP client network stack based on LwIP</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">UDP-RAW</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">UDP low level communication</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">ICMP-RAW</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">ICMP low level communication</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">RECORDING-PCAP</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Recording in PCAP format</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">LOGGING</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">DLT-VERBOSE</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Access to DLT verbose messages</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">hardware</NAME>
+						<DISPLAY-NAME xsi:type="string">Hardware</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Choose the hardware which should be used</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">Name: VN5650 SerialNumber: 878 Capabilities: CAN DAIO ETHERNET (878)</ELEMENT>
+							<ELEMENT xsi:type="string">Name: Virtual CAN SerialNumber: 0 Capabilities: CAN (0)</ELEMENT>
+							<ELEMENT xsi:type="string">Entry &quot;ECU-TEST&quot; in Vector Hardware Config (-1)</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">Name: VN5650 SerialNumber: 878 Capabilities: CAN DAIO ETHERNET (878)</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">Debug</NAME>
+						<DISPLAY-NAME xsi:type="string">Debug</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">False</DEFAULT>
+						<READONLY xsi:type="boolean">True</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet"/>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+	</TOOL-DESCRIPTORS>
+	<PORT-DESCRIPTORS>
+		<PORT-DESCRIPTOR dkey="DIAG-DOIP01">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+					<NAME xsi:type="string">DIAGNOSTICS</NAME>
+				</PORT-TYPE-ID>
+				<IMPL-TYPE-ID xsi:type="string">DOIP</IMPL-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">PollInterval</NAME>
+						<DISPLAY-NAME xsi:type="string">Poll interval</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Period [ms] in which the availability of pending diagnostic responses is being checked</DESCRIPTION>
+						<TYPE xsi:type="string">int</TYPE>
+						<DEFAULT xsi:type="string">200</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">port</NAME>
+						<DISPLAY-NAME xsi:type="string">Port</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Name of the port inside a network. In Vector Hardware Config, the network-based mode must be activated.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">Ethernet1:Port13</ELEMENT>
+						</DOMAIN>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">cliMac</NAME>
+						<DISPLAY-NAME xsi:type="string">MAC address (client)</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">String (format: 02:00:4C:4F:4F:50), 'default' if the adapter MAC address should be uesd</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DEFAULT xsi:type="string">02:00:4C:4F:4F:50</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">proto</NAME>
+						<DISPLAY-NAME xsi:type="string">IP version</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Selection of the IP version used</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">IPv4</ELEMENT>
+							<ELEMENT xsi:type="string">IPv6</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">IPv4</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">devIp</NAME>
+						<DISPLAY-NAME xsi:type="string">IP address (client)</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">IP address to be used by the client</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">devGw</NAME>
+						<DISPLAY-NAME xsi:type="string">Gateway address</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">IP address, leave empty if no gateway is needed</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">devPrefixLength</NAME>
+						<DISPLAY-NAME xsi:type="string">Subnet mask / prefix length</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">For IPv4 subnet mask or prefix length (format: '255.255.255.0' or '24'), 'default' to use the default subnet mask.
+For IPv6 only prefix length is supported. 'default' is not possible.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DEFAULT xsi:type="string">default</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">vlanId</NAME>
+						<DISPLAY-NAME xsi:type="string">VLAN ID</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">ID with which VLAN packets should be tagged. (0 -&gt; VLAN is not used)</DESCRIPTION>
+						<TYPE xsi:type="string">int</TYPE>
+						<DEFAULT xsi:type="string">0</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">CloseSession</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of diagnostic session - Integer</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Closes a diagnostic session</DESCRIPTION>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">CallService</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Request</NAME>
+								<DESCRIPTION xsi:type="string">Diagnostic request to be sent - ByteStream</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of diagnostic session - Integer</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Calls a diagnostic service</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ClearDTCs</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">GroupOfDTC</NAME>
+								<DESCRIPTION xsi:type="string">Number of the DTC or DTC group to clear (default: 0xFFFFFF = all DTCs)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFFFFFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Clears the specified DTCs.
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportNumberOfDTCByStatusMask</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StatusMask</NAME>
+								<DESCRIPTION xsi:type="string">Status mask: Only DTCs having at least one of the status bits specified in the mask set are queried. (default: 0xFF = any status)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x01
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportDTCByStatusMask</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StatusMask</NAME>
+								<DESCRIPTION xsi:type="string">Status mask: Only DTCs having at least one of the status bits specified in the mask set are queried. (default: 0xFF = any status)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x02
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportDTCSnapshotIdentification</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x03
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportSupportedDTCs</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x0A
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportFirstTestFailedDTC</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x0B
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportFirstConfirmedDTC</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x0C
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportMostRecentTestFailedDTC</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x0D
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportMostRecentConfirmedDTC</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x0E
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportMirrorMemoryDTCByStatusMask</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StatusMask</NAME>
+								<DESCRIPTION xsi:type="string">Status mask: Only DTCs having at least one of the status bits specified in the mask set are queried. (default: 0xFF = any status)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x0F
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportNumberOfMirrorMemoryDTCByStatusMask</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StatusMask</NAME>
+								<DESCRIPTION xsi:type="string">Status mask: Only DTCs having at least one of the status bits specified in the mask set are queried. (default: 0xFF = any status)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x11
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportNumberOfEmissionsOBDDTCByStatusMask</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StatusMask</NAME>
+								<DESCRIPTION xsi:type="string">Status mask: Only DTCs having at least one of the status bits specified in the mask set are queried. (default: 0xFF = any status)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x12
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportEmissionsOBDDTCByStatusMask</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StatusMask</NAME>
+								<DESCRIPTION xsi:type="string">Status mask: Only DTCs having at least one of the status bits specified in the mask set are queried. (default: 0xFF = any status)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x13
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportDTCFaultDetectionCounter</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x14
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportDTCWithPermanentStatus</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x15
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">List of DTCs - :api:`DTCListDiagResult &lt;general_api/diagdatastructures.html#tts.testModule.diag.diagObjects.DTCResult.DTCListDiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DTCListDiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReportUserDefMemoryDTCByStatusMask</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">MemorySelection</NAME>
+								<DESCRIPTION xsi:type="string">User-defined DTC memory: Only DTCs stored in the selected memory will be retrieved. </DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">StatusMask</NAME>
+								<DESCRIPTION xsi:type="string">Status mask: Only DTCs having at least one of the status bits specified in the mask set are queried. (default: 0xFF = any status)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0xFF</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDTCInformation (0x19) subfunction 0x17
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RequestSeed</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SecurityLevel</NAME>
+								<DESCRIPTION xsi:type="string">Security level: odd number between 0x01 and 0x7D</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataRecord</NAME>
+								<DESCRIPTION xsi:type="string">DataRecord: optional, to send data in the requst (default: None)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">SecurityAccess (0x27) subfunction requestSeed
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">SendKey</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SecurityLevel</NAME>
+								<DESCRIPTION xsi:type="string">Security Level: even number between 0x02 and 0x7E (= SecurityLevel from RequestSeed + 1)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SecurityKey</NAME>
+								<DESCRIPTION xsi:type="string">Key derived from the seed</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">SecurityAccess (0x27) subfunction sendKey
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReadDataByIdentifier</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataIdentifier</NAME>
+								<DESCRIPTION xsi:type="string">Identifier - Integer (2Byte)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadDataByIdentifier (0x22) service
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">WriteDataByIdentifier</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataIdentifier</NAME>
+								<DESCRIPTION xsi:type="string">Identifier - Integer (2Byte)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataRecord</NAME>
+								<DESCRIPTION xsi:type="string">Data record to be written</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">WriteDataByIdentifier (0x2E) service
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReadMemoryByAddress</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">MemoryAddress</NAME>
+								<DESCRIPTION xsi:type="string">Memory address</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">MemorySize</NAME>
+								<DESCRIPTION xsi:type="string">Length of the data to read</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ReadMemoryByAddress (0x23) service
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RoutineControl</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">RoutineId</NAME>
+								<DESCRIPTION xsi:type="string">ID of the routine</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Subfunction</NAME>
+								<DESCRIPTION xsi:type="string">Subfunction: Start (0x01), Stop (0x02), Request (0x03)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">1</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">RoutineOptionRecord</NAME>
+								<DESCRIPTION xsi:type="string">Routine parameters (optional)</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">hasRoutineInfo</NAME>
+								<DESCRIPTION xsi:type="string">optional</DESCRIPTION>
+								<TYPE xsi:type="string">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">False</ELEMENT>
+									<ELEMENT xsi:type="string">True</ELEMENT>
+								</DOMAIN>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">RoutineControl (0x31) subfunction startRoutine
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ECUReset</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Subfunction</NAME>
+								<DESCRIPTION xsi:type="string">Reset-subfunction to be executed</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">ECUReset (0x11) service
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">WriteMemoryByAddress</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">MemoryAddress</NAME>
+								<DESCRIPTION xsi:type="string">Start address for the data to write</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">MemorySize</NAME>
+								<DESCRIPTION xsi:type="string">Number of Bytes to be written</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataRecord</NAME>
+								<DESCRIPTION xsi:type="string">Data to be written</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">WriteMemoryByAddress (0x3D) service
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">InputOutputControlByIdentifier</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">DataIdentifier</NAME>
+								<DESCRIPTION xsi:type="string">Identifier - Integer (2Byte)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">InputOutputControlParameter</NAME>
+								<DESCRIPTION xsi:type="string">Type of control according to ISO 14229-1 Annex 1.e - Integer (1 Byte):
+0 = returnControlToECU,
+1 = resetToDefault,
+2 = freezeCurrentState,
+3 = shortTermAdjustment</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">ControlStateRecord</NAME>
+								<DESCRIPTION xsi:type="string">DataRecord for Control type &quot;shortTermAdjustment&quot;</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">ControlEnableMaskRecord</NAME>
+								<DESCRIPTION xsi:type="string">bit mask specifying the parameters to adjust in case of shortTermAdjustment. ISO 14229-1 says to use this only if the DID consists of more than one parameter.</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">SessionId</NAME>
+								<DESCRIPTION xsi:type="string">Handle of the diagnostic session</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">Timeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout (ms) after which the diagnostic system aborts waiting for diagnostic response (optional) - Integer (&gt;=0)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">InputOutputControlByIdentifier (0x2F) service
+
+This job is part of the ECU-TEST diagnostics add-on.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">Return</NAME>
+							<DESCRIPTION xsi:type="string">Result of diagnose service call - :api:`DiagResult &lt;general_api/diagdatastructures.html#ttRawDiag.diag.DiagResult.DiagResult&gt;` - or :api:`NegativeResponse &lt;general_api/diagdatastructures.html#tts.tooling.common.genericBusAccess.busHw.diag.NegativeResponse.NegativeResponse&gt;`</DESCRIPTION>
+							<TYPE xsi:type="string">DiagResult</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RestartDefaultSession</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Restarts the diagnostic session set up in the test configuration.</DESCRIPTION>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">OpenDoIpSession</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">targetIp</NAME>
+								<DESCRIPTION xsi:type="string">IP address of the DoIP entity</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">eid</NAME>
+								<DESCRIPTION xsi:type="string">ID of the DoIP entity to which a connection is to be established. If specified, a vehicle identification request is sent to this ID to establish the connection. If not, a general vehicle identification request is sent and a connection is established with the first responding control unit.</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<DEFAULT xsi:type="string">ByteStream('')</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">targetAddress</NAME>
+								<DESCRIPTION xsi:type="string">The diagnostic address of the DoIP entity. If specified, no vehicle identification request is sent and UDS requests are sent directly to this address.</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<DEFAULT xsi:type="string">ByteStream('')</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">sourceAddress</NAME>
+								<DESCRIPTION xsi:type="string">The diagnostic address from which diagnostic messages are sent</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">remotePort</NAME>
+								<DESCRIPTION xsi:type="string">Destination port on which the DoIP entity receives diagnostic requests</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">13400</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">listenPort</NAME>
+								<DESCRIPTION xsi:type="string">port on which to expect responses from the DoIP entity.</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">doIpVersion</NAME>
+								<DESCRIPTION xsi:type="string">Version of the DoIP protocol</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">2</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">activateRouting</NAME>
+								<DESCRIPTION xsi:type="string">Indicates whether the DoIP entity shall forward diagnostic messages to an internal device - Boolean</DESCRIPTION>
+								<TYPE xsi:type="string">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">False</ELEMENT>
+									<ELEMENT xsi:type="string">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">False</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">activationType</NAME>
+								<DESCRIPTION xsi:type="string">Routing type in case of routing activation (e..b 0x00 -&gt; default, 0x01 -&gt; WWH-OBD, 0xE0 -&gt; Central Security, further values can be taken from the standard)</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<DEFAULT xsi:type="string">ByteStream('00')</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">diagTimeout</NAME>
+								<DESCRIPTION xsi:type="string">Timeout in milliseconds when waiting for responses on diagnostic requests via the DoIP protocol</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">5000</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">startRequest</NAME>
+								<DESCRIPTION xsi:type="string">Diagnosos request to open a session</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">stopRequest</NAME>
+								<DESCRIPTION xsi:type="string">Diagnostic request to end a session</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">testerPresentRequest</NAME>
+								<DESCRIPTION xsi:type="string">Diagnostic request for periodic tester-available signaling</DESCRIPTION>
+								<TYPE xsi:type="string">ByteStream</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">testerPresentCycleTime</NAME>
+								<DESCRIPTION xsi:type="string">Interval for periodic tester-present signaling (in ms)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">retryOnBusy</NAME>
+								<DESCRIPTION xsi:type="string">Number of retries in case of error (-1 for infinity)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">-1</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">retryDelay</NAME>
+								<DESCRIPTION xsi:type="string">Delay between retries (in ms)</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Opens a new diagnostics based on the DoIP protocol</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">SessionId</NAME>
+							<DESCRIPTION xsi:type="string">ID der geöffneten Sitzung</DESCRIPTION>
+							<TYPE xsi:type="string">object</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+	</PORT-DESCRIPTORS>
+</TOOLING>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">input</NAME>
+			<DEFAULT-VALUE xsi:type="inbox">
+				<SIZE xsi:type="integer">50</SIZE>
+				<DISCARD-OLDEST xsi:type="boolean">False</DISCARD-OLDEST>
+				<OVERFLOW-WARNING xsi:type="boolean">False</OVERFLOW-WARNING>
+				<DEFAULT-FETCH-TIMEOUT xsi:type="integer">20000</DEFAULT-FETCH-TIMEOUT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">input_value</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="ab6f5daa-0d44-4a2f-9b33-5bf0fbe47955" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+			<TESTSTEP format-rev="3" id="e0a9c66e-73be-41e0-919e-7601fb9729a2" name="TsInboxFetch" xsi:type="utility-179c75a3-4fef-11dc-8fdd-0013728784ee">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="inbox">
+						<DVALUE xsi:type="string">input</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<LOOK-UP-MODE xsi:type="boolean">True</LOOK-UP-MODE>
+				<FETCH-TIMEOUT format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">3000</VALUE>
+				</FETCH-TIMEOUT>
+				<SAVE-IN xsi:type="varBaseExpression">
+					<NAME xsi:type="string">input_value</NAME>
+				</SAVE-IN>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="79e3d705-d6f1-4b16-b0e7-d4046bc2e370" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA xsi:type="varBaseExpression">
+					<NAME xsi:type="string">input_value</NAME>
+				</FORMULA>
+				<EXPECTATION-OPTION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</VALUE>
+					</EXPRESSION>
+				</EXPECTATION-OPTION>
+			</TESTSTEP>
+			<TESTSTEP id="07379aa0-10b0-4a22-9605-2773ea06d325" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+				<CONDITION xsi:type="compareOpBaseExpression">
+					<NAME xsi:type="string">&gt;</NAME>
+					<FIRST-COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">input_value</NAME>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1</VALUE>
+					</SECOND-COMPONENT>
+				</CONDITION>
+				<THEN id="35541ae7-b601-4cd3-975a-baa82a05969b" xsi:type="ifThenElseNode">
+					<TESTSTEP format-rev="1" id="958a528a-b8c1-49a8-aeb9-4ee50bd1b182" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+						<COMMENT-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string"/>
+						</COMMENT-EXPRESSION>
+						<COMMENT-VERDICT xsi:type="string">SUCCESS</COMMENT-VERDICT>
+					</TESTSTEP>
+					<TESTSTEP id="75bbc5cb-f480-461a-8e63-855cc47395b7" name="TsBreak" xsi:type="utility-11b0144f-4e4f-11e0-b968-1c659df540cc"/>
+				</THEN>
+				<ELSE id="fef5dec4-797b-4d80-a179-06fa404623e7" xsi:type="ifThenElseNode">
+					<TESTSTEP id="2a25c19a-ac0f-490b-80d8-3fe93bf80294" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+						<TIME format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</TIME>
+						<UNIT xsi:type="string">s</UNIT>
+					</TESTSTEP>
+				</ELSE>
+			</TESTSTEP>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">loopCounter</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<LOOP-COUNT format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">10</VALUE>
+			</LOOP-COUNT>
+		</TESTSTEP>
+		<TESTSTEP id="aab68dfa-280c-46f5-9a55-314d7a385201" name="TsReactOn" xsi:type="utility-83517ac0-9f53-11dd-9c62-001b24fa84bf">
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<TESTSTEP id="a9ce9a3b-436d-455d-ac4d-1be36f2d3a15" xsi:type="OnNode">
+				<ON-CONDITION xsi:type="inboxCondition">
+					<INBOX-NAME xsi:type="string">input</INBOX-NAME>
+				</ON-CONDITION>
+				<TESTSTEP format-rev="3" id="36fc42d8-12a7-4afb-8998-63bc9f65cd31" name="TsInboxFetch" xsi:type="utility-179c75a3-4fef-11dc-8fdd-0013728784ee">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="inbox">
+							<DVALUE xsi:type="string">input</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<LOOK-UP-MODE xsi:type="boolean">True</LOOK-UP-MODE>
+					<FETCH-TIMEOUT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">3000</VALUE>
+					</FETCH-TIMEOUT>
+					<SAVE-IN xsi:type="varBaseExpression">
+						<NAME xsi:type="string">input_value</NAME>
+					</SAVE-IN>
+				</TESTSTEP>
+				<TESTSTEP id="7d569447-d601-4e31-bfbf-5626a459e8b6" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+					<CONDITION xsi:type="compareOpBaseExpression">
+						<NAME xsi:type="string">&gt;</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">input_value</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</SECOND-COMPONENT>
+					</CONDITION>
+					<THEN id="44038e3e-cc88-4e2d-8e9a-2bfa982e55db" xsi:type="ifThenElseNode">
+						<TESTSTEP format-rev="1" id="acc5c7a7-a06a-4029-a814-fec4206f4fdd" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+							<COMMENT-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</COMMENT-EXPRESSION>
+							<COMMENT-VERDICT xsi:type="string">SUCCESS</COMMENT-VERDICT>
+						</TESTSTEP>
+						<TESTSTEP id="5ab36169-ff68-47d9-8f97-b26dc7828c1a" name="TsBreak" xsi:type="utility-11b0144f-4e4f-11e0-b968-1c659df540cc"/>
+					</THEN>
+					<ELSE id="8778938b-d19b-4db9-8abc-6f569adfa7b7" xsi:type="ifThenElseNode">
+						<TESTSTEP id="1010d184-114f-49c9-a6fa-b47454d4a547" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+							<TIME format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</TIME>
+							<UNIT xsi:type="string">s</UNIT>
+						</TESTSTEP>
+					</ELSE>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<PROJECT format-rev="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<NAME xsi:type="string">Project</NAME>
 	<ENABLED xsi:type="boolean">True</ENABLED>
 	<REPORTING xsi:type="boolean">True</REPORTING>
-	<ID xsi:type="string">80115a897ed211ee98a934cff6f2e990</ID>
+	<ID xsi:type="string">1c1f3c106e4911ef9b8734cff6f2e990</ID>
 	<COMPONENTS>
 		<COMPONENT format-rev="6" xsi:type="packageTest">
-			<NAME xsi:type="string">TestCase336.pkg</NAME>
+			<NAME xsi:type="string">TestCase123.pkg</NAME>
 			<ENABLED xsi:type="boolean">True</ENABLED>
 			<REPORTING xsi:type="boolean">True</REPORTING>
-			<ID xsi:type="string">80616c087ed211ee9fc634cff6f2e990</ID>
+			<ID xsi:type="string">1c3e785d6e4911ef9a6834cff6f2e990</ID>
 			<COMPONENTS/>
 			<PACKAGE-REF xsi:type="expressionref">
 				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
-					<VALUE xsi:type="string">Filter_pkg/TestCase336.pkg</VALUE>
+					<VALUE xsi:type="string">Filter_pkg/TestCase123.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">TestCase236.pkg</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">1c3ea0286e4911efb86e34cff6f2e990</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Filter_pkg/TestCase236.pkg</VALUE>
 				</PATH-EXPRESSION>
 			</PACKAGE-REF>
 		</COMPONENT>

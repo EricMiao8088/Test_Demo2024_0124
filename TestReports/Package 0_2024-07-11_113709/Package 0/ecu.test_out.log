@@ -1,0 +1,131 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          71.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 11.07.2024 11:37:09 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Maximum. Additional logging active: default output, debug information (TOPIC_TOOLING, TOPIC_API)
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-10
+         - licensed for: Turing
+
+
+2024-07-11 11:37:09.288 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/start.sti
+2024-07-11 11:37:09.301 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/starterButton.sti
+2024-07-11 11:37:09.306 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/stop.sti
+2024-07-11 11:37:09.316 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_1.sti
+2024-07-11 11:37:09.327 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_10.sti
+2024-07-11 11:37:09.337 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_20.sti
+2024-07-11 11:37:09.347 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_50.sti
+2024-07-11 11:37:09.356 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_80.sti
+2024-07-11 11:37:09.365 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_100.sti
+2024-07-11 11:37:09.374 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_1.sti
+2024-07-11 11:37:09.384 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_10.sti
+2024-07-11 11:37:09.393 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_20.sti
+2024-07-11 11:37:09.402 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_50.sti
+2024-07-11 11:37:09.411 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_80.sti
+2024-07-11 11:37:09.422 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_100.sti
+2024-07-11 11:37:09.433 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/deceleration_mid.sti
+2024-07-11 11:37:09.441 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/brake.sti
+2024-07-11 11:37:09.450 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroCable.sti
+2024-07-11 11:37:09.459 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroDoor.sti
+2024-07-11 11:37:09.467 26188 ManagedWorker-5*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-07-11 11:37:09.471 26188 ManagedWorker-5*PE.Run() INFO:
+                        Initialize variables...
+2024-07-11 11:37:09.481 26188 ManagedWorker-5*PE.Run() INFO:
+                        Initializing execution mapping...
+2024-07-11 11:37:09.490 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding " BBM/BcmZCUCANFD1Fr03/BcmZCUCANFD1Fr03/MsgReqByHillDwnCtrl  (MsgReqByHillDwnCtrl)" 1895248784848
+2024-07-11 11:37:09.498 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding " BBM/BcmZCUCANFD1Fr12/BcmZCUCANFD1Fr12/BrkAndAbsWarnIndcnReqAbsWarnIndcnReq  (BrkAndAbsWarnIndcnReqAbsWarnIndcnReq)" 1895234398160
+2024-07-11 11:37:09.507 26188 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-07-11 11:37:09.514 26188 ManagedWorker-5*PE.Run() INFO:
+                        Preprocess of test steps in Package 0
+2024-07-11 11:37:09.523 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-07-11 11:37:09.553 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: CanStart('VectorCanUdsPort_1895232956624') --> None
+2024-07-11 11:37:09.555 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: CanResetTime('VectorCanUdsPort_1895232956624') --> None
+2024-07-11 11:37:09.566 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: InitIsoTpSessionManager('VectorCanUdsPort_1895232956624', 600000, False) --> None
+2024-07-11 11:37:09.566 26188 ToolLibs DEBUG:
+                        VectorBusAccessLib: DIAG: ToolLib time: 11:37:09.566 Using system time
+2024-07-11 11:37:09.574 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2024-07-11 11:37:09.594 26188 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2024-07-11 11:37:09.606 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        MAPPING: ANALYSIS JOB MS: Adding " BBM/BcmZCUCANFD1Fr12/BcmZCUCANFD1Fr12/BrkAndAbsWarnIndcnReqAbsWarnIndcnReq  (BrkAndAbsWarnIndcnReqAbsWarnIndcnReq)" 1895234398160
+2024-07-11 11:37:09.614 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        MAPPING: ANALYSIS JOB MS: Adding " BBM/BcmZCUCANFD1Fr03/BcmZCUCANFD1Fr03/MsgReqByHillDwnCtrl  (MsgReqByHillDwnCtrl)" 1895248784848
+2024-07-11 11:37:09.626 26188 ManagedWorker-5*PE.Run() INFO:
+                        Post process of test steps in Package 0
+2024-07-11 11:37:09.635 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-07-11 11:37:09.645 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: DiagFetchTracebackFiles() --> {}
+2024-07-11 11:37:09.654 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: CloseIsoTpSession('VectorCanUdsPort_1895232956624') --> True
+2024-07-11 11:37:09.664 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: CloseIsoTpSessionManager('VectorCanUdsPort_1895232956624') --> None
+2024-07-11 11:37:09.672 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: DiagShutdown('VectorCanUdsPort_1895232956624') --> None
+2024-07-11 11:37:09.682 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: CanStop('VectorCanUdsPort_1895232956624') --> None
+2024-07-11 11:37:10.201 26188 ManagedWorker-5*PE.Run() ERROR:
+                        tts.traceRecording.SyncConfigExec.SynchronizeGroupedRecordingInfos: SyncEOFError: Synchronization of recording Recording group for Signal group with master Recording group for New episode failed: No synchronization point found! Perhaps, TimeLimit and/or MaxDeltaT are too low.
+2024-07-11 11:37:10.244 26188 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-07-11 11:37:10.305 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: GetVersion() --> 'DLL: 20.30'
+2024-07-11 11:37:10.323 26188 ManagedWorker-5*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 0" -> "Trace analysis 1")
+2024-07-11 11:37:10.328 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SignalCache: Generic signal _BBM_BcmZCUCANFD1Fr03_BcmZCUCANFD1Fr03_MsgReqByHillDwnCtrl___MsgReqByHillDwnCtrl_ (New episode/Recording.BLF / BBM/BcmZCUCANFD1Fr03/BcmZCUCANFD1Fr03/MsgReqByHillDwnCtrl  (MsgReqByHillDwnCtrl)) in cache: False
+2024-07-11 11:37:10.333 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SignalCache: Generic signal _BBM_BcmZCUCANFD1Fr12_BcmZCUCANFD1Fr12_BrkAndAbsWarnIndcnReqAbsWarnIndcnReq___BrkAndAbsWarnIndcnReqAbsWarnIndcnReq_ (New episode/Recording.BLF / BBM/BcmZCUCANFD1Fr12/BcmZCUCANFD1Fr12/BrkAndAbsWarnIndcnReqAbsWarnIndcnReq  (BrkAndAbsWarnIndcnReqAbsWarnIndcnReq)) in cache: False
+2024-07-11 11:37:10.349 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        Performing episode ...
+2024-07-11 11:37:10.351 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2024-07-11 11:37:10.848 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        Episode completed
+2024-07-11 11:37:10.849 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2024-07-11 11:37:10.904 26188 ManagedWorker-5*PE.Run() DEBUG:
+                        SignalCache: 2 entries with a total of 4 signals consuming 0.00 MB (ratio: 267.3 %, original 0.00 MB).

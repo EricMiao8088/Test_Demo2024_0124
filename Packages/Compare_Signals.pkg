@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">test</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">FMCU_FD1/FMCU_ActRotSpd</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">FMCU_FD1/FMCU_ActRotSpd</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Sic_RpmGMAct</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">Sic_RpmGMAct</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Sin_RpmShInFil</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">Sin_RpmShInFil</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Signal group</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Sic_RpmGMAct</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Sin_RpmShInFil</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">FMCU_FD1</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">FMCU_FD1/FMCU_ActRotSpd</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Signal group</NAME>
+				<UUID xsi:type="string">fb53a0c7641811ef96ce34cff6f2e990</UUID>
+				<RECORDINGS>
+					<ELEMENT format-rev="2" xsi:type="recordingInfo">
+						<RECORDING-TYPE xsi:type="string">MDF_VECTOR</RECORDING-TYPE>
+						<PATHS>
+							<PATH xsi:type="fileReference">
+								<PATH xsi:type="string">Recording_蜂巢.mdf</PATH>
+								<PATH-TYPE xsi:type="string">relTraces</PATH-TYPE>
+							</PATH>
+						</PATHS>
+						<RECORDING-NAME xsi:type="string">GWV_XCP</RECORDING-NAME>
+					</ELEMENT>
+				</RECORDINGS>
+				<SIGNAL-GROUP-REF>Signal group</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for FMCU_FD1</NAME>
+				<UUID xsi:type="string">6a1fc23e641911efb7f134cff6f2e990</UUID>
+				<RECORDINGS>
+					<ELEMENT format-rev="2" xsi:type="recordingInfo">
+						<RECORDING-TYPE xsi:type="string">MDF_VECTOR</RECORDING-TYPE>
+						<PATHS>
+							<PATH xsi:type="fileReference">
+								<PATH xsi:type="string">Recording_蜂巢.mdf</PATH>
+								<PATH-TYPE xsi:type="string">relTraces</PATH-TYPE>
+							</PATH>
+						</PATHS>
+						<RECORDING-NAME xsi:type="string">PT_CANFD_channel_1</RECORDING-NAME>
+					</ELEMENT>
+				</RECORDINGS>
+				<SIGNAL-GROUP-REF>FMCU_FD1</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+	</TRACE-RECORDING>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="11e13133641911ef866234cff6f2e990" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="11e13134641911efaab934cff6f2e990" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM format-rev="1" uuid="7fc7c21f641911ef9eb434cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">45535条件trigger</NAME>
+					<ANALYSISITEM format-rev="1" uuid="8011d312642211efa91d34cff6f2e990" xsi:type="triggerBlock">
+						<NAME xsi:type="string">GMAct信号第一次变化trigger,时间大于4s</NAME>
+						<ANALYSISITEM format-rev="3" poolRev="7" uuid="0a02a4fd643411efa5fb34cff6f2e990" xsi:type="referencingTraceStep">
+							<NAME xsi:type="string">Comparing_Signals</NAME>
+							<ANALYSISITEM format-rev="4" uuid="172241f4641911efb11d34cff6f2e990" xsi:type="plotItem">
+								<NAME xsi:type="string">Plot</NAME>
+								<VISIBLE xsi:type="boolean">False</VISIBLE>
+								<SUB-PLOTS>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">common</TYPE>
+										<ENTITIES/>
+										<AXES/>
+									</SUB-PLOT>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">separate</TYPE>
+										<ENTITIES>
+											<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">FMCU_FD1_FMCU_ActRotSpd</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+											</ENTITY>
+											<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">Sic_RpmGMAct</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+											</ENTITY>
+											<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">Sin_RpmShInFil</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+											</ENTITY>
+										</ENTITIES>
+										<AXES>
+											<AXIS xsi:type="plotAxis"/>
+										</AXES>
+									</SUB-PLOT>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">common</TYPE>
+										<ENTITIES/>
+										<AXES/>
+									</SUB-PLOT>
+								</SUB-PLOTS>
+								<UNUSED-SIGNALS/>
+								<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NONE</CONDITION>
+									<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-OVERVIEW>
+								<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NEVER</CONDITION>
+									<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-PARENT-CONTEXT>
+								<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NEVER</CONDITION>
+									<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-DETAILS>
+								<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+								<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+							</ANALYSISITEM>
+							<SIGNAL-BINDING xsi:type="signalBinding">
+								<PARAMETER dkey="Out_Signal">
+									<DVALUE format-rev="1" xsi:type="signalParameter">
+										<REF-SIGNAL-NAME xsi:type="string">Out_Signal</REF-SIGNAL-NAME>
+									</DVALUE>
+								</PARAMETER>
+								<PARAMETER dkey="Signal_A">
+									<DVALUE format-rev="1" xsi:type="signalParameter">
+										<REF-SIGNAL-NAME xsi:type="string">Sic_RpmGMAct</REF-SIGNAL-NAME>
+									</DVALUE>
+								</PARAMETER>
+								<PARAMETER dkey="Signal_B">
+									<DVALUE format-rev="1" xsi:type="signalParameter">
+										<REF-SIGNAL-NAME xsi:type="string">Sin_RpmShInFil</REF-SIGNAL-NAME>
+									</DVALUE>
+								</PARAMETER>
+							</SIGNAL-BINDING>
+							<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+								<PARAM-ASSIGNMENTS>
+									<ASSIGNMENT dkey="Diff_Value">
+										<DVALUE format-rev="2" xsi:type="valueBaseExpression">
+											<VALUE xsi:type="float">0.01</VALUE>
+										</DVALUE>
+									</ASSIGNMENT>
+								</PARAM-ASSIGNMENTS>
+							</PARAM-ASSIGNMENTS>
+							<REPORT-CONFIG xsi:type="trcpReportConfig">
+								<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+								<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+							</REPORT-CONFIG>
+							<TEMPLATE-REF xsi:type="expressionref">
+								<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">Comparing_Signals.py</VALUE>
+								</PATH-EXPRESSION>
+							</TEMPLATE-REF>
+						</ANALYSISITEM>
+						<START-CONDITION xsi:type="string">Edge(Sic_RpmGMAct)</START-CONDITION>
+						<STOP-CONDITION xsi:type="string">Time(Sic_RpmGMAct)-StartTriggerTime() &gt;=4</STOP-CONDITION>
+						<TRIGGER-MODE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">start trigger while not stop trigger</VALUE>
+						</TRIGGER-MODE>
+						<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+							<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+							<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">1.0</VALUE>
+							</COMPONENT>
+						</TRIGGER-START-OFFSET>
+						<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</TRIGGER-STOP-OFFSET>
+						<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+						<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">10</VALUE>
+						</REPORT-MAX-NUMBER>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">FMCU_FD1_FMCU_ActRotSpd==45535</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="1537dede641911efba0f34cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Sic_RpmGMAct</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Sic_RpmGMAct</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">fb53a0c7641811ef96ce34cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="15d045fe641911ef85a734cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Sin_RpmShInFil</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Sin_RpmShInFil</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">fb53a0c7641811ef96ce34cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="6a1d27dd641911ef93a734cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">FMCU_FD1_FMCU_ActRotSpd</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">FMCU_FD1/FMCU_ActRotSpd</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">6a1fc23e641911efb7f134cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="536adcbd765811ef908c34cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Out_Signal</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>

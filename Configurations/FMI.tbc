@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TOOLING format-rev="3" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+	<TOOL-HOSTS>
+		<TOOL-HOST xsi:type="toolHost">
+			<URL xsi:type="string">local</URL>
+			<PLATFORM xsi:type="string">Windows</PLATFORM>
+			<BASE-PATH xsi:type="string">&lt;workspace&gt;</BASE-PATH>
+		</TOOL-HOST>
+	</TOOL-HOSTS>
+	<TOOLS>
+		<TOOL id="FMI01" xsi:type="tool">
+			<TOOL-HOST xsi:type="string">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="string">FMI</TOOL-NAME>
+			<START-OPTION xsi:type="integer">0</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="fmuRootDir" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">FMU_Models</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</TOOL>
+	</TOOLS>
+	<PORTS>
+		<PORT format-rev="2" id="MDL01" toolId="FMI01" xsi:type="port">
+			<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+				<NAME xsi:type="string">MODELACCESS</NAME>
+			</PORT-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="ModelFile" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">ref:SUT</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="fmiType" propertyType="choiceGroup" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">automatic</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</PORT>
+	</PORTS>
+	<TOOL-DESCRIPTORS>
+		<TOOL-DESCRIPTOR dkey="FMI01">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="string">FMI</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">MODELACCESS</NAME>
+						</PORT-TYPE-ID>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">BUSACCESS</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">GENERIC</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Generic bus access</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">fmuRootDir</NAME>
+						<DISPLAY-NAME xsi:type="string">FMU Root Directory</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Base directory for the FMU search. If it is a relative path specification, the base path of the tool host is used and extended by the directory specified here.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">AutoSimulation</NAME>
+						<DISPLAY-NAME xsi:type="string">Automatically start/stop simulation</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">If this option is activated, the simulation will be started before the test run and stopped afterwards</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">True</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">workingDirectoryProperties</NAME>
+						<DISPLAY-NAME xsi:type="string">Change working directory</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Change of the working directory of the process which loads the FMU. By default, this remains unchanged on the ecu.test- installation directory. Optionally, it can be set automatically to the temporary directory where the FMUs are being unpacked (%TEMP%\ecu.test_FMI). A custom working directory is also possible.</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">do not change</ELEMENT>
+							<ELEMENT xsi:type="string">temporary directory</ELEMENT>
+							<ELEMENT xsi:type="string">individual</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">do not change</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">customWorkingDirectory</NAME>
+						<DISPLAY-NAME xsi:type="string">Custom working directory</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Working directory to which the FMU process should change, as an absolute path. The directory must already exist.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">workingDirectoryProperties</GROUP>
+						<GROUP-VALUE xsi:type="string">individual</GROUP-VALUE>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">fmiRecordingType</NAME>
+						<DISPLAY-NAME xsi:type="string">Recording format</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">File format for recording</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">MDF4</ELEMENT>
+							<ELEMENT xsi:type="string">MAT</ELEMENT>
+							<ELEMENT xsi:type="string">CSV</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">MDF4</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ToolAccessTimeout</NAME>
+						<DISPLAY-NAME xsi:type="string">Timeout for tool call (in sec.)</DISPLAY-NAME>
+						<DESCRIPTION xsi:type="string">Timeout after which a tool call is aborted.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DEFAULT xsi:type="string">600</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet"/>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+	</TOOL-DESCRIPTORS>
+	<PORT-DESCRIPTORS>
+		<PORT-DESCRIPTOR dkey="MDL01">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+					<NAME xsi:type="string">MODELACCESS</NAME>
+				</PORT-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ModelFile</NAME>
+						<DISPLAY-NAME xsi:type="string">FMU file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Relative path to the FMU file relative to the FMU root directory.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<VALID-REFS>
+							<ELEMENT xsi:type="string">SUT</ELEMENT>
+						</VALID-REFS>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">fmiType</NAME>
+						<DISPLAY-NAME xsi:type="string">FMI type</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">The FMI type to be used for the simulation. If &quot;automatic&quot; is selected, the type defined in the model description is used or &quot;CoSimulation&quot; if the FMU supports both types.</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">automatic</ELEMENT>
+							<ELEMENT xsi:type="string">CoSimulation</ELEMENT>
+							<ELEMENT xsi:type="string">ModelExchange</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">automatic</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">validateModelDescription</NAME>
+						<DISPLAY-NAME xsi:type="string">Validate Model Description</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Validate the Model Description XML against the schema from the FMI standard upon loading?</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">True</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">SimulationProperties</NAME>
+						<DISPLAY-NAME xsi:type="string">Simulation behavior</DISPLAY-NAME>
+						<TYPE xsi:type="string">group</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">pacedSimulation</NAME>
+						<DISPLAY-NAME xsi:type="string">Simulation speed</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">For real-time simulations, the simulation speed can be reduced to a setpoint (multiple of real time).</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">unthrottled</ELEMENT>
+							<ELEMENT xsi:type="string">individual</ELEMENT>
+							<ELEMENT xsi:type="string">1x</ELEMENT>
+							<ELEMENT xsi:type="string">2x</ELEMENT>
+							<ELEMENT xsi:type="string">4x</ELEMENT>
+							<ELEMENT xsi:type="string">8x</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">unthrottled</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">SimulationProperties</GROUP>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">customSimulationSpeed</NAME>
+						<DISPLAY-NAME xsi:type="string">individual simulation speed</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Set individual simulation speed (multiple of real time)</DESCRIPTION>
+						<TYPE xsi:type="string">float</TYPE>
+						<DEFAULT xsi:type="string">1.0</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">pacedSimulation</GROUP>
+						<GROUP-VALUE xsi:type="string">individual</GROUP-VALUE>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">stepSize</NAME>
+						<DISPLAY-NAME xsi:type="string">Communication step size</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Step size that is used to stimulate signals. Also used as &quot;stepSize&quot; for ModelExchange FMUs with fixed-step solver. If &quot;automatic&quot; is set, the system first tries to determine the step size from the default experiment. If this is not available or no default experiment is defined, 0.001 (1 ms) is used.</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">automatic</ELEMENT>
+							<ELEMENT xsi:type="string">determine from Default Experiment</ELEMENT>
+							<ELEMENT xsi:type="string">individual</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">automatic</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">SimulationProperties</GROUP>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">customStepSize</NAME>
+						<DISPLAY-NAME xsi:type="string">individual communication step size</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">define individual communication step size (specified in seconds)</DESCRIPTION>
+						<TYPE xsi:type="string">float</TYPE>
+						<DEFAULT xsi:type="string">0.001</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">stepSize</GROUP>
+						<GROUP-VALUE xsi:type="string">individual</GROUP-VALUE>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">recordingDownsamplingFactor</NAME>
+						<DISPLAY-NAME xsi:type="string">Downsampling factor for signal recording</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Factor for reducing the data points (samples) when recording signals. The factor is related to the communication step size and not to the step size with which the FMU calculates internally. With a factor of 10, only every tenth data point is written to the recording. By default, all data points are recorded (factor 1).</DESCRIPTION>
+						<TYPE xsi:type="string">int</TYPE>
+						<DEFAULT xsi:type="string">1</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">SimulationProperties</GROUP>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">LoggingProperties</NAME>
+						<DISPLAY-NAME xsi:type="string">Logging</DISPLAY-NAME>
+						<TYPE xsi:type="string">group</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">debugLogging</NAME>
+						<DISPLAY-NAME xsi:type="string">Enable debug logging</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Enables debug logging for the FMU. This option should be disabled in production because emitting a lot of debug prints may severely affect the simulation performance.</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">LoggingProperties</GROUP>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">fmiLogging</NAME>
+						<DISPLAY-NAME xsi:type="string">Enable logging for FMI calls</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Enables logging of all FMI calls. This option should be disabled in production because emitting a lot of debug prints may severely affect the simulation performance.</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">LoggingProperties</GROUP>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetSimulationTime</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Returns the current simulation time</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">current simulation time</DESCRIPTION>
+							<TYPE xsi:type="string">float</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">StartSimulation</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">May be used to start the simulation within a package, e.g. if the simulation isn't started automatically upon package start (see test bench option).</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">No return value</DESCRIPTION>
+							<TYPE xsi:type="string">/</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">StopSimulation</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">May be used to stop the simulation within a package</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">current simulation time</DESCRIPTION>
+							<TYPE xsi:type="string">float</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetSampleTime</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Returns the configured step size</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">configured step size</DESCRIPTION>
+							<TYPE xsi:type="string">float</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetFmiType</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Returns the FMI simulation type of the FMU</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">FMI simulation type</DESCRIPTION>
+							<TYPE xsi:type="string">string</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">SetDebugLogging</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">loggingOn</NAME>
+								<DESCRIPTION xsi:type="string">Enable/disable debug logging</DESCRIPTION>
+								<TYPE xsi:type="string">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">False</ELEMENT>
+									<ELEMENT xsi:type="string">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">True</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">categories</NAME>
+								<DESCRIPTION xsi:type="string">List of categories for which logging should be enabled (type: list[str]). (affects both regular log output and debug log output).
+The available categories can be taken from the modelDescription.xml of the FMU.
+'None' or an empty list '[]' will cause the log outputs to be unfiltered, i.e. all log categories will be output.</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Enables/disables debug logging for the FMU</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+	</PORT-DESCRIPTORS>
+</TOOLING>

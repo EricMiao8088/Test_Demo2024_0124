@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEST-CASE-LANGUAGES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ENABLED-TEST-CASE-LANGUAGES>
+		<ELEMENT xsi:type="string">zh_CN</ELEMENT>
+		<ELEMENT xsi:type="string">de_DE</ELEMENT>
+		<ELEMENT xsi:type="string">en_US</ELEMENT>
+	</ENABLED-TEST-CASE-LANGUAGES>
+</TEST-CASE-LANGUAGES>

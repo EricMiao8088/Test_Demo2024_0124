@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<canoefdxdescription version="1.0">
+  <datagroup groupID="0" size="45">
+    <identifier>ComfortBus</identifier>
+    <item offset="0" size="4" type="int32">
+      <sysvar name="EngineRunning" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="4" size="8" type="double">
+      <sysvar name="CarSpeedEuropean" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="12" size="4" type="int32">
+      <sysvar name="DashboardABSDisplay" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="16" size="4" type="int32">
+      <sysvar name="DashboardBatteryDisplay" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="20" size="4" type="int32">
+      <sysvar name="DashboardEngineOilDisplay" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="24" size="4" type="int32">
+      <sysvar name="DashboardEngineWaterDisplay" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="28" size="4" type="int32">
+      <sysvar name="DashboardESPDisplay" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="32" size="4" type="int32">
+      <sysvar name="IG_15" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="36" size="4" type="int32">
+      <sysvar name="IG_15R" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="40" size="1" type="string">
+      <sysvar name="RadioInfoDisplay" namespace="ComfortBus" value="raw" />
+    </item>
+    <item offset="41" size="4" type="int32">
+      <sysvar name="StarterKey" namespace="ComfortBus" value="raw" />
+    </item>
+  </datagroup>
+  <datagroup groupID="1" size="16">
+    <identifier>LightSystem</identifier>
+    <item offset="0" size="4" type="int32">
+      <sysvar name="OnOff" namespace="LightSystem" value="raw" />
+    </item>
+    <item offset="4" size="4" type="int32">
+      <sysvar name="SwitchHazard" namespace="LightSystem" value="raw" />
+    </item>
+    <item offset="8" size="4" type="int32">
+      <sysvar name="TurnIndicationLeft" namespace="LightSystem" value="raw" />
+    </item>
+    <item offset="12" size="4" type="int32">
+      <sysvar name="TurnIndicationRight" namespace="LightSystem" value="raw" />
+    </item>
+  </datagroup>
+</canoefdxdescription>

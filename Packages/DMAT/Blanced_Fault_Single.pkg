@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string">Demo, 不运行</DESCRIPTION>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">fault_duration</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Zf</NAME>
+			<DESCRIPTION xsi:type="string">故障阻抗系数</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">None</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">SCR</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">X_R</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Active_Power</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Recative_Power</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Fault_Type</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="texttable">
+				<DATA xsi:type="string">3PHG</DATA>
+				<TEXT-LIST>
+					<ELEMENT xsi:type="string">3PHG</ELEMENT>
+					<ELEMENT xsi:type="string">2PHG</ELEMENT>
+				</TEXT-LIST>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Active_Po</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Reca_Po</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">SCR</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Zf</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="0d85cf58-b419-400f-8ab0-fb6d15511d3f" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">模型逻辑搭建</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+		</TESTSTEP>
+		<TESTSTEP id="548a3178-3295-4a7b-847c-05c7bb4c345b" name="TsSwitchCase" xsi:type="utility-83517ac0-9f53-11dd-9c62-001b24fa84be">
+			<TESTSTEP id="c50f3032-73e6-4d77-a63c-f132652bae8d" xsi:type="caseNode">
+				<TESTSTEP format-rev="3" id="b5ae2af9-03d7-469d-8f4b-c481b9d7bd06" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">故障持续时间</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="b634f726-2e9f-450d-b3e2-80d756627795" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+						<TIME xsi:type="varBaseExpression">
+							<NAME xsi:type="string">fault_duration</NAME>
+						</TIME>
+						<UNIT xsi:type="string">s</UNIT>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="5f3c904f-a599-46e7-820e-e8a4c5a27e28" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">确认故障阻抗系数</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="714f34fd-7e5f-4682-8ea1-7657c98da499" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Zf</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Zf</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="e39a117b-3422-4353-9b68-772864405ec4" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">SCR值</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="70925006-e27b-44c3-bc6b-b44c5fdd2287" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">SCR</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">SCR</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="c8fe6520-97dd-409c-a2bf-6198df97535d" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">Active_Power</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="72e4b945-0515-4f86-aa0f-ff59048bdd3a" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Active_Po</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Active_Power</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="a7626e8d-f0e6-4f66-b417-2f5cb87f20ba" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">Recative_Power</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="dbfc3389-8a87-4172-b22c-48e038af83d9" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Reca_Po</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Recative_Power</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<CASE-VALUE format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">3PHG</VALUE>
+				</CASE-VALUE>
+				<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+			</TESTSTEP>
+			<TESTSTEP id="b27f0344-9c6b-4fba-a420-88223ad8f290" xsi:type="caseNode">
+				<TESTSTEP format-rev="3" id="f49c907c-372a-4acb-abd6-5cbd5056ac30" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">故障持续时间</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="f6a13878-cdfc-4609-919e-d9dd75b9a5ae" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+						<TIME xsi:type="varBaseExpression">
+							<NAME xsi:type="string">fault_duration</NAME>
+						</TIME>
+						<UNIT xsi:type="string">s</UNIT>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="9d9033a3-947a-4a29-886b-23195d609bed" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">确认故障阻抗系数</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="3998d2de-e4ea-4919-a714-fa588499d4d2" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Zf</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Zf</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="72b911da-6da6-4b93-a0ee-75c19f419a7d" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">SCR值</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="bd0e650a-8b79-4a42-96fa-dcd03438a143" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">SCR</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">SCR</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="c1e66beb-5a29-4cff-b406-53d9b2602c7a" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">Active_Power</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="f13e1dc5-5ac1-4eae-ac79-b6a14c56b916" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Active_Po</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Active_Power</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<TESTSTEP format-rev="3" id="a1b259f2-94b8-45ab-8532-453e5dfbff00" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">Recative_Power</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="4251fc06-b68e-4563-aa4a-9bd07134f164" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Reca_Po</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Recative_Power</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+				<CASE-VALUE format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">2PHG</VALUE>
+				</CASE-VALUE>
+				<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+			</TESTSTEP>
+			<TESTSTEP id="f02f520e-101e-4036-a664-a87923715ca2" xsi:type="caseNode">
+				<CASE-VALUE format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</CASE-VALUE>
+				<IS-DEFAULT xsi:type="boolean">True</IS-DEFAULT>
+			</TESTSTEP>
+			<SWITCH-VALUE xsi:type="varBaseExpression">
+				<NAME xsi:type="string">Fault_Type</NAME>
+			</SWITCH-VALUE>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

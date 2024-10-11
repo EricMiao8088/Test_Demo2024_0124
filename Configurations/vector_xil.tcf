@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONFIGURATION format-rev="9" prog-version="2023.3.0.141374+8eeee403f0b5" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
-	<COMMON xsi:type="commonData">
-		<HOST xsi:type="string">Eric</HOST>
+<CONFIGURATION format-rev="9" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON format-rev="4" xsi:type="commonData">
 		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
 	</COMMON>
 	<REPORT format-rev="4" xsi:type="reportData">
@@ -15,10 +14,7 @@
 				<DIAGNOSTIC-PORT xsi:type="string">DIAG-CAN01</DIAGNOSTIC-PORT>
 				<DIAGNOSTIC-DB xsi:type="string">C:/ET2023_1/2_ECU-TEST_Advanced/CDD/diagnostic_data.cdd</DIAGNOSTIC-DB>
 				<DIAGNOSTIC-DB-ASSOCIATE xsi:type="string">EPB1 (CAN)</DIAGNOSTIC-DB-ASSOCIATE>
-				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings">
-					<CAN-ISO-TP-SETTINGS xsi:type="canIsoTpSettings"/>
-					<FR-TP-SETTINGS xsi:type="frTpSettings"/>
-				</DIAGNOSTIC-SETTINGS>
+				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings"/>
 				<ECU-POSITION xsi:type="integer">1</ECU-POSITION>
 				<LOG-PORT xsi:type="string">offline</LOG-PORT>
 				<LOG-PROTOCOL xsi:type="string">DLT (non-verbose)</LOG-PROTOCOL>
@@ -30,7 +26,6 @@
 			<DVALUE format-rev="1" xsi:type="busData">
 				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS-CAN01</BUS-ACCESS-PORT-ACTIVENODE>
 				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS-CAN_MANIP01</BUS-ACCESS-PORT-SIMULATION>
-				<BUS-ACCESS-PORT-MONITORING xsi:type="string">BUS-CAN01</BUS-ACCESS-PORT-MONITORING>
 				<DATABASE xsi:type="localArtifactReference">
 					<PATH xsi:type="string">Bus/Electric_V2.DBC</PATH>
 				</DATABASE>

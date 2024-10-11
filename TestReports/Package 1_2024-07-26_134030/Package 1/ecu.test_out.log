@@ -1,0 +1,45 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          56.7GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 26.07.2024 13:40:30 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-25
+         - licensed for: Turing
+
+
+2024-07-26 13:40:30.277 35316 ManagedWorker-4*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-07-26 13:40:30.291 35316 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 1" started
+2024-07-26 13:40:30.294 35316 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-07-26 13:40:30.309 35316 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2024-07-26 13:40:30.327 35316 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-07-26 13:40:30.360 35316 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 1" completed
+2024-07-26 13:40:30.414 35316 ManagedWorker-4*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 1" -> "Trace analysis 1")
+2024-07-26 13:40:30.439 35316 ManagedWorker-4*PE.Run() DEBUG:
+                        Performing episode ...
+2024-07-26 13:40:30.441 35316 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2024-07-26 13:40:30.469 35316 ManagedWorker-4*PE.Run() ERROR:
+                        tts.traceAnalysis.common.steps.episode.EpisodeExec.Execute: ValueError: unsupported indexing operation: 2

@@ -1,0 +1,62 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          81.5GB/475.7GB
+Operating system:  Windows-10-10.0.22621
+Long path support: False
+-------------------------------------------------------------------------
+
+= 03.06.2024 17:52:36 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.2
+         - valid until: 2024-06-06
+         - licensed for: Eric
+         - Server: Eric
+
+
+2024-06-03 17:52:36.791 22460 ManagedWorker-3*PE.Run() INFO:
+                        Start package 'BasicDrive.pkg' with test case execution with sequential analysis job execution
+2024-06-03 17:52:36.802 22460 ManagedWorker-3*PE.Run() WARNING:
+                        Plant model/Model Root/ctrl_veh/driverrequest [%]/Value will not be registered as recording: Error during initialization: Variable path 'Model Root/ctrl_veh/driverrequest [%]/Value' does not exist!
+2024-06-03 17:52:36.804 22460 ManagedWorker-3*PE.Run() WARNING:
+                        Plant model/Model Root/status_veh/vehiclevelocity [kmh]/In1 will not be registered as recording: Error during initialization: Variable path 'Model Root/status_veh/vehiclevelocity [kmh]/In1' does not exist!
+2024-06-03 17:52:36.815 22460 ManagedWorker-3*PE.Run() WARNING:
+                        Plant model/Model Root/status_veh/vehicletractionstandby [0|1]/In1 will not be registered as recording: Error during initialization: Variable path 'Model Root/status_veh/vehicletractionstandby [0|1]/In1' does not exist!
+2024-06-03 17:52:36.838 22460 ManagedWorker-3*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2024-06-03 17:52:36.874 22460 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-06-03 17:52:36.897 22460 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2024-06-03 17:52:36.899 22460 ManagedWorker-3*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+2024-06-03 17:52:36.912 22460 ManagedWorker-3*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+2024-06-03 17:52:36.935 22460 ManagedWorker-3*PE.Run() ERROR:
+                        Test step .4(SetVehTrStby).1(Read): "Error during initialization: Variable path 'Model Root/status_veh/vehicletractionstandby [0|1]/In1' does not exist!"
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\SetVehTrStby.pkg"#1
+2024-06-03 17:52:36.938 22460 ManagedWorker-3*PE.Run() DEBUG_EXC_PRINT:
+                        tts.core.package.engine.ExecutionMappingSpaceManager.__CallRegisterXaObjects: TTError: Error during initialization: Variable path 'Model Root/status_veh/vehicletractionstandby [0|1]/In1' does not exist!
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\SetVehTrStby.pkg"#1
+2024-06-03 17:52:36.960 22460 ManagedWorker-3*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+2024-06-03 17:52:36.962 22460 ManagedWorker-3*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+2024-06-03 17:52:36.978 22460 ManagedWorker-3*PE.Run() WARNING:
+                        Test case "BasicDrive" aborted
+2024-06-03 17:52:36.988 22460 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-06-03 17:52:37.010 22460 ManagedWorker-3*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.FinalizeMainPackage: KeyError: 'Engine-Control[0x1a58c6d4850]'
+2024-06-03 17:52:37.051 22460 ManagedWorker-3*PE.Run() INFO:
+                        Test case "BasicDrive" completed

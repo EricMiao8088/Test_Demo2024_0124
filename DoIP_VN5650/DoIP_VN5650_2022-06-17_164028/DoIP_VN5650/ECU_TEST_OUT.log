@@ -1,0 +1,56 @@
+
+
+= 17.06.2022 16:40:28 (UTC +8:00) === ECU-TEST 2021.3.115966+69cd6241dc96 115966+69cd6241dc96 (2021/09/06 06:53:51) (64bit) ===
+
+License: Dongle #1806389034
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+
+
+2022-06-17 16:40:28.906 7064 ManagedWorker-4*PE.Run() INFO:
+                        Start package 'DoIP_VN5650.pkg' with test case execution with sequential analysis job execution
+2022-06-17 16:40:29.003 7064 ManagedWorker-4*PE.Run() INFO:
+                        Initialize variables...
+2022-06-17 16:40:29.007 7064 ManagedWorker-4*PE.Run() INFO:
+                        Initializing execution mapping...
+2022-06-17 16:40:29.010 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "OpenDoIpSession" 2041206721112
+2022-06-17 16:40:29.013 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "CallService" 2041206719824
+2022-06-17 16:40:29.016 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "CloseSession" 2041206556096
+2022-06-17 16:40:29.124 7064 ManagedWorker-4*PE.Run() INFO:
+                        Test case "DoIP_VN5650" started
+2022-06-17 16:40:29.127 7064 ManagedWorker-4*PE.Run() INFO:
+                        Preprocess of test steps in DoIP_VN5650
+2022-06-17 16:40:29.131 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-06-17 16:40:29.147 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2022-06-17 16:40:29.150 7064 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2022-06-17 16:40:29.205 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: DiagCreateDoIpConnectionXl(<ttRawDiag.transProto.TransProtoDoIp.DoIpParams object at 0x000001DB4880B198>, (('Ethernet1', 'Port13'), 'B4:45:06:40:2C:7B', '172.17.8.31', 16, '0.0.0.0', 0, 0, 0, 0)) --> (1, <ttRawDiag.transProto.TransProtoDoIp.DoIpParams object at 0x000001DB487E1A58>)
+                        Package "D:\v71\TEST_tools\dist\project\A0\ecuTest\a0 340\Packages\DoIP_VN5650.pkg"#1
+2022-06-17 16:40:32.316 7064 ToolLibs DEBUG:
+                        VectorBusAccessLib: ETH: ToolLib time: 16:40:32.225 send packet to '0.0.0.0:0'
+2022-06-17 16:40:32.335 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: DiagOpenDoIpSession((1, <ttRawDiag.transProto.TransProtoDoIp.DoIpParams object at 0x000001DB487E1A58>), <ttRawDiag.diag.DiagProtoUds.UdsProtoParam object at 0x000001DB4880B940>) --> (1, 0)
+                        Package "D:\v71\TEST_tools\dist\project\A0\ecuTest\a0 340\Packages\DoIP_VN5650.pkg"#1
+2022-06-17 16:40:32.345 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: DiagCallService((1, 0), ByteStream('10:01'), None) --> 0
+                        Package "D:\v71\TEST_tools\dist\project\A0\ecuTest\a0 340\Packages\DoIP_VN5650.pkg"#2
+2022-06-17 16:40:32.347 7064 ToolLibs DEBUG:
+                        VectorBusAccessLib: ETH: ToolLib time: 16:40:32.344 send packet to '0.0.0.0:0'
+2022-06-17 16:40:32.562 7064 Thread-57 DEBUG:
+                        SendCommand: VECTOR-HW: DiagGetDiagResult((1, 0), 0) --> <ttRawDiag.diag.DiagResult.DiagResult object at 0x000001DB487F5AC8>
+2022-06-17 16:40:33.417 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        SendCommand: VECTOR-HW: DiagSessionClose((1, 0)) --> None
+                        Package "D:\v71\TEST_tools\dist\project\A0\ecuTest\a0 340\Packages\DoIP_VN5650.pkg"#4
+2022-06-17 16:40:33.421 7064 ManagedWorker-4*PE.Run() INFO:
+                        Post process of test steps in DoIP_VN5650
+2022-06-17 16:40:33.425 7064 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-06-17 16:40:33.429 7064 ManagedWorker-4*PE.Run() INFO:
+                        Test case "DoIP_VN5650" completed

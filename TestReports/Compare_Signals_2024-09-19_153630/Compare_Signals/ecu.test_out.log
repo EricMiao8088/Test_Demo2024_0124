@@ -1,0 +1,71 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.5GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 19.09.2024 15:36:30 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-10-19
+         - licensed for: Turing
+
+
+2024-09-19 15:36:30.442 15928 ManagedWorker-7*PE.Run() INFO:
+                        Start package 'Compare_Signals.pkg' with test case execution with sequential analysis job execution
+2024-09-19 15:36:30.454 15928 ManagedWorker-7*PE.Run() INFO:
+                        Test case "Compare_Signals" started
+2024-09-19 15:36:30.455 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-09-19 15:36:30.493 15928 ManagedWorker-7*PE.Run() INFO:
+                        System time mode activated
+2024-09-19 15:36:30.503 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-09-19 15:36:30.525 15928 ManagedWorker-7*PE.Run() INFO:
+                        Test case "Compare_Signals" completed
+2024-09-19 15:36:30.576 15928 ManagedWorker-7*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Compare_Signals.pkg" -> "Trace analysis 1")
+2024-09-19 15:36:30.599 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        Performing episode ...
+2024-09-19 15:36:30.600 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-09-19 15:36:30.672 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        <class 'tts.traceAnalysis.common.steps.templates.trcpNumpy.TrcpNumpyExec.Signal'>
+2024-09-19 15:36:30.673 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-09-19 15:36:30.683 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        1
+2024-09-19 15:36:30.692 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-09-19 15:36:30.701 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        []
+2024-09-19 15:36:30.710 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-09-19 15:36:30.719 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        0
+2024-09-19 15:36:30.729 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-09-19 15:36:30.738 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        --------
+2024-09-19 15:36:30.748 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-09-19 15:36:30.757 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        11111
+2024-09-19 15:36:30.766 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-09-19 15:36:30.777 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        Episode completed
+2024-09-19 15:36:30.784 15928 ManagedWorker-7*PE.Run() DEBUG:
+                        

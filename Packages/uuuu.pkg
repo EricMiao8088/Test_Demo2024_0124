@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="4e13bc73-1cbd-4f05-8826-69aa66d093c8" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+			<CONDITION format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="boolean">True</VALUE>
+			</CONDITION>
+			<THEN id="221ea525-74f8-421b-a9ae-b63d3816917a" xsi:type="ifThenElseNode">
+				<TESTSTEP format-rev="3" id="db50cacc-d5c7-4798-ae71-a4cbd987478f" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="zh_CN">
+								<DVALUE xsi:type="string">test</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+					</ACTION>
+				</TESTSTEP>
+			</THEN>
+			<ELSE id="f6abe9d2-505b-437c-bcc6-3dc8506cfb90" xsi:type="ifThenElseNode"/>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

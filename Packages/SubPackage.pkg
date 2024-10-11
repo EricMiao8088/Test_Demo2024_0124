@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" out="true" xsi:type="variable">
+			<NAME xsi:type="string">test</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="inbox">
+				<SIZE xsi:type="integer">50</SIZE>
+				<DISCARD-OLDEST xsi:type="boolean">False</DISCARD-OLDEST>
+				<OVERFLOW-WARNING xsi:type="boolean">False</OVERFLOW-WARNING>
+				<DEFAULT-FETCH-TIMEOUT xsi:type="integer">20</DEFAULT-FETCH-TIMEOUT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">tt</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="6686d172-48d7-477a-88ec-d7483180259e" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+			<TESTSTEP format-rev="3" id="2f45db53-9b8b-4447-8d4d-4f923d0098a3" name="TsInboxFetch" xsi:type="utility-179c75a3-4fef-11dc-8fdd-0013728784ee">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="inbox">
+						<DVALUE xsi:type="string">test</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<LOOK-UP-MODE xsi:type="boolean">True</LOOK-UP-MODE>
+				<FETCH-TIMEOUT format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">200</VALUE>
+				</FETCH-TIMEOUT>
+				<SAVE-IN xsi:type="varBaseExpression">
+					<NAME xsi:type="string">tt</NAME>
+				</SAVE-IN>
+			</TESTSTEP>
+			<TESTSTEP id="52a21c25-ac75-44b0-8f11-e84d8006cc68" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+				<CONDITION xsi:type="compareOpBaseExpression">
+					<NAME xsi:type="string">==</NAME>
+					<FIRST-COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">tt</NAME>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">2</VALUE>
+					</SECOND-COMPONENT>
+				</CONDITION>
+				<THEN id="a04e2f27-7fdc-4a4c-8305-7ba31119a66e" xsi:type="ifThenElseNode">
+					<TESTSTEP format-rev="1" id="51bed544-be4d-4f46-95fb-9ebc53b49abd" name="TsExit" xsi:type="utility-c6aa4f70-f037-11dc-9d16-001b24fa84be">
+						<ENABLED xsi:type="boolean">False</ENABLED>
+						<EXIT-RESULT xsi:type="string">ERROR</EXIT-RESULT>
+						<ABORT xsi:type="boolean">True</ABORT>
+						<COMMENT-EXPR format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Abort test</VALUE>
+						</COMMENT-EXPR>
+					</TESTSTEP>
+					<TESTSTEP id="c1221b50-5d7f-48b2-8159-d7ff5699d893" name="TsBreak" xsi:type="utility-11b0144f-4e4f-11e0-b968-1c659df540cc"/>
+				</THEN>
+				<ELSE id="3c915a05-76c3-450d-b9e2-36181d89cdf6" xsi:type="ifThenElseNode">
+					<TESTSTEP id="d8faa9d7-6157-4656-becf-24cd47dcd8d4" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+						<TIME format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</TIME>
+						<UNIT xsi:type="string">s</UNIT>
+					</TESTSTEP>
+				</ELSE>
+			</TESTSTEP>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">loopCounter</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<LOOP-COUNT format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">20</VALUE>
+			</LOOP-COUNT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

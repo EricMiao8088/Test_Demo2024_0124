@@ -1,0 +1,83 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 27.08.2024 11:23:38 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-26
+         - licensed for: Turing
+
+
+2024-08-27 11:23:38.477 7288 ManagedWorker-1*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-08-27 11:23:38.489 7288 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-08-27 11:23:38.493 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-27 11:23:38.553 7288 ManagedWorker-1*PE.Run() INFO:
+                        System time mode activated
+2024-08-27 11:23:38.560 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-27 11:23:38.581 7288 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-08-27 11:23:38.630 7288 ManagedWorker-1*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 0" -> "Trace analysis 1")
+2024-08-27 11:23:38.651 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        Performing episode ...
+2024-08-27 11:23:38.652 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.715 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:23:38.716 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.726 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:23:38.736 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.745 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:23:38.755 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.766 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.18470809
+2024-08-27 11:23:38.776 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.786 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:23:38.796 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.807 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:23:38.817 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.827 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:23:38.837 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.847 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.199543364
+2024-08-27 11:23:38.857 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.870 7288 ManagedWorker-1*PE.Run() ERROR:
+                        tts.traceAnalysis.common.steps.templates.trcpNumpy.TrcpNumpyExec.Eval: ValueError: 0.18470809 is not in list
+2024-08-27 11:23:38.889 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        Episode completed
+2024-08-27 11:23:38.890 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:23:38.959 7288 ManagedWorker-1*PE.Run() ERROR:
+                        Runtime error in template method "Process", line 136: ValueError: 0.18470809 is not in list

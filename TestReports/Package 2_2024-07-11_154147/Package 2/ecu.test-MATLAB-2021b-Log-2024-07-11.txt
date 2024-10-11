@@ -1,0 +1,300 @@
+2024-07-11 16:34:04.309: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-07-11 16:34:04.382: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-07-11 16:34:05.307: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-07-11 16:34:05.316: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-07-11 16:34:06.104: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:34:11.286: Terminate Time: 1.928626 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:34:14.766: No cached data for sldemo_autotrans found in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:34:18.263: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CachedData.StoreSampleTimes (line 0)
+    > CacheManager.StoreSampleTimes (line 0)
+    > GetSampleTimes (line 0)
+2024-07-11 16:34:18.965: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > FindUsedVariables (line 0)
+    > GetApplicationData (line 0)
+2024-07-11 16:34:19.309: Compile Time: 0.295379 -> Set compilation state COMPILED;  in 
+    > Compile (line 0)
+    > FindUsedVariables (line 0)
+    > GetApplicationData (line 0)
+2024-07-11 16:34:19.325: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CachedData.StoreUsedVariables (line 0)
+    > CacheManager.StoreUsedVariables (line 0)
+    > FindUsedVariables (line 0)
+    > GetApplicationData (line 0)
+2024-07-11 16:34:19.633: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > FindUsedVariables (line 0)
+    > GetApplicationData (line 0)
+2024-07-11 16:34:19.649: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CachedData.StoreUsedVariables (line 0)
+    > CacheManager.StoreUsedVariables (line 0)
+    > FindUsedVariables (line 0)
+    > GetApplicationData (line 0)
+2024-07-11 16:34:20.066: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-07-11 16:34:20.174: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In1'): Invalid Simulink object name: sldemo_autotrans/In1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:34:20.332: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In2'): Invalid Simulink object name: sldemo_autotrans/In2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:34:20.466: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:34:20.671: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'time'): Invalid Simulink object name: sldemo_autotrans/time. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:34:20.868: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input1'): Invalid Simulink object name: sldemo_autotrans/Input1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:34:21.067: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input2'): Invalid Simulink object name: sldemo_autotrans/Input2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:34:21.196: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:34:28.260: Terminate Time: 0.052764 -> Set compilation state TERMINATED;  in 
+    > Terminate (line 0)
+2024-07-11 16:34:29.377: Closing sldemo_autotrans in 
+    > CloseAll (line 0)
+    > CloseAll (line 0)
+2024-07-11 16:34:29.924: Closing Add_Sys in 
+    > CloseAll (line 0)
+    > CloseAll (line 0)
+2024-07-11 16:34:29.990: Unloading cached models in 
+    > CacheManager.Unload (line 0)
+    > ModelCache.ClearCaches (line 0)
+    > CloseAll (line 0)
+2024-07-11 16:35:29.886: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-07-11 16:35:30.095: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-07-11 16:35:32.297: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-07-11 16:35:32.318: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-07-11 16:36:03.184: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:36:11.520: Terminate Time: 0.031615 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:36:24.035: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:36:49.810: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In1'): Invalid Simulink object name: sldemo_autotrans/In1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:36:50.521: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In2'): Invalid Simulink object name: sldemo_autotrans/In2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:36:50.867: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:36:51.154: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'time'): Invalid Simulink object name: sldemo_autotrans/time. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:36:51.489: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input1'): Invalid Simulink object name: sldemo_autotrans/Input1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:36:51.760: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input2'): Invalid Simulink object name: sldemo_autotrans/Input2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:36:52.459: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:42:56.542: Terminate Time: 0.001657 -> Already in state TERMINATED in 
+    > Terminate (line 0)
+2024-07-11 16:42:57.408: Closing sldemo_autotrans in 
+    > CloseAll (line 0)
+    > CloseAll (line 0)
+2024-07-11 16:42:58.213: Unloading cached models in 
+    > CacheManager.Unload (line 0)
+    > ModelCache.ClearCaches (line 0)
+    > CloseAll (line 0)
+2024-07-11 16:44:20.911: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-07-11 16:44:20.989: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-07-11 16:44:21.463: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-07-11 16:44:21.470: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-07-11 16:44:24.838: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:44:25.600: Terminate Time: 0.538471 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:44:33.786: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 16:44:35.921: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In1'): Invalid Simulink object name: sldemo_autotrans/In1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:44:36.041: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In2'): Invalid Simulink object name: sldemo_autotrans/In2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:44:36.147: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:44:36.258: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'time'): Invalid Simulink object name: sldemo_autotrans/time. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:44:36.369: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input1'): Invalid Simulink object name: sldemo_autotrans/Input1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:44:36.472: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input2'): Invalid Simulink object name: sldemo_autotrans/Input2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:44:36.585: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 16:44:39.554: Terminate Time: 0.000807 -> Already in state TERMINATED in 
+    > Terminate (line 0)
+2024-07-11 17:04:23.094: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-07-11 17:04:23.163: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-07-11 17:04:23.538: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-07-11 17:04:23.544: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-07-11 17:04:24.107: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 17:04:24.273: Terminate Time: 0.008564 -> Already in state TERMINATED in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 17:04:24.313: Unloading cached model sldemo_autotrans in 
+    > CacheManager.UnloadModel (line 0)
+    > ModelCache.ClearCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 17:04:25.191: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 17:04:26.963: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In1'): Invalid Simulink object name: sldemo_autotrans/In1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 17:04:27.074: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'In2'): Invalid Simulink object name: sldemo_autotrans/In2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 17:04:27.191: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 17:04:27.295: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'time'): Invalid Simulink object name: sldemo_autotrans/time. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 17:04:27.397: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input1'): Invalid Simulink object name: sldemo_autotrans/Input1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 17:04:27.496: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Input2'): Invalid Simulink object name: sldemo_autotrans/Input2. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 17:04:27.598: GetModelValuesOnPath.p (line 0): ECUTEST:GetModelValuesOnPath: GetSignalValues('sldemo_autotrans', 'Out1'): Invalid Simulink object name: sldemo_autotrans/Out1. in 
+    > warning (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-07-11 17:04:32.182: Terminate Time: 0.000865 -> Already in state TERMINATED in 
+    > Terminate (line 0)
+2024-07-11 17:04:32.806: Closing sldemo_autotrans in 
+    > CloseAll (line 0)
+    > CloseAll (line 0)
+2024-07-11 17:04:33.699: Unloading cached models in 
+    > CacheManager.Unload (line 0)
+    > ModelCache.ClearCaches (line 0)
+    > CloseAll (line 0)
+2024-07-11 17:11:05.554: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-07-11 17:11:05.723: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-07-11 17:11:08.739: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-07-11 17:11:08.757: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-07-11 17:11:27.204: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 17:11:32.466: Terminate Time: 0.037263 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-07-11 17:11:40.688: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)

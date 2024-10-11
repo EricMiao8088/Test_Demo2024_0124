@@ -1,0 +1,2 @@
+[-1ms Package 0:1]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<READ>   None
+[-1ms Package 0:2]MODEL:-:Model Root/STATUS_BAT/StateOfCharge [%]/Value<READ>   70.0

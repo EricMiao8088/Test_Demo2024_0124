@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.4.2.143901+d4a6458297f6" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">test</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="inbox">
+				<SIZE xsi:type="integer">50</SIZE>
+				<DISCARD-OLDEST xsi:type="boolean">False</DISCARD-OLDEST>
+				<OVERFLOW-WARNING xsi:type="boolean">False</OVERFLOW-WARNING>
+				<DEFAULT-FETCH-TIMEOUT xsi:type="integer">200</DEFAULT-FETCH-TIMEOUT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">tt</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="f19c580e-0f8d-4774-888d-3d334d13d181" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+			<TESTSTEP format-rev="3" id="84e174ed-4eae-4aab-91d3-1cede448a54d" name="TsInboxFetch" xsi:type="utility-179c75a3-4fef-11dc-8fdd-0013728784ee">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="inbox">
+						<DVALUE xsi:type="string">test</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FETCH-TIMEOUT format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">50</VALUE>
+				</FETCH-TIMEOUT>
+				<SAVE-IN xsi:type="varBaseExpression">
+					<NAME xsi:type="string">tt</NAME>
+				</SAVE-IN>
+			</TESTSTEP>
+			<TESTSTEP id="2cae982a-f997-4d93-a6c6-ca009d76869f" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+				<CONDITION xsi:type="compareOpBaseExpression">
+					<NAME xsi:type="string">==</NAME>
+					<FIRST-COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">tt</NAME>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">3</VALUE>
+					</SECOND-COMPONENT>
+				</CONDITION>
+				<THEN id="c7c3d203-f605-4137-9abe-a1e3497b2b72" xsi:type="ifThenElseNode">
+					<TESTSTEP id="577c619b-a570-4f06-936e-5c821e197400" name="TsBreak" xsi:type="utility-11b0144f-4e4f-11e0-b968-1c659df540cc"/>
+				</THEN>
+				<ELSE id="5508ba53-7414-47cf-ac74-576d8f6a1ba7" xsi:type="ifThenElseNode">
+					<TESTSTEP id="46aea23e-5337-4bbf-8658-0d856f8c95f0" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+						<TIME format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</TIME>
+						<UNIT xsi:type="string">s</UNIT>
+					</TESTSTEP>
+				</ELSE>
+			</TESTSTEP>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">loopCounter</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<LOOP-COUNT format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">30</VALUE>
+			</LOOP-COUNT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

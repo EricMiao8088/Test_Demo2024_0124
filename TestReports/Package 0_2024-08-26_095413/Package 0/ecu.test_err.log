@@ -1,0 +1,47 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          52.3GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 26.08.2024 09:54:14 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-25
+         - licensed for: Turing
+
+
+2024-08-26 09:54:14.503 36404 ManagedWorker-7*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\traceAnalysis\common\functions\FunctionSignature.py", line 34, in GetFullParameterCall
+                        TypeError: At most 0 arguments expected (1 given)
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\traceAnalysis\common\steps\calculation\CalculationExec.py", line 639, in RegisterInSignals
+                          File "tts\traceAnalysis\common\expressions\ConditionHandlerNumpy.py", line 352, in __init__
+                          File "tts\traceAnalysis\common\expressions\ConditionHandlerNumpy.py", line 60, in __init__
+                          File "tts\traceAnalysis\common\expressions\Expressionator.py", line 547, in GetExpression
+                          File "ast.py", line 418, in visit
+                          File "ast.py", line 494, in generic_visit
+                          File "ast.py", line 418, in visit
+                          File "ast.py", line 503, in generic_visit
+                          File "ast.py", line 418, in visit
+                          File "tts\traceAnalysis\common\expressions\Expressionator.py", line 392, in visit_Call
+                          File "tts\traceAnalysis\common\expressions\Expressionator.py", line 476, in __visit
+                          File "tts\traceAnalysis\common\functions\TriggerTimes.py", line 59, in Create
+                          File "tts\traceAnalysis\common\functions\FunctionSignature.py", line 114, in GetFullParameterCall
+                        TypeError: Function StopTriggerTime: At most 0 arguments expected (1 given)

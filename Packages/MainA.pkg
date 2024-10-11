@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.4.2.143901+d4a6458297f6" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">out</NAME>
+			<DEFAULT-VALUE xsi:type="outbox">
+				<DISCARD-IF-DISCONNECTED xsi:type="boolean">False</DISCARD-IF-DISCONNECTED>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Unnamed_1</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">SubA</ID>
+			<XACCESS xsi:type="xaPackage">
+				<PATH xsi:type="string">&lt;workspace.packages&gt;/SubA.pkg</PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="1" id="a35018e0-008f-4b9f-b592-22d9427e1600" xsi:type="tsParallelPackageCall">
+			<MAPPING-REF xsi:type="string">SubA</MAPPING-REF>
+			<PARAM-ASSIGNMENTS/>
+			<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+			<INBOX-BINDINGS>
+				<INBOX-BINDING dkey="input">
+					<DVALUE xsi:type="string">out</DVALUE>
+				</INBOX-BINDING>
+			</INBOX-BINDINGS>
+		</TESTSTEP>
+		<TESTSTEP id="79b97eee-cb02-4bd1-8985-2c2a6a341673" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">2</VALUE>
+			</TIME>
+			<UNIT xsi:type="string">s</UNIT>
+		</TESTSTEP>
+		<TESTSTEP id="b2d8d8a7-333b-491f-a592-2bb747c50427" name="TsOutboxPost" xsi:type="utility-179c75a2-4fef-11dc-8fdd-0013728784ee">
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="outbox">
+					<DVALUE xsi:type="string">out</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<MESSAGE format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">3</VALUE>
+			</MESSAGE>
+		</TESTSTEP>
+		<TESTSTEP id="0bde9cd2-2857-4760-b9ce-212cf998fc0f" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">1000</VALUE>
+			</TIME>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

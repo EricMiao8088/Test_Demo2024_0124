@@ -1,0 +1,45 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          83.3GB/475.7GB
+Operating system:  Windows-10-10.0.22621
+Long path support: False
+-------------------------------------------------------------------------
+
+= 29.05.2024 09:42:48 (UTC +8:00) === ecu.test 2023.4.2.143901+d4a6458297f6 143901+d4a6458297f6 (2024/01/11 11:18:51) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] / wx: 4.2.1+tt.2
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 23-jun-2024
+         - licensed for: Turing
+
+
+2024-05-29 09:42:48.419 25732 ManagedWorker-6*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-05-29 09:42:48.432 25732 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-05-29 09:42:48.517 25732 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-05-29 09:42:48.546 25732 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2024-05-29 09:42:48.548 25732 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for A-CAN
+                        Package "Package 0"#0
+2024-05-29 09:42:50.218 25732 ManagedWorker-6*PE.Run() WARNING:
+                        Recording group Recording group for A-CAN is already recording!
+                        Package "Package 0"#3
+2024-05-29 09:42:50.235 25732 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for A-CAN stopped
+                        Package "Package 0"#5
+2024-05-29 09:42:50.275 25732 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-05-29 09:42:50.444 25732 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 0" completed

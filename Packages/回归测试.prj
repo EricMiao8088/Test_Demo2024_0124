@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">1c1b10736e4911ef876234cff6f2e990</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="1" xsi:type="projectCall">
+			<NAME xsi:type="string">Generated filtered project</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">1c3f1a0a6e4911ef8dbb34cff6f2e990</ID>
+			<PROJECT-REF xsi:type="projectRef">
+				<PROJECT-PATH xsi:type="string">Generated filtered project.prj</PROJECT-PATH>
+			</PROJECT-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

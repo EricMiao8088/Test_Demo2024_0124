@@ -3,22 +3,11 @@
 	<DEPOSITORIES>
 		<ELEMENT dkey="test.guide">
 			<DVALUE xsi:type="testGuideDepository">
-				<URL xsi:type="string">192.168.43.141</URL>
-				<PORT xsi:type="integer">8085</PORT>
-				<PROJECT_ID xsi:type="integer">1</PROJECT_ID>
-				<AUTH-KEY xsi:type="string">hYQP2bE=.YyiWUIdejSs3tUdiIf_br--TlNSOw0iQHXn6gaTSWKU=</AUTH-KEY>
-				<DEPOSITORY-ID xsi:type="string">1</DEPOSITORY-ID>
-				<HTTPS-ENABLED xsi:type="boolean">True</HTTPS-ENABLED>
-			</DVALUE>
-		</ELEMENT>
-		<ELEMENT dkey="test.guide2">
-			<DVALUE xsi:type="testGuideDepository">
-				<URL xsi:type="string">192.168.43.141</URL>
+				<URL xsi:type="string">localhost</URL>
 				<PORT xsi:type="integer">8085</PORT>
 				<PROJECT_ID xsi:type="integer">3</PROJECT_ID>
-				<AUTH-KEY xsi:type="string">hYQP2bE=.YyiWUIdejSs3tUdiIf_br--TlNSOw0iQHXn6gaTSWKU=</AUTH-KEY>
-				<DEPOSITORY-ID xsi:type="string">2</DEPOSITORY-ID>
-				<HTTPS-ENABLED xsi:type="boolean">True</HTTPS-ENABLED>
+				<AUTH-KEY xsi:type="string">Dw_yBI4=.WlynjUV2hAIWRnvS9HaeTDXFm4cZDQgibrlu4q68yTg=</AUTH-KEY>
+				<DEPOSITORY-ID xsi:type="string">20241011</DEPOSITORY-ID>
 			</DVALUE>
 		</ELEMENT>
 	</DEPOSITORIES>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.4.2.143901+d4a6458297f6" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DiagnosisInfo</NAME>
+			<DESCRIPTION xsi:type="string">原始诊断响应信息</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="byteStream">
+					<CONTENT xsi:type="string">59:02:FF:CD:94:05:07:CD:94:57:07:21:E9:20:07:CD:8C:01:07:21:E9:2E:07:21:E9:2F:07:21:E9:33:07:21:E9:36:07:CD:94:5F:07:CD:94:61:07:CD:94:88:07:CD:94:2A:07:CD:94:58:07</CONTENT>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">DTC_List</NAME>
+			<DESCRIPTION xsi:type="string">Return value of Get_DTC_Info</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">{}</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Expected_DTC_List</NAME>
+			<DESCRIPTION xsi:type="string">包含期望DTC的一个列表，元素是字符串需要用''表示，全部字母大写。</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">['P21E933']</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">DTC_Codes</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Expected_DTC_Status</NAME>
+			<DESCRIPTION xsi:type="string">包含期望DTC状态位的一个列表，元素是字符串需要用''表示，全部字母大写。</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">['07']</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">DTC_Status</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">listofstrings_codes</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">listofstrings_status</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">GetDTCInfo</ID>
+			<XACCESS xsi:type="xaPackage">
+				<PATH xsi:type="string">C:/Users/92126/Desktop/GetDTCInfo.pkg</PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="1" id="616b41c4-6e6c-4e0a-af57-a6a29d446f59" xsi:type="tsPackageCall">
+			<MAPPING-REF xsi:type="string">GetDTCInfo</MAPPING-REF>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="DTC_List">
+					<DVALUE xsi:type="string">DTC_List</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<PARAM-ASSIGNMENTS>
+				<ASSIGNMENT dkey="DiagnosisInfo">
+					<DVALUE xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DiagnosisInfo</NAME>
+					</DVALUE>
+				</ASSIGNMENT>
+			</PARAM-ASSIGNMENTS>
+			<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="2763281" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Check DTC Info</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Check DTC Info</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="2763349" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">DTC_Codes</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="attributeBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">DTC_List</NAME>
+						</COMPONENT>
+						<ATTR-NAME xsi:type="string">keys</ATTR-NAME>
+					</COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="7bece832-7d1f-404d-a1d6-b6d0e1e0b674" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">type</NAME>
+					</COMPONENT>
+					<ARGUMENTS>
+						<ARGUMENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">DTC_Codes</NAME>
+						</ARGUMENT>
+					</ARGUMENTS>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="74bf1b02-8693-4282-8e9b-e060f8409d3d" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">listofstrings_codes</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">list</NAME>
+					</COMPONENT>
+					<ARGUMENTS>
+						<ARGUMENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">DTC_Codes</NAME>
+						</ARGUMENT>
+					</ARGUMENTS>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="2763548" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">DTC_Status</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="attributeBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">DTC_List</NAME>
+						</COMPONENT>
+						<ATTR-NAME xsi:type="string">values</ATTR-NAME>
+					</COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="9db9ddb8-485e-4653-a765-b7b61660cf77" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">listofstrings_status</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">list</NAME>
+					</COMPONENT>
+					<ARGUMENTS>
+						<ARGUMENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">DTC_Status</NAME>
+						</ARGUMENT>
+					</ARGUMENTS>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="2763359" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Check if DTC is in DTC lists</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Check whether DTC is in DTC list</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="2763378" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+					<TESTSTEP format-rev="3" id="2763356" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+						<FORMULA xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Expected_DTC_List</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">loopCounter</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</SECOND-COMPONENT>
+						</FORMULA>
+						<EXPECTATION-OPTION xsi:type="timelessOption">
+							<EXPRESSION xsi:type="builtStringListExpression">
+								<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+								<TYPE xsi:type="integer">6</TYPE>
+								<BASE-EXPRESSION xsi:type="varBaseExpression">
+									<NAME xsi:type="string">listofstrings_codes</NAME>
+								</BASE-EXPRESSION>
+							</EXPRESSION>
+						</EXPECTATION-OPTION>
+					</TESTSTEP>
+					<TESTSTEP id="2763369" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+						<CONDITION xsi:type="compareOpBaseExpression">
+							<NAME xsi:type="string">==</NAME>
+							<FIRST-COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="attributeBaseExpression">
+									<COMPONENT xsi:type="attributeBaseExpression">
+										<COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">api</NAME>
+										</COMPONENT>
+										<ATTR-NAME xsi:type="string">TestEnvironment</ATTR-NAME>
+									</COMPONENT>
+									<ATTR-NAME xsi:type="string">ExecutionInfo</ATTR-NAME>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">LastTestStepResult</ATTR-NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">SUCCESS</VALUE>
+							</SECOND-COMPONENT>
+						</CONDITION>
+						<THEN id="2763367" xsi:type="ifThenElseNode">
+							<TESTSTEP format-rev="3" id="2763362" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+								<ACTION xsi:type="I18NItem">
+									<MULTILANGDATA>
+										<ELEMENT dkey="de_DE">
+											<DVALUE xsi:type="string">Check if DTC Status is correct for the specified DTC code</DVALUE>
+										</ELEMENT>
+										<ELEMENT dkey="en_US">
+											<DVALUE xsi:type="string">Check whether DTC Status is correct for the specified DTC code</DVALUE>
+										</ELEMENT>
+									</MULTILANGDATA>
+									<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+								</ACTION>
+								<TESTSTEP format-rev="3" id="2763365" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+									<COMMENT-I18N xsi:type="I18NItem">
+										<MULTILANGDATA>
+											<ELEMENT dkey="en_US">
+												<DVALUE xsi:type="string">'07'是指定的DTC状态位，此处也可以设计成variables。</DVALUE>
+											</ELEMENT>
+										</MULTILANGDATA>
+										<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+									</COMMENT-I18N>
+									<FORMULA xsi:type="binaryOpBaseExpression">
+										<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+										<FIRST-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">DTC_List</NAME>
+										</FIRST-COMPONENT>
+										<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+											<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+											<FIRST-COMPONENT xsi:type="varBaseExpression">
+												<NAME xsi:type="string">Expected_DTC_List</NAME>
+											</FIRST-COMPONENT>
+											<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+												<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+												<FIRST-COMPONENT xsi:type="varBaseExpression">
+													<NAME xsi:type="string">loopCounter</NAME>
+												</FIRST-COMPONENT>
+												<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+													<VALUE xsi:type="integer">1</VALUE>
+												</SECOND-COMPONENT>
+											</SECOND-COMPONENT>
+										</SECOND-COMPONENT>
+									</FORMULA>
+									<EXPECTATION-OPTION xsi:type="timelessOption">
+										<EXPRESSION xsi:type="builtStringExpression">
+											<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+											<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="string">07</VALUE>
+											</BASE-EXPRESSION>
+										</EXPRESSION>
+									</EXPECTATION-OPTION>
+								</TESTSTEP>
+							</TESTSTEP>
+						</THEN>
+						<ELSE id="2763368" xsi:type="ifThenElseNode"/>
+					</TESTSTEP>
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="string">loopCounter</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<LOOP-COUNT xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">len</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Expected_DTC_List</NAME>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</LOOP-COUNT>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="2763452" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Check whether DTC_Status if in DTC list</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<COMMENT-I18N xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">注意：python字典型数据是不能根据value查key的。{key: value}这是字典数据的定义方式。</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</COMMENT-I18N>
+				<TESTSTEP id="2763539" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+					<TESTSTEP format-rev="3" id="2763555" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+						<FORMULA xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_SUBSCR</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Expected_DTC_Status</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">loopCounter</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">1</VALUE>
+								</SECOND-COMPONENT>
+							</SECOND-COMPONENT>
+						</FORMULA>
+						<EXPECTATION-OPTION xsi:type="timelessOption">
+							<EXPRESSION xsi:type="builtStringListExpression">
+								<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+								<TYPE xsi:type="integer">6</TYPE>
+								<BASE-EXPRESSION xsi:type="varBaseExpression">
+									<NAME xsi:type="string">listofstrings_status</NAME>
+								</BASE-EXPRESSION>
+							</EXPRESSION>
+						</EXPECTATION-OPTION>
+					</TESTSTEP>
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="string">loopCounter</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<LOOP-COUNT xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">len</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Expected_DTC_Status</NAME>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</LOOP-COUNT>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

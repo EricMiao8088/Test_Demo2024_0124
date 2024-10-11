@@ -1,0 +1,75 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.3GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 19.09.2024 17:08:01 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-10-19
+         - licensed for: Turing
+
+
+2024-09-19 17:08:01.648 15928 ManagedWorker-2*PE.Run() INFO:
+                        Start package 'Compare_Signals.pkg' with test case execution with sequential analysis job execution
+2024-09-19 17:08:01.661 15928 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Compare_Signals" started
+2024-09-19 17:08:01.665 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-09-19 17:08:01.677 15928 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2024-09-19 17:08:01.697 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-09-19 17:08:01.725 15928 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Compare_Signals" completed
+2024-09-19 17:08:01.777 15928 ManagedWorker-2*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Compare_Signals.pkg" -> "Trace analysis 1")
+2024-09-19 17:08:01.800 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        Performing episode ...
+2024-09-19 17:08:01.801 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:01.870 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        <class 'tts.traceAnalysis.common.steps.templates.trcpNumpy.TrcpNumpyExec.Signal'>
+2024-09-19 17:08:01.871 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:01.882 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        1
+2024-09-19 17:08:01.892 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:01.901 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        []
+2024-09-19 17:08:01.910 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:01.919 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        0
+2024-09-19 17:08:01.930 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:01.939 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        --------
+2024-09-19 17:08:01.949 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:01.960 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        11111
+2024-09-19 17:08:01.971 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:01.986 15928 ManagedWorker-2*PE.Run() ERROR:
+                        tts.traceAnalysis.common.steps.templates.trcpNumpy.TrcpNumpyExec.Eval: ValueError: Length of timestamps and length of values has to be equal (801 vs. 800)!
+2024-09-19 17:08:02.007 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        Episode completed
+2024-09-19 17:08:02.008 15928 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-19 17:08:02.094 15928 ManagedWorker-2*PE.Run() ERROR:
+                        Runtime error in template method "Process", line 173: ValueError: Length of timestamps and length of values has to be equal (801 vs. 800)!

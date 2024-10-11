@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<TAGS>
+			<TAG xsi:type="string">TESTCASE</TAG>
+		</TAGS>
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">SOC</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Engine_Control_VehTrStby</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Veh_mdl</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Veh_Bus</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Veh_Meas</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">diff</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Run_Counter</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Battery-Control/Cell_6_Voltage</ID>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Battery-Control</ECU-KEY>
+				<LABEL xsi:type="string">Cell_6_Voltage</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Battery-Control/SoC</ID>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Battery-Control</ECU-KEY>
+				<LABEL xsi:type="string">SoC</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CTRL_VEH/BrakePedal [%]/Value</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">Model Root/CTRL_VEH/BrakePedal [%]/Value</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">uint(32)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CTRL_VEH/DriveMode [0|1|2|3|4]/Value</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">Model Root/CTRL_VEH/DriveMode [0|1|2|3|4]/Value</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">uint(32)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CTRL_VEH/DriverRequest [%]/Value</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">Model Root/CTRL_VEH/DriverRequest [%]/Value</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">flt(64,IEEE)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY</ID>
+			<DESCRIPTION xsi:type="string">
+</DESCRIPTION>
+			<XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<BUS-KEY xsi:type="string">EPT-CAN</BUS-KEY>
+				<FRAME-NAME xsi:type="string">VEH_DATA</FRAME-NAME>
+				<SIGNAL-NAME xsi:type="string">VEHICLE_VELOCITY</SIGNAL-NAME>
+				<NODE-NAME xsi:type="string">ELECTRIC_POWER_TRAIN</NODE-NAME>
+				<PDU-NAME xsi:type="string">VEH_DATA</PDU-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Engine-Control/VehTrStby</ID>
+			<DESCRIPTION xsi:type="string">information if vehicle traction standby is established</DESCRIPTION>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Engine-Control</ECU-KEY>
+				<LABEL xsi:type="string">VehTrStby</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Engine-Control/recup</ID>
+			<DESCRIPTION xsi:type="string">recuperation state -&gt; 1=active</DESCRIPTION>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Engine-Control</ECU-KEY>
+				<LABEL xsi:type="string">recup</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Engine-Control/speed</ID>
+			<DESCRIPTION xsi:type="string">velocity of the vehicle in km/h</DESCRIPTION>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Engine-Control</ECU-KEY>
+				<LABEL xsi:type="string">speed</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Engine-Control/tmot</ID>
+			<DESCRIPTION xsi:type="string">engine temperature</DESCRIPTION>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Engine-Control</ECU-KEY>
+				<LABEL xsi:type="string">tmot</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Engine-Control/ub</ID>
+			<DESCRIPTION xsi:type="string">battery voltage</DESCRIPTION>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="string">Engine-Control</ECU-KEY>
+				<LABEL xsi:type="string">ub</LABEL>
+				<RASTER xsi:type="string">Port-Default</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">STATUS_VEH/VehicleVelocity [kmh]/In1</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">flt(64,IEEE)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">StateOfCharge</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">Model Root/STATUS_BAT/StateOfCharge [%]/Value</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">flt(64,IEEE)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">设置车辆状态</ID>
+			<XACCESS xsi:type="xaPackage">
+				<PATH xsi:type="string">C:/ET2024_2/2_ECU-TEST_Advanced/Packages/设置车辆状态.pkg</PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Engine-Control</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Engine-Control/speed</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Engine-Control/VehTrStby</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Engine-Control/recup</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Engine-Control/tmot</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Engine-Control/ub</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Battery-Control</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Battery-Control/SoC</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Battery-Control/Cell_6_Voltage</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Plant model</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">CTRL_VEH/DriverRequest [%]/Value</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Engine-Control</NAME>
+				<UUID xsi:type="string">66184491431411ef865b34cff6f2e990</UUID>
+				<FILE-NAME xsi:type="string">${packageName}_${recordingStartTime}</FILE-NAME>
+				<SIGNAL-GROUP-REF>Engine-Control</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Battery-Control</NAME>
+				<UUID xsi:type="string">94222ffa431411efa95634cff6f2e990</UUID>
+				<SIGNAL-GROUP-REF>Battery-Control</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Plant model</NAME>
+				<UUID xsi:type="string">03f75183431911ef96ee34cff6f2e990</UUID>
+				<SIGNAL-GROUP-REF>Plant model</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="50113fba-1398-46f0-822b-ff2ff2d627c8" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">检查SOC状态是否在20至90之间</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="ebe9b687-ef5b-4fa1-836c-e11182bf2d92" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">StateOfCharge</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">SOC</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<EXPECTATION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="manualNumericExpression">
+						<BASE-EXPRESSION xsi:type="andBaseExpression">
+							<FIRST-COMPONENT xsi:type="compareOpBaseExpression">
+								<NAME xsi:type="string">&lt;=</NAME>
+								<FIRST-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">20</VALUE>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">value</NAME>
+								</SECOND-COMPONENT>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="compareOpBaseExpression">
+								<NAME xsi:type="string">&lt;=</NAME>
+								<FIRST-COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">value</NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">90</VALUE>
+								</SECOND-COMPONENT>
+							</SECOND-COMPONENT>
+						</BASE-EXPRESSION>
+					</EXPRESSION>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="1" id="f0b0838a-d8bc-464d-81ca-09ac8338e34e" xsi:type="tsPackageCall">
+			<MAPPING-REF xsi:type="string">设置车辆状态</MAPPING-REF>
+			<PARAM-ASSIGNMENTS/>
+			<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+		</TESTSTEP>
+		<TESTSTEP id="f7737702-d33d-4bd4-85db-c3f602d89d0e" xsi:type="tsRead">
+			<MAPPING-REF xsi:type="string">Engine-Control/VehTrStby</MAPPING-REF>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">Engine_Control_VehTrStby</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<EXPECTATION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="builtNumericExpression">
+					<RELATION xsi:type="string">==</RELATION>
+					<VALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1</VALUE>
+					</VALUE>
+				</EXPRESSION>
+			</EXPECTATION>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<Z-UNIT xsi:type="string">u_none</Z-UNIT>
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+			</METRIC>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="2ac526ac-37b9-428b-bb72-4762b4e6f93f" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">设置车辆驾驶状态</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="a204f364-cc00-492c-8bed-c7721969077c" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">CTRL_VEH/DriveMode [0|1|2|3|4]/Value</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP id="070a7964-4095-4816-9685-89b116b87321" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+			<NAME xsi:type="string"/>
+			<RECORD-ALL xsi:type="boolean">True</RECORD-ALL>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="9ad36d97-041d-433c-b00f-ec341fbd0e93" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">设置驾驶需求为50%</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="509ece3a-c7a6-48a3-8170-ca89cfc0617f" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">CTRL_VEH/DriverRequest [%]/Value</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">50</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="c172644d-4884-4af5-b121-568a88bd6598" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">检查三个不同通道获取的车速</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<TESTSTEP id="3ec35a68-4d96-43db-b119-9fb3024cf22e" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">STATUS_VEH/VehicleVelocity [kmh]/In1</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Veh_mdl</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<EXPECTATION xsi:type="finallyTrueOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">&gt;</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">50</VALUE>
+						</VALUE>
+					</EXPRESSION>
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">9000</VALUE>
+					</TIME>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="23bd02d1-792e-404e-9873-d16582a6fa73" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Veh_Bus</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<EXPECTATION xsi:type="finallyTrueOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">&gt;</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">50</VALUE>
+						</VALUE>
+					</EXPRESSION>
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">9000</VALUE>
+					</TIME>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<Z-UNIT xsi:type="string">u_kmph</Z-UNIT>
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="faed3e1f-2707-4f60-b819-2734dd18b7e1" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Engine-Control/speed</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Veh_Meas</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<EXPECTATION xsi:type="finallyTrueOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">&gt;</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">50</VALUE>
+						</VALUE>
+					</EXPRESSION>
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">9000</VALUE>
+					</TIME>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<Z-UNIT xsi:type="string">u_none</Z-UNIT>
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="89c8bfbf-2f75-4b63-81e6-77acc9f0149c" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="zh_CN">
+							<DVALUE xsi:type="string">检查三者信号的误差值</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP format-rev="3" id="87e4048c-0d31-4f3e-84ab-17cc8bcdab19" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="string">diff</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">max</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT xsi:type="functionBaseExpression">
+								<COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">abs</NAME>
+								</COMPONENT>
+								<ARGUMENTS>
+									<ARGUMENT xsi:type="binaryOpBaseExpression">
+										<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+										<FIRST-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">Veh_Bus</NAME>
+										</FIRST-COMPONENT>
+										<SECOND-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">Veh_mdl</NAME>
+										</SECOND-COMPONENT>
+									</ARGUMENT>
+								</ARGUMENTS>
+							</ARGUMENT>
+							<ARGUMENT xsi:type="functionBaseExpression">
+								<COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">abs</NAME>
+								</COMPONENT>
+								<ARGUMENTS>
+									<ARGUMENT xsi:type="binaryOpBaseExpression">
+										<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+										<FIRST-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">Veh_Bus</NAME>
+										</FIRST-COMPONENT>
+										<SECOND-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">Veh_Meas</NAME>
+										</SECOND-COMPONENT>
+									</ARGUMENT>
+								</ARGUMENTS>
+							</ARGUMENT>
+							<ARGUMENT xsi:type="functionBaseExpression">
+								<COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">abs</NAME>
+								</COMPONENT>
+								<ARGUMENTS>
+									<ARGUMENT xsi:type="binaryOpBaseExpression">
+										<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+										<FIRST-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">Veh_mdl</NAME>
+										</FIRST-COMPONENT>
+										<SECOND-COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">Veh_Meas</NAME>
+										</SECOND-COMPONENT>
+									</ARGUMENT>
+								</ARGUMENTS>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</FORMULA>
+					<EXPECTATION-OPTION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">&lt;=</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">1.2</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION-OPTION>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="6a2e0a48-aa83-4922-8f09-a799b653ac66" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">驾驶需求设置为0</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<TESTSTEP id="c2c6486d-d709-475c-ac2a-ecf181573456" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">CTRL_VEH/DriverRequest [%]/Value</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="28cede9e-d004-4111-b508-46c652804b34" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">检查车速5秒内小于30</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="fa5603cb-3999-4d16-b033-a4ef3da27b5e" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Engine-Control/speed</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Veh_Meas</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<EXPECTATION xsi:type="finallyTrueOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">&lt;</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">30</VALUE>
+						</VALUE>
+					</EXPRESSION>
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">9000</VALUE>
+					</TIME>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<Z-UNIT xsi:type="string">u_none</Z-UNIT>
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP id="006186db-42fe-4a02-9067-8512e9af9ec9" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+			<NAME xsi:type="string"/>
+			<RECORD-ALL xsi:type="boolean">True</RECORD-ALL>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="eda07c17-224a-4fce-a124-43c56e5a9b3f" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">设置刹车为35%</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="1b6b04db-6575-48e0-a6b2-6aa96bdb9681" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">CTRL_VEH/BrakePedal [%]/Value</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">35</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="e20c64c6-d85c-40f8-a2fb-92bc5e67f573" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">检查车速5秒内降为0</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="aaee2610-1ffe-46ed-a506-df6a673c77e2" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Engine-Control/speed</MAPPING-REF>
+				<EXPECTATION xsi:type="finallyTrueOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</VALUE>
+						<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.001</VALUE>
+							</VALUE>
+						</TOLERANCE>
+					</EXPRESSION>
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5000</VALUE>
+					</TIME>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<Z-UNIT xsi:type="string">u_none</Z-UNIT>
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="1" id="b6e1b790-74ba-4bc1-9dc1-ad1a3fbceee2" xsi:type="tsPackageCall">
+			<MAPPING-REF xsi:type="string">设置车辆状态</MAPPING-REF>
+			<PARAM-ASSIGNMENTS>
+				<ASSIGNMENT dkey="startButton">
+					<DVALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">Postcondition</VALUE>
+					</DVALUE>
+				</ASSIGNMENT>
+			</PARAM-ASSIGNMENTS>
+			<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+		</TESTSTEP>
+		<TESTSTEP id="1658646b-c1c2-4114-bd0e-22c296398e9d" xsi:type="tsRead">
+			<MAPPING-REF xsi:type="string">Engine-Control/VehTrStby</MAPPING-REF>
+			<EXPECTATION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="builtNumericExpression">
+					<RELATION xsi:type="string">==</RELATION>
+					<VALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</VALUE>
+				</EXPRESSION>
+			</EXPECTATION>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<Z-UNIT xsi:type="string">u_none</Z-UNIT>
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+			</METRIC>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="4195c3f3431411ef962434cff6f2e990" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="4195c3f4431411ef897734cff6f2e990" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM uuid="7bbff394431611efa88834cff6f2e990" xsi:type="analysisBlock">
+					<NAME xsi:type="string">plot</NAME>
+					<ANALYSISITEM format-rev="4" uuid="65d6f01b431411ef88c134cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">Engine_Control_speed</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">DriverRequest</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">Battery_Control_SoC</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">VehTrStby</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS>
+							<UNUSED-SIGNAL format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<NAME xsi:type="string">Battery_Control_Cell_6_Voltage</NAME>
+								<AXIS xsi:type="integer">0</AXIS>
+							</UNUSED-SIGNAL>
+						</UNUSED-SIGNALS>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+				</ANALYSISITEM>
+				<ANALYSISITEM uuid="82d1c80a431611efb61f34cff6f2e990" xsi:type="analysisBlock">
+					<NAME xsi:type="string">检查soc大于20%</NAME>
+					<ANALYSISITEM format-rev="1" uuid="b03c46bd431611ef810234cff6f2e990" xsi:type="calculation">
+						<ANALYSISITEM format-rev="4" uuid="e2ed7724431611ef994634cff6f2e990" xsi:type="plotItem">
+							<NAME xsi:type="string">Plot</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">Battery_Control_SoC</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<UNUSED-SIGNALS/>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NONE</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<NAME xsi:type="string">Calculation</NAME>
+						<FORMULA xsi:type="string">Battery_Control_SoC &gt; 20</FORMULA>
+						<EXPECTATION xsi:type="manualExpression">
+							<BASE-EXPRESSION xsi:type="varBaseExpression">
+								<NAME xsi:type="string">value</NAME>
+							</BASE-EXPRESSION>
+						</EXPECTATION>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+					</ANALYSISITEM>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="d8559ccd431711efa03334cff6f2e990" xsi:type="calculation">
+					<ANALYSISITEM format-rev="4" uuid="e4571be7431711ef859a34cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">VehTrStby</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<NAME xsi:type="string">Calculation</NAME>
+					<FORMULA xsi:type="string">VehTrStby == 1</FORMULA>
+					<EXPECTATION xsi:type="manualExpression">
+						<BASE-EXPRESSION xsi:type="varBaseExpression">
+							<NAME xsi:type="string">value</NAME>
+						</BASE-EXPRESSION>
+					</EXPECTATION>
+					<EXPECTATION-MODE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">once</VALUE>
+					</EXPECTATION-MODE>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="087d53fa431911efaede34cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">Trigger block</NAME>
+					<ANALYSISITEM format-rev="3" poolRev="7" uuid="9f907745432011efba7c34cff6f2e990" xsi:type="referencingTraceStep">
+						<NAME xsi:type="string">CalculateTriggerRangeDuration</NAME>
+						<ANALYSISITEM format-rev="4" uuid="9f907746432011ef810734cff6f2e990" xsi:type="plotItem">
+							<NAME xsi:type="string">Plot</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="2" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">Signal</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="2" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">TriggerRangeDuration</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<UNUSED-SIGNALS/>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NONE</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<SIGNAL-BINDING xsi:type="signalBinding">
+							<PARAMETER dkey="Signal">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="string">Engine_Control_speed</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+							<PARAMETER dkey="TriggerRangeDuration">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="string">time</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+						</SIGNAL-BINDING>
+						<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+							<PARAM-ASSIGNMENTS>
+								<ASSIGNMENT dkey="TriggerRangeDurationList">
+									<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="ZeroSamplesOutsideTriggerRange">
+									<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+							</PARAM-ASSIGNMENTS>
+						</PARAM-ASSIGNMENTS>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+						<TEMPLATE-REF xsi:type="expressionref">
+							<PATH-EXPRESSION xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_ADD</NAME>
+								<FIRST-COMPONENT xsi:type="attributeBaseExpression">
+									<COMPONENT xsi:type="attributeBaseExpression">
+										<COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">libraries</NAME>
+										</COMPONENT>
+										<ATTR-NAME xsi:type="string">std</ATTR-NAME>
+									</COMPONENT>
+									<ATTR-NAME xsi:type="string">traceStepTemplates</ATTR-NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">Calculate/CalculateTriggerRangeDuration.py</VALUE>
+								</SECOND-COMPONENT>
+							</PATH-EXPRESSION>
+						</TEMPLATE-REF>
+					</ANALYSISITEM>
+					<ANALYSISITEM format-rev="1" uuid="b32fa3ef431e11efb98734cff6f2e990" xsi:type="calculation">
+						<VISIBLE xsi:type="boolean">False</VISIBLE>
+						<ANALYSISITEM format-rev="4" uuid="1bb12d02431911ef9c2f34cff6f2e990" xsi:type="plotItem">
+							<NAME xsi:type="string">Plot</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">Engine_Control_speed</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">DriverRequest</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">time</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">VehTrStby</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<UNUSED-SIGNALS/>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NONE</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<NAME xsi:type="string">Calculation</NAME>
+						<FORMULA xsi:type="string">StopTriggerTime()-StartTriggerTime()+Battery_Control_SoC*0</FORMULA>
+						<SAVE-IN xsi:type="string">time</SAVE-IN>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">DriverRequest &gt; 1 and VehTrStby == 1</START-CONDITION>
+					<STOP-CONDITION xsi:type="string">Engine_Control_speed&gt;35</STOP-CONDITION>
+					<TRIGGER-MODE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">start trigger while not stop trigger</VALUE>
+					</TRIGGER-MODE>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+				<ANALYSISITEM format-rev="1" uuid="f7f064df431f11ef8b5334cff6f2e990" xsi:type="triggerBlock">
+					<NAME xsi:type="string">Trigger block</NAME>
+					<ANALYSISITEM format-rev="4" uuid="161cbdc1432011efa64334cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">Engine_Control_speed</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<ANALYSISITEM format-rev="3" poolRev="7" uuid="545caacf432011ef840e34cff6f2e990" xsi:type="referencingTraceStep">
+						<NAME xsi:type="string">CalculateTriggerRangeDuration</NAME>
+						<ANALYSISITEM format-rev="4" uuid="6c3de251432011ef922134cff6f2e990" xsi:type="plotItem">
+							<NAME xsi:type="string">Plot</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="2" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">Signal</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="2" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">TriggerRangeDuration</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<UNUSED-SIGNALS/>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NONE</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<SIGNAL-BINDING xsi:type="signalBinding">
+							<PARAMETER dkey="Signal">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="string">Engine_Control_speed</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+							<PARAMETER dkey="TriggerRangeDuration">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="string">TriggerRangeDuration_time</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+						</SIGNAL-BINDING>
+						<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+							<PARAM-ASSIGNMENTS>
+								<ASSIGNMENT dkey="TriggerRangeDurationList">
+									<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="ZeroSamplesOutsideTriggerRange">
+									<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+							</PARAM-ASSIGNMENTS>
+						</PARAM-ASSIGNMENTS>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+						<TEMPLATE-REF xsi:type="expressionref">
+							<PATH-EXPRESSION xsi:type="binaryOpBaseExpression">
+								<NAME xsi:type="string">BINARY_ADD</NAME>
+								<FIRST-COMPONENT xsi:type="attributeBaseExpression">
+									<COMPONENT xsi:type="attributeBaseExpression">
+										<COMPONENT xsi:type="varBaseExpression">
+											<NAME xsi:type="string">libraries</NAME>
+										</COMPONENT>
+										<ATTR-NAME xsi:type="string">std</ATTR-NAME>
+									</COMPONENT>
+									<ATTR-NAME xsi:type="string">traceStepTemplates</ATTR-NAME>
+								</FIRST-COMPONENT>
+								<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">Calculate/CalculateTriggerRangeDuration.py</VALUE>
+								</SECOND-COMPONENT>
+							</PATH-EXPRESSION>
+						</TEMPLATE-REF>
+					</ANALYSISITEM>
+					<START-CONDITION xsi:type="string">RisingEdge(Engine_Control_speed)</START-CONDITION>
+					<STOP-CONDITION xsi:type="string"/>
+					<TRIGGER-START-OFFSET xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">1.0</VALUE>
+						</COMPONENT>
+					</TRIGGER-START-OFFSET>
+					<TRIGGER-STOP-OFFSET format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</TRIGGER-STOP-OFFSET>
+					<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+					<REPORT-MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</REPORT-MAX-NUMBER>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="66163622431411ef9b4434cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Engine_Control_speed</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Engine-Control/speed</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">66184491431411ef865b34cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="942002fb431411efab4e34cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Battery_Control_SoC</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Battery-Control/SoC</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">94222ffa431411efa95634cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="9f1b029b431711ef8f1434cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">VehTrStby</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Engine-Control/VehTrStby</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">66184491431411ef865b34cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="03f653e0431911ef9c3934cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">DriverRequest</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">CTRL_VEH/DriverRequest [%]/Value</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">03f75183431911ef96ee34cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="de96319f431e11efaefc34cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">time</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="602c0491432011efaec934cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">TriggerRangeDuration_time</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>

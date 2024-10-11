@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MASTER-MAPPING format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+		<ID xsi:type="string">Plant model/currentTime</ID>
+		<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+			<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+			<VARIABLE-PATH xsi:type="string">currentTime</VARIABLE-PATH>
+			<VARIABLE-TYPE xsi:type="string">flt(64,IEEE)*</VARIABLE-TYPE>
+		</XACCESS>
+	</MAPPING-ITEM>
+	<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+		<ID xsi:type="string">StateOfCharge</ID>
+		<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+			<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+			<VARIABLE-PATH xsi:type="string">modelStepSize</VARIABLE-PATH>
+			<VARIABLE-TYPE xsi:type="string">flt(64,IEEE)</VARIABLE-TYPE>
+		</XACCESS>
+	</MAPPING-ITEM>
+</MASTER-MAPPING>

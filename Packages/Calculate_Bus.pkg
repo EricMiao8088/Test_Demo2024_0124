@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CANoeCANalyzer01.StartMeasurement</ID>
+			<XACCESS xsi:type="xaJob">
+				<TOOL-ID xsi:type="string">CANoeCANalyzer01</TOOL-ID>
+				<JOB-NAME xsi:type="string">StartMeasurement</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CANoeCANalyzer01.StopMeasurement</ID>
+			<XACCESS xsi:type="xaJob">
+				<TOOL-ID xsi:type="string">CANoeCANalyzer01</TOOL-ID>
+				<JOB-NAME xsi:type="string">StopMeasurement</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Engine/EngineData/EngineData/EngSpeed</ID>
+			<DESCRIPTION xsi:type="string">
+</DESCRIPTION>
+			<XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<BUS-KEY xsi:type="string">B-CAN</BUS-KEY>
+				<FRAME-NAME xsi:type="string">EngineData</FRAME-NAME>
+				<SIGNAL-NAME xsi:type="string">EngSpeed</SIGNAL-NAME>
+				<NODE-NAME xsi:type="string">Engine</NODE-NAME>
+				<PDU-NAME xsi:type="string">EngineData</PDU-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">FrameID</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">FrameID</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">B-CAN</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Engine/EngineData/EngineData/EngSpeed</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">FrameID</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for B-CAN</NAME>
+				<UUID xsi:type="string">7844cf4c5bc711efbe3934cff6f2e990</UUID>
+				<SIGNAL-GROUP-REF>B-CAN</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="702afe1f-28de-4f9f-8e0c-35955fbf0f07" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+			<NAME xsi:type="string"/>
+			<RECORD-ALL xsi:type="boolean">True</RECORD-ALL>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="e1aa138a-a25e-4c99-ab0d-ebfdf61e8e4c" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">CANoeCANalyzer01.StartMeasurement</MAPPING-REF>
+		</TESTSTEP>
+		<TESTSTEP id="caa583c6-610e-4d43-b4e7-e7c9c7ae3c63" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">8000</VALUE>
+			</TIME>
+		</TESTSTEP>
+		<TESTSTEP id="9b21d1c7-0164-4594-8307-a92ef90dae3f" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+			<NAME xsi:type="string"/>
+			<RECORD-ALL xsi:type="boolean">True</RECORD-ALL>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="eda9142e-bc47-428d-b402-910966d31ecb" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">CANoeCANalyzer01.StopMeasurement</MAPPING-REF>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="40f785d05bc711ef916934cff6f2e990" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="40f785d15bc711ef873334cff6f2e990" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM format-rev="3" poolRev="7" uuid="17f88af25bc911ef8f2934cff6f2e990" xsi:type="referencingTraceStep">
+					<NAME xsi:type="string">Bus_Calculation</NAME>
+					<ANALYSISITEM format-rev="4" uuid="2883946e5bc911ef9de334cff6f2e990" xsi:type="plotItem">
+						<NAME xsi:type="string">Plot</NAME>
+						<VISIBLE xsi:type="boolean">False</VISIBLE>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">Signal1</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<UNUSED-SIGNALS/>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NONE</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="string">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<SIGNAL-BINDING xsi:type="signalBinding">
+						<PARAMETER dkey="Bus_Signal">
+							<DVALUE format-rev="1" xsi:type="signalParameter">
+								<REF-SIGNAL-NAME xsi:type="string">Signal1</REF-SIGNAL-NAME>
+							</DVALUE>
+						</PARAMETER>
+					</SIGNAL-BINDING>
+					<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+						<PARAM-ASSIGNMENTS>
+							<ASSIGNMENT dkey="Average_Time">
+								<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="Failure_Count">
+								<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="Frame_ID">
+								<DVALUE format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">0x100</VALUE>
+								</DVALUE>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="Max_Time">
+								<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="Min_Time">
+								<DVALUE format-rev="2" xsi:type="valueBaseExpression"/>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="Target_Max_Time">
+								<DVALUE format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">200</VALUE>
+								</DVALUE>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="Target_Min_Time">
+								<DVALUE format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">90</VALUE>
+								</DVALUE>
+							</ASSIGNMENT>
+						</PARAM-ASSIGNMENTS>
+					</PARAM-ASSIGNMENTS>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+					<TEMPLATE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Bus_Calculation.py</VALUE>
+						</PATH-EXPRESSION>
+					</TEMPLATE-REF>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="7843e4e45bc711ef8a7434cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Engine_EngineData_EngineData_EngSpeed</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Engine/EngineData/EngineData/EngSpeed</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">7844cf4c5bc711efbe3934cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="1e383f8a5bc911efa59f34cff6f2e990" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Signal1</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">FrameID</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">7844cf4c5bc711efbe3934cff6f2e990</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>

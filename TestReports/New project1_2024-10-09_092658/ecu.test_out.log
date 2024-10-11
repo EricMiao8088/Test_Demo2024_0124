@@ -1,0 +1,59 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          38.0GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 09.10.2024 09:26:58 (UTC +8:00) === ecu.test 2024.3.0.156114+c108ea21784a 156114+c108ea21784a (2024/09/19 12:15:31) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-11-08
+         - licensed for: Turing
+         - runner: False
+
+
+
+2024-10-09 09:26:58.722 23820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "oooo" started
+2024-10-09 09:26:58.762 23820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-10-09 09:26:58.763 23820 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2024-10-09 09:27:01.775 23820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-10-09 09:27:01.776 23820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "oooo" completed
+2024-10-09 09:27:01.837 23820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "oooo" started
+2024-10-09 09:27:01.839 23820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-10-09 09:27:01.849 23820 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2024-10-09 09:27:16.206 23820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-10-09 09:27:16.207 23820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "oooo" completed
+2024-10-09 09:27:16.258 23820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "oooo" started
+2024-10-09 09:27:16.260 23820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-10-09 09:27:16.271 23820 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2024-10-09 09:27:20.790 23820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-10-09 09:27:20.793 23820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "oooo" completed
+2024-10-09 09:27:20.823 23820 ManagedWorker-4 INFO:
+                        Finalizing report 'New project1.prf'...

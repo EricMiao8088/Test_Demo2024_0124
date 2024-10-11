@@ -1,0 +1,68 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          81.5GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 11.06.2024 16:52:47 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-07-07
+         - licensed for: Turing
+
+
+2024-06-11 16:52:47.302 29852 XMLRPC-API-Listener ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\api\xmlRpcApi\Xmlrpc.py", line 437, in _dispatch
+                          File "tts\core\api\xmlRpcApi\Xmlrpc.py", line 434, in _dispatch
+                          File "xmlrpc\server.py", line 419, in _dispatch
+                          File "tts\core\api\objectApi\ObjectBasedApi.py", line 287, in Call
+                          File "tts\core\api\objectApi\Facade.py", line 282, in Wrapper
+                          File "tts\core\project\objectApi\ProjectApi.py", line 69, in OpenProject
+                        tts.core.api.objectApi.ObjectBasedApi.ApiError: Project file C:\ET2024_2\2_ECU-TEST_Advanced\Packages does not exist.
+2024-06-11 16:52:47.338 29852 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 1393, in Evaluate
+                          File "C:\ET2024_2\2_ECU-TEST_Advanced\UserPyModules\Disable.py", line 15, in Disable
+                            prj=api.ProjectApi.OpenProject(PRJName)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          File "C:\Program Files\ecu.test 2024.2\Templates\ApiClient\ApiClient.py", line 21349, in OpenProject
+                            callResult = self._Call("OpenProject", filename, execInCurrentPkgDir, filterExpression)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          File "C:\Program Files\ecu.test 2024.2\Templates\ApiClient\ObjectApiProxy.py", line 81, in _Call
+                            return self._xmlRpc.ObjectApi.Call(self._objId, methodName, argList, argDict)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          File "xmlrpc\client.py", line 1122, in __call__
+                          File "xmlrpc\client.py", line 1464, in __request
+                          File "xmlrpc\client.py", line 1166, in request
+                          File "xmlrpc\client.py", line 1182, in single_request
+                          File "xmlrpc\client.py", line 1354, in parse_response
+                          File "xmlrpc\client.py", line 668, in close
+                        xmlrpc.client.Fault: <Fault 1: 'ApiError: Project file C:\\ET2024_2\\2_ECU-TEST_Advanced\\Packages does not exist.'>
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 1397, in Evaluate
+                        tt._Exceptions_.TTError: An error occurred when calling "user.Disable.Disable(MainPackagePath, PRJName)": <Fault 1: 'ApiError: Project file C:\\ET2024_2\\2_ECU-TEST_Advanced\\Packages does not exist.'>
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 921, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 209, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 152, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: An error occurred when calling "user.Disable.Disable(MainPackagePath, PRJName)": <Fault 1: 'ApiError: Project file C:\\ET2024_2\\2_ECU-TEST_Advanced\\Packages does not exist.'>

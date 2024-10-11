@@ -1,0 +1,43 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          49.5GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 11.09.2024 16:56:51 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-10-09
+         - licensed for: Turing
+
+
+2024-09-11 16:56:51.576 7348 ManagedWorker-2*PE.Run() INFO:
+                        Start package 'Voltage reference step change.pkg' without test case execution with sequential analysis job execution
+2024-09-11 16:56:51.599 7348 ManagedWorker-2*PE.Run() INFO:
+                        PreProcess "Voltage reference step change" started
+2024-09-11 16:56:51.644 7348 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2024-09-11 16:56:51.681 7348 ManagedWorker-2*PE.Run() INFO:
+                        PreProcess "Voltage reference step change" completed
+2024-09-11 16:56:51.745 7348 ManagedWorker-2*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\DMAT\Voltage reference step change.pkg" -> "Trace analysis 1")
+2024-09-11 16:56:51.786 7348 ManagedWorker-2*PE.Run() DEBUG:
+                        Performing episode ...
+2024-09-11 16:56:51.788 7348 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-09-11 16:56:51.808 7348 ManagedWorker-2*PE.Run() DEBUG:
+                        Episode completed
+2024-09-11 16:56:51.814 7348 ManagedWorker-2*PE.Run() DEBUG:
+                        

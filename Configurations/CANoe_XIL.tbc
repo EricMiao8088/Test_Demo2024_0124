@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TOOLING format-rev="3" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+	<TOOL-HOSTS>
+		<TOOL-HOST xsi:type="toolHost">
+			<URL xsi:type="string">local</URL>
+			<PLATFORM xsi:type="string">Windows</PLATFORM>
+			<BASE-PATH xsi:type="string">&lt;workspace&gt;</BASE-PATH>
+		</TOOL-HOST>
+	</TOOL-HOSTS>
+	<TOOLS>
+		<TOOL id="CANoeCANalyzer01" xsi:type="tool">
+			<TOOL-HOST xsi:type="string">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="string">CANoeCANalyzer</TOOL-NAME>
+			<START-OPTION xsi:type="integer">0</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="CfgFile" propertyType="uri" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">C:\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\AFDX\AFDXBasic\AFDXBasic.cfg</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="XilID" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">Vector; CANoe64 2.0.1</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="modelDir" propertyType="uri" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">C:\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\AFDX\AFDXBasic</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="recordingFormats" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">MDF4</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</TOOL>
+	</TOOLS>
+	<PORTS>
+		<PORT format-rev="2" id="MDL-XIL01" toolId="CANoeCANalyzer01" xsi:type="port">
+			<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+				<NAME xsi:type="string">MODELACCESS</NAME>
+			</PORT-TYPE-ID>
+			<IMPL-TYPE-ID xsi:type="string">XIL</IMPL-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="ModelFile" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">ref:SUT</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="RecordingFormat" propertyType="choiceGroup" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">CSV</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="SimulationStopMode" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">Do not stop</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</PORT>
+	</PORTS>
+	<TOOL-DESCRIPTORS>
+		<TOOL-DESCRIPTOR dkey="CANoeCANalyzer01">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="string">CANoeCANalyzer</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">MODELACCESS</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">EnvVarModel</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Environment variables</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">SystemVarModel</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">System variables</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">ConfigModel</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Configuration</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">XIL</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">XIL MAPort</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">BUSACCESS</NAME>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">Standard</IMPL-TYPE-ID>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="string">GENERIC</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="string">Generic bus access (using XIL-API model port)</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">toolName</NAME>
+						<DISPLAY-NAME xsi:type="string">Tool selection</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Determines whether CANoe or CANalyzer shall be used</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">CANoe</ELEMENT>
+							<ELEMENT xsi:type="string">CANalyzer</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">CANoe</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">XilID</NAME>
+						<DISPLAY-NAME xsi:type="string">XIL-API Server</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">XIL API server version. The XIL interface has to be enabled in the project settings in CANoe.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">Don't use</ELEMENT>
+							<ELEMENT xsi:type="string">Vector; CANoe32 2.0.1</ELEMENT>
+							<ELEMENT xsi:type="string">Vector; CANoe32 &lt;latest&gt;</ELEMENT>
+							<ELEMENT xsi:type="string">Vector; CANoe64 2.0.1</ELEMENT>
+							<ELEMENT xsi:type="string">Vector; CANoe64 &lt;latest&gt;</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">Vector; CANoe64 &lt;latest&gt;</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">modelDir</NAME>
+						<DISPLAY-NAME xsi:type="string">Model directory</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Base directory for model-file search (DBC files with environment variables) on the tool host (absolute path or relative to the specified base path).</DESCRIPTION>
+						<TYPE xsi:type="string">uri</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">Messungsstart</NAME>
+						<DISPLAY-NAME xsi:type="string">Start of measurement</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">When the measurement should start?</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">Upon initialization of the test environment</ELEMENT>
+							<ELEMENT xsi:type="string">On start of test</ELEMENT>
+							<ELEMENT xsi:type="string">Manually</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">Manually</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">recordingFormats</NAME>
+						<DISPLAY-NAME xsi:type="string">Recording formats</DISPLAY-NAME>
+						<DESCRIPTION xsi:type="string">In which format should recordings be made? Please note: System variables from the model access can only be read from BLF files. For MDF4 system variables must be read by adressing the corresponding trace file signals.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">MDF4</ELEMENT>
+							<ELEMENT xsi:type="string">BLF</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">BLF</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">CfgFile</NAME>
+						<DISPLAY-NAME xsi:type="string">CFG file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">CANoe/CANalyzer configuration to load (absolute path or relative to the specified base path)</DESCRIPTION>
+						<TYPE xsi:type="string">uri</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">CfgAutoSave</NAME>
+						<DISPLAY-NAME xsi:type="string">CFG auto save</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Automatically save changed CANoe/CANalyzer configuration</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">True</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ToolVersion</NAME>
+						<DISPLAY-NAME xsi:type="string">Version</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">CANoe and CANalyzer version</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DEFAULT xsi:type="string">{'CANalyzer': '10.0', 'CANoe': '10.0'}</DEFAULT>
+						<READONLY xsi:type="boolean">True</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ShutdownToolOnDisconnect</NAME>
+						<DISPLAY-NAME xsi:type="string">Exit tool</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">If this option is selected, CANoeCANalyzer gets shut down after quitting ecu.test.Otherwise only the running project gets closed.</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ToolAccessTimeout</NAME>
+						<DISPLAY-NAME xsi:type="string">Timeout for tool call (in sec.)</DISPLAY-NAME>
+						<DESCRIPTION xsi:type="string">Timeout after which a tool call is aborted.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DEFAULT xsi:type="string">600</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">RegisterCAPLFunction</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">name</NAME>
+								<DESCRIPTION xsi:type="string">Name of CAPL function</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Registers a CAPL function. This function can only be called when the measurement is not running.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">CallCAPLFunction</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">name</NAME>
+								<DESCRIPTION xsi:type="string">Name of CAPL function</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg0</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg1</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg2</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg3</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg4</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg5</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg6</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg7</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg8</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">arg9</NAME>
+								<DESCRIPTION xsi:type="string">Parameter value</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Calls a CAPL function. This function can only be called when the measurement is running. The CAPL function must be registered before starting the measurement, e.g. with RegisterCAPLFunction.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReadEnvVar</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">varName</NAME>
+								<DESCRIPTION xsi:type="string">Name of environment variable</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Reads an environment variable</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">WriteEnvVar</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">varName</NAME>
+								<DESCRIPTION xsi:type="string">Name of environment variable</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">value</NAME>
+								<DESCRIPTION xsi:type="string">value to be written</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Writes an environment variable</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ReadSysVar</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">varPath</NAME>
+								<DESCRIPTION xsi:type="string">Path of the system variable, formatted namespace/varname or namespace::varname</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Reads a system variable</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">WriteSysVar</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">varPath</NAME>
+								<DESCRIPTION xsi:type="string">Path of the system variable, formatted namespace/varname or namespace::varname</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">value</NAME>
+								<DESCRIPTION xsi:type="string">value to be written</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Writes a system variable</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">IsMeasurementRunning</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Inquiry whether measurement is running</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">StartMeasurement</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Starts the measurement.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">StopMeasurement</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Stops the measurement</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetCurrentCfg</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Returns the path of current loaded cfg file in CANoe/CANalyzer.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<TYPE xsi:type="string">uri</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ChangeCfg</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">CfgFile</NAME>
+								<DESCRIPTION xsi:type="string">Configuration file to be loaded. Using the TBC information if the value is not set or an empty string.</DESCRIPTION>
+								<TYPE xsi:type="string">uri</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">To load a configuration file</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+	</TOOL-DESCRIPTORS>
+	<PORT-DESCRIPTORS>
+		<PORT-DESCRIPTOR dkey="MDL-XIL01">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+					<NAME xsi:type="string">MODELACCESS</NAME>
+				</PORT-TYPE-ID>
+				<IMPL-TYPE-ID xsi:type="string">XIL</IMPL-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ModelFile</NAME>
+						<DISPLAY-NAME xsi:type="string">Configuration file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Path to the configuration file of the MAPort. Path has to be either absolute, or relative to the model directory. If &lt;auto&gt;, the configuration file the TCF references to will be used.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<VALID-REFS>
+							<ELEMENT xsi:type="string">SUT</ELEMENT>
+						</VALID-REFS>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ModelOnlineQuerySupport</NAME>
+						<DISPLAY-NAME xsi:type="string">Support for online model querying</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">(De-)Activates the interface for online querying of model information by the test configuration</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">True</DEFAULT>
+						<READONLY xsi:type="boolean">True</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">OverwritingModelProperties</NAME>
+						<DISPLAY-NAME xsi:type="string">Overwrite configuration parameters</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Allows the port configuration parameters in the specified configuration file to be overwritten. The parameter paths, including the new values, must be specified in a JSON format, e.g. '{&quot;sample.path&quot;: value}'. The parameter paths to be overwritten must already be defined in the port configuration file.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DEFAULT xsi:type="string">&lt;none&gt;</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ForceConfig</NAME>
+						<DISPLAY-NAME xsi:type="string">Replace current configuration</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">&quot;True&quot; replaces the current configuration with the selected one. Otherwise the running configuration will be used.</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">SimulationStopMode</NAME>
+						<DISPLAY-NAME xsi:type="string">Stop simulation</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Specifies when the simulation is stopped.
+&quot;Stop&quot;: The simulation is stopped when the configuration stops.
+&quot;At test stop&quot;: The simulation is stopped when the execution of the test case stops.
+&quot;Do not stop&quot;: The simulation is not stopped implicitly.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">Stop</ELEMENT>
+							<ELEMENT xsi:type="string">At test stop</ELEMENT>
+							<ELEMENT xsi:type="string">Do not stop</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">Stop</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">RecordingFormat</NAME>
+						<DISPLAY-NAME xsi:type="string">Recording format</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">File format for recording</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">CSV</ELEMENT>
+							<ELEMENT xsi:type="string">MDF</ELEMENT>
+							<ELEMENT xsi:type="string">MF4</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">MF4</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">Delimiter</NAME>
+						<DISPLAY-NAME xsi:type="string">Delimiter</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Delimiter of CSV file</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">;</ELEMENT>
+							<ELEMENT xsi:type="string">,</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">;</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">RecordingFormat</GROUP>
+						<GROUP-VALUE xsi:type="string">CSV</GROUP-VALUE>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">downsamplingRate</NAME>
+						<DISPLAY-NAME xsi:type="string">Recording down-sampling rate</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">This value can be specified to store only every N-th signal value. &quot;&lt;default&gt;&quot; means that the down-sampling rate is not specified and the vendor default is to be used.</DESCRIPTION>
+						<TYPE xsi:type="string">int</TYPE>
+						<DEFAULT xsi:type="string">&lt;default&gt;</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">maxCaptureStartLatency</NAME>
+						<DISPLAY-NAME xsi:type="string">Recording start timeout (s)</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Maximum allowed duration until the tool has actually started the capture after manually starting a capture.</DESCRIPTION>
+						<TYPE xsi:type="string">int</TYPE>
+						<DEFAULT xsi:type="string">30</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">defaultRaster</NAME>
+						<DISPLAY-NAME xsi:type="string">Default recording acquisition rate</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Recording acquisition rate to use as fallback, if no acquisition rate has been provided for the variable (&quot;*&quot; and &quot;?&quot; may be used as wildcards).
+&quot;Tool-Default&quot; uses the first available acquisition rate.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<DEFAULT xsi:type="string">Tool-Default</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">enforceDefaultRaster</NAME>
+						<DISPLAY-NAME xsi:type="string">Enforce default recording acquisition rate</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">The default recording acquisition rate is enforced for all quantities when recording.</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">modelTimeUpdateInterval</NAME>
+						<DISPLAY-NAME xsi:type="string">Model time refresh rate</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Defines the interval (in seconds) at which the model time should be queried for synchronization with the test case. Value 0 causes a query after each simulation step.</DESCRIPTION>
+						<TYPE xsi:type="string">float</TYPE>
+						<DEFAULT xsi:type="string">0</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">parameterSets</NAME>
+						<DISPLAY-NAME xsi:type="string">Parameter files</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">A comma separated list of parameter files. The files will be transferred to the XIL server on start of configuration.
+Paths can be absolute or relative to the tool host base path.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">matrixToColMajor</NAME>
+						<DISPLAY-NAME xsi:type="string">Adapt matrix layout</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Convert matrices from row layout (XIL) to column layout (ecu.test). In contrast to ASAM XIL, which implements the row layout for storing matrices, ecu.test uses the column layout. If this option is set, matrices are adapted to the internally implemented column layout when they are read in and before they are used in ecu.test. As a result, matrices are displayed correctly and indexing is done consistently according to the scheme [column][row]. If this option is not set, the missing adaptation of the layout causes that one works with the transposed matrix (see e.g. display in report). Thus, indexing the transposed matrix according to the above scheme in ecu.test is equivalent to indexing the (non-transposed) original matrix using the scheme [row][column] from the tool's point of view. An unset option corresponds to the former behavior. It is recommended to set this for new test cases.</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetConfigState</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">configParam</NAME>
+								<DISPLAY-NAME xsi:type="string">Path of the configuration parameter</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Path of the configuration parameter within the configuration file of the port, e.g. &quot;sample.path.value&quot;.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Returns the current status of the specified configuration parameter. The parameter must be given as a complete path.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">return</NAME>
+							<DISPLAY-NAME xsi:type="string">ConfigState</DISPLAY-NAME>
+							<DESCRIPTION xsi:type="string">Value of the configuration parameter</DESCRIPTION>
+							<TYPE xsi:type="string">string</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetSimulationState</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Get status of simulation</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">return</NAME>
+							<DISPLAY-NAME xsi:type="string">Status</DISPLAY-NAME>
+							<DESCRIPTION xsi:type="string">&quot;disconnected&quot;, &quot;running&quot;, &quot;paused&quot;, &quot;stopped&quot;, &quot;not initialized&quot; or &quot;unknown: &lt;MAPortState&gt;&quot;. The state &quot;paused&quot; is available since XiL-version 2.1.</DESCRIPTION>
+							<TYPE xsi:type="string">string</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetSimulationTime</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Request simulation time</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">PauseStimulation</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">InstanceIdentifier</NAME>
+								<DESCRIPTION xsi:type="string">Instance identifier of the stimulus that is to be paused.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Pause stimulation</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ResumeStimulation</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">InstanceIdentifier</NAME>
+								<DESCRIPTION xsi:type="string">Instance identifier of the stimulus that is to be resumed.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Resume paused stimulation</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetStimulationState</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">InstanceIdentifier</NAME>
+								<DESCRIPTION xsi:type="string">Instance identifier of the stimulus of which to query the state.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">GetStatus of stimulation</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">return</NAME>
+							<DISPLAY-NAME xsi:type="string">Status</DISPLAY-NAME>
+							<DESCRIPTION xsi:type="string">&quot;configuration&quot;, &quot;ready&quot;, &quot;running&quot;, &quot;paused&quot;, &quot;finished&quot;, &quot;stopped&quot;, &quot;not started&quot; or &quot;unkown: &lt;SignalGeneratorState&gt;&quot;</DESCRIPTION>
+							<TYPE xsi:type="string">string</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetAllStimulations</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">RunningOnly</NAME>
+								<DESCRIPTION xsi:type="string">Return only active (running and paused) Stimuli.</DESCRIPTION>
+								<TYPE xsi:type="string">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="string">False</ELEMENT>
+									<ELEMENT xsi:type="string">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="string">False</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Get list of initialized stimuli files</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">return</NAME>
+							<DISPLAY-NAME xsi:type="string">Stimulations</DISPLAY-NAME>
+							<DESCRIPTION xsi:type="string">List of active stimulation files</DESCRIPTION>
+							<TYPE xsi:type="string">object</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetRecordingFilesStates</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Get dictionary containing all recording files and their corresponding recording state</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">return</NAME>
+							<DISPLAY-NAME xsi:type="string">RecordingFileStates</DISPLAY-NAME>
+							<DESCRIPTION xsi:type="string">Dictionary containing file names and corresponding state (&quot;activated&quot;,&quot;configured&quot;, &quot;running&quot; or &quot;finished&quot;)</DESCRIPTION>
+							<TYPE xsi:type="string">object</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">TriggerClientEvent</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">eventId</NAME>
+								<DISPLAY-NAME xsi:type="string">Event ID</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">ID of the event (freely selectable). Range of valid values: 0-18446744073709551615.</DESCRIPTION>
+								<TYPE xsi:type="string">int</TYPE>
+								<DEFAULT xsi:type="string">0</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">description</NAME>
+								<DISPLAY-NAME xsi:type="string">Description</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Description of the event (freely selectable).</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Inserts an event into all running recordings of the port.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="string">DownloadParameterSets</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">parameterFilePaths</NAME>
+								<DISPLAY-NAME xsi:type="string">Parameter files</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">A comma separated list of parameter files.</DESCRIPTION>
+								<TYPE xsi:type="string">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Loads a single or multiple parameter files to the XIL server.</DESCRIPTION>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">ExecuteTargetScript</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">targetScriptPath</NAME>
+								<DISPLAY-NAME xsi:type="string">Path to target script</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Absolute or relative path to target script on this machine. Relative paths are resolved relative to the workspace directory.</DESCRIPTION>
+								<TYPE xsi:type="string">uri</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">inputParameters</NAME>
+								<DISPLAY-NAME xsi:type="string">Input parameter</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">Input parameters for Target Script as dictionary {&quot;parameterName&quot;: &quot;parameterValue&quot;}. Only primitive data types are supported.</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<DEFAULT xsi:type="string">{}</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="string">outputParameterNames</NAME>
+								<DISPLAY-NAME xsi:type="string">Names of output parameters</DISPLAY-NAME>
+								<DESCRIPTION xsi:type="string">List of output parameters to be returned. These are read from the target script after execution. To be entered as a list of strings. Only primitive data types are supported.</DESCRIPTION>
+								<TYPE xsi:type="string">object</TYPE>
+								<DEFAULT xsi:type="string">[]</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+								<INVALID-AT xsi:type="string"/>
+								<DEPRECATION-MESSAGE xsi:type="string"/>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="string">Loads a target script to the target system and executes it. The execution time is limited by the tool's setting &quot;Timeout for tool call&quot;.</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">Values of output parameters as dictionary {&quot;outputParameter&quot;: &quot;valueAfterExecution&quot;}. The target script parameters to be returned need to be specified before execution with the respective job parameter.</DESCRIPTION>
+							<TYPE xsi:type="string">object</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+							<INVALID-AT xsi:type="string"/>
+							<DEPRECATION-MESSAGE xsi:type="string"/>
+						</RETURN>
+						<INVALID-AT xsi:type="string"/>
+						<DEPRECATION-MESSAGE xsi:type="string"/>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+	</PORT-DESCRIPTORS>
+</TOOLING>

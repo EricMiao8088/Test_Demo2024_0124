@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2021.4.119000+a29e29641862" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">SessionID</NAME>
+			<DESCRIPTION xsi:type="string">Return value of 10 01 - DefaultSessionStart</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CloseSession</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">DIAG-DOIP01</PORT-ID>
+				<JOB-NAME xsi:type="string">CloseSession</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">OpenDoIpSession</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">DIAG-DOIP01</PORT-ID>
+				<JOB-NAME xsi:type="string">OpenDoIpSession</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="9b2d7f25-a5f9-4f1b-892d-a38ba8ca52d0" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">建立DoIp连接</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="4" id="f0385aa3-fa20-4844-bc5a-2e3f3f8f911f" xsi:type="tsJob">
+				<MAPPING-REF xsi:type="string">OpenDoIpSession</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">SessionID</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">activateRouting</NAME>
+					<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="boolean">True</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">activationType</NAME>
+					<EXPRESSION xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">ByteStream</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">00</VALUE>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">diagTimeout</NAME>
+					<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10000</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">doIpVersion</NAME>
+					<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">3</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">eid</NAME>
+					<EXPRESSION xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">ByteStream</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string"/>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">listenPort</NAME>
+					<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">remotePort</NAME>
+					<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">13400</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">retryDelay</NAME>
+					<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">retryOnBusy</NAME>
+					<EXPRESSION xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</COMPONENT>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">sourceAddress</NAME>
+					<EXPRESSION xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">ByteStream</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">0E:80</VALUE>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">startRequest</NAME>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">stopRequest</NAME>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">targetAddress</NAME>
+					<EXPRESSION xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">ByteStream</NAME>
+						</COMPONENT>
+						<ARGUMENTS>
+							<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">10:01</VALUE>
+							</ARGUMENT>
+						</ARGUMENTS>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">targetIp</NAME>
+					<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">169.254.65.2</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">testerPresentCycleTime</NAME>
+				</JOB-PARAMETER>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">testerPresentRequest</NAME>
+				</JOB-PARAMETER>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="4b7ab430-b0d6-45c9-ac97-0370e796811f" xsi:type="tsPackage">
+				<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Sessions\\10 01 - DefaultSessionStart.pkg</VALUE>
+				</PACKAGE-REFERENCE>
+				<PARAM-ASSIGNMENTS>
+					<ASSIGNMENT dkey="SessionID">
+						<DVALUE xsi:type="varBaseExpression">
+							<NAME xsi:type="string">SessionID</NAME>
+						</DVALUE>
+					</ASSIGNMENT>
+				</PARAM-ASSIGNMENTS>
+				<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="e3b1851c-1283-46a5-bb8c-7eb12f160af8" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">DID读取PowerMode</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="3702c80c-53df-4e03-90c5-606272be059e" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">进入Level2的安全访问</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="2" id="2706307f-3933-4312-9a37-850063c99a67" xsi:type="tsPackage">
+				<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Sessions\\10 03 - ExtendedDiagnosticSessionStart.pkg</VALUE>
+				</PACKAGE-REFERENCE>
+				<PARAM-ASSIGNMENTS>
+					<ASSIGNMENT dkey="SessionID">
+						<DVALUE xsi:type="varBaseExpression">
+							<NAME xsi:type="string">SessionID</NAME>
+						</DVALUE>
+					</ASSIGNMENT>
+				</PARAM-ASSIGNMENTS>
+				<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="3323cb12-9a95-4f1d-b5ab-a11513a6fa15" xsi:type="tsPackage">
+				<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">27_SecurityAccess\\setAccessLevel.pkg</VALUE>
+				</PACKAGE-REFERENCE>
+				<PARAM-ASSIGNMENTS>
+					<ASSIGNMENT dkey="DLLPath">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">F:\\Project\\ECU_TEST\\ET_MS11_HIL2\\Parameters\\Security_Access\\MS11_VCCD_E2_Diagnostic_Security_Access_Dll.dll</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+					<ASSIGNMENT dkey="PythonPath">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">C:\\Users\\XIAOMI-VCCD\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+					<ASSIGNMENT dkey="Security_Level">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0x02</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+					<ASSIGNMENT dkey="Seed_len">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+					<ASSIGNMENT dkey="SessionID">
+						<DVALUE xsi:type="varBaseExpression">
+							<NAME xsi:type="string">SessionID</NAME>
+						</DVALUE>
+					</ASSIGNMENT>
+				</PARAM-ASSIGNMENTS>
+				<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="71feda88-fcec-4b07-889d-c3472ea245e9" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">关闭会话</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="4" id="94a03e29-91f1-4e81-b813-1fcd848084f0" xsi:type="tsJob">
+				<MAPPING-REF xsi:type="string">CloseSession</MAPPING-REF>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">SessionId</NAME>
+					<EXPRESSION xsi:type="varBaseExpression">
+						<NAME xsi:type="string">SessionID</NAME>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

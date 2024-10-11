@@ -1,0 +1,66 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          82.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 06.06.2024 13:44:18 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.2
+         - valid until: 2024-06-06
+         - licensed for: Eric
+         - Server: Eric
+
+
+2024-06-06 13:44:18.955 12000 ManagedWorker-7*PE.Run() INFO:
+                        Start package 'BasicDrive.pkg' with test case execution with sequential analysis job execution
+2024-06-06 13:44:18.975 12000 ManagedWorker-7*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2024-06-06 13:44:18.996 12000 ManagedWorker-7*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2024-06-06 13:44:18.998 12000 ManagedWorker-7*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2024-06-06 13:44:19.007 12000 ManagedWorker-7*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2024-06-06 13:44:19.033 12000 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-06-06 13:44:19.080 12000 ManagedWorker-7*PE.Run() INFO:
+                        System time mode activated
+2024-06-06 13:44:19.082 12000 ManagedWorker-7*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+2024-06-06 13:44:19.091 12000 ManagedWorker-7*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+2024-06-06 13:44:41.274 12000 ManagedWorker-7*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+2024-06-06 13:44:41.275 12000 ManagedWorker-7*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+2024-06-06 13:44:41.291 12000 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-06-06 13:44:41.891 12000 ManagedWorker-7*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2024-06-06 13:44:42.877 12000 ManagedWorker-7*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg" -> "Basic Drive")
+2024-06-06 13:44:42.884 12000 ManagedWorker-7*PE.Run() WARNING:
+                        
+File "C:\ET2024_2\2_ECU-TEST_Advanced\.workspace\analysisexecution.xml", line 4, column 2
+Unknown xml element SUPPRESS-END-OF-FILE-ERRORS in AnalysisExecution
+2024-06-06 13:44:42.903 12000 ManagedWorker-7*PE.Run() DEBUG:
+                        Performing episode ...
+2024-06-06 13:44:42.904 12000 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2024-06-06 13:44:45.054 12000 ManagedWorker-7*PE.Run() DEBUG:
+                        Episode completed
+2024-06-06 13:44:45.055 12000 ManagedWorker-7*PE.Run() DEBUG:
+                        

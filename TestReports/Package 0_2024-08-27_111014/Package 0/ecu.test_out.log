@@ -1,0 +1,63 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 27.08.2024 11:10:14 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-26
+         - licensed for: Turing
+
+
+2024-08-27 11:10:14.813 7288 ManagedWorker-5*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-08-27 11:10:14.825 7288 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-08-27 11:10:14.829 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-27 11:10:14.876 7288 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2024-08-27 11:10:14.883 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-27 11:10:14.905 7288 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-08-27 11:10:14.954 7288 ManagedWorker-5*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 0" -> "Trace analysis 1")
+2024-08-27 11:10:14.970 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        Performing episode ...
+2024-08-27 11:10:14.971 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2024-08-27 11:10:15.012 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:10:15.013 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2024-08-27 11:10:15.023 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:10:15.032 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2024-08-27 11:10:15.041 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:10:15.050 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2024-08-27 11:10:15.060 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        0.18470809
+2024-08-27 11:10:15.069 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        
+2024-08-27 11:10:15.079 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        Episode completed
+2024-08-27 11:10:15.088 7288 ManagedWorker-5*PE.Run() DEBUG:
+                        

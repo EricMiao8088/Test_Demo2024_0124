@@ -1,0 +1,1569 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          69.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 15.07.2024 16:41:12 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Maximum. Additional logging active: default output, debug information (TOPIC_TOOLING, TOPIC_API)
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-10
+         - licensed for: Turing
+
+
+2024-07-15 16:41:12.448 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/start.sti
+2024-07-15 16:41:12.515 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/starterButton.sti
+2024-07-15 16:41:12.535 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/stop.sti
+2024-07-15 16:41:12.595 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_1.sti
+2024-07-15 16:41:12.643 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_10.sti
+2024-07-15 16:41:12.682 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_20.sti
+2024-07-15 16:41:12.718 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_50.sti
+2024-07-15 16:41:12.756 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_80.sti
+2024-07-15 16:41:12.804 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_100.sti
+2024-07-15 16:41:12.841 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_1.sti
+2024-07-15 16:41:12.878 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_10.sti
+2024-07-15 16:41:12.911 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_20.sti
+2024-07-15 16:41:12.944 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_50.sti
+2024-07-15 16:41:12.987 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_80.sti
+2024-07-15 16:41:13.034 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_100.sti
+2024-07-15 16:41:13.073 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/deceleration_mid.sti
+2024-07-15 16:41:13.111 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/brake.sti
+2024-07-15 16:41:13.153 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroCable.sti
+2024-07-15 16:41:13.180 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroDoor.sti
+2024-07-15 16:41:13.214 23216 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'Test_0715.pkg' with test case execution with sequential analysis job execution
+2024-07-15 16:41:13.240 23216 ManagedWorker-6*PE.Run() INFO:
+                        Initialize variables...
+2024-07-15 16:41:13.292 23216 ManagedWorker-6*PE.Run() INFO:
+                        Initializing execution mapping...
+2024-07-15 16:41:13.323 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "StateOfCharge" 1719013992592
+2024-07-15 16:41:13.397 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "设置车辆状态" 1718889145104
+2024-07-15 16:41:13.436 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Engine-Control/VehTrStby" 1719013913616
+2024-07-15 16:41:13.488 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "CTRL_VEH/DriveMode [0|1|2|3|4]/Value" 1719013903248
+2024-07-15 16:41:13.524 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "CTRL_VEH/DriverRequest [%]/Value" 1719013901392
+2024-07-15 16:41:13.581 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "STATUS_VEH/VehicleVelocity [kmh]/In1" 1719013997008
+2024-07-15 16:41:13.621 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY" 1719013905680
+2024-07-15 16:41:13.666 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Engine-Control/speed" 1719013997584
+2024-07-15 16:41:13.710 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "CTRL_VEH/BrakePedal [%]/Value" 1719013901776
+2024-07-15 16:41:13.755 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        ExecutionMappingSpace: Calculating mapping for package C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg ...
+2024-07-15 16:41:13.794 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "CTRL_VEH/BrakePedal [%]/Value" 1719011382160
+2024-07-15 16:41:13.839 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "CTRL_VEH/StarterButton [-1|0|1]/Value" 1718905137104
+2024-07-15 16:41:13.878 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Engine-Control/B_abgle" 1719029446864
+2024-07-15 16:41:13.937 23216 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Test_0715" started
+2024-07-15 16:41:13.983 23216 ManagedWorker-6*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "VehTrStby" (use 100ms instead of 10ms)
+2024-07-15 16:41:13.990 23216 ManagedWorker-6*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2024-07-15 16:41:14.030 23216 ManagedWorker-6*PE.Run() INFO:
+                        Preprocess of test steps in Test_0715
+2024-07-15 16:41:14.075 23216 ManagedWorker-6*PE.Run() INFO:
+                        Preprocess of test steps in 设置车辆状态
+2024-07-15 16:41:14.161 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-07-15 16:41:15.520 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2024-07-15 16:41:15.524 23216 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2024-07-15 16:41:15.557 23216 ManagedWorker-6*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Test case variables
+2024-07-15 16:41:15.596 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:3]MODEL:-:Model Root/STATUS_BAT/StateOfCharge [%]/Value<READ>   70.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#3
+2024-07-15 16:41:15.644 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:3]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   20
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#3
+2024-07-15 16:41:15.669 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:4]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   1
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#4
+2024-07-15 16:41:15.958 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:6]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#6
+2024-07-15 16:41:18.966 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:8]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#8
+2024-07-15 16:41:18.975 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [3418ms 设置车辆状态:9]MEAS:-:B_abgle<READ>   None
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#9
+2024-07-15 16:41:19.013 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [3455ms Test_0715:5]MEAS:-:VehTrStby<READ>   1.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#5
+2024-07-15 16:41:19.051 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:7]MODEL:-:Model Root/CTRL_VEH/DriveMode [0|1|2|3|4]/Value<WRITE>   1
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#7
+2024-07-15 16:41:19.088 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:9]MODEL:-:Model Root/CTRL_VEH/DriverRequest [%]/Value<WRITE>   50
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#9
+2024-07-15 16:41:19.120 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.02
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.156 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.194 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.62
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.233 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.261 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.15
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.297 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.44
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.332 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.72
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.375 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.05
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.411 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.452 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.65
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.488 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.94
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.515 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.15
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.542 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.36
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.566 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.55
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.597 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.78
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.635 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.07
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.668 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.705 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.62
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.741 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.89
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.779 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.18
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.807 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.41
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.844 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.876 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.916 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.23
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.950 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.48
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:19.975 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.005 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.91
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.037 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.15
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.067 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.37
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.107 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.66
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.136 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.89
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.161 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.08
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.193 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.215 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.48
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.237 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.64
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.264 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.83
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.282 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.97
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.309 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.17
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.329 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.350 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.48
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.370 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.62
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.389 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.76
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.407 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.9
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.427 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.04
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.459 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.27
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.482 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.45
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.517 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.69
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.542 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.88
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.567 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.590 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.22
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.611 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.38
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.631 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.52
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.658 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.72
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.683 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.9
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.706 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.07
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.733 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.26
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.754 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.41
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.771 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.798 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.72
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.816 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.85
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.837 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.868 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.23
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.887 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.36
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.914 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.56
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.936 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.71
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.960 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.88
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:20.983 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.04
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.008 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.21
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.030 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.38
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.050 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.52
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.072 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.100 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.87
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.130 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.07
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.165 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.198 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.233 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.79
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.267 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.03
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.307 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.342 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.388 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.87
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.423 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.1
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.458 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.495 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.59
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.536 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.87
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.577 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.15
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.611 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.38
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.651 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.65
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.691 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.92
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.727 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.17
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.771 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.47
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.813 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.75
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.860 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.05
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.897 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.930 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.52
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.956 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.7
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:21.985 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.89
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.011 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.053 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.082 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.52
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.115 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.73
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.154 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.195 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.27
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.232 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.5
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.269 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.74
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.304 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.97
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.340 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.2
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.372 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.41
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.396 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.57
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.420 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.72
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.446 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.89
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.480 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.1
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.515 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.32
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.547 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.591 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.81
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.629 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.05
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.663 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.26
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.709 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.55
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.754 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.793 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.08
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.829 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.882 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.64
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.921 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.88
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:22.964 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.15
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.009 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.42
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.041 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.62
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.093 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.94
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.123 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.13
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.171 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.42
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.204 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.63
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.242 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.85
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.274 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.05
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.302 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.22
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.332 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.4
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.367 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.61
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.410 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.87
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.438 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.03
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.472 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.25
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.503 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.43
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.543 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.66
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.575 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.85
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.609 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.638 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.23
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.680 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.48
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.711 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.66
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.755 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.92
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.791 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.13
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.824 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.33
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.859 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.52
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.908 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.82
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.954 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.08
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:23.986 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.26
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.023 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.48
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.052 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.65
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.096 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.9
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.121 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.04
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.159 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.26
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.184 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.4
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.215 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.58
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.246 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.75
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.280 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.95
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.311 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.13
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.346 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.32
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.376 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.49
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.414 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.7
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.441 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.85
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.474 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.04
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.500 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.18
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.528 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.35
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.553 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.48
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.581 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.64
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.605 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.646 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.686 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.22
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.724 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.43
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.757 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.61
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.797 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.83
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.838 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.882 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.29
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.929 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.55
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.962 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.73
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:24.998 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.028 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.09
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.065 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.29
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.089 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.42
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.116 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.56
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.145 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.72
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.172 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.86
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.210 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.247 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.26
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.279 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.43
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.316 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.63
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.346 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.79
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.389 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.424 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.2
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.468 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.42
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.504 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.61
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.535 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.567 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.94
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.597 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.09
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.631 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.28
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.666 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.46
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.715 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.71
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.745 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.86
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.776 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.02
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.810 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.19
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.843 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.37
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.876 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.910 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.7
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.936 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.85
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:25.973 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.02
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.003 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.18
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.043 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.38
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.073 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.53
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.114 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.73
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.154 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.204 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.19
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.243 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.38
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.274 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.324 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.78
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.351 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.92
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.381 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.07
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.426 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.29
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.486 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.58
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.532 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.8
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.578 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.03
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.609 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.18
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.651 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.39
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.686 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.56
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.731 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.769 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.95
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.803 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.12
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.842 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.3
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.877 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.47
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.919 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.67
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:26.956 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.84
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.001 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.030 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.19
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.057 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.33
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.085 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.45
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.119 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.61
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.144 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.73
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.170 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.86
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.203 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   50.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.233 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   50.14
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#11
+2024-07-15 16:41:27.282 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [11725ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.44
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#12
+2024-07-15 16:41:27.333 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [11775ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#12
+2024-07-15 16:41:27.370 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [11813ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.85
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#12
+2024-07-15 16:41:27.419 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [11862ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   50.08
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#12
+2024-07-15 16:41:27.453 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [11896ms Test_0715:13]MEAS:-:speed<READ>   51.17
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#13
+2024-07-15 16:41:27.503 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:30]MODEL:-:Model Root/CTRL_VEH/DriverRequest [%]/Value<WRITE>   0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#30
+2024-07-15 16:41:27.529 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [11972ms Test_0715:32]MEAS:-:speed<READ>   49.95
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.577 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12020ms Test_0715:32]MEAS:-:speed<READ>   49.6
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.614 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12057ms Test_0715:32]MEAS:-:speed<READ>   49.35
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.664 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12107ms Test_0715:32]MEAS:-:speed<READ>   48.99
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.711 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12154ms Test_0715:32]MEAS:-:speed<READ>   48.66
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.747 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12190ms Test_0715:32]MEAS:-:speed<READ>   48.41
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.786 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12230ms Test_0715:32]MEAS:-:speed<READ>   48.14
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.814 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12257ms Test_0715:32]MEAS:-:speed<READ>   47.95
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.852 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12295ms Test_0715:32]MEAS:-:speed<READ>   47.7
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.877 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12320ms Test_0715:32]MEAS:-:speed<READ>   47.53
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.924 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12367ms Test_0715:32]MEAS:-:speed<READ>   47.2
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:27.978 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12422ms Test_0715:32]MEAS:-:speed<READ>   46.84
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.018 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12461ms Test_0715:32]MEAS:-:speed<READ>   46.58
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.072 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12515ms Test_0715:32]MEAS:-:speed<READ>   46.22
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.116 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12559ms Test_0715:32]MEAS:-:speed<READ>   45.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.160 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12603ms Test_0715:32]MEAS:-:speed<READ>   45.64
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.204 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12646ms Test_0715:32]MEAS:-:speed<READ>   45.36
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.256 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12699ms Test_0715:32]MEAS:-:speed<READ>   45.02
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.293 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12736ms Test_0715:32]MEAS:-:speed<READ>   44.79
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.345 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12788ms Test_0715:32]MEAS:-:speed<READ>   44.45
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.382 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12824ms Test_0715:32]MEAS:-:speed<READ>   44.22
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.428 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12871ms Test_0715:32]MEAS:-:speed<READ>   43.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.468 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12911ms Test_0715:32]MEAS:-:speed<READ>   43.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.496 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12940ms Test_0715:32]MEAS:-:speed<READ>   43.49
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.523 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12965ms Test_0715:32]MEAS:-:speed<READ>   43.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.546 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [12989ms Test_0715:32]MEAS:-:speed<READ>   43.19
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.567 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13010ms Test_0715:32]MEAS:-:speed<READ>   43.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.591 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13035ms Test_0715:32]MEAS:-:speed<READ>   42.91
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.614 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13057ms Test_0715:32]MEAS:-:speed<READ>   42.78
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.633 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13076ms Test_0715:32]MEAS:-:speed<READ>   42.66
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.653 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13096ms Test_0715:32]MEAS:-:speed<READ>   42.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.688 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13131ms Test_0715:32]MEAS:-:speed<READ>   42.32
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.713 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13156ms Test_0715:32]MEAS:-:speed<READ>   42.17
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.741 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13184ms Test_0715:32]MEAS:-:speed<READ>   42.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.772 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13215ms Test_0715:32]MEAS:-:speed<READ>   41.82
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.811 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13254ms Test_0715:32]MEAS:-:speed<READ>   41.58
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.841 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13283ms Test_0715:32]MEAS:-:speed<READ>   41.41
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.869 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13311ms Test_0715:32]MEAS:-:speed<READ>   41.25
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.908 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13350ms Test_0715:32]MEAS:-:speed<READ>   41.02
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.943 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13386ms Test_0715:32]MEAS:-:speed<READ>   40.81
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:28.981 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13424ms Test_0715:32]MEAS:-:speed<READ>   40.59
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.027 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13470ms Test_0715:32]MEAS:-:speed<READ>   40.33
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.059 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13502ms Test_0715:32]MEAS:-:speed<READ>   40.14
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.095 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13538ms Test_0715:32]MEAS:-:speed<READ>   39.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.124 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13567ms Test_0715:32]MEAS:-:speed<READ>   39.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.163 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13606ms Test_0715:32]MEAS:-:speed<READ>   39.55
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.206 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13649ms Test_0715:32]MEAS:-:speed<READ>   39.31
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.240 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13683ms Test_0715:32]MEAS:-:speed<READ>   39.11
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.284 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13727ms Test_0715:32]MEAS:-:speed<READ>   38.87
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.312 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13755ms Test_0715:32]MEAS:-:speed<READ>   38.71
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.349 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13792ms Test_0715:32]MEAS:-:speed<READ>   38.51
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.382 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13825ms Test_0715:32]MEAS:-:speed<READ>   38.33
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.425 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13868ms Test_0715:32]MEAS:-:speed<READ>   38.09
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.455 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13899ms Test_0715:32]MEAS:-:speed<READ>   37.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.501 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13943ms Test_0715:32]MEAS:-:speed<READ>   37.69
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.547 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [13990ms Test_0715:32]MEAS:-:speed<READ>   37.44
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.589 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14031ms Test_0715:32]MEAS:-:speed<READ>   37.22
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.644 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14087ms Test_0715:32]MEAS:-:speed<READ>   36.92
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.690 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14134ms Test_0715:32]MEAS:-:speed<READ>   36.67
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.722 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14165ms Test_0715:32]MEAS:-:speed<READ>   36.51
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.760 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14202ms Test_0715:32]MEAS:-:speed<READ>   36.32
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.790 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14234ms Test_0715:32]MEAS:-:speed<READ>   36.16
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.822 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14265ms Test_0715:32]MEAS:-:speed<READ>   36.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.858 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14301ms Test_0715:32]MEAS:-:speed<READ>   35.81
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.899 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14341ms Test_0715:32]MEAS:-:speed<READ>   35.61
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.937 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14380ms Test_0715:32]MEAS:-:speed<READ>   35.41
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.965 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14408ms Test_0715:32]MEAS:-:speed<READ>   35.26
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:29.998 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14441ms Test_0715:32]MEAS:-:speed<READ>   35.1
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.032 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14474ms Test_0715:32]MEAS:-:speed<READ>   34.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.070 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14513ms Test_0715:32]MEAS:-:speed<READ>   34.74
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.102 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14546ms Test_0715:32]MEAS:-:speed<READ>   34.58
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.139 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14581ms Test_0715:32]MEAS:-:speed<READ>   34.41
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.185 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14628ms Test_0715:32]MEAS:-:speed<READ>   34.18
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.234 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14677ms Test_0715:32]MEAS:-:speed<READ>   33.94
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.276 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14719ms Test_0715:32]MEAS:-:speed<READ>   33.73
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.321 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14764ms Test_0715:32]MEAS:-:speed<READ>   33.52
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.371 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14813ms Test_0715:32]MEAS:-:speed<READ>   33.28
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.408 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14851ms Test_0715:32]MEAS:-:speed<READ>   33.11
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.466 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14908ms Test_0715:32]MEAS:-:speed<READ>   32.84
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.521 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [14964ms Test_0715:32]MEAS:-:speed<READ>   32.58
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.565 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15008ms Test_0715:32]MEAS:-:speed<READ>   32.37
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.607 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15050ms Test_0715:32]MEAS:-:speed<READ>   32.18
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.642 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15086ms Test_0715:32]MEAS:-:speed<READ>   32.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.681 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15124ms Test_0715:32]MEAS:-:speed<READ>   31.84
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.717 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15159ms Test_0715:32]MEAS:-:speed<READ>   31.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.763 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15206ms Test_0715:32]MEAS:-:speed<READ>   31.47
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.822 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15265ms Test_0715:32]MEAS:-:speed<READ>   31.2
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.865 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15308ms Test_0715:32]MEAS:-:speed<READ>   31.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:30.949 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15392ms Test_0715:32]MEAS:-:speed<READ>   30.64
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:31.020 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15463ms Test_0715:32]MEAS:-:speed<READ>   30.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:31.063 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15506ms Test_0715:32]MEAS:-:speed<READ>   30.15
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:31.122 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15565ms Test_0715:32]MEAS:-:speed<READ>   29.9
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#32
+2024-07-15 16:41:31.169 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms Test_0715:34]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   35
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#34
+2024-07-15 16:41:31.203 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15646ms Test_0715:36]MEAS:-:speed<READ>   29.96
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.236 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15679ms Test_0715:36]MEAS:-:speed<READ>   29.7
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.270 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15713ms Test_0715:36]MEAS:-:speed<READ>   29.43
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.302 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15745ms Test_0715:36]MEAS:-:speed<READ>   29.17
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.332 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15775ms Test_0715:36]MEAS:-:speed<READ>   28.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.365 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15807ms Test_0715:36]MEAS:-:speed<READ>   28.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.391 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15834ms Test_0715:36]MEAS:-:speed<READ>   28.46
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.418 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15862ms Test_0715:36]MEAS:-:speed<READ>   28.24
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.447 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15890ms Test_0715:36]MEAS:-:speed<READ>   28.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.476 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15919ms Test_0715:36]MEAS:-:speed<READ>   27.79
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.503 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15945ms Test_0715:36]MEAS:-:speed<READ>   27.57
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.531 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [15974ms Test_0715:36]MEAS:-:speed<READ>   27.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.560 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16002ms Test_0715:36]MEAS:-:speed<READ>   27.12
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.589 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16032ms Test_0715:36]MEAS:-:speed<READ>   26.88
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.613 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16057ms Test_0715:36]MEAS:-:speed<READ>   26.69
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.643 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16087ms Test_0715:36]MEAS:-:speed<READ>   26.45
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.679 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16122ms Test_0715:36]MEAS:-:speed<READ>   26.16
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.704 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16147ms Test_0715:36]MEAS:-:speed<READ>   25.97
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.730 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16174ms Test_0715:36]MEAS:-:speed<READ>   25.75
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.759 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16202ms Test_0715:36]MEAS:-:speed<READ>   25.53
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.784 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16226ms Test_0715:36]MEAS:-:speed<READ>   25.33
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.809 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16252ms Test_0715:36]MEAS:-:speed<READ>   25.12
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.833 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16276ms Test_0715:36]MEAS:-:speed<READ>   24.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.854 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16297ms Test_0715:36]MEAS:-:speed<READ>   24.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.875 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16317ms Test_0715:36]MEAS:-:speed<READ>   24.61
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.895 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16338ms Test_0715:36]MEAS:-:speed<READ>   24.45
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.919 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16361ms Test_0715:36]MEAS:-:speed<READ>   24.26
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.943 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16386ms Test_0715:36]MEAS:-:speed<READ>   24.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.957 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16400ms Test_0715:36]MEAS:-:speed<READ>   23.94
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.974 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16418ms Test_0715:36]MEAS:-:speed<READ>   23.81
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:31.993 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16437ms Test_0715:36]MEAS:-:speed<READ>   23.66
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.025 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16468ms Test_0715:36]MEAS:-:speed<READ>   23.4
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.045 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16488ms Test_0715:36]MEAS:-:speed<READ>   23.24
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.069 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16512ms Test_0715:36]MEAS:-:speed<READ>   23.06
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.094 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16536ms Test_0715:36]MEAS:-:speed<READ>   22.86
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.124 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16567ms Test_0715:36]MEAS:-:speed<READ>   22.62
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.151 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16594ms Test_0715:36]MEAS:-:speed<READ>   22.4
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.182 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16625ms Test_0715:36]MEAS:-:speed<READ>   22.16
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.214 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16657ms Test_0715:36]MEAS:-:speed<READ>   21.9
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.244 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16688ms Test_0715:36]MEAS:-:speed<READ>   21.65
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.285 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16727ms Test_0715:36]MEAS:-:speed<READ>   21.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.322 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16765ms Test_0715:36]MEAS:-:speed<READ>   21.03
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.366 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16809ms Test_0715:36]MEAS:-:speed<READ>   20.68
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.391 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16833ms Test_0715:36]MEAS:-:speed<READ>   20.49
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.418 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16861ms Test_0715:36]MEAS:-:speed<READ>   20.27
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.456 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16899ms Test_0715:36]MEAS:-:speed<READ>   19.97
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.493 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16936ms Test_0715:36]MEAS:-:speed<READ>   19.67
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.534 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [16977ms Test_0715:36]MEAS:-:speed<READ>   19.35
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.560 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17003ms Test_0715:36]MEAS:-:speed<READ>   19.13
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.586 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17029ms Test_0715:36]MEAS:-:speed<READ>   18.93
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.611 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17054ms Test_0715:36]MEAS:-:speed<READ>   18.73
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.644 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17088ms Test_0715:36]MEAS:-:speed<READ>   18.46
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.674 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17117ms Test_0715:36]MEAS:-:speed<READ>   18.23
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.718 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17161ms Test_0715:36]MEAS:-:speed<READ>   17.87
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.761 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17204ms Test_0715:36]MEAS:-:speed<READ>   17.54
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.801 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17244ms Test_0715:36]MEAS:-:speed<READ>   17.21
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.844 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17287ms Test_0715:36]MEAS:-:speed<READ>   16.88
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.879 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17322ms Test_0715:36]MEAS:-:speed<READ>   16.6
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.912 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17355ms Test_0715:36]MEAS:-:speed<READ>   16.33
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.949 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17392ms Test_0715:36]MEAS:-:speed<READ>   16.03
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:32.981 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17424ms Test_0715:36]MEAS:-:speed<READ>   15.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.009 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17451ms Test_0715:36]MEAS:-:speed<READ>   15.56
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.039 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17482ms Test_0715:36]MEAS:-:speed<READ>   15.32
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.077 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17520ms Test_0715:36]MEAS:-:speed<READ>   15.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.109 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17552ms Test_0715:36]MEAS:-:speed<READ>   14.75
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.141 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17584ms Test_0715:36]MEAS:-:speed<READ>   14.5
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.177 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17620ms Test_0715:36]MEAS:-:speed<READ>   14.21
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.224 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17666ms Test_0715:36]MEAS:-:speed<READ>   13.85
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.265 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17709ms Test_0715:36]MEAS:-:speed<READ>   13.51
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.304 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17747ms Test_0715:36]MEAS:-:speed<READ>   13.2
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.343 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17786ms Test_0715:36]MEAS:-:speed<READ>   12.89
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.374 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17817ms Test_0715:36]MEAS:-:speed<READ>   12.65
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.411 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17855ms Test_0715:36]MEAS:-:speed<READ>   12.34
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.442 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17885ms Test_0715:36]MEAS:-:speed<READ>   12.1
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.477 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17919ms Test_0715:36]MEAS:-:speed<READ>   11.82
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.502 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17945ms Test_0715:36]MEAS:-:speed<READ>   11.62
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.531 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [17975ms Test_0715:36]MEAS:-:speed<READ>   11.39
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.559 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18002ms Test_0715:36]MEAS:-:speed<READ>   11.17
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.595 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18038ms Test_0715:36]MEAS:-:speed<READ>   10.88
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.617 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18060ms Test_0715:36]MEAS:-:speed<READ>   10.7
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.652 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18095ms Test_0715:36]MEAS:-:speed<READ>   10.42
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.675 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18118ms Test_0715:36]MEAS:-:speed<READ>   10.24
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.710 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18153ms Test_0715:36]MEAS:-:speed<READ>   9.97
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.738 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18181ms Test_0715:36]MEAS:-:speed<READ>   9.73
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.774 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18217ms Test_0715:36]MEAS:-:speed<READ>   9.45
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.800 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18243ms Test_0715:36]MEAS:-:speed<READ>   9.25
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.830 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18273ms Test_0715:36]MEAS:-:speed<READ>   9.01
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.875 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18318ms Test_0715:36]MEAS:-:speed<READ>   8.64
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.925 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18367ms Test_0715:36]MEAS:-:speed<READ>   8.25
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:33.977 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18421ms Test_0715:36]MEAS:-:speed<READ>   7.83
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.008 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18451ms Test_0715:36]MEAS:-:speed<READ>   7.59
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.045 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18488ms Test_0715:36]MEAS:-:speed<READ>   7.29
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.077 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18519ms Test_0715:36]MEAS:-:speed<READ>   7.04
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.118 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18561ms Test_0715:36]MEAS:-:speed<READ>   6.7
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.151 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18594ms Test_0715:36]MEAS:-:speed<READ>   6.45
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.189 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18632ms Test_0715:36]MEAS:-:speed<READ>   6.14
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.225 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18668ms Test_0715:36]MEAS:-:speed<READ>   5.86
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.257 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18700ms Test_0715:36]MEAS:-:speed<READ>   5.59
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.287 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18729ms Test_0715:36]MEAS:-:speed<READ>   5.36
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.310 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18753ms Test_0715:36]MEAS:-:speed<READ>   5.18
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.334 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18777ms Test_0715:36]MEAS:-:speed<READ>   4.98
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.359 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18802ms Test_0715:36]MEAS:-:speed<READ>   4.79
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.385 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18828ms Test_0715:36]MEAS:-:speed<READ>   4.57
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.417 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18860ms Test_0715:36]MEAS:-:speed<READ>   4.32
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.438 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18881ms Test_0715:36]MEAS:-:speed<READ>   4.15
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.462 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18905ms Test_0715:36]MEAS:-:speed<READ>   3.96
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.486 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18929ms Test_0715:36]MEAS:-:speed<READ>   3.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.516 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18959ms Test_0715:36]MEAS:-:speed<READ>   3.53
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.546 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [18989ms Test_0715:36]MEAS:-:speed<READ>   3.3
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.577 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19020ms Test_0715:36]MEAS:-:speed<READ>   3.04
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.602 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19046ms Test_0715:36]MEAS:-:speed<READ>   2.84
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.637 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19080ms Test_0715:36]MEAS:-:speed<READ>   2.56
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.659 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19101ms Test_0715:36]MEAS:-:speed<READ>   2.39
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.692 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19135ms Test_0715:36]MEAS:-:speed<READ>   2.12
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.718 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19161ms Test_0715:36]MEAS:-:speed<READ>   1.91
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.744 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19187ms Test_0715:36]MEAS:-:speed<READ>   1.72
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.770 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19213ms Test_0715:36]MEAS:-:speed<READ>   1.5
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.803 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19247ms Test_0715:36]MEAS:-:speed<READ>   1.24
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.827 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19270ms Test_0715:36]MEAS:-:speed<READ>   1.05
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.862 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19305ms Test_0715:36]MEAS:-:speed<READ>   0.77
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.888 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19331ms Test_0715:36]MEAS:-:speed<READ>   0.57
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.924 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19367ms Test_0715:36]MEAS:-:speed<READ>   0.28
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.953 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19396ms Test_0715:36]MEAS:-:speed<READ>   0.04
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:34.978 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [19422ms Test_0715:36]MEAS:-:speed<READ>   0.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#36
+2024-07-15 16:41:35.005 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:3]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   20
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#3
+2024-07-15 16:41:35.024 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:4]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   -1
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#4
+2024-07-15 16:41:35.296 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:6]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#6
+2024-07-15 16:41:38.307 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [-1ms 设置车辆状态:8]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#8
+2024-07-15 16:41:38.315 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [22758ms 设置车辆状态:9]MEAS:-:B_abgle<READ>   None
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\设置车辆状态.pkg"#9
+2024-07-15 16:41:38.336 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        DummyAdapterSimulation: [22779ms Test_0715:38]MEAS:-:VehTrStby<READ>   0.0
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\test\Test_0715.pkg"#38
+2024-07-15 16:41:38.355 23216 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Test case variables: Autostop
+2024-07-15 16:41:38.367 23216 ManagedWorker-6*PE.Run() INFO:
+                        Post process of test steps in Test_0715
+2024-07-15 16:41:38.385 23216 ManagedWorker-6*PE.Run() INFO:
+                        Post process of test steps in 设置车辆状态
+2024-07-15 16:41:38.409 23216 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-07-15 16:41:38.452 23216 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Test_0715" completed

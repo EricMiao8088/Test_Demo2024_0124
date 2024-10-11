@@ -1,0 +1,296 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          72.0GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 11.07.2024 15:41:47 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Maximum. Additional logging active: default output, debug information (TOPIC_TOOLING, TOPIC_API)
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-10
+         - licensed for: Turing
+
+
+2024-07-11 15:41:47.132 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/start.sti
+2024-07-11 15:41:47.149 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/starterButton.sti
+2024-07-11 15:41:47.153 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/stop.sti
+2024-07-11 15:41:47.162 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_1.sti
+2024-07-11 15:41:47.172 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_10.sti
+2024-07-11 15:41:47.182 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_20.sti
+2024-07-11 15:41:47.193 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_50.sti
+2024-07-11 15:41:47.203 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_80.sti
+2024-07-11 15:41:47.212 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_100.sti
+2024-07-11 15:41:47.223 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_1.sti
+2024-07-11 15:41:47.231 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_10.sti
+2024-07-11 15:41:47.242 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_20.sti
+2024-07-11 15:41:47.252 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_50.sti
+2024-07-11 15:41:47.262 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_80.sti
+2024-07-11 15:41:47.271 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_100.sti
+2024-07-11 15:41:47.282 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/deceleration_mid.sti
+2024-07-11 15:41:47.292 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/brake.sti
+2024-07-11 15:41:47.302 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroCable.sti
+2024-07-11 15:41:47.313 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroDoor.sti
+2024-07-11 15:41:47.322 26188 ManagedWorker-2*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-07-11 15:41:47.329 26188 ManagedWorker-2*PE.Run() INFO:
+                        Initialize variables...
+2024-07-11 15:41:47.340 26188 ManagedWorker-2*PE.Run() INFO:
+                        Initializing execution mapping...
+2024-07-11 15:41:47.349 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Plant model.Input1" 1895289060304
+2024-07-11 15:41:47.359 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Plant model.Input2" 1895286827472
+2024-07-11 15:41:47.370 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Plant model.Out1" 1895234129040
+2024-07-11 15:41:47.380 26188 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 2" started
+2024-07-11 15:41:47.391 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: RegisterVariable('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input1', [FmuVariable(name='Input1', valueRef=0, variability='continuous', unit=None, description='Input1', causality='input', structured=True, var_type='Real', fmiLevel=2, min='', max='', quantity='', declaredTypeName=None, dimensions=())], ()) --> None
+2024-07-11 15:41:47.398 26188 ManagedWorker-2*PE.Run() WARNING:
+                        No acquisition rate is used for variable "Input1".
+2024-07-11 15:41:47.411 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: RegisterVariable('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input1', [FmuVariable(name='Input1', valueRef=0, variability='continuous', unit=None, description='Input1', causality='input', structured=True, var_type='Real', fmiLevel=2, min='', max='', quantity='', declaredTypeName=None, dimensions=())], ()) --> None
+2024-07-11 15:41:47.419 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: RegisterVariable('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input2', [FmuVariable(name='Input2', valueRef=1, variability='continuous', unit=None, description='Input2', causality='input', structured=True, var_type='Real', fmiLevel=2, min='', max='', quantity='', declaredTypeName=None, dimensions=())], ()) --> None
+2024-07-11 15:41:47.429 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: RegisterVariable('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input2', [FmuVariable(name='Input2', valueRef=1, variability='continuous', unit=None, description='Input2', causality='input', structured=True, var_type='Real', fmiLevel=2, min='', max='', quantity='', declaredTypeName=None, dimensions=())], ()) --> None
+2024-07-11 15:41:47.437 26188 ManagedWorker-2*PE.Run() WARNING:
+                        No acquisition rate is used for variable "Input2".
+2024-07-11 15:41:47.447 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: RegisterVariable('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Out1', [FmuVariable(name='Out1', valueRef=2, variability='continuous', unit=None, description='Out1', causality='output', structured=True, var_type='Real', fmiLevel=2, min='', max='', quantity='', declaredTypeName=None, dimensions=())], ()) --> None
+2024-07-11 15:41:47.455 26188 ManagedWorker-2*PE.Run() WARNING:
+                        No acquisition rate is used for variable "Out1".
+2024-07-11 15:41:47.464 26188 ManagedWorker-2*PE.Run() INFO:
+                        Preprocess of test steps in Package 2
+2024-07-11 15:41:47.474 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-07-11 15:41:47.485 26188 Thread-90 (__ThreadIsBroken) DEBUG:
+                        SendCommand: FMI: IsBroken() --> False
+2024-07-11 15:41:47.550 26188 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 15:41:47.549 FMU is initialized
+2024-07-11 15:41:47.551 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: BeginPackage('{df040216-fde4-df2d-ea10-cf8bb144e8cd}') --> None
+2024-07-11 15:41:47.562 26188 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 15:41:47.561 Simulation is started
+2024-07-11 15:41:47.570 26188 ToolLibs DEBUG:
+                        FmiLib: FmuData: ToolLib time: 15:41:47.561 _Instantiate C:\ET2024_2\2_ECU-TEST_Advanced\FMU_Models\multiplication_model.fmu
+2024-07-11 15:41:47.578 26188 ToolLibs DEBUG:
+                        FmiLib: FmuData.StartSimulation: ToolLib time: 15:41:47.564 Initializing stepwise simulation
+2024-07-11 15:41:47.587 26188 ToolLibs DEBUG:
+                        FmiLib: SimulationControl: ToolLib time: 15:41:47.564 Preparing fmpy for simulation
+2024-07-11 15:41:47.596 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 15:41:47.565 Starting simulation
+2024-07-11 15:41:47.605 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 15:41:47.566 Simulation in state ready
+2024-07-11 15:41:47.613 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: StartSimulation('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', targetSimulationSpeed=0.0, isSteppedSimulation=True) --> None
+2024-07-11 15:41:47.623 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2024-07-11 15:41:47.634 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: GetSimulationTime('{df040216-fde4-df2d-ea10-cf8bb144e8cd}') --> 0
+2024-07-11 15:41:47.642 26188 ManagedWorker-2*PE.Run() INFO:
+                        init SteppedSimulationClock
+2024-07-11 15:41:47.650 26188 ManagedWorker-2*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: MDL01
+2024-07-11 15:41:47.658 26188 ManagedWorker-2*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+2024-07-11 15:41:47.668 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: GetSimulationTime('{df040216-fde4-df2d-ea10-cf8bb144e8cd}') --> 0
+2024-07-11 15:41:47.677 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        Recording: Starting recording at: 0
+2024-07-11 15:41:47.688 26188 ToolLibs DEBUG:
+                        FmiLib: Recording is saved in 'C:\Users\92126\AppData\Local\Temp\ECU-TEST 2022.2\ToolLibTemp\FMI\Recordings\FMI_2024-07-11-154147_0.mf4: ToolLib time: 15:41:47.687
+2024-07-11 15:41:47.700 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: StartRecording('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'f55bafa23f5711ef90b034cff6f2e990-', ['Input2', 'Input1', 'Out1'], 'Plant model', 1, 'MDF4') --> None
+2024-07-11 15:41:47.707 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: SetValue('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input1', 2) --> None
+                        Package "Package 2"#3
+2024-07-11 15:41:47.716 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: SetValue('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input2', 2) --> None
+                        Package "Package 2"#4
+2024-07-11 15:41:47.724 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 15:41:47.724 Waiting until the current task has finished (1 s)
+2024-07-11 15:41:47.731 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 15:41:47.724 Transition to RUNNING
+2024-07-11 15:41:47.739 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.748 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 0.
+2024-07-11 15:41:47.757 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 15:41:47.725 Simulation in state ready
+2024-07-11 15:41:47.767 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SteppedSimulation._Interrupt: ToolLib time: 15:41:47.725 Entering simulation loop for the first time
+2024-07-11 15:41:47.775 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.783 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 0.2.
+2024-07-11 15:41:47.792 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.801 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 0.4.
+2024-07-11 15:41:47.810 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.819 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 0.6000000000000001.
+2024-07-11 15:41:47.828 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.837 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 0.8.
+2024-07-11 15:41:47.847 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 15:41:47.726 Current task (1 s) finished successfully
+2024-07-11 15:41:47.855 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: StepSimulation('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 1) --> 1.0
+                        Package "Package 2"#5
+2024-07-11 15:41:47.867 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: SetValue('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input1', 3) --> None
+                        Package "Package 2"#3
+2024-07-11 15:41:47.876 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: SetValue('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input2', 4) --> None
+                        Package "Package 2"#4
+2024-07-11 15:41:47.886 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 15:41:47.885 Waiting until the current task has finished (1 s)
+2024-07-11 15:41:47.895 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.906 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 1.
+2024-07-11 15:41:47.917 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.926 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 1.2.
+2024-07-11 15:41:47.936 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.944 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 1.4.
+2024-07-11 15:41:47.955 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.963 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 1.6.
+2024-07-11 15:41:47.973 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:47.982 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 1.8.
+2024-07-11 15:41:47.991 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 15:41:47.889 Current task (1 s) finished successfully
+2024-07-11 15:41:48.000 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: StepSimulation('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 1) --> 2.0
+                        Package "Package 2"#5
+2024-07-11 15:41:48.012 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: SetValue('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input1', 4) --> None
+                        Package "Package 2"#3
+2024-07-11 15:41:48.021 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: SetValue('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'Input2', 6) --> None
+                        Package "Package 2"#4
+2024-07-11 15:41:48.031 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 15:41:48.030 Waiting until the current task has finished (1 s)
+2024-07-11 15:41:48.040 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:48.051 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 2.
+2024-07-11 15:41:48.060 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:48.071 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 2.2.
+2024-07-11 15:41:48.083 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:48.092 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 2.4.
+2024-07-11 15:41:48.101 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:48.111 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 2.6.
+2024-07-11 15:41:48.120 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] CommunicationStepSize=0.2, LocalSolverStepSize=0.2
+2024-07-11 15:41:48.130 26188 ToolLibs DEBUG:
+                        FmiLib: [OK] Local solver will do 1 steps from t = 2.8.
+2024-07-11 15:41:48.138 26188 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 15:41:48.033 Current task (1 s) finished successfully
+2024-07-11 15:41:48.147 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: StepSimulation('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 1) --> 3.0
+                        Package "Package 2"#5
+2024-07-11 15:41:48.158 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: GetSimulationTime('{df040216-fde4-df2d-ea10-cf8bb144e8cd}') --> 3.0
+2024-07-11 15:41:48.164 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        Recording: Finishing recording at: 3.0
+2024-07-11 15:41:48.175 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: StopRecording('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'f55bafa23f5711ef90b034cff6f2e990-') --> None
+2024-07-11 15:41:48.182 26188 ManagedWorker-2*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+2024-07-11 15:41:48.191 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: ANALYSIS JOB MS: Adding "Plant model.Input2" 1895286827472
+2024-07-11 15:41:48.198 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: ANALYSIS JOB MS: Adding "Plant model.Out1" 1895234129040
+2024-07-11 15:41:48.206 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: ANALYSIS JOB MS: Adding "Plant model.Input1" 1895289060304
+2024-07-11 15:41:48.217 26188 ManagedWorker-2*PE.Run() INFO:
+                        Post process of test steps in Package 2
+2024-07-11 15:41:48.223 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-07-11 15:41:48.233 26188 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 15:41:48.232 Simulation is stopped
+2024-07-11 15:41:48.243 26188 ToolLibs DEBUG:
+                        FmiLib: SimulationControl: ToolLib time: 15:41:48.233 Restoring fmpy after simulation
+2024-07-11 15:41:48.251 26188 ToolLibs DEBUG:
+                        FmiLib: FmuData: ToolLib time: 15:41:48.233 _FreeInstance C:\ET2024_2\2_ECU-TEST_Advanced\FMU_Models\multiplication_model.fmu
+2024-07-11 15:41:48.260 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: StopSimulation('{df040216-fde4-df2d-ea10-cf8bb144e8cd}') --> 3.0
+2024-07-11 15:41:48.269 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        Recording: Finalizing recording
+2024-07-11 15:41:48.281 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: FinishRecording('{df040216-fde4-df2d-ea10-cf8bb144e8cd}', 'f55bafa23f5711ef90b034cff6f2e990-') --> [[('MDF4', 'C:\\Users\\92126\\AppData\\Local\\Temp\\ECU-TEST 2022.2\\ToolLibTemp\\FMI\\Recordings\\FMI_2024-07-11-154147_0.mf4', '', 0, 'FMU=Plant model')]]
+2024-07-11 15:41:48.291 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        ExportResource() Transferring resource: local: C:\ET2024_2\2_ECU-TEST_Advanced\TestReports\Package 2_2024-07-11_154147\Package 2\Recording.mf4 <-- FMI@local:C:\Users\92126\AppData\Local\Temp\ECU-TEST 2022.2\ToolLibTemp\FMI\Recordings\FMI_2024-07-11-154147_0.mf4: 
+2024-07-11 15:41:48.667 26188 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 2" completed
+2024-07-11 15:41:48.730 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SendCommand: FMI: GetVersion() --> '0.3.20'
+2024-07-11 15:41:48.747 26188 ManagedWorker-2*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 2" -> "Trace analysis 1")
+2024-07-11 15:41:48.753 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SignalCache: Generic signal Plant_model_Input1 (Plant model.Input1) in cache: False
+2024-07-11 15:41:48.758 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SignalCache: Generic signal Plant_model_Out1 (Plant model.Out1) in cache: False
+2024-07-11 15:41:48.768 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SignalCache: Generic signal Plant_model_Input2 (Plant model.Input2) in cache: False
+2024-07-11 15:41:48.785 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        Mdf4NumpyRecording-ParseMappingFile: Sidecar file 'C:\ET2024_2\2_ECU-TEST_Advanced\TestReports\Package 2_2024-07-11_154147\Package 2\Recording.recscf' not found!
+2024-07-11 15:41:48.791 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        Performing episode ...
+2024-07-11 15:41:48.796 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-07-11 15:41:48.810 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        Episode completed
+2024-07-11 15:41:48.816 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2024-07-11 15:41:48.907 26188 ManagedWorker-2*PE.Run() DEBUG:
+                        SignalCache: 1 entries with a total of 4 signals consuming 0.00 MB (ratio: 346.3 %, original 0.00 MB).

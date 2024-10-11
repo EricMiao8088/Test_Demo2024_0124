@@ -1,0 +1,32 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          51.3GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 19.08.2024 14:09:05 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-04
+         - licensed for: Turing
+
+
+2024-08-19 14:09:05.385 23532 ManagedWorker-6*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\traceAnalysis\common\steps\templates\trcpNumpy\TrcpNumpyExec.py", line 367, in Eval
+                          File "C:\ET2024_2\2_ECU-TEST_Advanced\TraceStepTemplates\Bus_Calculation.py", line 143, in Process
+                            if signal_value[i] == int(hex(Frame_ID)[2:]):
+                                                  ^^^^^^^^^^^^^^^^^^^^^^
+                        ValueError: invalid literal for int() with base 10: '1c5'

@@ -1,0 +1,40 @@
+{
+    "metadata": {
+        "name": "Demo_testguide_1011"
+    },
+    "workspace": {
+        "source": {
+            "sourceType": "artifact",
+            "artifactId": "20241011-2",
+            "relativeWorkspacePath": null
+        }
+    },
+    "setup": {
+        "steps": [
+            {
+                "tbcPath": "Configurations/Testlab_HiL.tbc",
+                "tcfPath": "Configurations/SW_Ver_1.tcf",
+                "type": "configuration"
+            }
+        ]
+    },
+    "execution": {
+        "testcases": [
+            {
+                "relativePath": "Packages/BasicDrive.pkg",
+                "type": "package"
+            }
+        ]
+    },
+    "teardown": {
+        "steps": []
+    },
+    "xilConfigRequirements": [
+        {
+            "label": "Identifier",
+            "category": "XIL",
+            "value": "NorthBuilding/7/701A/HIL/Eric",
+            "details": []
+        }
+    ]
+}

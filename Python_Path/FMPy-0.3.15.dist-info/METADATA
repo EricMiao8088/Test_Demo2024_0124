@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: FMPy
+Version: 0.3.15
+Summary: Simulate Functional Mock-up Units (FMUs) in Python
+Home-page: https://github.com/CATIA-Systems/FMPy
+Author: Torsten Sommer
+Author-email: torsten.sommer@3ds.com
+License: Standard 2-clause BSD
+Requires-Python: >=3.5
+License-File: LICENSE.txt
+Requires-Dist: attrs
+Requires-Dist: Jinja2
+Requires-Dist: lark
+Requires-Dist: lxml
+Requires-Dist: msgpack
+Requires-Dist: numpy
+Requires-Dist: pytz
+Requires-Dist: pywin32 ; platform_system == "Windows"
+Provides-Extra: complete
+Requires-Dist: PyQt5 ; extra == 'complete'
+Requires-Dist: PyQtWebEngine ; extra == 'complete'
+Requires-Dist: dash-bootstrap-components (>=1.0.0) ; extra == 'complete'
+Requires-Dist: dask[bag] ; extra == 'complete'
+Requires-Dist: kaleido ; extra == 'complete'
+Requires-Dist: matplotlib ; extra == 'complete'
+Requires-Dist: notebook ; extra == 'complete'
+Requires-Dist: plotly ; extra == 'complete'
+Requires-Dist: pyqtgraph ; extra == 'complete'
+Requires-Dist: requests ; extra == 'complete'
+Requires-Dist: scipy ; extra == 'complete'
+Provides-Extra: examples
+Requires-Dist: dask[bag] ; extra == 'examples'
+Requires-Dist: requests ; extra == 'examples'
+Provides-Extra: gui
+Requires-Dist: PyQt5 ; extra == 'gui'
+Requires-Dist: pyqtgraph ; extra == 'gui'
+Requires-Dist: PyQtWebEngine ; extra == 'gui'
+Provides-Extra: notebook
+Requires-Dist: kaleido ; extra == 'notebook'
+Requires-Dist: notebook ; extra == 'notebook'
+Requires-Dist: plotly ; extra == 'notebook'
+Provides-Extra: plot
+Requires-Dist: matplotlib ; extra == 'plot'
+Requires-Dist: scipy ; extra == 'plot'
+Provides-Extra: webapp
+Requires-Dist: dash-bootstrap-components (>=1.0.0) ; extra == 'webapp'
+
+
+FMPy
+====
+
+FMPy is a free Python library to simulate `Functional Mock-up Units (FMUs) <http://fmi-standard.org/>`_ that...
+
+- supports FMI 1.0, 2.0, and 3.0 for Co-Simulation and Model Exchange
+- runs on Windows, Linux and macOS
+- has a graphical user interface
+- compiles C code FMUs and generates CMake projects for debugging

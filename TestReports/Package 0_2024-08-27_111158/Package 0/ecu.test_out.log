@@ -1,0 +1,3295 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          50.8GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 27.08.2024 11:11:58 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-26
+         - licensed for: Turing
+
+
+2024-08-27 11:11:58.589 7288 ManagedWorker-1*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-08-27 11:11:58.602 7288 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-08-27 11:11:58.604 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-27 11:11:58.663 7288 ManagedWorker-1*PE.Run() INFO:
+                        System time mode activated
+2024-08-27 11:11:58.672 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-27 11:11:58.698 7288 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-08-27 11:11:58.751 7288 ManagedWorker-1*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 0" -> "Trace analysis 1")
+2024-08-27 11:11:58.769 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        Performing episode ...
+2024-08-27 11:11:58.771 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.816 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:11:58.817 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.828 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:11:58.838 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.850 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:58.860 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.870 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.18470809
+2024-08-27 11:11:58.880 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.890 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:11:58.900 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.910 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:11:58.920 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.931 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:58.941 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.953 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.199543364
+2024-08-27 11:11:58.964 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.975 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:11:58.986 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:58.998 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:59.010 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.021 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:11:59.032 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.044 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.204699788
+2024-08-27 11:11:59.055 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.065 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:59.075 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.085 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:11:59.095 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.104 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:59.113 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.122 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.209604222
+2024-08-27 11:11:59.132 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.141 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:59.151 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.160 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:59.170 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.179 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:11:59.189 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.199 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.449670662
+2024-08-27 11:11:59.209 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.218 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:11:59.229 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.240 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:11:59.251 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.261 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:59.271 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.281 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.459521531
+2024-08-27 11:11:59.292 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.301 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:11:59.311 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.322 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:11:59.331 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.340 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:11:59.351 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.360 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.46470394
+2024-08-27 11:11:59.370 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.380 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:11:59.388 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.398 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:11:59.407 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.417 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.426 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.436 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        0.649719716
+2024-08-27 11:11:59.447 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.458 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.469 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.480 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.491 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.501 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1505.0
+2024-08-27 11:11:59.513 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.526 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.009592377
+2024-08-27 11:11:59.536 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.545 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.555 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.565 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1505.0
+2024-08-27 11:11:59.575 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.585 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.596 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.606 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.014642815
+2024-08-27 11:11:59.617 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.628 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.637 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.647 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.658 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.668 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1505.0
+2024-08-27 11:11:59.679 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.692 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.024673657
+2024-08-27 11:11:59.703 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.714 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1505.0
+2024-08-27 11:11:59.725 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.736 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1505.0
+2024-08-27 11:11:59.747 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.758 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.768 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.777 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.354627808
+2024-08-27 11:11:59.788 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.798 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1505.0
+2024-08-27 11:11:59.808 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.818 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.828 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.838 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:11:59.848 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.859 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.359484226
+2024-08-27 11:11:59.870 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.880 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1506.0
+2024-08-27 11:11:59.890 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.900 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:11:59.910 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.922 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:11:59.934 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.945 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.364680652
+2024-08-27 11:11:59.957 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.968 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:11:59.981 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:11:59.991 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:00.001 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.012 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:00.022 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.032 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.369627088
+2024-08-27 11:12:00.041 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.049 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:00.059 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.068 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:00.078 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.087 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:00.097 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.106 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.37463751
+2024-08-27 11:12:00.116 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.127 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:00.136 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.146 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:00.157 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.167 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:00.177 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.187 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.379515944
+2024-08-27 11:12:00.197 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.207 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:00.217 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.229 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:00.240 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.250 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:00.260 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.269 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.389584789
+2024-08-27 11:12:00.278 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.286 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:00.295 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.306 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:00.316 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.326 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.335 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.344 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.404682072
+2024-08-27 11:12:00.354 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.363 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.372 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.382 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.391 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.401 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.411 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.420 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.424679773
+2024-08-27 11:12:00.430 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.440 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.450 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.460 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.470 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.480 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1521.0
+2024-08-27 11:12:00.489 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.500 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.444699491
+2024-08-27 11:12:00.509 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.519 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1521.0
+2024-08-27 11:12:00.528 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.537 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1521.0
+2024-08-27 11:12:00.547 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.557 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1522.0
+2024-08-27 11:12:00.567 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.576 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.474642051
+2024-08-27 11:12:00.586 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.594 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1522.0
+2024-08-27 11:12:00.604 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.613 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1522.0
+2024-08-27 11:12:00.622 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.632 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1521.0
+2024-08-27 11:12:00.642 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.651 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.549654453
+2024-08-27 11:12:00.661 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.670 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1521.0
+2024-08-27 11:12:00.681 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.691 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1521.0
+2024-08-27 11:12:00.701 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.710 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.719 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.728 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.609571573
+2024-08-27 11:12:00.737 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.746 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.756 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.766 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.775 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.784 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.794 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.804 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.699499254
+2024-08-27 11:12:00.814 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.823 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.833 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.842 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.851 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.860 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.870 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.880 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.709568099
+2024-08-27 11:12:00.891 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.901 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.911 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.922 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1520.0
+2024-08-27 11:12:00.932 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.941 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.950 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.960 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.714634537
+2024-08-27 11:12:00.969 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.978 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:00.987 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:00.997 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1519.0
+2024-08-27 11:12:01.006 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.015 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:01.025 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.034 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.80957864
+2024-08-27 11:12:01.044 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.053 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:01.062 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.071 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:01.081 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.089 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:01.099 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.108 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1.914635604
+2024-08-27 11:12:01.118 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.127 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:01.137 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.146 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:01.156 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.165 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1516.0
+2024-08-27 11:12:01.174 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.185 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.019516564
+2024-08-27 11:12:01.193 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.203 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1516.0
+2024-08-27 11:12:01.211 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.222 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1516.0
+2024-08-27 11:12:01.232 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.240 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1515.0
+2024-08-27 11:12:01.250 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.260 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.149655652
+2024-08-27 11:12:01.268 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.278 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1516.0
+2024-08-27 11:12:01.287 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.295 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1515.0
+2024-08-27 11:12:01.305 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.314 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1516.0
+2024-08-27 11:12:01.324 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.333 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.154620071
+2024-08-27 11:12:01.343 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.353 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1515.0
+2024-08-27 11:12:01.362 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.372 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1516.0
+2024-08-27 11:12:01.381 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.391 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1515.0
+2024-08-27 11:12:01.401 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.411 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.159492504
+2024-08-27 11:12:01.420 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.429 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1515.0
+2024-08-27 11:12:01.439 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.448 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1515.0
+2024-08-27 11:12:01.457 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.466 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:01.475 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.485 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.254636587
+2024-08-27 11:12:01.493 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.504 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:01.514 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.523 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:01.533 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.542 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.551 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.560 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.389568073
+2024-08-27 11:12:01.569 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.579 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:01.588 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.597 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.607 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.617 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:01.628 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.637 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.394682496
+2024-08-27 11:12:01.646 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.655 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.665 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.674 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1514.0
+2024-08-27 11:12:01.684 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.694 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.703 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.712 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.399484927
+2024-08-27 11:12:01.721 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.732 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.741 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.751 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.760 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.770 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:01.779 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.788 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.56958339
+2024-08-27 11:12:01.798 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.807 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.817 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.827 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:01.838 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.848 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.858 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.868 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.574631812
+2024-08-27 11:12:01.878 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.887 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:01.896 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.906 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.915 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.925 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:01.937 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.948 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.579470244
+2024-08-27 11:12:01.959 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.970 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:01.982 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:01.992 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.004 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.015 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:02.026 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.038 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.584652653
+2024-08-27 11:12:02.049 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.062 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.073 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.085 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:02.097 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.109 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.121 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.133 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.589569087
+2024-08-27 11:12:02.144 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.154 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.165 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.175 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.186 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.196 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.207 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.218 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.709567298
+2024-08-27 11:12:02.230 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.241 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.251 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.261 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.271 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.281 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.290 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.300 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.71463772
+2024-08-27 11:12:02.310 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.320 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.331 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.342 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1512.0
+2024-08-27 11:12:02.351 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.361 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.371 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.380 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.719506153
+2024-08-27 11:12:02.389 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.397 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.407 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.416 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.425 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.434 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:12:02.443 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.453 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.869592904
+2024-08-27 11:12:02.463 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.473 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.482 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.491 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:12:02.500 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.509 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.518 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.528 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.874595339
+2024-08-27 11:12:02.538 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.547 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.557 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.566 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:02.576 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.585 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:12:02.594 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.604 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        2.889564615
+2024-08-27 11:12:02.614 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.623 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:12:02.632 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.642 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:12:02.652 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.661 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.670 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.680 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.069589917
+2024-08-27 11:12:02.690 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.700 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.709 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.719 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.728 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.738 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:12:02.748 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.760 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.089571629
+2024-08-27 11:12:02.771 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.783 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.794 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.806 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1510.0
+2024-08-27 11:12:02.817 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.829 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.840 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.852 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.094692052
+2024-08-27 11:12:02.863 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.874 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.884 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.894 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.904 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.914 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:02.925 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.935 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.274628295
+2024-08-27 11:12:02.945 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.955 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:02.965 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.975 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:02.984 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:02.992 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:03.003 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.012 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.279470747
+2024-08-27 11:12:03.023 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.033 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.043 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.052 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:03.062 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.072 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.082 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.091 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.284635207
+2024-08-27 11:12:03.101 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.112 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:03.122 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.131 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.140 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.151 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:03.163 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.172 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.289559678
+2024-08-27 11:12:03.182 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.191 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.201 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.210 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1509.0
+2024-08-27 11:12:03.219 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.229 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.238 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.248 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.294688137
+2024-08-27 11:12:03.259 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.268 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.280 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.289 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.299 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.309 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:12:03.318 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.327 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.529569822
+2024-08-27 11:12:03.336 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.345 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:12:03.355 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.364 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:12:03.373 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.382 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.392 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.402 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.539452746
+2024-08-27 11:12:03.411 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.420 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.430 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.439 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:03.448 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.457 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:12:03.466 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.475 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.549639663
+2024-08-27 11:12:03.485 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.495 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:12:03.504 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.514 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:12:03.523 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.532 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:03.541 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.550 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.70466596
+2024-08-27 11:12:03.558 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.567 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1507.0
+2024-08-27 11:12:03.577 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.586 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:03.595 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.606 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:03.614 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.623 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.709558413
+2024-08-27 11:12:03.633 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.642 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1511.0
+2024-08-27 11:12:03.650 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.659 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:03.668 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.678 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1524.0
+2024-08-27 11:12:03.687 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.697 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.714612887
+2024-08-27 11:12:03.706 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.715 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1518.0
+2024-08-27 11:12:03.725 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.734 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1524.0
+2024-08-27 11:12:03.745 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.754 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1531.0
+2024-08-27 11:12:03.763 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.771 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.719507339
+2024-08-27 11:12:03.782 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.791 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1524.0
+2024-08-27 11:12:03.800 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.810 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1531.0
+2024-08-27 11:12:03.819 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.828 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1532.0
+2024-08-27 11:12:03.837 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.846 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.7246558
+2024-08-27 11:12:03.856 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.865 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1531.0
+2024-08-27 11:12:03.875 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.884 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1532.0
+2024-08-27 11:12:03.893 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.903 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1531.0
+2024-08-27 11:12:03.912 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.921 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.72959427
+2024-08-27 11:12:03.931 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.941 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1532.0
+2024-08-27 11:12:03.951 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.960 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1531.0
+2024-08-27 11:12:03.970 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.979 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1529.0
+2024-08-27 11:12:03.989 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:03.999 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.734632727
+2024-08-27 11:12:04.010 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.019 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1531.0
+2024-08-27 11:12:04.029 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.037 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1529.0
+2024-08-27 11:12:04.046 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.057 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1526.0
+2024-08-27 11:12:04.068 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.078 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.739477194
+2024-08-27 11:12:04.089 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.099 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1529.0
+2024-08-27 11:12:04.110 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.121 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1526.0
+2024-08-27 11:12:04.131 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.141 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1522.0
+2024-08-27 11:12:04.150 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.158 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.744755642
+2024-08-27 11:12:04.168 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.177 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1526.0
+2024-08-27 11:12:04.186 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.195 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1522.0
+2024-08-27 11:12:04.204 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.214 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:04.224 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.234 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.749704113
+2024-08-27 11:12:04.244 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.252 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1522.0
+2024-08-27 11:12:04.262 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.272 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:04.282 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.291 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:04.299 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.308 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.754636567
+2024-08-27 11:12:04.317 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.326 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1517.0
+2024-08-27 11:12:04.336 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.345 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:04.354 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.364 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:04.374 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.382 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.759481034
+2024-08-27 11:12:04.391 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.401 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1513.0
+2024-08-27 11:12:04.410 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.418 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:04.428 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.438 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1504.0
+2024-08-27 11:12:04.447 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.458 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.764629494
+2024-08-27 11:12:04.468 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.477 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1508.0
+2024-08-27 11:12:04.487 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.496 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1504.0
+2024-08-27 11:12:04.505 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.514 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1499.0
+2024-08-27 11:12:04.523 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.532 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.769617951
+2024-08-27 11:12:04.541 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.551 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1504.0
+2024-08-27 11:12:04.560 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.569 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1499.0
+2024-08-27 11:12:04.579 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.588 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1496.0
+2024-08-27 11:12:04.597 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.605 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.774606406
+2024-08-27 11:12:04.615 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.623 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1499.0
+2024-08-27 11:12:04.632 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.641 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1496.0
+2024-08-27 11:12:04.651 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.660 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1493.0
+2024-08-27 11:12:04.669 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.679 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.779490875
+2024-08-27 11:12:04.688 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.699 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1496.0
+2024-08-27 11:12:04.708 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.718 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1493.0
+2024-08-27 11:12:04.728 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.737 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1491.0
+2024-08-27 11:12:04.745 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.755 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.784667336
+2024-08-27 11:12:04.764 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.774 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1493.0
+2024-08-27 11:12:04.782 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.793 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1491.0
+2024-08-27 11:12:04.802 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.811 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1490.0
+2024-08-27 11:12:04.820 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.830 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.789561804
+2024-08-27 11:12:04.838 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.847 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1490.0
+2024-08-27 11:12:04.856 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.866 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1490.0
+2024-08-27 11:12:04.874 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.884 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1489.0
+2024-08-27 11:12:04.893 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.902 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.83947641
+2024-08-27 11:12:04.911 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.920 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1489.0
+2024-08-27 11:12:04.930 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.939 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1489.0
+2024-08-27 11:12:04.949 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.958 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1488.0
+2024-08-27 11:12:04.968 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.977 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.889559021
+2024-08-27 11:12:04.986 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:04.995 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1489.0
+2024-08-27 11:12:05.004 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.014 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1488.0
+2024-08-27 11:12:05.023 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.032 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1487.0
+2024-08-27 11:12:05.041 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.050 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.89469748
+2024-08-27 11:12:05.060 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.069 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1488.0
+2024-08-27 11:12:05.078 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.087 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1487.0
+2024-08-27 11:12:05.096 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.105 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1486.0
+2024-08-27 11:12:05.114 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.122 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.899493947
+2024-08-27 11:12:05.131 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.140 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1487.0
+2024-08-27 11:12:05.150 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.158 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1486.0
+2024-08-27 11:12:05.167 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.177 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1485.0
+2024-08-27 11:12:05.186 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.196 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.904658407
+2024-08-27 11:12:05.206 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.215 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1486.0
+2024-08-27 11:12:05.224 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.236 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1485.0
+2024-08-27 11:12:05.244 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.253 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1484.0
+2024-08-27 11:12:05.264 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.273 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.909568876
+2024-08-27 11:12:05.282 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.291 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1485.0
+2024-08-27 11:12:05.300 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.309 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1484.0
+2024-08-27 11:12:05.318 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.326 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1482.0
+2024-08-27 11:12:05.336 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.346 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.914623335
+2024-08-27 11:12:05.355 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.365 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1484.0
+2024-08-27 11:12:05.374 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.383 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1482.0
+2024-08-27 11:12:05.392 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.401 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1481.0
+2024-08-27 11:12:05.410 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.420 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.919495787
+2024-08-27 11:12:05.429 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.439 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1482.0
+2024-08-27 11:12:05.449 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.460 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1481.0
+2024-08-27 11:12:05.470 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.480 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1479.0
+2024-08-27 11:12:05.489 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.497 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.924680248
+2024-08-27 11:12:05.506 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.515 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1481.0
+2024-08-27 11:12:05.524 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.533 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1479.0
+2024-08-27 11:12:05.542 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.552 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1478.0
+2024-08-27 11:12:05.560 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.569 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.929582717
+2024-08-27 11:12:05.579 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.589 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1479.0
+2024-08-27 11:12:05.599 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.608 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1478.0
+2024-08-27 11:12:05.617 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.626 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1476.0
+2024-08-27 11:12:05.634 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.644 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.934613174
+2024-08-27 11:12:05.653 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.661 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1478.0
+2024-08-27 11:12:05.671 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.680 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1476.0
+2024-08-27 11:12:05.689 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.700 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1475.0
+2024-08-27 11:12:05.709 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.719 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.939483642
+2024-08-27 11:12:05.729 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.738 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1476.0
+2024-08-27 11:12:05.748 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.757 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1475.0
+2024-08-27 11:12:05.766 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.775 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1473.0
+2024-08-27 11:12:05.784 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.793 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.944666104
+2024-08-27 11:12:05.802 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.812 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1475.0
+2024-08-27 11:12:05.822 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.831 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1473.0
+2024-08-27 11:12:05.840 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.849 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1472.0
+2024-08-27 11:12:05.858 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.867 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.949626558
+2024-08-27 11:12:05.878 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.887 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1473.0
+2024-08-27 11:12:05.897 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.907 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1472.0
+2024-08-27 11:12:05.917 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.927 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1470.0
+2024-08-27 11:12:05.937 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.946 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.954607014
+2024-08-27 11:12:05.955 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.963 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1472.0
+2024-08-27 11:12:05.972 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.981 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1470.0
+2024-08-27 11:12:05.990 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:05.999 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1469.0
+2024-08-27 11:12:06.008 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.018 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.959463482
+2024-08-27 11:12:06.026 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.035 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1470.0
+2024-08-27 11:12:06.043 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.055 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1469.0
+2024-08-27 11:12:06.065 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.074 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1467.0
+2024-08-27 11:12:06.084 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.093 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.964623943
+2024-08-27 11:12:06.103 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.112 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1469.0
+2024-08-27 11:12:06.126 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.137 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1467.0
+2024-08-27 11:12:06.148 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.159 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1466.0
+2024-08-27 11:12:06.170 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.182 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.969590413
+2024-08-27 11:12:06.192 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.201 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1467.0
+2024-08-27 11:12:06.211 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.220 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1466.0
+2024-08-27 11:12:06.229 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.238 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1464.0
+2024-08-27 11:12:06.248 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.256 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.97461287
+2024-08-27 11:12:06.265 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.275 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1466.0
+2024-08-27 11:12:06.284 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.295 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1464.0
+2024-08-27 11:12:06.305 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.314 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1463.0
+2024-08-27 11:12:06.323 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.331 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.979469322
+2024-08-27 11:12:06.340 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.349 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1464.0
+2024-08-27 11:12:06.359 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.368 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1463.0
+2024-08-27 11:12:06.378 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.388 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1461.0
+2024-08-27 11:12:06.398 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.409 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.984641783
+2024-08-27 11:12:06.418 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.426 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1463.0
+2024-08-27 11:12:06.436 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.445 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1461.0
+2024-08-27 11:12:06.454 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.463 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1460.0
+2024-08-27 11:12:06.472 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.481 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.989542252
+2024-08-27 11:12:06.490 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.499 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1461.0
+2024-08-27 11:12:06.508 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.517 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1460.0
+2024-08-27 11:12:06.527 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.536 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1458.0
+2024-08-27 11:12:06.545 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.554 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.994704713
+2024-08-27 11:12:06.563 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.572 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1460.0
+2024-08-27 11:12:06.581 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.590 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1458.0
+2024-08-27 11:12:06.599 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.609 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1456.0
+2024-08-27 11:12:06.619 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.628 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        3.999461177
+2024-08-27 11:12:06.638 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.646 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1458.0
+2024-08-27 11:12:06.658 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.666 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1456.0
+2024-08-27 11:12:06.676 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.685 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1455.0
+2024-08-27 11:12:06.695 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.703 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.004649638
+2024-08-27 11:12:06.712 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.721 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1456.0
+2024-08-27 11:12:06.730 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.739 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1455.0
+2024-08-27 11:12:06.750 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.759 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1454.0
+2024-08-27 11:12:06.768 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.776 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.009552092
+2024-08-27 11:12:06.784 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.795 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1455.0
+2024-08-27 11:12:06.803 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.812 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1454.0
+2024-08-27 11:12:06.822 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.831 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1452.0
+2024-08-27 11:12:06.840 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.850 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.014592549
+2024-08-27 11:12:06.861 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.872 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1454.0
+2024-08-27 11:12:06.884 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.895 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1452.0
+2024-08-27 11:12:06.907 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.918 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1451.0
+2024-08-27 11:12:06.929 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.939 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.019503019
+2024-08-27 11:12:06.949 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.961 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1452.0
+2024-08-27 11:12:06.971 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:06.982 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1451.0
+2024-08-27 11:12:06.993 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.003 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1449.0
+2024-08-27 11:12:07.013 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.022 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.024653479
+2024-08-27 11:12:07.032 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.042 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1451.0
+2024-08-27 11:12:07.050 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.061 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1449.0
+2024-08-27 11:12:07.070 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.080 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1447.0
+2024-08-27 11:12:07.090 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.100 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.029553948
+2024-08-27 11:12:07.110 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.120 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1449.0
+2024-08-27 11:12:07.129 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.138 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1447.0
+2024-08-27 11:12:07.147 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.156 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1446.0
+2024-08-27 11:12:07.166 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.175 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.034622406
+2024-08-27 11:12:07.185 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.195 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1447.0
+2024-08-27 11:12:07.206 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.216 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1446.0
+2024-08-27 11:12:07.226 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.236 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1444.0
+2024-08-27 11:12:07.246 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.255 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.039474858
+2024-08-27 11:12:07.266 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.274 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1446.0
+2024-08-27 11:12:07.284 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.294 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1444.0
+2024-08-27 11:12:07.305 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.314 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1443.0
+2024-08-27 11:12:07.324 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.334 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.044695321
+2024-08-27 11:12:07.344 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.353 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1444.0
+2024-08-27 11:12:07.362 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.372 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1443.0
+2024-08-27 11:12:07.381 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.390 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1442.0
+2024-08-27 11:12:07.399 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.409 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.049629774
+2024-08-27 11:12:07.418 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.427 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1443.0
+2024-08-27 11:12:07.437 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.446 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1442.0
+2024-08-27 11:12:07.455 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.465 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1440.0
+2024-08-27 11:12:07.473 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.482 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.054610246
+2024-08-27 11:12:07.493 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.502 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1442.0
+2024-08-27 11:12:07.510 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.519 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1440.0
+2024-08-27 11:12:07.529 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.539 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1438.0
+2024-08-27 11:12:07.549 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.560 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.059460713
+2024-08-27 11:12:07.570 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.580 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1440.0
+2024-08-27 11:12:07.591 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.601 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1438.0
+2024-08-27 11:12:07.610 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.618 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1436.0
+2024-08-27 11:12:07.627 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.636 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.064645175
+2024-08-27 11:12:07.645 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.654 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1438.0
+2024-08-27 11:12:07.663 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.672 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1436.0
+2024-08-27 11:12:07.682 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.692 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1434.0
+2024-08-27 11:12:07.701 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.711 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.069555628
+2024-08-27 11:12:07.720 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.728 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1436.0
+2024-08-27 11:12:07.738 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.747 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1434.0
+2024-08-27 11:12:07.756 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.765 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1431.0
+2024-08-27 11:12:07.774 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.784 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.074610086
+2024-08-27 11:12:07.793 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.802 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1434.0
+2024-08-27 11:12:07.813 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.822 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1431.0
+2024-08-27 11:12:07.831 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.840 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1427.0
+2024-08-27 11:12:07.849 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.859 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.079466553
+2024-08-27 11:12:07.868 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.877 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1431.0
+2024-08-27 11:12:07.886 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.896 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1427.0
+2024-08-27 11:12:07.904 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.914 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1422.0
+2024-08-27 11:12:07.924 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.933 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.084621015
+2024-08-27 11:12:07.942 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.951 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1427.0
+2024-08-27 11:12:07.959 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.969 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1422.0
+2024-08-27 11:12:07.978 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:07.987 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1417.0
+2024-08-27 11:12:07.996 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.005 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.089549468
+2024-08-27 11:12:08.015 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.024 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1422.0
+2024-08-27 11:12:08.034 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.043 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1417.0
+2024-08-27 11:12:08.054 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.063 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1412.0
+2024-08-27 11:12:08.072 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.081 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.094701929
+2024-08-27 11:12:08.091 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.100 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1417.0
+2024-08-27 11:12:08.110 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.119 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1412.0
+2024-08-27 11:12:08.128 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.137 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1409.0
+2024-08-27 11:12:08.145 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.155 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.099470394
+2024-08-27 11:12:08.165 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.174 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1412.0
+2024-08-27 11:12:08.184 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.193 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1409.0
+2024-08-27 11:12:08.203 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.212 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1405.0
+2024-08-27 11:12:08.222 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.233 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.104610854
+2024-08-27 11:12:08.244 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.254 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1409.0
+2024-08-27 11:12:08.266 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.277 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1405.0
+2024-08-27 11:12:08.287 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.296 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1399.0
+2024-08-27 11:12:08.305 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.315 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.109551324
+2024-08-27 11:12:08.324 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.333 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1405.0
+2024-08-27 11:12:08.344 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.354 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1399.0
+2024-08-27 11:12:08.362 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.371 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1392.0
+2024-08-27 11:12:08.380 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.389 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.114617782
+2024-08-27 11:12:08.399 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.410 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1399.0
+2024-08-27 11:12:08.419 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.428 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1392.0
+2024-08-27 11:12:08.438 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.447 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1382.0
+2024-08-27 11:12:08.455 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.465 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.11948425
+2024-08-27 11:12:08.474 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.483 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1392.0
+2024-08-27 11:12:08.493 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.504 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1382.0
+2024-08-27 11:12:08.514 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.523 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1370.0
+2024-08-27 11:12:08.533 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.543 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.12463271
+2024-08-27 11:12:08.552 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.561 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1382.0
+2024-08-27 11:12:08.570 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.579 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1370.0
+2024-08-27 11:12:08.588 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.597 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1360.0
+2024-08-27 11:12:08.607 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.616 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.129573165
+2024-08-27 11:12:08.624 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.634 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1370.0
+2024-08-27 11:12:08.643 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.652 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1360.0
+2024-08-27 11:12:08.661 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.670 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1346.0
+2024-08-27 11:12:08.679 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.688 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.134595621
+2024-08-27 11:12:08.698 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.707 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1360.0
+2024-08-27 11:12:08.716 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.726 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1346.0
+2024-08-27 11:12:08.735 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.745 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1334.0
+2024-08-27 11:12:08.754 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.764 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.13947809
+2024-08-27 11:12:08.773 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.784 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1346.0
+2024-08-27 11:12:08.793 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.803 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1334.0
+2024-08-27 11:12:08.811 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.820 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1320.0
+2024-08-27 11:12:08.829 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.838 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.144692552
+2024-08-27 11:12:08.847 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.856 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1334.0
+2024-08-27 11:12:08.865 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.874 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1320.0
+2024-08-27 11:12:08.884 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.893 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1307.0
+2024-08-27 11:12:08.903 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.913 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.149622978
+2024-08-27 11:12:08.922 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.931 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1320.0
+2024-08-27 11:12:08.940 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.949 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1307.0
+2024-08-27 11:12:08.959 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.967 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1292.0
+2024-08-27 11:12:08.977 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:08.987 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.154611416
+2024-08-27 11:12:08.996 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.007 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1307.0
+2024-08-27 11:12:09.016 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.026 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1292.0
+2024-08-27 11:12:09.035 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.044 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1279.0
+2024-08-27 11:12:09.053 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.062 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.159473835
+2024-08-27 11:12:09.071 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.080 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1292.0
+2024-08-27 11:12:09.090 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.098 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1279.0
+2024-08-27 11:12:09.108 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.117 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1259.0
+2024-08-27 11:12:09.126 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.136 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.164626261
+2024-08-27 11:12:09.145 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.154 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1279.0
+2024-08-27 11:12:09.163 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.173 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1259.0
+2024-08-27 11:12:09.182 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.191 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1244.0
+2024-08-27 11:12:09.200 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.209 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.169582683
+2024-08-27 11:12:09.219 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.228 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1259.0
+2024-08-27 11:12:09.238 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.247 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1244.0
+2024-08-27 11:12:09.257 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.267 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1226.0
+2024-08-27 11:12:09.276 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.285 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.174595121
+2024-08-27 11:12:09.294 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.303 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1244.0
+2024-08-27 11:12:09.312 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.321 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1226.0
+2024-08-27 11:12:09.330 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.339 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1188.0
+2024-08-27 11:12:09.348 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.358 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.179459556
+2024-08-27 11:12:09.367 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.376 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1226.0
+2024-08-27 11:12:09.385 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.394 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1188.0
+2024-08-27 11:12:09.403 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.412 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1164.0
+2024-08-27 11:12:09.422 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.431 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.184615983
+2024-08-27 11:12:09.440 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.449 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1188.0
+2024-08-27 11:12:09.458 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.469 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1164.0
+2024-08-27 11:12:09.478 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.488 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1150.0
+2024-08-27 11:12:09.497 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.507 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.189552404
+2024-08-27 11:12:09.517 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.527 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1164.0
+2024-08-27 11:12:09.536 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.545 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1150.0
+2024-08-27 11:12:09.555 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.563 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1125.0
+2024-08-27 11:12:09.572 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.581 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.194656829
+2024-08-27 11:12:09.590 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.599 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1150.0
+2024-08-27 11:12:09.608 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.617 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1125.0
+2024-08-27 11:12:09.626 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.635 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1104.0
+2024-08-27 11:12:09.645 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.654 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.199429262
+2024-08-27 11:12:09.663 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.672 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1125.0
+2024-08-27 11:12:09.681 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.690 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1104.0
+2024-08-27 11:12:09.701 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.711 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1080.0
+2024-08-27 11:12:09.720 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.729 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.20461169
+2024-08-27 11:12:09.739 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.748 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1104.0
+2024-08-27 11:12:09.758 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.767 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1080.0
+2024-08-27 11:12:09.777 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.786 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1061.0
+2024-08-27 11:12:09.795 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.805 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.209552111
+2024-08-27 11:12:09.813 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.823 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1080.0
+2024-08-27 11:12:09.832 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.841 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1061.0
+2024-08-27 11:12:09.850 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.859 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1039.0
+2024-08-27 11:12:09.868 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.877 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.21458855
+2024-08-27 11:12:09.885 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.895 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1061.0
+2024-08-27 11:12:09.904 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.913 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1039.0
+2024-08-27 11:12:09.921 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.931 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1016.0
+2024-08-27 11:12:09.940 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.949 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.21947497
+2024-08-27 11:12:09.959 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.969 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1039.0
+2024-08-27 11:12:09.978 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:09.989 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1016.0
+2024-08-27 11:12:09.998 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.007 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        992.0
+2024-08-27 11:12:10.016 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.025 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.224621396
+2024-08-27 11:12:10.034 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.043 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        1016.0
+2024-08-27 11:12:10.052 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.061 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        992.0
+2024-08-27 11:12:10.070 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.079 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        965.0
+2024-08-27 11:12:10.089 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.099 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.229551817
+2024-08-27 11:12:10.108 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.118 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        992.0
+2024-08-27 11:12:10.127 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.135 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        965.0
+2024-08-27 11:12:10.145 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.153 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        936.0
+2024-08-27 11:12:10.163 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.172 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.234578256
+2024-08-27 11:12:10.182 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.190 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        965.0
+2024-08-27 11:12:10.200 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.209 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        936.0
+2024-08-27 11:12:10.223 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.233 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        911.0
+2024-08-27 11:12:10.242 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.251 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.239408691
+2024-08-27 11:12:10.260 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.269 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        936.0
+2024-08-27 11:12:10.280 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.289 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        911.0
+2024-08-27 11:12:10.299 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.308 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        888.0
+2024-08-27 11:12:10.318 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.328 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.244683104
+2024-08-27 11:12:10.338 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.348 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        911.0
+2024-08-27 11:12:10.356 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.366 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        888.0
+2024-08-27 11:12:10.375 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.384 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        854.0
+2024-08-27 11:12:10.393 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.402 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.249659541
+2024-08-27 11:12:10.410 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.419 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        888.0
+2024-08-27 11:12:10.429 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.440 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        854.0
+2024-08-27 11:12:10.450 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.459 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        830.0
+2024-08-27 11:12:10.470 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.480 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.254577962
+2024-08-27 11:12:10.489 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.498 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        854.0
+2024-08-27 11:12:10.506 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.516 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        830.0
+2024-08-27 11:12:10.526 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.534 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        807.0
+2024-08-27 11:12:10.543 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.552 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.259408397
+2024-08-27 11:12:10.561 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.570 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        830.0
+2024-08-27 11:12:10.580 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.590 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        807.0
+2024-08-27 11:12:10.599 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.608 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        778.0
+2024-08-27 11:12:10.617 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.626 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.264604824
+2024-08-27 11:12:10.635 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.644 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        807.0
+2024-08-27 11:12:10.654 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.663 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        778.0
+2024-08-27 11:12:10.673 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.684 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        745.0
+2024-08-27 11:12:10.694 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.705 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.269569246
+2024-08-27 11:12:10.715 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.724 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        778.0
+2024-08-27 11:12:10.735 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.745 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        745.0
+2024-08-27 11:12:10.754 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.763 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        716.0
+2024-08-27 11:12:10.772 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.781 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.274589669
+2024-08-27 11:12:10.790 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.799 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        745.0
+2024-08-27 11:12:10.808 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.817 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        716.0
+2024-08-27 11:12:10.827 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.836 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        690.0
+2024-08-27 11:12:10.845 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.854 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.279412103
+2024-08-27 11:12:10.864 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.873 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        716.0
+2024-08-27 11:12:10.882 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.891 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        690.0
+2024-08-27 11:12:10.900 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.908 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        662.0
+2024-08-27 11:12:10.917 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.927 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.284630531
+2024-08-27 11:12:10.937 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.947 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        690.0
+2024-08-27 11:12:10.957 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.968 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        662.0
+2024-08-27 11:12:10.978 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:10.989 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        637.0
+2024-08-27 11:12:11.001 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.011 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.289564952
+2024-08-27 11:12:11.022 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.034 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        662.0
+2024-08-27 11:12:11.044 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.056 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        637.0
+2024-08-27 11:12:11.068 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.079 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        608.0
+2024-08-27 11:12:11.090 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.100 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.294643377
+2024-08-27 11:12:11.109 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.118 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        637.0
+2024-08-27 11:12:11.128 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.138 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        608.0
+2024-08-27 11:12:11.148 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.158 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        580.0
+2024-08-27 11:12:11.169 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.178 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.299461811
+2024-08-27 11:12:11.188 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.198 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        608.0
+2024-08-27 11:12:11.208 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.216 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        580.0
+2024-08-27 11:12:11.225 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.235 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        560.0
+2024-08-27 11:12:11.243 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.253 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.304626237
+2024-08-27 11:12:11.262 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.272 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        580.0
+2024-08-27 11:12:11.281 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.292 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        560.0
+2024-08-27 11:12:11.301 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.311 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        526.0
+2024-08-27 11:12:11.320 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.329 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.309560674
+2024-08-27 11:12:11.339 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.349 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        560.0
+2024-08-27 11:12:11.358 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.367 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        526.0
+2024-08-27 11:12:11.377 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.386 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        506.0
+2024-08-27 11:12:11.395 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.405 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.314585097
+2024-08-27 11:12:11.415 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.425 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        526.0
+2024-08-27 11:12:11.434 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.444 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        506.0
+2024-08-27 11:12:11.454 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.463 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        484.0
+2024-08-27 11:12:11.472 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.481 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.319479517
+2024-08-27 11:12:11.489 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.498 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        506.0
+2024-08-27 11:12:11.508 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.517 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        484.0
+2024-08-27 11:12:11.527 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.537 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        432.0
+2024-08-27 11:12:11.547 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.556 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.324629944
+2024-08-27 11:12:11.564 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.574 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        484.0
+2024-08-27 11:12:11.583 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.592 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        432.0
+2024-08-27 11:12:11.601 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.611 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        411.0
+2024-08-27 11:12:11.621 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.631 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.32955038
+2024-08-27 11:12:11.640 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.650 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        432.0
+2024-08-27 11:12:11.660 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.671 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        411.0
+2024-08-27 11:12:11.681 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.690 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        401.0
+2024-08-27 11:12:11.699 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.709 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.334584804
+2024-08-27 11:12:11.717 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.726 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        411.0
+2024-08-27 11:12:11.735 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.743 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        401.0
+2024-08-27 11:12:11.752 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.762 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        371.0
+2024-08-27 11:12:11.771 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.780 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.339415239
+2024-08-27 11:12:11.789 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.798 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        401.0
+2024-08-27 11:12:11.808 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.817 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        371.0
+2024-08-27 11:12:11.826 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.835 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        361.0
+2024-08-27 11:12:11.845 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.854 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.344717667
+2024-08-27 11:12:11.863 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.872 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        371.0
+2024-08-27 11:12:11.881 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.892 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        361.0
+2024-08-27 11:12:11.901 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.911 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        332.0
+2024-08-27 11:12:11.920 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.929 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.349606088
+2024-08-27 11:12:11.938 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.947 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        361.0
+2024-08-27 11:12:11.956 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.966 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        332.0
+2024-08-27 11:12:11.977 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:11.987 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        319.0
+2024-08-27 11:12:11.996 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.006 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.354556525
+2024-08-27 11:12:12.015 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.024 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        332.0
+2024-08-27 11:12:12.034 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.043 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        319.0
+2024-08-27 11:12:12.052 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.061 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        304.0
+2024-08-27 11:12:12.070 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.079 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.35938296
+2024-08-27 11:12:12.089 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.098 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        319.0
+2024-08-27 11:12:12.107 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.118 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        304.0
+2024-08-27 11:12:12.127 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.137 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        291.0
+2024-08-27 11:12:12.145 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.155 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.364621372
+2024-08-27 11:12:12.164 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.172 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        304.0
+2024-08-27 11:12:12.181 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.190 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        291.0
+2024-08-27 11:12:12.200 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.209 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        273.0
+2024-08-27 11:12:12.218 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.228 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.369551809
+2024-08-27 11:12:12.237 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.246 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        291.0
+2024-08-27 11:12:12.255 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.265 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        273.0
+2024-08-27 11:12:12.274 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.283 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        257.0
+2024-08-27 11:12:12.292 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.301 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.374576232
+2024-08-27 11:12:12.311 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.321 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        273.0
+2024-08-27 11:12:12.331 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.341 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        257.0
+2024-08-27 11:12:12.352 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.364 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        239.0
+2024-08-27 11:12:12.376 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.386 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.379428668
+2024-08-27 11:12:12.395 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.404 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        257.0
+2024-08-27 11:12:12.413 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.422 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        239.0
+2024-08-27 11:12:12.431 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.440 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        196.0
+2024-08-27 11:12:12.449 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.458 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.384611078
+2024-08-27 11:12:12.467 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.476 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        239.0
+2024-08-27 11:12:12.487 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.496 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        196.0
+2024-08-27 11:12:12.505 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.515 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        178.0
+2024-08-27 11:12:12.524 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.533 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.389537515
+2024-08-27 11:12:12.542 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.551 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        178.0
+2024-08-27 11:12:12.560 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.571 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        178.0
+2024-08-27 11:12:12.580 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.590 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        155.0
+2024-08-27 11:12:12.600 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.610 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.399410373
+2024-08-27 11:12:12.619 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.628 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        155.0
+2024-08-27 11:12:12.637 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.647 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        155.0
+2024-08-27 11:12:12.656 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.665 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        132.0
+2024-08-27 11:12:12.673 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.682 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.409547221
+2024-08-27 11:12:12.691 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.701 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        132.0
+2024-08-27 11:12:12.711 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.721 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        132.0
+2024-08-27 11:12:12.730 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.739 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        122.0
+2024-08-27 11:12:12.748 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.757 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.429550943
+2024-08-27 11:12:12.765 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.775 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        132.0
+2024-08-27 11:12:12.784 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.794 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        122.0
+2024-08-27 11:12:12.803 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.813 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        98.0
+2024-08-27 11:12:12.823 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.832 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.434577367
+2024-08-27 11:12:12.842 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.851 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        122.0
+2024-08-27 11:12:12.862 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.871 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        98.0
+2024-08-27 11:12:12.880 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.889 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        81.0
+2024-08-27 11:12:12.899 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.908 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.439415802
+2024-08-27 11:12:12.916 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.925 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        81.0
+2024-08-27 11:12:12.935 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.949 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        81.0
+2024-08-27 11:12:12.958 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.969 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        74.0
+2024-08-27 11:12:12.979 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:12.988 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.449612651
+2024-08-27 11:12:12.997 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.005 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        81.0
+2024-08-27 11:12:13.014 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.024 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        74.0
+2024-08-27 11:12:13.032 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.041 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        68.0
+2024-08-27 11:12:13.051 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.061 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.454569074
+2024-08-27 11:12:13.070 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.080 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        68.0
+2024-08-27 11:12:13.090 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.100 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        68.0
+2024-08-27 11:12:13.109 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.118 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        63.0
+2024-08-27 11:12:13.127 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.136 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.464603935
+2024-08-27 11:12:13.146 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.154 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        68.0
+2024-08-27 11:12:13.164 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.173 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        63.0
+2024-08-27 11:12:13.182 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.191 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        58.0
+2024-08-27 11:12:13.201 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.210 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.469570357
+2024-08-27 11:12:13.219 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.228 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        63.0
+2024-08-27 11:12:13.237 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.246 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        58.0
+2024-08-27 11:12:13.256 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.264 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        55.0
+2024-08-27 11:12:13.273 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.282 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.474564779
+2024-08-27 11:12:13.291 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.301 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        58.0
+2024-08-27 11:12:13.312 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.321 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        55.0
+2024-08-27 11:12:13.331 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.341 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        51.0
+2024-08-27 11:12:13.350 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.360 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.479403214
+2024-08-27 11:12:13.369 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.378 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        55.0
+2024-08-27 11:12:13.387 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.396 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        51.0
+2024-08-27 11:12:13.405 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.415 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        48.0
+2024-08-27 11:12:13.424 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.433 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.484619642
+2024-08-27 11:12:13.442 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.452 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        51.0
+2024-08-27 11:12:13.462 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.471 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        48.0
+2024-08-27 11:12:13.481 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.490 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        45.0
+2024-08-27 11:12:13.499 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.508 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.489538078
+2024-08-27 11:12:13.516 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.525 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        45.0
+2024-08-27 11:12:13.535 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.544 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        45.0
+2024-08-27 11:12:13.554 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.564 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        36.0
+2024-08-27 11:12:13.573 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.583 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.499426921
+2024-08-27 11:12:13.592 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.601 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        36.0
+2024-08-27 11:12:13.610 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.618 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        36.0
+2024-08-27 11:12:13.627 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.637 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        34.0
+2024-08-27 11:12:13.646 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.654 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.539398349
+2024-08-27 11:12:13.663 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.673 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        36.0
+2024-08-27 11:12:13.682 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.691 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        34.0
+2024-08-27 11:12:13.701 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.711 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        33.0
+2024-08-27 11:12:13.720 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.728 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.544630776
+2024-08-27 11:12:13.737 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.747 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        34.0
+2024-08-27 11:12:13.756 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.767 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        33.0
+2024-08-27 11:12:13.777 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.786 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        31.0
+2024-08-27 11:12:13.795 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.804 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.5496292
+2024-08-27 11:12:13.815 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.824 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        33.0
+2024-08-27 11:12:13.834 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.842 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        31.0
+2024-08-27 11:12:13.851 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.860 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        30.0
+2024-08-27 11:12:13.870 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.878 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.554569637
+2024-08-27 11:12:13.887 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.896 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        30.0
+2024-08-27 11:12:13.906 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.915 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        30.0
+2024-08-27 11:12:13.924 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.934 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        29.0
+2024-08-27 11:12:13.943 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.952 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.564592482
+2024-08-27 11:12:13.960 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.969 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        30.0
+2024-08-27 11:12:13.978 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:13.987 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        29.0
+2024-08-27 11:12:13.996 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.006 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        23.0
+2024-08-27 11:12:14.016 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.025 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.56955892
+2024-08-27 11:12:14.035 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.044 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        23.0
+2024-08-27 11:12:14.055 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.064 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        23.0
+2024-08-27 11:12:14.073 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.082 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        22.0
+2024-08-27 11:12:14.091 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.100 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.619445191
+2024-08-27 11:12:14.109 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.118 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        22.0
+2024-08-27 11:12:14.127 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.136 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        22.0
+2024-08-27 11:12:14.144 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.153 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        21.0
+2024-08-27 11:12:14.163 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.172 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.629546055
+2024-08-27 11:12:14.182 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.191 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        22.0
+2024-08-27 11:12:14.201 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.210 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        21.0
+2024-08-27 11:12:14.219 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.227 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        17.0
+2024-08-27 11:12:14.237 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.245 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.634558477
+2024-08-27 11:12:14.256 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.265 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        17.0
+2024-08-27 11:12:14.275 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.283 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        17.0
+2024-08-27 11:12:14.293 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.303 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        14.0
+2024-08-27 11:12:14.311 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.320 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        4.704596474
+2024-08-27 11:12:14.329 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2024-08-27 11:12:14.339 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        Episode completed
+2024-08-27 11:12:14.348 7288 ManagedWorker-1*PE.Run() DEBUG:
+                        

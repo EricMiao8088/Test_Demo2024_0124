@@ -1,0 +1,58 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          68.9GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 03.07.2024 16:01:10 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-02
+         - licensed for: Turing
+
+
+2024-07-03 16:01:10.867 8664 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'Diag_27_32_no_add-on.pkg' with test case execution with sequential analysis job execution
+2024-07-03 16:01:10.888 8664 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Diag_27_32_no_add-on" started
+2024-07-03 16:01:10.952 8664 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-07-03 16:01:11.498 8664 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2024-07-03 16:01:13.475 8664 ManagedWorker-6*PE.Run() ERROR:
+                        Test step 33(Calculation): "An error occurred when calling "user.call_py32.call_32bit_python(PythonPath, DLLPath, str(Seed), str(Seed_len), str(Security_Level), str(Variant))": 出错！Traceback (most recent call last):
+  File "C:\ET2024_2\2_ECU-TEST_Advanced\UserPyModules\process_seed.py", line 72, in <module>
+    key_list = SA_DLL(dll_path, seed, seed_len, security_level, variant)
+  File "C:\ET2024_2\2_ECU-TEST_Advanced\UserPyModules\process_seed.py", line 18, in SA_DLL
+    DLL = ctypes.CDLL(dllpath)  # indicate DLL file path here.
+  File "C:\Users\92126\AppData\Local\Programs\Python\Python37-32\lib\ctypes\__init__.py", line 364, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: [WinError 126] 找不到指定的模块。
+"
+                        Package "C:\ET2021_4\0_Diag_27_Demo\Diag_27_Demo\Packages\Diag_27_32_no_add-on.pkg"#33
+2024-07-03 16:01:13.477 8664 ManagedWorker-6*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: UserCodeException: An error occurred when calling "user.call_py32.call_32bit_python(PythonPath, DLLPath, str(Seed), str(Seed_len), str(Security_Level), str(Variant))": 出错！Traceback (most recent call last):
+  File "C:\ET2024_2\2_ECU-TEST_Advanced\UserPyModules\process_seed.py", line 72, in <module>
+    key_list = SA_DLL(dll_path, seed, seed_len, security_level, variant)
+  File "C:\ET2024_2\2_ECU-TEST_Advanced\UserPyModules\process_seed.py", line 18, in SA_DLL
+    DLL = ctypes.CDLL(dllpath)  # indicate DLL file path here.
+  File "C:\Users\92126\AppData\Local\Programs\Python\Python37-32\lib\ctypes\__init__.py", line 364, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: [WinError 126] 找不到指定的模块。
+                        Package "C:\ET2021_4\0_Diag_27_Demo\Diag_27_Demo\Packages\Diag_27_32_no_add-on.pkg"#33
+2024-07-03 16:01:13.517 8664 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-07-03 16:01:13.520 8664 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Diag_27_32_no_add-on" completed

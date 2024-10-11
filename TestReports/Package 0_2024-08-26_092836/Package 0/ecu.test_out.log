@@ -1,0 +1,47 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          52.3GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 26.08.2024 09:28:37 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-25
+         - licensed for: Turing
+
+
+2024-08-26 09:28:37.113 36404 ManagedWorker-3*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-08-26 09:28:37.139 36404 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-08-26 09:28:37.173 36404 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-08-26 09:28:37.226 36404 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2024-08-26 09:28:37.233 36404 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-08-26 09:28:37.257 36404 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-08-26 09:28:37.288 36404 ManagedWorker-3*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Package 0" -> "Trace analysis 1")
+2024-08-26 09:28:37.353 36404 ManagedWorker-3*PE.Run() DEBUG:
+                        Performing episode ...
+2024-08-26 09:28:37.354 36404 ManagedWorker-3*PE.Run() DEBUG:
+                        
+2024-08-26 09:28:37.401 36404 ManagedWorker-3*PE.Run() DEBUG:
+                        Episode completed
+2024-08-26 09:28:37.402 36404 ManagedWorker-3*PE.Run() DEBUG:
+                        

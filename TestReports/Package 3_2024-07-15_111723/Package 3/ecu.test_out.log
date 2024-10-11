@@ -1,0 +1,87 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          70.1GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 15.07.2024 11:17:23 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Maximum. Additional logging active: default output, debug information (TOPIC_TOOLING, TOPIC_API)
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-08-10
+         - licensed for: Turing
+
+
+2024-07-15 11:17:23.964 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/start.sti
+2024-07-15 11:17:23.982 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/starterButton.sti
+2024-07-15 11:17:23.987 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/stop.sti
+2024-07-15 11:17:23.999 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_1.sti
+2024-07-15 11:17:24.013 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_10.sti
+2024-07-15 11:17:24.026 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_20.sti
+2024-07-15 11:17:24.045 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_50.sti
+2024-07-15 11:17:24.057 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_80.sti
+2024-07-15 11:17:24.068 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/acceleration_100.sti
+2024-07-15 11:17:24.085 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_1.sti
+2024-07-15 11:17:24.095 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_10.sti
+2024-07-15 11:17:24.107 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_20.sti
+2024-07-15 11:17:24.119 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_50.sti
+2024-07-15 11:17:24.128 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_80.sti
+2024-07-15 11:17:24.142 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/battery_100.sti
+2024-07-15 11:17:24.160 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/deceleration_mid.sti
+2024-07-15 11:17:24.172 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/brake.sti
+2024-07-15 11:17:24.180 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroCable.sti
+2024-07-15 11:17:24.191 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        StimulationManager: Loading C:/ET2024_2/2_ECU-TEST_Advanced/_Simulation/switchToZeroDoor.sti
+2024-07-15 11:17:24.204 3012 ManagedWorker-3*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-07-15 11:17:24.209 3012 ManagedWorker-3*PE.Run() INFO:
+                        Initialize variables...
+2024-07-15 11:17:24.229 3012 ManagedWorker-3*PE.Run() INFO:
+                        Initializing execution mapping...
+2024-07-15 11:17:24.242 3012 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 3" started
+2024-07-15 11:17:24.252 3012 ManagedWorker-3*PE.Run() INFO:
+                        Preprocess of test steps in Package 3
+2024-07-15 11:17:24.264 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-07-15 11:17:24.312 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2024-07-15 11:17:24.313 3012 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2024-07-15 11:17:24.329 3012 ManagedWorker-3*PE.Run() WARNING:
+                        Test case "Package 3" aborted
+2024-07-15 11:17:24.345 3012 ManagedWorker-3*PE.Run() INFO:
+                        Post process of test steps in Package 3
+2024-07-15 11:17:24.360 3012 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-07-15 11:17:24.381 3012 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 3" completed

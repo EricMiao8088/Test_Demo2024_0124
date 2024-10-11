@@ -1,0 +1,54 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          52.9GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 21.08.2024 23:55:05 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-09-04
+         - licensed for: Turing
+
+
+2024-08-21 23:55:05.492 21284 ManagedWorker-2*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\traceRecording\RecordingManager.py", line 1269, in PrepareRecording
+                          File "tts\traceRecording\groups\SignalRecordingGroup.py", line 155, in PrepareRecording
+                          File "tts\core\toolingFramework\interface\Recording.py", line 210, in InitRecording
+                          File "tts\tooling\tool\CANoeCANalyzer\CANoeCANalyzer.py", line 344, in InitRecording
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 991, in <lambda>
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 168, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 90, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 505, in raiseException
+                        tt._Exceptions_.TTError: RuntimeError: Creating a recorder is not possible if the measurement is already running
+2024-08-21 23:55:05.493 21284 ToolLibs ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\networking\ToolServerConnector.py", line 353, in PrintRemoteException
+                          File "tts\core\toolingFramework\networking\ToollibProcessStarter.py", line 635, in __CallCommandErrback
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 505, in raiseException
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 269, in inContext
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 285, in <lambda>
+                          File ".\Lib\site-packages\twisted\python\context.py", line 117, in callWithContext
+                          File ".\Lib\site-packages\twisted\python\context.py", line 82, in callWithContext
+                          File "tts\tooling\tool\CANoeCANalyzer\CANoeCANalyzerLib.py", line 832, in InitRecording
+                        RuntimeError: Creating a recorder is not possible if the measurement is already running
+2024-08-21 23:55:05.625 21284 ManagedWorker-2*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\traceRecording\testSteps\startTrace\TsStartTraceExec.py", line 82, in Run
+                          File "tts\traceRecording\groups\SignalRecordingGroup.py", line 187, in StartRecording
+                          File "tts\traceRecording\groups\RecordingGroup.py", line 176, in CheckStart
+                          File "tts\traceRecording\groups\RecordingGroup.py", line 138, in CheckError
+                        tts.traceRecording.groups.RecordingGroup.RecordingStateFatalError: Recording group Recording group for B-CAN: RuntimeError: Creating a recorder is not possible if the measurement is already running

@@ -2,33 +2,40 @@
 <HISTORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<RECENT-TCFFILES>
 		<ELEMENT xsi:type="string">Configurations\SW_Ver_1.tcf</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\rrrrr.tcf</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\www.tcf</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\vector_xil.tcf</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\Carsim.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Veristand.tcf</ELEMENT>
 		<ELEMENT xsi:type="string">Configurations\canoe.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\matlab_0909.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MATLAB.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\INCA.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Selenium.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\IO.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\vector_xil.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\radar_fusion_execution.tcf</ELEMENT>
 	</RECENT-TCFFILES>
 	<LAST-TCF-SAVED xsi:type="boolean">True</LAST-TCF-SAVED>
 	<RECENT-TBC-FILES>
 		<ELEMENT xsi:type="string">Configurations\Testlab_HiL.tbc</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\yyy.tbc</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\IBN_HiL.tbc</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\qqqqq.tbc</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\vector_xil.tbc</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\Carsim.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Veristand.tbc</ELEMENT>
 		<ELEMENT xsi:type="string">Configurations\canoe.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\matlab_0909.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MATLAB.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\INCA.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Selenium.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\vector_xil.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\TEST0801.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\TEST.tbc</ELEMENT>
 	</RECENT-TBC-FILES>
 	<LAST-TBC-SAVED xsi:type="boolean">True</LAST-TBC-SAVED>
 	<RECENT-PROJECTS-PACKAGES>
-		<ELEMENT xsi:type="string">Packages\BasicDrive.pkg</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\SW_Ver_1.tcf</ELEMENT>
-		<ELEMENT xsi:type="string">Packages\tttt.prj</ELEMENT>
-		<ELEMENT xsi:type="string">TestReports\BasicDrive_2023-10-07_143133\BasicDrive.trf</ELEMENT>
-		<ELEMENT xsi:type="string">Packages\testDTC.pkg</ELEMENT>
-		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\ET2023_1_0505\Configurations\TEST_0505 (reset).tcf</ELEMENT>
-		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\ET2023_1_0505\Configurations\TEST_0505.tbc</ELEMENT>
-		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\Desktop\Report_PASS\寻车功能_2023-09-06_104927\寻车功能.trf</ELEMENT>
-		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\长安\Desktop\Report_PASS\行李箱_2023-09-06_161931\行李箱.trf</ELEMENT>
-		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\ET2023_1_0614\ET2023_1_0505\TestReports\车窗升降-总成开关-左前-手动_2023-06-13_142908\车窗升降-总成开关-左前-手动.trf</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Demo_testguide_1011.prj</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\DOIP_Examples\10 03 - ExtendedDiagnosticSessionStart.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\New_test\BasicDrive.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\test\BasicDrive.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\92126\Desktop\ReadWriteService_ApplicationTest_2024-08-03_093636\ReadWriteService_ApplicationTest.trf</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Compare_Signals.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\92126\Downloads\LEO_HILNI.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\TEST.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\TEST.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\TEST0517.tbc</ELEMENT>
 	</RECENT-PROJECTS-PACKAGES>
 </HISTORY-SETTINGS>

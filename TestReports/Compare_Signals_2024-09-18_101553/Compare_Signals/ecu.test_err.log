@@ -1,0 +1,31 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          46.0GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 18.09.2024 10:15:54 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-10-18
+         - licensed for: Turing
+
+
+2024-09-18 10:15:54.319 23844 ManagedWorker-3*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\traceAnalysis\common\steps\templates\trcpNumpy\TrcpNumpyExec.py", line 367, in Eval
+                          File "C:\ET2024_2\2_ECU-TEST_Advanced\TraceStepTemplates\Comparing_Signals.py", line 170, in Process
+                            matplotlib.pyplot(trigger_time,A_np,label='平移前曲线')
+                        TypeError: 'module' object is not callable

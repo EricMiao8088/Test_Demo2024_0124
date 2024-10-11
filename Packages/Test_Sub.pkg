@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">sub</NAME>
+			<DEFAULT-VALUE xsi:type="inbox">
+				<SIZE xsi:type="integer">50</SIZE>
+				<DISCARD-OLDEST xsi:type="boolean">False</DISCARD-OLDEST>
+				<OVERFLOW-WARNING xsi:type="boolean">False</OVERFLOW-WARNING>
+				<DEFAULT-FETCH-TIMEOUT xsi:type="integer">20000</DEFAULT-FETCH-TIMEOUT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" out="true" xsi:type="variable">
+			<NAME xsi:type="string">sub_output</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="outbox">
+				<DISCARD-IF-DISCONNECTED xsi:type="boolean">False</DISCARD-IF-DISCONNECTED>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="5687d54f-b4e2-4c95-95fa-f2a27142ba3c" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">10</VALUE>
+			</TIME>
+			<UNIT xsi:type="string">s</UNIT>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="b0da71c8-25c9-49e8-bd12-260850fc818c" name="TsInboxFetch" xsi:type="utility-179c75a3-4fef-11dc-8fdd-0013728784ee">
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="inbox">
+					<DVALUE xsi:type="string">sub</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+		</TESTSTEP>
+		<TESTSTEP id="fa383f73-2626-4b4c-9959-87ddff9ad4d3" name="TsOutboxPost" xsi:type="utility-179c75a2-4fef-11dc-8fdd-0013728784ee">
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="outbox">
+					<DVALUE xsi:type="string">sub_output</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<MESSAGE format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">2</VALUE>
+			</MESSAGE>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

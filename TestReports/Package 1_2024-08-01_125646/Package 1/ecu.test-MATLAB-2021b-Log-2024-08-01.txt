@@ -1,0 +1,57 @@
+2024-08-01 13:41:16.927: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-08-01 13:41:17.001: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-08-01 13:41:17.777: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-08-01 13:41:17.783: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-08-01 13:42:00.472: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-08-01 13:42:10.613: Terminate Time: 0.044395 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-08-01 13:42:25.164: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-08-01 13:42:54.881: Terminate Time: 0.002070 -> Already in state TERMINATED in 
+    > Terminate (line 0)
+2024-08-01 13:42:56.006: Closing sldemo_autotrans in 
+    > CloseAll (line 0)
+    > CloseAll (line 0)
+2024-08-01 13:42:56.904: Unloading cached models in 
+    > CacheManager.Unload (line 0)
+    > ModelCache.ClearCaches (line 0)
+    > CloseAll (line 0)
+2024-08-01 13:52:10.721: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-08-01 13:52:10.913: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-08-01 13:52:12.042: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-08-01 13:52:12.062: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-08-01 13:52:29.660: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-08-01 13:52:35.554: Terminate Time: 0.040125 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-08-01 13:52:45.373: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)

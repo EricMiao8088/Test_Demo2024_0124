@@ -1,0 +1,19 @@
+<MAPort>
+    <Connection ip="127.0.0.1" xilPort="3030"/>
+    <FDX fdxPort="2809">
+        <DescriptionFiles>
+            <DescriptionFile name="TEST_XIL.xml"/>
+        </DescriptionFiles>
+        <ReadGroups>
+            <ReadGroup id="0" readMode="cyclic" cycleTime="5"/>
+        <WriteGroups>
+            <WriteGroup id="0"/>
+        </WriteGroups>
+    </FDX>
+    <ApplicationControl controlMode="COM" startCANoe="true" loadConfig="C:\Users\Public\Documents\Vector\CANoe\10.0 (x64)\CANoe Sample Configurations\AFDX\AFDXBasic\AFDXBasic.cfg" /> </MAPort>
+
+
+
+
+
+

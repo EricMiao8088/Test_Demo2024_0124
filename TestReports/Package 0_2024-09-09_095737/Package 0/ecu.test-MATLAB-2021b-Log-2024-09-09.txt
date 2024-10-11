@@ -1,0 +1,235 @@
+2024-09-09 09:22:16.024: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-09-09 09:22:16.077: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-09-09 09:22:16.851: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-09-09 09:22:16.860: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-09-09 09:22:56.057: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 09:23:05.280: Terminate Time: 0.041369 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 09:23:18.051: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 09:37:47.202: Terminate Time: 0.001078 -> Already in state TERMINATED in 
+    > Terminate (line 0)
+2024-09-09 09:37:48.383: Closing sldemo_autotrans in 
+    > CloseAll (line 0)
+    > CloseAll (line 0)
+2024-09-09 09:37:49.387: Unloading cached models in 
+    > CacheManager.Unload (line 0)
+    > ModelCache.ClearCaches (line 0)
+    > CloseAll (line 0)
+2024-09-09 09:47:49.738: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-09-09 09:47:49.830: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-09-09 09:47:50.516: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-09-09 09:47:50.524: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-09-09 09:48:07.451: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 09:48:13.234: Terminate Time: 0.033220 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 09:48:22.379: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 09:55:38.720: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:55:40.580: Compile Time: 1.499210 -> Set compilation state COMPILED;  in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:55:41.090: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:55:43.426: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:55:43.473: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:55:47.037: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:55:47.080: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:55:48.776: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:55:48.811: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:55:53.270: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:55:53.313: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:55:55.175: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:55:55.209: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:56:31.863: Terminate Time: 0.178311 -> Set compilation state TERMINATED;  in 
+    > Terminate (line 0)
+2024-09-09 09:56:32.138: "sldemo_autotrans" in 
+    > Start (line 0)
+2024-09-09 09:56:34.574: "sldemo_autotrans" in 
+    > Stop (line 0)
+2024-09-09 09:57:05.233: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:57:05.773: Compile Time: 0.520196 -> Set compilation state COMPILED;  in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:57:06.041: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:57:37.504: Terminate Time: 0.076164 -> Set compilation state TERMINATED;  in 
+    > Terminate (line 0)
+2024-09-09 09:57:38.083: Terminate Time: 0.000941 -> Already in state TERMINATED in 
+    > Terminate (line 0)
+    > CreateRWBlock (line 0)
+    > CreateRWBlock (line 0)
+    > CreateRWBlock (line 0)
+    > GetOrCreateBlock (line 0)
+2024-09-09 09:57:38.508: SwapSignalParameters.p (line 0): off: Simulink:blocks:BusSelectorCantChangeSignalLabel in 
+    > warning (line 0)
+    > SwapSignalParameters (line 0)
+    > ConnectBlockToPort (line 0)
+    > CreateRWBlock (line 0)
+    > CreateRWBlock (line 0)
+    > GetOrCreateBlock (line 0)
+2024-09-09 09:57:38.589: SwapSignalParameters.p (line 0): on: Simulink:blocks:BusSelectorCantChangeSignalLabel in 
+    > warning (line 0)
+    > @()ecuTest.tools.warning('on','Simulink:blocks:BusSelectorCantChangeSignalLabel') (line 0)
+    > onCleanup.delete (line 80)
+    > SwapSignalParameters (line 0)
+    > ConnectBlockToPort (line 0)
+    > CreateRWBlock (line 0)
+    > CreateRWBlock (line 0)
+    > GetOrCreateBlock (line 0)
+2024-09-09 09:57:39.470: "sldemo_autotrans" in 
+    > Start (line 0)
+2024-09-09 09:57:50.849: "sldemo_autotrans" in 
+    > Stop (line 0)
+2024-09-09 09:59:17.748: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:59:18.111: Compile Time: 0.340618 -> Set compilation state COMPILED;  in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:59:18.589: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:59:47.083: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:59:47.161: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:59:50.532: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:59:50.561: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 09:59:59.804: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 09:59:59.835: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 10:00:20.040: Ensure compiled state in model "sldemo_autotrans" (currently in state normal) in 
+    > Compile (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+    > GetModelValuesOnPath (line 0)
+2024-09-09 10:00:20.094: Stored cache data for sldemo_autotrans to C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.Store (line 0)
+    > CacheManager.Store (line 0)
+2024-09-09 10:05:49.339: Terminate Time: 0.051052 -> Set compilation state TERMINATED;  in 
+    > Terminate (line 0)
+2024-09-09 10:05:50.231: Closing sldemo_autotrans in 
+    > CloseAll (line 0)
+    > CloseAll (line 0)
+2024-09-09 10:05:50.745: Unloading cached models in 
+    > CacheManager.Unload (line 0)
+    > ModelCache.ClearCaches (line 0)
+    > CloseAll (line 0)
+2024-09-09 10:06:35.233: Log.p (line 0): on: ECUTEST:GetSignalProperties in 
+    > warning (line 0)
+    > Log (line 0)
+2024-09-09 10:06:35.338: ============= Enable Logging ============= in 
+    > Log (line 0)
+2024-09-09 10:06:36.068: ================================ in 
+    > OpenModelOrScript (line 0)
+2024-09-09 10:06:36.077: "sldemo_autotrans_startup.m" in 
+    > OpenModelOrScript (line 0)
+2024-09-09 10:06:54.876: "sldemo_autotrans_startup.m" in 
+    > OpenModel (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 10:07:01.033: Terminate Time: 0.059442 -> Model did not terminate on time in 
+    > Terminate (line 0)
+    > OpenModelOrScript (line 0)
+2024-09-09 10:07:10.852: Loading cached data for sldemo_autotrans from C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models\.ecutest\sldemo_autotrans\bc73ff15a89afdbf6b1d94ab29415bf2.mat in 
+    > CachedData.InitCachedData (line 0)
+    > CachedData.CachedData (line 0)
+    > CachedData.GetCacheEntry (line 0)
+    > CacheManager.GetOrInitCachedData (line 0)
+    > CacheManager.GetModelCacheData (line 0)
+    > ModelCache.ModelCache (line 0)
+    > ModelCache.GetCache (line 0)
+    > OpenModelOrScript (line 0)

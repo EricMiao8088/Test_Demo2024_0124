@@ -1,0 +1,63 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          81.5GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 11.06.2024 16:52:42 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-07-07
+         - licensed for: Turing
+
+
+2024-06-11 16:52:42.333 29852 ManagedWorker-5 INFO:
+                        Start project 'New project1' with test case execution with sequential analysis job execution
+2024-06-11 16:52:43.234 29852 ManagedWorker-5*PE.Run() INFO:
+                        Test case "test0611_2" started
+2024-06-11 16:52:43.268 29852 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-06-11 16:52:43.269 29852 ManagedWorker-5*PE.Run() WARNING:
+                        Tool VECTOR-HW01 of port DIAG-CAN01 not connected or faulty
+2024-06-11 16:52:43.280 29852 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2024-06-11 16:52:45.293 29852 ManagedWorker-5*PE.Run() WARNING:
+                        Action: Execute error handling package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Disable.pkg"
+2024-06-11 16:52:47.302 29852 XMLRPC-API-Listener ERROR:
+                        tts.core.api.xmlRpcApi.Xmlrpc._dispatch: ApiError: Project file C:\ET2024_2\2_ECU-TEST_Advanced\Packages does not exist.
+2024-06-11 16:52:47.337 29852 ManagedWorker-5*PE.Run() ERROR:
+                        Test step .ERRORPACKAGE(Disable).4(Calculation): "An error occurred when calling "user.Disable.Disable(MainPackagePath, PRJName)": <Fault 1: 'ApiError: Project file C:\\ET2024_2\\2_ECU-TEST_Advanced\\Packages does not exist.'>"
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Disable.pkg"#4
+2024-06-11 16:52:47.338 29852 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: UserCodeException: An error occurred when calling "user.Disable.Disable(MainPackagePath, PRJName)": <Fault 1: 'ApiError: Project file C:\\ET2024_2\\2_ECU-TEST_Advanced\\Packages does not exist.'>
+                        Package "C:\ET2024_2\2_ECU-TEST_Advanced\Packages\Disable.pkg"#4
+2024-06-11 16:52:47.373 29852 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-06-11 16:52:47.374 29852 ManagedWorker-5*PE.Run() INFO:
+                        Test case "test0611_2" completed
+2024-06-11 16:52:49.211 29852 ManagedWorker-5*PE.Run() INFO:
+                        Test case "test_0611" started
+2024-06-11 16:52:49.218 29852 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-06-11 16:52:49.228 29852 ManagedWorker-5*PE.Run() WARNING:
+                        Tool VECTOR-HW01 of port DIAG-CAN01 not connected or faulty
+2024-06-11 16:52:49.238 29852 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2024-06-11 16:52:52.248 29852 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-06-11 16:52:52.250 29852 ManagedWorker-5*PE.Run() INFO:
+                        Test case "test_0611" completed
+2024-06-11 16:52:52.597 29852 ManagedWorker-5 INFO:
+                        Finalizing report 'New project1.prf'...

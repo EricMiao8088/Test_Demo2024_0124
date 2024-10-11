@@ -1,0 +1,39 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Number of CPUs:    16
+RAM:               15.2GB
+Diskinfo:          43.7GB/475.7GB
+Operating system:  Windows-10-10.0.22631
+Long path support: False
+-------------------------------------------------------------------------
+
+= 12.09.2024 15:52:22 (UTC +8:00) === ecu.test 2024.2.0.151174+1c1d96a477d2 151174+1c1d96a477d2 (2024/05/31 06:34:48) (64bit) ===
+Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+Roaming License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2024-10-12
+         - licensed for: Turing
+
+
+2024-09-12 15:52:22.410 6468 ManagedWorker-1*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2024-09-12 15:52:22.424 6468 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 2" started
+2024-09-12 15:52:22.466 6468 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-09-12 15:52:22.789 6468 ManagedWorker-1*PE.Run() INFO:
+                        System time mode activated
+2024-09-12 15:52:22.881 6468 XMLRPC-API-Listener INFO:
+                        Obsolete synchronization of trace analysis automatically migrated.
+2024-09-12 15:52:22.961 6468 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-09-12 15:52:22.963 6468 ManagedWorker-1*PE.Run() INFO:
+                        Test case "Package 2" completed

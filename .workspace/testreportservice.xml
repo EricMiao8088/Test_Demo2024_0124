@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TESTREPORTSERVICE-SETTINGS format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<TESTREPORTSERVICE xsi:type="testReportService">
-		<NAME xsi:type="string">test.guide</NAME>
-		<SERVICE-HOST-LOCATION xsi:type="string">192.168.43.141</SERVICE-HOST-LOCATION>
 		<REPORT-SETTINGS>
 			<ELEMENT dkey="projectId">
-				<DVALUE xsi:type="string">1</DVALUE>
+				<DVALUE xsi:type="string">3</DVALUE>
+			</ELEMENT>
+			<ELEMENT dkey="uploadAuthenticationKey">
+				<DVALUE xsi:type="string">Dw_yBI4=.WlynjUV2hAIWRnvS9HaeTDXFm4cZDQgibrlu4q68yTg=</DVALUE>
 			</ELEMENT>
 		</REPORT-SETTINGS>
 	</TESTREPORTSERVICE>
-	<DEFAULT-INSTANCE xsi:type="string">test.guide</DEFAULT-INSTANCE>
 </TESTREPORTSERVICE-SETTINGS>

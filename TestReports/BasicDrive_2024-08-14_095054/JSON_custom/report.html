@@ -1,0 +1,1776 @@
+﻿<!-- saved from url=(0013)about:internet -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- ecu.test VERSION: 2024.2.0.151174+1c1d96a477d2 -->
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<style>
+		fieldset {
+			position: relative !important;
+			padding-top: 2em !important;
+			margin-top: 20px !important;
+		}
+		legend {
+			position: absolute !important;
+			top: -1.1em !important;
+		}
+	</style>
+	<![endif]-->
+	<script type="text/javascript">
+	var HasTestCase = true,
+		jsonFile = 'data_BasicDrive.js';
+	</script>
+	<script src="info_BasicDrive.js" type="text/javascript"></script>
+	<script type="text/javascript">var HasTraceAnalyses = true, HasAnalysisJobs = false;</script>
+	<script src="lang.js" type="text/javascript"></script>
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="plugins/ttdrag.jquery.js" type="text/javascript"></script>
+	<script src="plugins/tooltip.jquery.js" type="text/javascript"></script>
+	<script src="plugins/focus.jquery.js" type="text/javascript"></script>
+	<script src="javascript.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        let reportConfig = {
+            enableTooltip: true,
+            enableInfoFrame: true,
+
+            load: function () {
+                if (localStorage.getItem('enableTooltip')) {
+                    this.enableTooltip = (localStorage.getItem('enableTooltip') === 'true');
+                }
+
+                if (localStorage.getItem('enableInfoFrame')) {
+                    this.enableInfoFrame = (localStorage.getItem('enableInfoFrame') === 'true');
+                }
+            },
+            setEnableTooltip: function (value) {
+                this.enableTooltip = value;
+                localStorage.setItem('enableTooltip', value.toString());
+            },
+            setEnableInfoFrame: function (value) {
+                this.enableInfoFrame = value;
+                localStorage.setItem('enableInfoFrame', value.toString());
+            }
+        }
+        reportConfig.load();
+
+        $document.ready(function () {
+            initSubReport(reportConfig);
+        });
+    </script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<title>SUCCESS - BasicDrive - ecu.test package report</title>
+</head>
+<body>
+<header>
+	<section>
+        		<section id="title">ecu.test package report&nbsp;Evaluation:&nbsp;<div id="result_container"><div id="result_success"></div><div id="result_txt">&#x2714;</div></div>&nbsp;SUCCESS&nbsp;</section>
+		<section id="date">2024-08-14 09:50:54.939719 (UTC +8:00)</section>
+		<section id="logo">
+            <img src="Logo.svg" alt="tracetronic">
+        </section>
+	</section>
+	<nav id="orangeLine">
+		<section>
+			<ul id="navigation">
+		<li><a href="#" id="a_details">Details</a></li>
+		<li><a href="#" id="a_config">Configuration</a></li>
+		<li><a href="#" id="a_mapping">Mapping</a></li>
+		<li><a href="#" id="a_report">Test case</a></li>
+		<li><a href="#" id="a_recordings">Recordings</a></li>
+		<li><a href="#" id="a_traceanalysis">Trace analysis</a></li>
+			</ul>
+		</section>
+	</nav>
+</header>
+	<section id="contentWrapper" style="overflow: hidden;">
+	<div id="details"><section class="content">
+    <fieldset>
+        <legend>Common</legend>
+        <table>
+            <tbody>
+        <tr>
+    <td style="width: 200px;">Execution time</td>
+    <td>0:00:29.04</td>
+</tr>
+        <tr>
+    <td style="width: 200px;">Path</td>
+    <td>C:\ET2024_2\2_ECU-TEST_Advanced\Packages\BasicDrive.pkg</td>
+</tr>
+
+        <tr>
+    <td style="width: 200px;">Computer</td>
+    <td>Eric</td>
+</tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Version control</legend>
+        <table>
+            <tbody>
+            <tr>
+    <td style="width: 200px;">Revision</td>
+    <td>c609559486b4d911f6577186ef8172a5c1ab8379m</td>
+</tr>
+            <tr>
+    <td style="width: 200px;">URL</td>
+    <td><a href="https://github.com/EricMiao8088/Test_Demo2024_0124.git">https://github.com/EricMiao8088/Test_Demo2024_0124.git</a></td>
+</tr>
+            <tr>
+    <td style="width: 200px;">Status</td>
+    <td>modified (unsaved)</td>
+</tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Parameter</legend>
+        <table>
+            <tbody>
+            
+        <tr>
+          <td class="configSubHeader">Name</td>
+          <td class="configSubHeader">Initial value</td>
+          <td class="configSubHeader">Origin</td>
+          <td class="configSubHeader">Description</td>
+        </tr>
+
+                
+        <tr>
+        
+          <td style="width: 200px;">drvreq</td>
+        
+          <td style="min-width: 100px;">50</td>
+        
+          <td style="min-width: 100px;">default</td>
+        
+          <td style="min-width: 100px;">in km/h</td>
+        </tr>
+
+                
+        <tr>
+        
+          <td style="width: 200px;">vehvel_tolerance</td>
+        
+          <td style="min-width: 100px;">2</td>
+        
+          <td style="min-width: 100px;">default</td>
+        
+          <td style="min-width: 100px;">in km/h</td>
+        </tr>
+
+                
+        <tr>
+        
+          <td style="width: 200px;">timeout</td>
+        
+          <td style="min-width: 100px;">9000</td>
+        
+          <td style="min-width: 100px;">default</td>
+        
+          <td style="min-width: 100px;">in ms</td>
+        </tr>
+
+            </tbody>
+        </table>
+    </fieldset>
+</section>
+</div>
+	<div id="config">        <section class="content">
+    <ul>
+      <li>Test configuration</li>
+      <li>C:\ET2024_2\2_ECU-TEST_Advanced\Configurations\SW_Ver_1.tcf</li>
+    </ul>
+    <fieldset>
+                  <legend>Common</legend>
+      <table>
+          <tr>
+    <td style="width: 200px">Tester</td>
+    <td>92126</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Data directory</td>
+    <td>C:\ET2024_2\2_ECU-TEST_Advanced</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Package directory</td>
+    <td>C:\ET2024_2\2_ECU-TEST_Advanced\Packages</td>
+  </tr>
+        </table>
+      </fieldset>
+                <fieldset>
+                    <legend>Execution</legend>
+            <table>
+                  <tr>
+    <td style="width: 200px">Simulation mode</td>
+    <td>Real-time</td>
+  </tr>
+                  <tr>
+    <td style="width: 200px">Waiting time after every I/O test step</td>
+    <td>0 ms</td>
+  </tr>
+            </table>
+        </fieldset>
+      <fieldset>
+                <legend>Model</legend>
+        <table>
+              <tr>
+    <td colspan="2">Plant model</td>
+  </tr>
+  <tr>
+    <td style="width: 200px; text-indent: 5px;">Model</td>
+    <td>EV_HV_HiL.sdf</td>
+  </tr>
+  <tr>
+    <td style="width: 200px; text-indent: 5px;">Version</td>
+  </tr>
+  <tr>
+    <td style="width: 200px; text-indent: 5px;">Use as time base</td>
+    <td>No</td>
+  </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+                <legend>Control units</legend>
+        <table>
+                  <tr>
+    <td colspan="2">Battery-Control</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">A2L file</td>
+    <td>ECU_Data\Battery-Control.a2l</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">Hex file</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">SGBD</td>
+    <td>None (version: )</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">LogicalLink</td>
+  </tr>
+                  <tr>
+    <td colspan="2">Engine-Control</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">A2L file</td>
+    <td>ECU_Data\Engine-Control.a2l</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">Hex file</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">SGBD</td>
+    <td>None (version: )</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">LogicalLink</td>
+  </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+                <legend>Bus access</legend>
+        <table>
+                  <tr>
+    <td colspan="2">EPT-CAN</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">Bus database</td>
+    <td>Bus\Electric_V1.DBC</td>
+  </tr>
+      <tr>
+    <td style="width: 200px; text-indent: 5px;">Fibex channel</td>
+    <td></td>
+  </tr>
+        </table>
+      </fieldset>
+  </section>
+        <section class="content">
+        <ul>
+            <li>Test bench</li>
+            <li>C:\ET2024_2\2_ECU-TEST_Advanced\Configurations\Testlab_HiL.tbc</li>
+        </ul>
+      <fieldset>
+                <legend>MODELDUMMY</legend>
+        <table>
+          <tr>
+    <td style="width: 200px">Host</td>
+    <td>local (2024.2.0.151174+1c1d96a477d2 64bit)</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Status</td>
+    <td>Active</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Version</td>
+    <td>2024.2.0</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Loaded patches</td>
+    <td></td>
+  </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+                <legend>APPLICATIONDUMMY</legend>
+        <table>
+          <tr>
+    <td style="width: 200px">Host</td>
+    <td>local (2024.2.0.151174+1c1d96a477d2 64bit)</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Status</td>
+    <td>Active</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Version</td>
+    <td>2024.2.0</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Loaded patches</td>
+    <td></td>
+  </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+                <legend>BUSDUMMY</legend>
+        <table>
+          <tr>
+    <td style="width: 200px">Host</td>
+    <td>local (2024.2.0.151174+1c1d96a477d2 64bit)</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Status</td>
+    <td>Active</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Version</td>
+    <td>2024.2.0</td>
+  </tr>
+          <tr>
+    <td style="width: 200px">Loaded patches</td>
+    <td></td>
+  </tr>
+        </table>
+      </fieldset>
+    </section>
+</div>
+	<div id="mapping"><section class="content">
+<li class="darkgrey">
+	<span style="width: 20%;">Name</span>
+	<span style="width: 20%;">Target</span>
+	<span style="width: 10%;">Type</span>
+	<span style="width: 25%;">Description</span>
+	<span style="width: 25%;">Origin</span>
+</li>
+	<li id="map_id_9">
+	<span style="width: 20%;">CheckVel</span>
+	<span style="width: 20%;"><workspace.packages>\Lib\CheckVel.pkg</span>
+	<span style="width: 10%;">PACKAGE</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_15">
+	<span style="width: 20%;">CTRL_VEH/BrakePedal [%]/Value</span>
+	<span style="width: 20%;">Plant model/Model Root/CTRL_VEH/BrakePedal [%]/Value</span>
+	<span style="width: 10%;">MODEL</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_7">
+	<span style="width: 20%;">CTRL_VEH/DriveMode [0|1|2|3|4]/Value</span>
+	<span style="width: 20%;">Plant model/Model Root/CTRL_VEH/DriveMode [0|1|2|3|4]/Value</span>
+	<span style="width: 10%;">MODEL</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_8">
+	<span style="width: 20%;">CTRL_VEH/DriverRequest [%]/Value</span>
+	<span style="width: 20%;">Plant model/Model Root/CTRL_VEH/DriverRequest [%]/Value</span>
+	<span style="width: 10%;">MODEL</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_13">
+	<span style="width: 20%;">recup</span>
+	<span style="width: 20%;">Engine-Control/recup</span>
+	<span style="width: 10%;">MEAS</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_2">
+	<span style="width: 20%;">SetVehTrStby</span>
+	<span style="width: 20%;"><workspace.packages>\Lib\SetVehTrStby.pkg</span>
+	<span style="width: 10%;">PACKAGE</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_14">
+	<span style="width: 20%;">speed</span>
+	<span style="width: 20%;">Engine-Control/speed</span>
+	<span style="width: 10%;">MEAS</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_1">
+	<span style="width: 20%;">STATUS_BAT/StateOfCharge [%]/Value</span>
+	<span style="width: 20%;">Plant model/Model Root/STATUS_BAT/StateOfCharge [%]/Value</span>
+	<span style="width: 10%;">MODEL</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	<li id="map_id_6">
+	<span style="width: 20%;">VehTrStby</span>
+	<span style="width: 20%;">Engine-Control/VehTrStby</span>
+	<span style="width: 10%;">MEAS</span>
+	<span style="width: 25%;"></span>
+	<span style="width: 25%;">BasicDrive</span>
+</li>
+	</ul>
+</section>
+</div>
+	<div id="report" class="content">
+    	<ul id="tableHead">
+		<li class="darkgrey">
+			<span class="centered">#</span>
+			<span class="centered">Time [s]</span>
+			<span>Action</span>
+			<span>Name</span>			<span>Value</span>
+			<span>Expected value</span>
+			<span>Comment</span>
+		</li>
+	</ul>
+	<ul id="list">
+	</ul>
+		<div id="blaettern">
+			<input type="checkbox" id="showTT" style="visibility: hidden;" checked>
+			<button id="previousPage" title="Scroll back one page [&#x2190;]" disabled>Previous page</button>
+			<button id="previous" title="Scroll back one line [&#x2191;]" disabled>&laquo;</button>
+			<input type="text" id="multiplier" value="1" style="text-align: center; width: 75px;">
+			<button id="next" title="Scroll ahead one line [&#x2193;]">&raquo;</button>
+			<button id="nextPage" title="Scroll ahead one page [&#x2192;]">Next page</button>
+		</div>
+		<div id="scrollbar">
+			<div style="height: 10000px;"></div>
+		</div>
+	</div>
+	<div id="recordings" class="content"><ul id="recList" class="lightgrey">
+    <li class="darkgrey">
+        <span style="width: 10%;">Signal group</span>
+        <span style="width: 20%;">Recording group</span>
+        <span style="width: 25%;">Recording</span>
+        <span style="width: 10%;">Number</span>
+        <span style="width: 05%;">Sync delta T</span>
+        <span style="width: 05%;">Type</span>
+        <span style="width: 15%;">File</span>
+        <span style="width: 10%;">Origin</span>
+    </li>
+        
+<li id="record_id_1">
+    <span style="width: 10%;">Plant model</span>
+    <span style="width: 20%;">Recording group for Plant model</span>
+    <span style="width: 25%;">DummyCSV (columnSeparator: ';', decimalSeparator: '.', thousandSeparator: ',', headLineNumber: '0', timeColumn: '0')</span>
+    <span style="width: 10%;">0</span>
+    <span style="width: 05%;">-</span>
+    <span style="width: 05%;">CSV</span>
+    <span style="width: 15%;"><a href = "file://C:/ET2024_2/2_ECU-TEST_Advanced/TestReports/BasicDrive_2024-08-14_095054/BasicDrive/Recording.csv">[Report folder]/../BasicDrive/Recording.csv</a>
+</span>
+    <span style="width: 10%;">Recording</span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr><th>Name</th><th>Target</th></tr>
+        <tr>
+            <td>STATUS_BAT/StateOfCharge [%]/Value</td>
+            <td>    Plant model/Model Root/STATUS_BAT/StateOfCharge [%]/Value
+</td>
+        </tr>
+        <tr>
+            <td>CTRL_VEH/DriverRequest [%]/Value</td>
+            <td>    Plant model/Model Root/CTRL_VEH/DriverRequest [%]/Value
+</td>
+        </tr>
+            </table>
+        </div>
+    </div>
+</li>
+        
+<li id="record_id_2">
+    <span style="width: 10%;">Engine-Control</span>
+    <span style="width: 20%;">Recording group for Engine-Control</span>
+    <span style="width: 25%;">DummyCSV (columnSeparator: ';', decimalSeparator: '.', thousandSeparator: ',', headLineNumber: '0', timeColumn: '0')</span>
+    <span style="width: 10%;">0</span>
+    <span style="width: 05%;">-</span>
+    <span style="width: 05%;">CSV</span>
+    <span style="width: 15%;"><a href = "file://C:/ET2024_2/2_ECU-TEST_Advanced/TestReports/BasicDrive_2024-08-14_095054/BasicDrive/Recording_1.csv">[Report folder]/../BasicDrive/Recording_1.csv</a>
+</span>
+    <span style="width: 10%;">Recording</span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr><th>Name</th><th>Target</th></tr>
+        <tr>
+            <td>VehTrStby</td>
+            <td>    Engine-Control/VehTrStby
+</td>
+        </tr>
+        <tr>
+            <td>speed</td>
+            <td>    Engine-Control/speed
+</td>
+        </tr>
+            </table>
+        </div>
+    </div>
+</li>
+</ul>
+</div>
+	<div id="traceanalysis" class="content">	<ul id="traceList">
+		<li class="darkgrey">
+			<span style="width: 10%;" class="centered">Result</span>
+			<span style="width: 35%;">Name</span>
+			<span style="width: 20%;">Generic signals</span>
+			<span style="width: 20%;">Parameter</span>
+			<span style="width: 15%;">Description</span>
+		</li>
+<li id="trace_id_3">
+<span style="width: 10%; background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 35%">
+Basic Drive (Job_1)</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;">SUCCESS</td>
+                    <td>Basic Drive (Job_1)</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+
+	<table>
+	    <tr>
+	        <td style="font-weight: bold;">File</td>
+	        <td style="font-weight: bold;">Recording</td>
+	        <td style="font-weight: bold;">Number</td>
+	        <td style="font-weight: bold;">Time range</td>
+	        <td style="font-weight: bold;">Sync delta T</td>
+	        <td style="font-weight: bold;">Recording group</td>
+	    </tr>
+
+		<tr>
+        <td><pre>BasicDrive\Recording.csv</pre></td>
+        <td><pre>DummyCSV (columnSeparator: ';', decimalSeparator: '.', thousandSeparator: ',', headLineNumber: '0', timeColumn: '0')</pre></td>
+        <td><pre>0</pre></td>
+        <td><pre>-</pre></td>
+        <td><pre>None</pre></td>
+        <td><pre>Recording group for Plant model</pre></td>
+	    </tr>
+
+		<tr>
+        <td><pre>BasicDrive\Recording_1.csv</pre></td>
+        <td><pre>DummyCSV (columnSeparator: ';', decimalSeparator: '.', thousandSeparator: ',', headLineNumber: '0', timeColumn: '0')</pre></td>
+        <td><pre>0</pre></td>
+        <td><pre>-</pre></td>
+        <td><pre>None</pre></td>
+        <td><pre>Recording group for Engine-Control</pre></td>
+	    </tr>
+	   
+	</table>
+</div>
+        <div class="tableContainer">
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Signal type</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Unit in recording</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Optional</td>
+        <td style="font-weight: bold;">Info / Error</td>
+    </tr>
+    <tr>
+              <td><pre>DRVREQ</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>Recording group for Plant model - CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>Recording group for Engine-Control - speed</pre></td>
+              <td><pre>Engine-Control/speed</pre></td>
+              <td><pre>speed</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>Recording group for Engine-Control - VehTrStby</pre></td>
+              <td><pre>Engine-Control/VehTrStby</pre></td>
+              <td><pre>VehTrStby</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>SOC</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>Recording group for Plant model - STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+
+	<table>
+	    <tr>
+	        <td style="font-weight: bold;">Created file</td>
+	        <td style="font-weight: bold;">Source</td>
+	        <td style="font-weight: bold;">Comment</td>
+	    </tr>
+
+		<tr>
+        <td><pre>BasicDrive\Job_1_Signals.astrace</pre></td>
+        <td><pre></pre></td>
+        <td><pre>automatically generated for trace.xplorer</pre></td>
+	    </tr>
+	   
+	</table>
+</div>
+    </div>
+</li>
+<li id="trace_id_61">
+<span style="width: 10%; background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 34%">
+<img src="images/3807371968.png" alt="Teststep-Icon"> FirstEpisode</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;">SUCCESS</td>
+                    <td><img src="images/3807371968.png" alt="Teststep-Icon">FirstEpisode</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Signal type</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Unit in recording</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Optional</td>
+        <td style="font-weight: bold;">Info / Error</td>
+    </tr>
+    <tr>
+              <td><pre>DRVREQ</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>Recording group for Plant model - CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>Recording group for Engine-Control - speed</pre></td>
+              <td><pre>Engine-Control/speed</pre></td>
+              <td><pre>speed</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>Recording group for Engine-Control - VehTrStby</pre></td>
+              <td><pre>Engine-Control/VehTrStby</pre></td>
+              <td><pre>VehTrStby</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>SOC</pre></td>
+              <td><pre>PHY</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>don't care</pre></td>
+              <td><pre>Recording group for Plant model - STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>False</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+</table>
+</div>
+    </div>
+</li>
+<li id="trace_id_62">
+<span style="width: 10%; background-color: #CDC5B9; font-weight: normal; color: #515151; position: relative;" class="centered">NONE</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 33%">
+<img src="images/3384909879.png" alt="Teststep-Icon"> Plot all signals</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #CDC5B9; font-weight: normal; color: #515151; position: relative;">NONE</td>
+                    <td><img src="images/3384909879.png" alt="Teststep-Icon">Plot all signals</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</li>
+<li id="trace_id_63">
+<span style="width: 10%; background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;" class="centered">NONE</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 32%">
+<img src="images/2298017190.png" alt="Teststep-Icon"> plot all signals</span>
+<span style="width: 20%;">PLOT: DRVREQ,SOC,VEHTRSTBY,VEHVEL</span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;">NONE</td>
+                    <td><img src="images/2298017190.png" alt="Teststep-Icon">plot all signals</td>
+                    <td style="">PLOT: DRVREQ,SOC,VEHTRSTBY,VEHVEL</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Shown: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  Overview plot </td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>DRVREQ</pre></td>
+              <td><pre>DRVREQ</pre></td>
+              <td><pre>Recording group for Plant model - CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>-</pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>Recording group for Engine-Control - speed</pre></td>
+              <td><pre>Engine-Control/speed</pre></td>
+              <td><pre>speed</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>Recording group for Engine-Control - VehTrStby</pre></td>
+              <td><pre>Engine-Control/VehTrStby</pre></td>
+              <td><pre>VehTrStby</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>SOC</pre></td>
+              <td><pre>SOC</pre></td>
+              <td><pre>Recording group for Plant model - STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>-</pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<div class="smallPicture" >
+    <img class="previewImage" height="200" src="Plot 0.png" alt="Plot 0.png">
+    <a href="Plot 0.png" target="_blank" class="newTab">+</a>
+</div>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Figure 1: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  plot all signals </td>
+
+    </tr>
+</table>
+</div>
+    </div>
+</li>
+<li id="trace_id_64">
+<span style="width: 10%; background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 33%">
+<img src="images/3384909879.png" alt="Teststep-Icon"> SoC basic check</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;">SUCCESS</td>
+                    <td><img src="images/3384909879.png" alt="Teststep-Icon">SoC basic check</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</li>
+<li id="trace_id_65">
+<span style="width: 10%; background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 32%">
+<img src="images/2074409880.png" alt="Teststep-Icon"> Expected SoC beaviour</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;">SUCCESS</td>
+                    <td><img src="images/2074409880.png" alt="Teststep-Icon">Expected SoC beaviour</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>SOC</pre></td>
+              <td><pre>SOC</pre></td>
+              <td><pre>Recording group for Plant model - STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>-</pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Parameter</td>
+        <td style="font-weight: bold;">Value</td>
+    </tr>
+    <tr>
+              <td><pre>Expression</pre></td>
+              <td><pre>SOC >= 20</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Save in</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Expectation mode</pre></td>
+              <td><pre>'Fulfilled everywhere'</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Expectation</pre></td>
+              <td><pre>Expression is True</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Vector/matrix handling</pre></td>
+              <td><pre>Expression is neither vector nor matrix</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Set result if the range is empty</pre></td>
+              <td><pre>INCONCLUSIVE</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Time</td>
+        <td style="font-weight: bold;">Duration</td>
+        <td style="font-weight: bold;">Result</td>
+        <td style="font-weight: bold;">Message</td>
+    </tr>
+    <tr>
+              <td style="background-color: #c4e0be"><pre>0.000000 - 22.190000</pre></td>
+              <td style="background-color: #c4e0be"><pre>22.190000</pre></td>
+              <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+              <td style="background-color: #c4e0be"><pre>Expectation fulfilled</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+</div>
+    </div>
+</li>
+<li id="trace_id_66">
+<span style="width: 10%; background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;" class="centered">NONE</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 31%">
+<img src="images/2298017190.png" alt="Teststep-Icon"> plot SoC behaviour</span>
+<span style="width: 20%;">PLOT: SOC</span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;">NONE</td>
+                    <td><img src="images/2298017190.png" alt="Teststep-Icon">plot SoC behaviour</td>
+                    <td style="">PLOT: SOC</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Shown: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  Overview plot </td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>SOC</pre></td>
+              <td><pre>SOC</pre></td>
+              <td><pre>Recording group for Plant model - STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>Model Root/STATUS_BAT/StateOfCharge [%]/Value</pre></td>
+              <td><pre>-</pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<div class="smallPicture" >
+    <img class="previewImage" height="200" src="Plot 0_(1).png" alt="Plot 0_(1).png">
+    <a href="Plot 0_(1).png" target="_blank" class="newTab">+</a>
+</div>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Figure 1: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  plot SoC behaviour </td>
+
+    </tr>
+</table>
+</div>
+    </div>
+</li>
+<li id="trace_id_67">
+<span style="width: 10%; background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 33%">
+<img src="images/3384909879.png" alt="Teststep-Icon"> Vehicle traction standby</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;">SUCCESS</td>
+                    <td><img src="images/3384909879.png" alt="Teststep-Icon">Vehicle traction standby</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</li>
+<li id="trace_id_68">
+<span style="width: 10%; background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 32%">
+<img src="images/2074409880.png" alt="Teststep-Icon"> Vehicle traction standby is reached</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;">SUCCESS</td>
+                    <td><img src="images/2074409880.png" alt="Teststep-Icon">Vehicle traction standby is reached</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>Recording group for Engine-Control - VehTrStby</pre></td>
+              <td><pre>Engine-Control/VehTrStby</pre></td>
+              <td><pre>VehTrStby</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Parameter</td>
+        <td style="font-weight: bold;">Value</td>
+    </tr>
+    <tr>
+              <td><pre>Expression</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Save in</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Expectation mode</pre></td>
+              <td><pre>'Fulfilled at least once'</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Expectation</pre></td>
+              <td><pre>Expression == 1</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Vector/matrix handling</pre></td>
+              <td><pre>Expression is neither vector nor matrix</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Set result if the range is empty</pre></td>
+              <td><pre>INCONCLUSIVE</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Time</td>
+        <td style="font-weight: bold;">Duration</td>
+        <td style="font-weight: bold;">Result</td>
+        <td style="font-weight: bold;">Message</td>
+    </tr>
+    <tr>
+              <td style="background-color: #e0bfbf"><pre>0.000000 - 1.330000</pre></td>
+              <td style="background-color: #e0bfbf"><pre>1.330000</pre></td>
+              <td style="background-color: #e0bfbf"><pre>FAILED</pre></td>
+              <td style="background-color: #e0bfbf"><pre>Expectation not fulfilled</pre></td>
+    </tr>
+    <tr>
+              <td style="background-color: #c4e0be"><pre>1.340000 - 20.380000</pre></td>
+              <td style="background-color: #c4e0be"><pre>19.040000</pre></td>
+              <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+              <td style="background-color: #c4e0be"><pre>Expectation fulfilled</pre></td>
+    </tr>
+    <tr>
+              <td style="background-color: #e0bfbf"><pre>20.390000 - 22.190000</pre></td>
+              <td style="background-color: #e0bfbf"><pre>1.800000</pre></td>
+              <td style="background-color: #e0bfbf"><pre>FAILED</pre></td>
+              <td style="background-color: #e0bfbf"><pre>Expectation not fulfilled</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+</div>
+    </div>
+</li>
+<li id="trace_id_69">
+<span style="width: 10%; background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;" class="centered">NONE</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 31%">
+<img src="images/2298017190.png" alt="Teststep-Icon"> plot VehTrStby</span>
+<span style="width: 20%;">PLOT: VEHTRSTBY</span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;">NONE</td>
+                    <td><img src="images/2298017190.png" alt="Teststep-Icon">plot VehTrStby</td>
+                    <td style="">PLOT: VEHTRSTBY</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Shown: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  Overview plot </td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>Recording group for Engine-Control - VehTrStby</pre></td>
+              <td><pre>Engine-Control/VehTrStby</pre></td>
+              <td><pre>VehTrStby</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<div class="smallPicture" >
+    <img class="previewImage" height="200" src="Plot 0_(2).png" alt="Plot 0_(2).png">
+    <a href="Plot 0_(2).png" target="_blank" class="newTab">+</a>
+</div>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Figure 1: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  plot VehTrStby </td>
+
+    </tr>
+</table>
+</div>
+    </div>
+</li>
+<li id="trace_id_70">
+<span style="width: 10%; background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 33%">
+<img src="images/3384909879.png" alt="Teststep-Icon"> Velocity is greater 0</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;">SUCCESS</td>
+                    <td><img src="images/3384909879.png" alt="Teststep-Icon">Velocity is greater 0</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</li>
+<li id="trace_id_71">
+<span style="width: 10%; background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 32%">
+<img src="images/2053511940.png" alt="Teststep-Icon"> Check VehVel > 0</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #c4e0be; font-weight: normal; color: #515151; position: relative;">SUCCESS</td>
+                    <td><img src="images/2053511940.png" alt="Teststep-Icon">Check VehVel > 0</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold; color: #000000; background-color: #E6FFE0;">Result</td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: normal; color: #000000; background-color: #E6FFE0;">1 Trigger range: 1 SUCCESS</td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>DRVREQ</pre></td>
+              <td><pre>DRVREQ</pre></td>
+              <td><pre>Recording group for Plant model - CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Plant model/Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>Model Root/CTRL_VEH/DriverRequest [%]/Value</pre></td>
+              <td><pre>-</pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>VEHTRSTBY</pre></td>
+              <td><pre>Recording group for Engine-Control - VehTrStby</pre></td>
+              <td><pre>Engine-Control/VehTrStby</pre></td>
+              <td><pre>VehTrStby</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Parameter</td>
+        <td style="font-weight: bold;">Value</td>
+    </tr>
+    <tr>
+              <td><pre>Evaluation</pre></td>
+              <td><pre>'as long as start trigger is fulfilled'</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Start trigger</pre></td>
+              <td><pre>DRVREQ > 0 and VEHTRSTBY == 1</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Start offset</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Stop offset</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Ignore time after start trigger</pre></td>
+              <td><pre>0.1</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Ignore time before stop trigger</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Stop trigger</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>End of trace as stop trigger</pre></td>
+              <td><pre>True</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Set result if no range found</pre></td>
+              <td><pre>INCONCLUSIVE</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Set result if the range is truncated</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Trigger once</pre></td>
+              <td><pre>False</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Condition for trigger ranges to be reported</pre></td>
+              <td><pre>'Always'</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Maximum number of report entries per result</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Report omitted start triggers</pre></td>
+              <td><pre>False</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Mention ignored ranges in test report</pre></td>
+              <td><pre>True</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Time</td>
+        <td style="font-weight: bold;">Duration</td>
+        <td style="font-weight: bold;">Result</td>
+        <td style="font-weight: bold;">Message</td>
+    </tr>
+    <tr>
+              <td style="background-color: #c4e0be"><pre>3.300000 - 11.590000</pre></td>
+              <td style="background-color: #c4e0be"><pre>8.290000</pre></td>
+              <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+              <td style="background-color: #c4e0be"><pre>trigger range 1</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+</div>
+    </div>
+</li>
+<li id="trace_id_72">
+<span style="width: 10%; background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 31%">
+<img src="images/2074409880.png" alt="Teststep-Icon"> Check Vehicle Velocity</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;">SUCCESS</td>
+                    <td><img src="images/2074409880.png" alt="Teststep-Icon">Check Vehicle Velocity</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold; color: #000000; background-color: #E6FFE0;">Result</td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: normal; color: #000000; background-color: #E6FFE0;">1 Trigger range: 1 SUCCESS</td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>Recording group for Engine-Control - speed</pre></td>
+              <td><pre>Engine-Control/speed</pre></td>
+              <td><pre>speed</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Parameter</td>
+        <td style="font-weight: bold;">Value</td>
+    </tr>
+    <tr>
+              <td><pre>Expression</pre></td>
+              <td><pre>VEHVEL</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Save in</pre></td>
+              <td><pre>-</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Expectation mode</pre></td>
+              <td><pre>'Fulfilled everywhere'</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Expectation</pre></td>
+              <td><pre>Expression > 0</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Vector/matrix handling</pre></td>
+              <td><pre>Expression is neither vector nor matrix</pre></td>
+    </tr>
+    <tr>
+              <td><pre>Set result if the range is empty</pre></td>
+              <td><pre>INCONCLUSIVE</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Time</td>
+        <td style="font-weight: bold;">Duration</td>
+        <td style="font-weight: bold;">Result</td>
+        <td style="font-weight: bold;">Message</td>
+    </tr>
+    <tr>
+              <td style="background-color: #c4e0be"><pre>3.300000 - 11.590000</pre></td>
+              <td style="background-color: #c4e0be"><pre>8.290000</pre></td>
+              <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+              <td style="background-color: #c4e0be"><pre>trigger range 1</pre></td>
+    </tr>
+    <tr>
+              <td style="background-color: #c4e0be"><pre>    3.410000 - 11.580000</pre></td>
+              <td style="background-color: #c4e0be"><pre>8.170000</pre></td>
+              <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+              <td style="background-color: #c4e0be"><pre>Expectation fulfilled</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+</div>
+    </div>
+</li>
+<li id="trace_id_73">
+<span style="width: 10%; background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;" class="centered">NONE</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 30%">
+<img src="images/2298017190.png" alt="Teststep-Icon"> plot trigger range</span>
+<span style="width: 20%;">PLOT: VEHVEL</span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #CDC5B9; font-weight: bold; color: #515151; position: relative;">NONE</td>
+                    <td><img src="images/2298017190.png" alt="Teststep-Icon">plot trigger range</td>
+                    <td style="">PLOT: VEHVEL</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Shown: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  Overview plot </td>
+
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Direction</td>
+        <td style="font-weight: bold;">Signal name</td>
+        <td style="font-weight: bold;">Generic signal</td>
+        <td style="font-weight: bold;">Mapping name</td>
+        <td style="font-weight: bold;">Mapping target</td>
+        <td style="font-weight: bold;">Name in recording</td>
+        <td style="font-weight: bold;">Unit</td>
+        <td style="font-weight: bold;">Cache</td>
+    </tr>
+    <tr>
+              <td><pre>IN</pre></td>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>VEHVEL</pre></td>
+              <td><pre>Recording group for Engine-Control - speed</pre></td>
+              <td><pre>Engine-Control/speed</pre></td>
+              <td><pre>speed</pre></td>
+              <td><pre> - </pre></td>
+              <td><pre>No</pre></td>
+    </tr>
+</table>
+</div>
+        <div class="tableContainer">
+<div class="smallPicture" >
+    <img class="previewImage" height="200" src="Plot 0_(3).png" alt="Plot 0_(3).png">
+    <a href="Plot 0_(3).png" target="_blank" class="newTab">+</a>
+</div>
+</div>
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="border:0px; font-weight:bold; font-style:italic; color:#00000; background-color:#F5F5F5"> Figure 1: </td>
+        <td style="border:0px; color:#00000; background-color:#F5F5F5">  plot trigger range </td>
+
+    </tr>
+</table>
+</div>
+    </div>
+</li>
+<li id="trace_id_74">
+<span style="width: 10%; background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;" class="centered">SUCCESS</span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 1%"></span>
+<span style="width: 30%">
+<img src="images/1976871229.png" alt="Teststep-Icon"> trigger range 1</span>
+<span style="width: 20%;"></span>
+<span style="width: 20%;"></span>
+<span style="width: 15%;"></span>
+    <div style="display: none;" class="hiddenData">
+        <div class="tableContainer">
+            <table>
+                <tr>
+                    <td style="background-color: #77FF5B; font-weight: bold; color: #2D7F2D; position: relative;">SUCCESS</td>
+                    <td><img src="images/1976871229.png" alt="Teststep-Icon">trigger range 1</td>
+                    <td style=""></td>
+                    <td style=""></td>
+                    <td style=""></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tableContainer">
+<table>
+    <tr>
+        <td style="font-weight: bold;">Time</td>
+        <td style="font-weight: bold;">Duration</td>
+        <td style="font-weight: bold;">Result</td>
+        <td style="font-weight: bold;">Message</td>
+    </tr>
+    <tr>
+              <td style="background-color: #c4e0be"><pre>3.300000 - 11.590000</pre></td>
+              <td style="background-color: #c4e0be"><pre>8.290000</pre></td>
+              <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+              <td style="background-color: #c4e0be"><pre>trigger range 1</pre></td>
+    </tr>
+    <tr>
+              <td style="background-color: #c4e0be"><pre>    3.410000 - 11.580000</pre></td>
+              <td style="background-color: #c4e0be"><pre>8.170000</pre></td>
+              <td style="background-color: #c4e0be"><pre>SUCCESS</pre></td>
+              <td style="background-color: #c4e0be"><pre>Expectation fulfilled</pre></td>
+    </tr>
+</table>
+</div>
+    </div>
+</li>
+	</ul>
+</div>
+	</section>
+	<section id="infoFrame"><div style="font-size: 20px;color: rgb(200,200,200); text-align: center; margin: 10px auto;">Info Frame</div></section>
+	<div id="infoHandler"><div id="infoDragHandler"></div></div>
+	<footer>
+		<section>JSON Report BETA powered by <a href="http://www.jquery.com" target="_blank" id="jqversion">jQuery $jqversion</a></section>
+		<section>Tooltip: <span id="tooltipSettings" class=""></span> - Infoframe: <span id="infoFrameSettings" class=""></span></section>
+	<section>
+      ecu.test: 2024.2.0.151174+1c1d96a477d2		</section>
+		<span class="stretcher"></span>
+	</footer>
+	<!-- verstecktes Element: Ebene mit Ladefenster -->
+	<div id="hiddenlayer">
+		<div id="loading"><img src="ajax-loader.gif" alt="Loading data"><br>Loading data</div>
+		<div id="lightbox">
+			<div id="imgbox"></div>
+			<div id="infobox">
+				<a id="prevImg" class="navImg" style="left: 0; border-radius: 5px 0 0 5px;">zurück</a>
+				<a id="closebox">Schließen</a>
+				<a id="nextImg" class="navImg" style="right: 0; border-radius: 0 5px 5px 0;">vor</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

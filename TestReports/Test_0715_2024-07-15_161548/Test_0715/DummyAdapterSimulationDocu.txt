@@ -1,0 +1,1187 @@
+[-1ms Test_0715:3]MODEL:-:Model Root/STATUS_BAT/StateOfCharge [%]/Value<READ>   70.0
+[-1ms 设置车辆状态:3]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   20
+[-1ms 设置车辆状态:4]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   1
+[-1ms 设置车辆状态:6]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   0
+[-1ms 设置车辆状态:8]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   0
+[9669ms Test_0715:5]MEAS:-:VehTrStby<READ>   1.0
+[-1ms Test_0715:7]MODEL:-:Model Root/CTRL_VEH/DriveMode [0|1|2|3|4]/Value<WRITE>   1
+[-1ms Test_0715:9]MODEL:-:Model Root/CTRL_VEH/DriverRequest [%]/Value<WRITE>   50
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.1
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.57
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.68
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.88
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   0.98
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.08
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.15
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.25
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.33
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.59
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.68
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.87
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   1.96
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.18
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.27
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.59
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.88
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   2.97
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.14
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.23
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.42
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.52
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.72
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.82
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   3.98
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.16
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.24
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.32
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.57
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.66
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.75
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   4.91
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.1
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.23
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.64
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.74
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.86
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   5.98
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.1
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.22
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.32
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.42
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.51
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.59
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.75
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.83
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.91
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   6.99
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.16
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.42
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.58
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.72
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.81
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   7.93
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.15
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.28
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.4
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.59
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.72
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.81
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   8.92
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.0
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.08
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.17
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.65
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   9.87
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.04
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.12
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.36
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.55
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.63
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.77
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   10.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.16
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.24
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.34
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.42
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.83
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.92
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   11.99
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.08
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.17
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.44
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   12.93
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.0
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.09
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.18
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.34
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.43
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.53
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.63
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.87
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   13.94
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.45
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.86
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   14.94
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.18
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.28
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.39
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.56
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.64
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.77
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.85
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   15.95
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.15
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.24
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.4
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.6
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   16.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.2
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.53
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.6
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.71
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.8
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.91
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   17.99
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.08
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.22
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.4
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.56
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.79
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.85
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   18.93
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.01
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.08
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.15
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.24
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.3
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.4
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.85
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   19.93
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.01
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.07
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.17
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.4
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.51
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.58
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.65
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.73
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.8
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.88
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   20.98
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.29
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.53
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.77
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   21.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.01
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.29
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.37
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.47
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.74
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.81
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.87
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   22.94
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.04
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.14
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.3
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.57
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   23.93
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.09
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.16
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.23
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.44
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.53
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.82
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   24.97
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.04
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.1
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.18
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.37
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.45
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.55
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.65
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.74
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.81
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.87
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   25.94
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.1
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.22
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.29
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.37
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.44
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.51
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.58
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.64
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.71
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.79
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.85
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   26.96
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.03
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.12
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.28
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.34
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.43
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.77
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.91
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   27.98
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.13
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.2
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.3
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.45
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.51
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.58
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.65
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.72
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.79
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.87
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   28.95
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.12
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.19
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.29
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.37
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.44
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.6
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.74
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.81
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.88
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   29.95
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.14
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.3
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.55
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.73
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.79
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.87
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   30.94
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.0
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.14
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.2
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.32
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.39
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.53
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.6
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.71
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.85
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.91
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   31.97
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.17
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.27
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.33
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.57
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.63
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.82
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   32.95
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.12
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.19
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.25
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.37
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.42
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.72
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.79
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.86
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.91
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   33.99
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.17
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.23
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.42
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.55
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.6
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.73
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.8
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.85
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   34.96
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.03
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.1
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.17
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.22
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.29
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.47
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.53
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.85
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.93
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   35.99
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.09
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.17
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.28
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.36
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.47
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.59
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.65
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.77
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.82
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.92
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   36.98
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.04
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.1
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.15
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.27
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.33
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.4
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.45
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.51
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.57
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.64
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.82
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   37.91
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.0
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.12
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.22
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.32
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.4
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.45
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.53
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.58
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.64
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.73
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.82
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.88
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   38.97
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.03
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.09
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.14
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.2
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.33
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.6
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.66
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.71
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.83
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   39.96
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.03
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.13
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.19
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.44
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   40.97
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.12
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.2
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.25
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.42
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.55
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.83
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   41.98
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.05
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.16
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.22
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.28
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.34
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.43
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.56
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.6
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.65
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.7
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.81
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.86
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.93
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   42.99
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.08
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.13
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.18
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.25
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.3
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.51
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.57
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.73
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   43.97
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.04
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.13
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.2
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.31
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.37
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.43
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.48
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.56
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   44.97
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.02
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.08
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.12
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.18
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.24
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.3
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.44
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.56
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.66
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.72
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.77
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.82
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   45.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.0
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.07
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.13
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.27
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.32
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.45
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.51
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.67
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.72
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.77
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   46.94
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.03
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.09
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.18
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.24
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.29
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.35
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.43
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.5
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.56
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.61
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.69
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.78
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.83
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   47.95
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.0
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.07
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.14
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.2
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.3
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.36
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.41
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.46
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.52
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.57
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.62
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.68
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.74
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.84
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.9
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   48.96
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.01
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.06
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.11
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.16
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.21
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.26
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.32
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.38
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.43
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.49
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.54
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.59
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.66
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.76
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.83
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.89
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   49.96
+[-1ms Test_0715:11]MODEL:-:Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1<READ>   50.06
+[17812ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.2
+[17836ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.31
+[17843ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.35
+[17867ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.46
+[17883ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.54
+[17898ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.61
+[17918ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.7
+[17929ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.75
+[17941ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.81
+[17953ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.86
+[17963ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.91
+[17979ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   49.98
+[17993ms Test_0715:12]BUS:-:VEH_DATA.VEHICLE_VELOCITY<READ>   50.05
+[18170ms Test_0715:13]MEAS:-:speed<READ>   51.79
+[-1ms Test_0715:17]MODEL:-:Model Root/CTRL_VEH/DriverRequest [%]/Value<WRITE>   0
+[18188ms Test_0715:19]MEAS:-:speed<READ>   49.99
+[18199ms Test_0715:19]MEAS:-:speed<READ>   49.91
+[18211ms Test_0715:19]MEAS:-:speed<READ>   49.83
+[18223ms Test_0715:19]MEAS:-:speed<READ>   49.74
+[18241ms Test_0715:19]MEAS:-:speed<READ>   49.61
+[18255ms Test_0715:19]MEAS:-:speed<READ>   49.51
+[18269ms Test_0715:19]MEAS:-:speed<READ>   49.41
+[18286ms Test_0715:19]MEAS:-:speed<READ>   49.3
+[18299ms Test_0715:19]MEAS:-:speed<READ>   49.2
+[18323ms Test_0715:19]MEAS:-:speed<READ>   49.04
+[18334ms Test_0715:19]MEAS:-:speed<READ>   48.95
+[18349ms Test_0715:19]MEAS:-:speed<READ>   48.85
+[18360ms Test_0715:19]MEAS:-:speed<READ>   48.77
+[18372ms Test_0715:19]MEAS:-:speed<READ>   48.69
+[18384ms Test_0715:19]MEAS:-:speed<READ>   48.61
+[18396ms Test_0715:19]MEAS:-:speed<READ>   48.52
+[18407ms Test_0715:19]MEAS:-:speed<READ>   48.45
+[18418ms Test_0715:19]MEAS:-:speed<READ>   48.37
+[18430ms Test_0715:19]MEAS:-:speed<READ>   48.29
+[18442ms Test_0715:19]MEAS:-:speed<READ>   48.2
+[18453ms Test_0715:19]MEAS:-:speed<READ>   48.13
+[18467ms Test_0715:19]MEAS:-:speed<READ>   48.03
+[18484ms Test_0715:19]MEAS:-:speed<READ>   47.92
+[18495ms Test_0715:19]MEAS:-:speed<READ>   47.84
+[18508ms Test_0715:19]MEAS:-:speed<READ>   47.75
+[18519ms Test_0715:19]MEAS:-:speed<READ>   47.68
+[18530ms Test_0715:19]MEAS:-:speed<READ>   47.61
+[18541ms Test_0715:19]MEAS:-:speed<READ>   47.53
+[18553ms Test_0715:19]MEAS:-:speed<READ>   47.45
+[18564ms Test_0715:19]MEAS:-:speed<READ>   47.37
+[18575ms Test_0715:19]MEAS:-:speed<READ>   47.3
+[18587ms Test_0715:19]MEAS:-:speed<READ>   47.22
+[18597ms Test_0715:19]MEAS:-:speed<READ>   47.15
+[18607ms Test_0715:19]MEAS:-:speed<READ>   47.08
+[18619ms Test_0715:19]MEAS:-:speed<READ>   47.0
+[18630ms Test_0715:19]MEAS:-:speed<READ>   46.93
+[18641ms Test_0715:19]MEAS:-:speed<READ>   46.85
+[18657ms Test_0715:19]MEAS:-:speed<READ>   46.75
+[18669ms Test_0715:19]MEAS:-:speed<READ>   46.67
+[18680ms Test_0715:19]MEAS:-:speed<READ>   46.59
+[18691ms Test_0715:19]MEAS:-:speed<READ>   46.52
+[18703ms Test_0715:19]MEAS:-:speed<READ>   46.44
+[18714ms Test_0715:19]MEAS:-:speed<READ>   46.37
+[18725ms Test_0715:19]MEAS:-:speed<READ>   46.29
+[18741ms Test_0715:19]MEAS:-:speed<READ>   46.19
+[18756ms Test_0715:19]MEAS:-:speed<READ>   46.09
+[18773ms Test_0715:19]MEAS:-:speed<READ>   45.98
+[18793ms Test_0715:19]MEAS:-:speed<READ>   45.85
+[18806ms Test_0715:19]MEAS:-:speed<READ>   45.76
+[18819ms Test_0715:19]MEAS:-:speed<READ>   45.68
+[18830ms Test_0715:19]MEAS:-:speed<READ>   45.61
+[18844ms Test_0715:19]MEAS:-:speed<READ>   45.51
+[18857ms Test_0715:19]MEAS:-:speed<READ>   45.43
+[18870ms Test_0715:19]MEAS:-:speed<READ>   45.35
+[18891ms Test_0715:19]MEAS:-:speed<READ>   45.21
+[18906ms Test_0715:19]MEAS:-:speed<READ>   45.11
+[18918ms Test_0715:19]MEAS:-:speed<READ>   45.04
+[18930ms Test_0715:19]MEAS:-:speed<READ>   44.96
+[18942ms Test_0715:19]MEAS:-:speed<READ>   44.89
+[18955ms Test_0715:19]MEAS:-:speed<READ>   44.8
+[18966ms Test_0715:19]MEAS:-:speed<READ>   44.73
+[18977ms Test_0715:19]MEAS:-:speed<READ>   44.66
+[18992ms Test_0715:19]MEAS:-:speed<READ>   44.57
+[19008ms Test_0715:19]MEAS:-:speed<READ>   44.46
+[19026ms Test_0715:19]MEAS:-:speed<READ>   44.35
+[19041ms Test_0715:19]MEAS:-:speed<READ>   44.25
+[19052ms Test_0715:19]MEAS:-:speed<READ>   44.18
+[19063ms Test_0715:19]MEAS:-:speed<READ>   44.11
+[19074ms Test_0715:19]MEAS:-:speed<READ>   44.04
+[19088ms Test_0715:19]MEAS:-:speed<READ>   43.95
+[19098ms Test_0715:19]MEAS:-:speed<READ>   43.89
+[19118ms Test_0715:19]MEAS:-:speed<READ>   43.77
+[19131ms Test_0715:19]MEAS:-:speed<READ>   43.69
+[19145ms Test_0715:19]MEAS:-:speed<READ>   43.6
+[19157ms Test_0715:19]MEAS:-:speed<READ>   43.52
+[19171ms Test_0715:19]MEAS:-:speed<READ>   43.44
+[19185ms Test_0715:19]MEAS:-:speed<READ>   43.36
+[19197ms Test_0715:19]MEAS:-:speed<READ>   43.28
+[19211ms Test_0715:19]MEAS:-:speed<READ>   43.2
+[19229ms Test_0715:19]MEAS:-:speed<READ>   43.08
+[19242ms Test_0715:19]MEAS:-:speed<READ>   43.0
+[19254ms Test_0715:19]MEAS:-:speed<READ>   42.92
+[19264ms Test_0715:19]MEAS:-:speed<READ>   42.86
+[19275ms Test_0715:19]MEAS:-:speed<READ>   42.8
+[19285ms Test_0715:19]MEAS:-:speed<READ>   42.74
+[19300ms Test_0715:19]MEAS:-:speed<READ>   42.65
+[19310ms Test_0715:19]MEAS:-:speed<READ>   42.58
+[19325ms Test_0715:19]MEAS:-:speed<READ>   42.49
+[19343ms Test_0715:19]MEAS:-:speed<READ>   42.38
+[19357ms Test_0715:19]MEAS:-:speed<READ>   42.3
+[19373ms Test_0715:19]MEAS:-:speed<READ>   42.2
+[19384ms Test_0715:19]MEAS:-:speed<READ>   42.14
+[19396ms Test_0715:19]MEAS:-:speed<READ>   42.06
+[19407ms Test_0715:19]MEAS:-:speed<READ>   42.0
+[19420ms Test_0715:19]MEAS:-:speed<READ>   41.92
+[19431ms Test_0715:19]MEAS:-:speed<READ>   41.86
+[19452ms Test_0715:19]MEAS:-:speed<READ>   41.73
+[19464ms Test_0715:19]MEAS:-:speed<READ>   41.66
+[19475ms Test_0715:19]MEAS:-:speed<READ>   41.59
+[19486ms Test_0715:19]MEAS:-:speed<READ>   41.53
+[19498ms Test_0715:19]MEAS:-:speed<READ>   41.45
+[19510ms Test_0715:19]MEAS:-:speed<READ>   41.38
+[19523ms Test_0715:19]MEAS:-:speed<READ>   41.31
+[19535ms Test_0715:19]MEAS:-:speed<READ>   41.24
+[19554ms Test_0715:19]MEAS:-:speed<READ>   41.12
+[19566ms Test_0715:19]MEAS:-:speed<READ>   41.05
+[19577ms Test_0715:19]MEAS:-:speed<READ>   40.99
+[19589ms Test_0715:19]MEAS:-:speed<READ>   40.92
+[19602ms Test_0715:19]MEAS:-:speed<READ>   40.84
+[19613ms Test_0715:19]MEAS:-:speed<READ>   40.78
+[19632ms Test_0715:19]MEAS:-:speed<READ>   40.67
+[19644ms Test_0715:19]MEAS:-:speed<READ>   40.6
+[19655ms Test_0715:19]MEAS:-:speed<READ>   40.54
+[19671ms Test_0715:19]MEAS:-:speed<READ>   40.44
+[19683ms Test_0715:19]MEAS:-:speed<READ>   40.37
+[19703ms Test_0715:19]MEAS:-:speed<READ>   40.26
+[19716ms Test_0715:19]MEAS:-:speed<READ>   40.18
+[19727ms Test_0715:19]MEAS:-:speed<READ>   40.12
+[19739ms Test_0715:19]MEAS:-:speed<READ>   40.05
+[19750ms Test_0715:19]MEAS:-:speed<READ>   39.99
+[19762ms Test_0715:19]MEAS:-:speed<READ>   39.92
+[19773ms Test_0715:19]MEAS:-:speed<READ>   39.86
+[19787ms Test_0715:19]MEAS:-:speed<READ>   39.78
+[19797ms Test_0715:19]MEAS:-:speed<READ>   39.72
+[19817ms Test_0715:19]MEAS:-:speed<READ>   39.61
+[19832ms Test_0715:19]MEAS:-:speed<READ>   39.52
+[19843ms Test_0715:19]MEAS:-:speed<READ>   39.46
+[19855ms Test_0715:19]MEAS:-:speed<READ>   39.39
+[19866ms Test_0715:19]MEAS:-:speed<READ>   39.33
+[19877ms Test_0715:19]MEAS:-:speed<READ>   39.27
+[19890ms Test_0715:19]MEAS:-:speed<READ>   39.2
+[19910ms Test_0715:19]MEAS:-:speed<READ>   39.08
+[19929ms Test_0715:19]MEAS:-:speed<READ>   38.98
+[19946ms Test_0715:19]MEAS:-:speed<READ>   38.88
+[19963ms Test_0715:19]MEAS:-:speed<READ>   38.79
+[19978ms Test_0715:19]MEAS:-:speed<READ>   38.71
+[19990ms Test_0715:19]MEAS:-:speed<READ>   38.64
+[20011ms Test_0715:19]MEAS:-:speed<READ>   38.53
+[20029ms Test_0715:19]MEAS:-:speed<READ>   38.43
+[20051ms Test_0715:19]MEAS:-:speed<READ>   38.31
+[20069ms Test_0715:19]MEAS:-:speed<READ>   38.21
+[20082ms Test_0715:19]MEAS:-:speed<READ>   38.14
+[20096ms Test_0715:19]MEAS:-:speed<READ>   38.06
+[20107ms Test_0715:19]MEAS:-:speed<READ>   38.0
+[20119ms Test_0715:19]MEAS:-:speed<READ>   37.94
+[20131ms Test_0715:19]MEAS:-:speed<READ>   37.87
+[20149ms Test_0715:19]MEAS:-:speed<READ>   37.77
+[20161ms Test_0715:19]MEAS:-:speed<READ>   37.71
+[20180ms Test_0715:19]MEAS:-:speed<READ>   37.61
+[20194ms Test_0715:19]MEAS:-:speed<READ>   37.54
+[20208ms Test_0715:19]MEAS:-:speed<READ>   37.46
+[20220ms Test_0715:19]MEAS:-:speed<READ>   37.39
+[20232ms Test_0715:19]MEAS:-:speed<READ>   37.33
+[20243ms Test_0715:19]MEAS:-:speed<READ>   37.27
+[20256ms Test_0715:19]MEAS:-:speed<READ>   37.2
+[20268ms Test_0715:19]MEAS:-:speed<READ>   37.14
+[20292ms Test_0715:19]MEAS:-:speed<READ>   37.01
+[20304ms Test_0715:19]MEAS:-:speed<READ>   36.95
+[20315ms Test_0715:19]MEAS:-:speed<READ>   36.89
+[20326ms Test_0715:19]MEAS:-:speed<READ>   36.83
+[20336ms Test_0715:19]MEAS:-:speed<READ>   36.78
+[20347ms Test_0715:19]MEAS:-:speed<READ>   36.72
+[20358ms Test_0715:19]MEAS:-:speed<READ>   36.66
+[20373ms Test_0715:19]MEAS:-:speed<READ>   36.58
+[20383ms Test_0715:19]MEAS:-:speed<READ>   36.53
+[20404ms Test_0715:19]MEAS:-:speed<READ>   36.42
+[20418ms Test_0715:19]MEAS:-:speed<READ>   36.35
+[20429ms Test_0715:19]MEAS:-:speed<READ>   36.29
+[20440ms Test_0715:19]MEAS:-:speed<READ>   36.23
+[20451ms Test_0715:19]MEAS:-:speed<READ>   36.18
+[20460ms Test_0715:19]MEAS:-:speed<READ>   36.13
+[20470ms Test_0715:19]MEAS:-:speed<READ>   36.08
+[20485ms Test_0715:19]MEAS:-:speed<READ>   36.0
+[20495ms Test_0715:19]MEAS:-:speed<READ>   35.95
+[20517ms Test_0715:19]MEAS:-:speed<READ>   35.84
+[20531ms Test_0715:19]MEAS:-:speed<READ>   35.77
+[20542ms Test_0715:19]MEAS:-:speed<READ>   35.71
+[20555ms Test_0715:19]MEAS:-:speed<READ>   35.65
+[20566ms Test_0715:19]MEAS:-:speed<READ>   35.59
+[20576ms Test_0715:19]MEAS:-:speed<READ>   35.54
+[20590ms Test_0715:19]MEAS:-:speed<READ>   35.47
+[20603ms Test_0715:19]MEAS:-:speed<READ>   35.4
+[20620ms Test_0715:19]MEAS:-:speed<READ>   35.32
+[20636ms Test_0715:19]MEAS:-:speed<READ>   35.23
+[20648ms Test_0715:19]MEAS:-:speed<READ>   35.17
+[20672ms Test_0715:19]MEAS:-:speed<READ>   35.05
+[20687ms Test_0715:19]MEAS:-:speed<READ>   34.98
+[20700ms Test_0715:19]MEAS:-:speed<READ>   34.91
+[20721ms Test_0715:19]MEAS:-:speed<READ>   34.81
+[20735ms Test_0715:19]MEAS:-:speed<READ>   34.74
+[20753ms Test_0715:19]MEAS:-:speed<READ>   34.65
+[20766ms Test_0715:19]MEAS:-:speed<READ>   34.59
+[20779ms Test_0715:19]MEAS:-:speed<READ>   34.52
+[20798ms Test_0715:19]MEAS:-:speed<READ>   34.43
+[20820ms Test_0715:19]MEAS:-:speed<READ>   34.32
+[20836ms Test_0715:19]MEAS:-:speed<READ>   34.24
+[20859ms Test_0715:19]MEAS:-:speed<READ>   34.13
+[20879ms Test_0715:19]MEAS:-:speed<READ>   34.03
+[20906ms Test_0715:19]MEAS:-:speed<READ>   33.91
+[20919ms Test_0715:19]MEAS:-:speed<READ>   33.84
+[20932ms Test_0715:19]MEAS:-:speed<READ>   33.78
+[20946ms Test_0715:19]MEAS:-:speed<READ>   33.71
+[20964ms Test_0715:19]MEAS:-:speed<READ>   33.62
+[20982ms Test_0715:19]MEAS:-:speed<READ>   33.54
+[21000ms Test_0715:19]MEAS:-:speed<READ>   33.45
+[21013ms Test_0715:19]MEAS:-:speed<READ>   33.39
+[21029ms Test_0715:19]MEAS:-:speed<READ>   33.31
+[21043ms Test_0715:19]MEAS:-:speed<READ>   33.24
+[21058ms Test_0715:19]MEAS:-:speed<READ>   33.17
+[21071ms Test_0715:19]MEAS:-:speed<READ>   33.11
+[21087ms Test_0715:19]MEAS:-:speed<READ>   33.04
+[21112ms Test_0715:19]MEAS:-:speed<READ>   32.92
+[21128ms Test_0715:19]MEAS:-:speed<READ>   32.85
+[21149ms Test_0715:19]MEAS:-:speed<READ>   32.74
+[21169ms Test_0715:19]MEAS:-:speed<READ>   32.66
+[21186ms Test_0715:19]MEAS:-:speed<READ>   32.57
+[21199ms Test_0715:19]MEAS:-:speed<READ>   32.51
+[21214ms Test_0715:19]MEAS:-:speed<READ>   32.44
+[21240ms Test_0715:19]MEAS:-:speed<READ>   32.32
+[21258ms Test_0715:19]MEAS:-:speed<READ>   32.24
+[21273ms Test_0715:19]MEAS:-:speed<READ>   32.17
+[21288ms Test_0715:19]MEAS:-:speed<READ>   32.1
+[21306ms Test_0715:19]MEAS:-:speed<READ>   32.02
+[21321ms Test_0715:19]MEAS:-:speed<READ>   31.95
+[21334ms Test_0715:19]MEAS:-:speed<READ>   31.89
+[21350ms Test_0715:19]MEAS:-:speed<READ>   31.82
+[21374ms Test_0715:19]MEAS:-:speed<READ>   31.71
+[21387ms Test_0715:19]MEAS:-:speed<READ>   31.65
+[21398ms Test_0715:19]MEAS:-:speed<READ>   31.6
+[21415ms Test_0715:19]MEAS:-:speed<READ>   31.52
+[21430ms Test_0715:19]MEAS:-:speed<READ>   31.46
+[21444ms Test_0715:19]MEAS:-:speed<READ>   31.39
+[21459ms Test_0715:19]MEAS:-:speed<READ>   31.33
+[21471ms Test_0715:19]MEAS:-:speed<READ>   31.27
+[21492ms Test_0715:19]MEAS:-:speed<READ>   31.18
+[21503ms Test_0715:19]MEAS:-:speed<READ>   31.13
+[21514ms Test_0715:19]MEAS:-:speed<READ>   31.08
+[21525ms Test_0715:19]MEAS:-:speed<READ>   31.03
+[21536ms Test_0715:19]MEAS:-:speed<READ>   30.98
+[21548ms Test_0715:19]MEAS:-:speed<READ>   30.93
+[21559ms Test_0715:19]MEAS:-:speed<READ>   30.88
+[21573ms Test_0715:19]MEAS:-:speed<READ>   30.82
+[21585ms Test_0715:19]MEAS:-:speed<READ>   30.77
+[21605ms Test_0715:19]MEAS:-:speed<READ>   30.68
+[21617ms Test_0715:19]MEAS:-:speed<READ>   30.63
+[21627ms Test_0715:19]MEAS:-:speed<READ>   30.58
+[21638ms Test_0715:19]MEAS:-:speed<READ>   30.54
+[21648ms Test_0715:19]MEAS:-:speed<READ>   30.49
+[21660ms Test_0715:19]MEAS:-:speed<READ>   30.44
+[21672ms Test_0715:19]MEAS:-:speed<READ>   30.39
+[21686ms Test_0715:19]MEAS:-:speed<READ>   30.33
+[21697ms Test_0715:19]MEAS:-:speed<READ>   30.28
+[21718ms Test_0715:19]MEAS:-:speed<READ>   30.19
+[21734ms Test_0715:19]MEAS:-:speed<READ>   30.12
+[21750ms Test_0715:19]MEAS:-:speed<READ>   30.05
+[21760ms Test_0715:19]MEAS:-:speed<READ>   30.01
+[21771ms Test_0715:19]MEAS:-:speed<READ>   29.96
+[-1ms Test_0715:21]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   35
+[21797ms Test_0715:23]MEAS:-:speed<READ>   29.98
+[21805ms Test_0715:23]MEAS:-:speed<READ>   29.91
+[21819ms Test_0715:23]MEAS:-:speed<READ>   29.81
+[21830ms Test_0715:23]MEAS:-:speed<READ>   29.71
+[21849ms Test_0715:23]MEAS:-:speed<READ>   29.56
+[21868ms Test_0715:23]MEAS:-:speed<READ>   29.42
+[21888ms Test_0715:23]MEAS:-:speed<READ>   29.25
+[21906ms Test_0715:23]MEAS:-:speed<READ>   29.11
+[21919ms Test_0715:23]MEAS:-:speed<READ>   29.0
+[21933ms Test_0715:23]MEAS:-:speed<READ>   28.9
+[21949ms Test_0715:23]MEAS:-:speed<READ>   28.77
+[21960ms Test_0715:23]MEAS:-:speed<READ>   28.68
+[21972ms Test_0715:23]MEAS:-:speed<READ>   28.58
+[21985ms Test_0715:23]MEAS:-:speed<READ>   28.48
+[21996ms Test_0715:23]MEAS:-:speed<READ>   28.39
+[22010ms Test_0715:23]MEAS:-:speed<READ>   28.28
+[22026ms Test_0715:23]MEAS:-:speed<READ>   28.15
+[22037ms Test_0715:23]MEAS:-:speed<READ>   28.06
+[22050ms Test_0715:23]MEAS:-:speed<READ>   27.96
+[22071ms Test_0715:23]MEAS:-:speed<READ>   27.79
+[22087ms Test_0715:23]MEAS:-:speed<READ>   27.66
+[22100ms Test_0715:23]MEAS:-:speed<READ>   27.57
+[22115ms Test_0715:23]MEAS:-:speed<READ>   27.44
+[22127ms Test_0715:23]MEAS:-:speed<READ>   27.34
+[22141ms Test_0715:23]MEAS:-:speed<READ>   27.24
+[22155ms Test_0715:23]MEAS:-:speed<READ>   27.12
+[22173ms Test_0715:23]MEAS:-:speed<READ>   26.98
+[22185ms Test_0715:23]MEAS:-:speed<READ>   26.88
+[22196ms Test_0715:23]MEAS:-:speed<READ>   26.79
+[22210ms Test_0715:23]MEAS:-:speed<READ>   26.68
+[22221ms Test_0715:23]MEAS:-:speed<READ>   26.59
+[22232ms Test_0715:23]MEAS:-:speed<READ>   26.51
+[22245ms Test_0715:23]MEAS:-:speed<READ>   26.41
+[22259ms Test_0715:23]MEAS:-:speed<READ>   26.29
+[22279ms Test_0715:23]MEAS:-:speed<READ>   26.13
+[22293ms Test_0715:23]MEAS:-:speed<READ>   26.02
+[22304ms Test_0715:23]MEAS:-:speed<READ>   25.93
+[22316ms Test_0715:23]MEAS:-:speed<READ>   25.84
+[22327ms Test_0715:23]MEAS:-:speed<READ>   25.75
+[22341ms Test_0715:23]MEAS:-:speed<READ>   25.64
+[22354ms Test_0715:23]MEAS:-:speed<READ>   25.53
+[22365ms Test_0715:23]MEAS:-:speed<READ>   25.44
+[22385ms Test_0715:23]MEAS:-:speed<READ>   25.28
+[22400ms Test_0715:23]MEAS:-:speed<READ>   25.16
+[22412ms Test_0715:23]MEAS:-:speed<READ>   25.07
+[22423ms Test_0715:23]MEAS:-:speed<READ>   24.98
+[22436ms Test_0715:23]MEAS:-:speed<READ>   24.88
+[22448ms Test_0715:23]MEAS:-:speed<READ>   24.78
+[22459ms Test_0715:23]MEAS:-:speed<READ>   24.69
+[22482ms Test_0715:23]MEAS:-:speed<READ>   24.51
+[22498ms Test_0715:23]MEAS:-:speed<READ>   24.38
+[22511ms Test_0715:23]MEAS:-:speed<READ>   24.28
+[22529ms Test_0715:23]MEAS:-:speed<READ>   24.14
+[22541ms Test_0715:23]MEAS:-:speed<READ>   24.04
+[22553ms Test_0715:23]MEAS:-:speed<READ>   23.94
+[22564ms Test_0715:23]MEAS:-:speed<READ>   23.86
+[22579ms Test_0715:23]MEAS:-:speed<READ>   23.74
+[22592ms Test_0715:23]MEAS:-:speed<READ>   23.63
+[22612ms Test_0715:23]MEAS:-:speed<READ>   23.47
+[22629ms Test_0715:23]MEAS:-:speed<READ>   23.34
+[22646ms Test_0715:23]MEAS:-:speed<READ>   23.2
+[22660ms Test_0715:23]MEAS:-:speed<READ>   23.09
+[22675ms Test_0715:23]MEAS:-:speed<READ>   22.98
+[22691ms Test_0715:23]MEAS:-:speed<READ>   22.84
+[22709ms Test_0715:23]MEAS:-:speed<READ>   22.7
+[22722ms Test_0715:23]MEAS:-:speed<READ>   22.6
+[22741ms Test_0715:23]MEAS:-:speed<READ>   22.44
+[22755ms Test_0715:23]MEAS:-:speed<READ>   22.33
+[22769ms Test_0715:23]MEAS:-:speed<READ>   22.22
+[22786ms Test_0715:23]MEAS:-:speed<READ>   22.09
+[22798ms Test_0715:23]MEAS:-:speed<READ>   21.99
+[22810ms Test_0715:23]MEAS:-:speed<READ>   21.9
+[22826ms Test_0715:23]MEAS:-:speed<READ>   21.77
+[22841ms Test_0715:23]MEAS:-:speed<READ>   21.65
+[22862ms Test_0715:23]MEAS:-:speed<READ>   21.48
+[22879ms Test_0715:23]MEAS:-:speed<READ>   21.34
+[22897ms Test_0715:23]MEAS:-:speed<READ>   21.2
+[22910ms Test_0715:23]MEAS:-:speed<READ>   21.1
+[22923ms Test_0715:23]MEAS:-:speed<READ>   20.99
+[22937ms Test_0715:23]MEAS:-:speed<READ>   20.89
+[22948ms Test_0715:23]MEAS:-:speed<READ>   20.79
+[22965ms Test_0715:23]MEAS:-:speed<READ>   20.66
+[22981ms Test_0715:23]MEAS:-:speed<READ>   20.53
+[22995ms Test_0715:23]MEAS:-:speed<READ>   20.42
+[23008ms Test_0715:23]MEAS:-:speed<READ>   20.32
+[23019ms Test_0715:23]MEAS:-:speed<READ>   20.23
+[23036ms Test_0715:23]MEAS:-:speed<READ>   20.09
+[23048ms Test_0715:23]MEAS:-:speed<READ>   19.99
+[23060ms Test_0715:23]MEAS:-:speed<READ>   19.9
+[23074ms Test_0715:23]MEAS:-:speed<READ>   19.79
+[23084ms Test_0715:23]MEAS:-:speed<READ>   19.71
+[23103ms Test_0715:23]MEAS:-:speed<READ>   19.56
+[23115ms Test_0715:23]MEAS:-:speed<READ>   19.46
+[23128ms Test_0715:23]MEAS:-:speed<READ>   19.36
+[23140ms Test_0715:23]MEAS:-:speed<READ>   19.27
+[23156ms Test_0715:23]MEAS:-:speed<READ>   19.13
+[23168ms Test_0715:23]MEAS:-:speed<READ>   19.05
+[23179ms Test_0715:23]MEAS:-:speed<READ>   18.95
+[23191ms Test_0715:23]MEAS:-:speed<READ>   18.85
+[23202ms Test_0715:23]MEAS:-:speed<READ>   18.77
+[23212ms Test_0715:23]MEAS:-:speed<READ>   18.69
+[23227ms Test_0715:23]MEAS:-:speed<READ>   18.57
+[23246ms Test_0715:23]MEAS:-:speed<READ>   18.42
+[23260ms Test_0715:23]MEAS:-:speed<READ>   18.3
+[23271ms Test_0715:23]MEAS:-:speed<READ>   18.22
+[23283ms Test_0715:23]MEAS:-:speed<READ>   18.12
+[23293ms Test_0715:23]MEAS:-:speed<READ>   18.04
+[23307ms Test_0715:23]MEAS:-:speed<READ>   17.93
+[23320ms Test_0715:23]MEAS:-:speed<READ>   17.82
+[23336ms Test_0715:23]MEAS:-:speed<READ>   17.7
+[23347ms Test_0715:23]MEAS:-:speed<READ>   17.61
+[23357ms Test_0715:23]MEAS:-:speed<READ>   17.53
+[23368ms Test_0715:23]MEAS:-:speed<READ>   17.44
+[23378ms Test_0715:23]MEAS:-:speed<READ>   17.36
+[23390ms Test_0715:23]MEAS:-:speed<READ>   17.27
+[23401ms Test_0715:23]MEAS:-:speed<READ>   17.18
+[23412ms Test_0715:23]MEAS:-:speed<READ>   17.09
+[23423ms Test_0715:23]MEAS:-:speed<READ>   17.01
+[23434ms Test_0715:23]MEAS:-:speed<READ>   16.92
+[23446ms Test_0715:23]MEAS:-:speed<READ>   16.82
+[23466ms Test_0715:23]MEAS:-:speed<READ>   16.66
+[23477ms Test_0715:23]MEAS:-:speed<READ>   16.57
+[23487ms Test_0715:23]MEAS:-:speed<READ>   16.49
+[23498ms Test_0715:23]MEAS:-:speed<READ>   16.41
+[23508ms Test_0715:23]MEAS:-:speed<READ>   16.32
+[23519ms Test_0715:23]MEAS:-:speed<READ>   16.24
+[23530ms Test_0715:23]MEAS:-:speed<READ>   16.15
+[23541ms Test_0715:23]MEAS:-:speed<READ>   16.06
+[23554ms Test_0715:23]MEAS:-:speed<READ>   15.96
+[23566ms Test_0715:23]MEAS:-:speed<READ>   15.87
+[23582ms Test_0715:23]MEAS:-:speed<READ>   15.74
+[23599ms Test_0715:23]MEAS:-:speed<READ>   15.6
+[23615ms Test_0715:23]MEAS:-:speed<READ>   15.47
+[23634ms Test_0715:23]MEAS:-:speed<READ>   15.32
+[23647ms Test_0715:23]MEAS:-:speed<READ>   15.22
+[23661ms Test_0715:23]MEAS:-:speed<READ>   15.1
+[23674ms Test_0715:23]MEAS:-:speed<READ>   15.0
+[23686ms Test_0715:23]MEAS:-:speed<READ>   14.9
+[23705ms Test_0715:23]MEAS:-:speed<READ>   14.75
+[23717ms Test_0715:23]MEAS:-:speed<READ>   14.66
+[23728ms Test_0715:23]MEAS:-:speed<READ>   14.57
+[23739ms Test_0715:23]MEAS:-:speed<READ>   14.48
+[23750ms Test_0715:23]MEAS:-:speed<READ>   14.39
+[23760ms Test_0715:23]MEAS:-:speed<READ>   14.31
+[23774ms Test_0715:23]MEAS:-:speed<READ>   14.2
+[23793ms Test_0715:23]MEAS:-:speed<READ>   14.05
+[23808ms Test_0715:23]MEAS:-:speed<READ>   13.93
+[23828ms Test_0715:23]MEAS:-:speed<READ>   13.78
+[23839ms Test_0715:23]MEAS:-:speed<READ>   13.68
+[23851ms Test_0715:23]MEAS:-:speed<READ>   13.6
+[23861ms Test_0715:23]MEAS:-:speed<READ>   13.51
+[23873ms Test_0715:23]MEAS:-:speed<READ>   13.41
+[23889ms Test_0715:23]MEAS:-:speed<READ>   13.28
+[23907ms Test_0715:23]MEAS:-:speed<READ>   13.14
+[23924ms Test_0715:23]MEAS:-:speed<READ>   13.01
+[23936ms Test_0715:23]MEAS:-:speed<READ>   12.91
+[23949ms Test_0715:23]MEAS:-:speed<READ>   12.81
+[23969ms Test_0715:23]MEAS:-:speed<READ>   12.65
+[23986ms Test_0715:23]MEAS:-:speed<READ>   12.52
+[24000ms Test_0715:23]MEAS:-:speed<READ>   12.41
+[24013ms Test_0715:23]MEAS:-:speed<READ>   12.3
+[24028ms Test_0715:23]MEAS:-:speed<READ>   12.18
+[24041ms Test_0715:23]MEAS:-:speed<READ>   12.07
+[24058ms Test_0715:23]MEAS:-:speed<READ>   11.94
+[24070ms Test_0715:23]MEAS:-:speed<READ>   11.84
+[24080ms Test_0715:23]MEAS:-:speed<READ>   11.76
+[24098ms Test_0715:23]MEAS:-:speed<READ>   11.62
+[24111ms Test_0715:23]MEAS:-:speed<READ>   11.51
+[24125ms Test_0715:23]MEAS:-:speed<READ>   11.4
+[24140ms Test_0715:23]MEAS:-:speed<READ>   11.28
+[24152ms Test_0715:23]MEAS:-:speed<READ>   11.19
+[24166ms Test_0715:23]MEAS:-:speed<READ>   11.07
+[24184ms Test_0715:23]MEAS:-:speed<READ>   10.94
+[24199ms Test_0715:23]MEAS:-:speed<READ>   10.81
+[24214ms Test_0715:23]MEAS:-:speed<READ>   10.69
+[24231ms Test_0715:23]MEAS:-:speed<READ>   10.56
+[24246ms Test_0715:23]MEAS:-:speed<READ>   10.44
+[24263ms Test_0715:23]MEAS:-:speed<READ>   10.3
+[24275ms Test_0715:23]MEAS:-:speed<READ>   10.2
+[24291ms Test_0715:23]MEAS:-:speed<READ>   10.08
+[24303ms Test_0715:23]MEAS:-:speed<READ>   9.99
+[24319ms Test_0715:23]MEAS:-:speed<READ>   9.85
+[24330ms Test_0715:23]MEAS:-:speed<READ>   9.77
+[24341ms Test_0715:23]MEAS:-:speed<READ>   9.68
+[24355ms Test_0715:23]MEAS:-:speed<READ>   9.57
+[24367ms Test_0715:23]MEAS:-:speed<READ>   9.47
+[24380ms Test_0715:23]MEAS:-:speed<READ>   9.38
+[24390ms Test_0715:23]MEAS:-:speed<READ>   9.29
+[24401ms Test_0715:23]MEAS:-:speed<READ>   9.2
+[24413ms Test_0715:23]MEAS:-:speed<READ>   9.1
+[24426ms Test_0715:23]MEAS:-:speed<READ>   9.0
+[24443ms Test_0715:23]MEAS:-:speed<READ>   8.86
+[24458ms Test_0715:23]MEAS:-:speed<READ>   8.74
+[24471ms Test_0715:23]MEAS:-:speed<READ>   8.64
+[24482ms Test_0715:23]MEAS:-:speed<READ>   8.55
+[24499ms Test_0715:23]MEAS:-:speed<READ>   8.42
+[24516ms Test_0715:23]MEAS:-:speed<READ>   8.28
+[24529ms Test_0715:23]MEAS:-:speed<READ>   8.18
+[24542ms Test_0715:23]MEAS:-:speed<READ>   8.07
+[24558ms Test_0715:23]MEAS:-:speed<READ>   7.95
+[24572ms Test_0715:23]MEAS:-:speed<READ>   7.84
+[24585ms Test_0715:23]MEAS:-:speed<READ>   7.73
+[24596ms Test_0715:23]MEAS:-:speed<READ>   7.64
+[24607ms Test_0715:23]MEAS:-:speed<READ>   7.56
+[24620ms Test_0715:23]MEAS:-:speed<READ>   7.45
+[24631ms Test_0715:23]MEAS:-:speed<READ>   7.36
+[24651ms Test_0715:23]MEAS:-:speed<READ>   7.21
+[24662ms Test_0715:23]MEAS:-:speed<READ>   7.12
+[24673ms Test_0715:23]MEAS:-:speed<READ>   7.03
+[24684ms Test_0715:23]MEAS:-:speed<READ>   6.94
+[24695ms Test_0715:23]MEAS:-:speed<READ>   6.85
+[24709ms Test_0715:23]MEAS:-:speed<READ>   6.74
+[24725ms Test_0715:23]MEAS:-:speed<READ>   6.61
+[24743ms Test_0715:23]MEAS:-:speed<READ>   6.47
+[24755ms Test_0715:23]MEAS:-:speed<READ>   6.38
+[24775ms Test_0715:23]MEAS:-:speed<READ>   6.22
+[24793ms Test_0715:23]MEAS:-:speed<READ>   6.07
+[24804ms Test_0715:23]MEAS:-:speed<READ>   5.98
+[24815ms Test_0715:23]MEAS:-:speed<READ>   5.9
+[24825ms Test_0715:23]MEAS:-:speed<READ>   5.82
+[24838ms Test_0715:23]MEAS:-:speed<READ>   5.71
+[24850ms Test_0715:23]MEAS:-:speed<READ>   5.62
+[24867ms Test_0715:23]MEAS:-:speed<READ>   5.48
+[24879ms Test_0715:23]MEAS:-:speed<READ>   5.39
+[24893ms Test_0715:23]MEAS:-:speed<READ>   5.27
+[24905ms Test_0715:23]MEAS:-:speed<READ>   5.18
+[24916ms Test_0715:23]MEAS:-:speed<READ>   5.09
+[24927ms Test_0715:23]MEAS:-:speed<READ>   5.0
+[24940ms Test_0715:23]MEAS:-:speed<READ>   4.9
+[24953ms Test_0715:23]MEAS:-:speed<READ>   4.8
+[24976ms Test_0715:23]MEAS:-:speed<READ>   4.61
+[24989ms Test_0715:23]MEAS:-:speed<READ>   4.51
+[25000ms Test_0715:23]MEAS:-:speed<READ>   4.42
+[25010ms Test_0715:23]MEAS:-:speed<READ>   4.34
+[25026ms Test_0715:23]MEAS:-:speed<READ>   4.21
+[25040ms Test_0715:23]MEAS:-:speed<READ>   4.1
+[25056ms Test_0715:23]MEAS:-:speed<READ>   3.97
+[25070ms Test_0715:23]MEAS:-:speed<READ>   3.86
+[25085ms Test_0715:23]MEAS:-:speed<READ>   3.75
+[25099ms Test_0715:23]MEAS:-:speed<READ>   3.63
+[25114ms Test_0715:23]MEAS:-:speed<READ>   3.51
+[25126ms Test_0715:23]MEAS:-:speed<READ>   3.42
+[25137ms Test_0715:23]MEAS:-:speed<READ>   3.33
+[25147ms Test_0715:23]MEAS:-:speed<READ>   3.25
+[25158ms Test_0715:23]MEAS:-:speed<READ>   3.17
+[25170ms Test_0715:23]MEAS:-:speed<READ>   3.06
+[25180ms Test_0715:23]MEAS:-:speed<READ>   2.98
+[25199ms Test_0715:23]MEAS:-:speed<READ>   2.83
+[25211ms Test_0715:23]MEAS:-:speed<READ>   2.74
+[25221ms Test_0715:23]MEAS:-:speed<READ>   2.66
+[25232ms Test_0715:23]MEAS:-:speed<READ>   2.57
+[25243ms Test_0715:23]MEAS:-:speed<READ>   2.48
+[25256ms Test_0715:23]MEAS:-:speed<READ>   2.39
+[25269ms Test_0715:23]MEAS:-:speed<READ>   2.27
+[25284ms Test_0715:23]MEAS:-:speed<READ>   2.15
+[25302ms Test_0715:23]MEAS:-:speed<READ>   2.01
+[25318ms Test_0715:23]MEAS:-:speed<READ>   1.88
+[25330ms Test_0715:23]MEAS:-:speed<READ>   1.8
+[25349ms Test_0715:23]MEAS:-:speed<READ>   1.64
+[25360ms Test_0715:23]MEAS:-:speed<READ>   1.55
+[25373ms Test_0715:23]MEAS:-:speed<READ>   1.44
+[25388ms Test_0715:23]MEAS:-:speed<READ>   1.32
+[25400ms Test_0715:23]MEAS:-:speed<READ>   1.23
+[25417ms Test_0715:23]MEAS:-:speed<READ>   1.09
+[25429ms Test_0715:23]MEAS:-:speed<READ>   1.0
+[25440ms Test_0715:23]MEAS:-:speed<READ>   0.91
+[25452ms Test_0715:23]MEAS:-:speed<READ>   0.81
+[25462ms Test_0715:23]MEAS:-:speed<READ>   0.73
+[25474ms Test_0715:23]MEAS:-:speed<READ>   0.64
+[25485ms Test_0715:23]MEAS:-:speed<READ>   0.55
+[25496ms Test_0715:23]MEAS:-:speed<READ>   0.46
+[25507ms Test_0715:23]MEAS:-:speed<READ>   0.37
+[25519ms Test_0715:23]MEAS:-:speed<READ>   0.29
+[25527ms Test_0715:23]MEAS:-:speed<READ>   0.22
+[25541ms Test_0715:23]MEAS:-:speed<READ>   0.1
+[25553ms Test_0715:23]MEAS:-:speed<READ>   0.02
+[25570ms Test_0715:23]MEAS:-:speed<READ>   0.0
+[-1ms 设置车辆状态:3]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   20
+[-1ms 设置车辆状态:4]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   -1
+[-1ms 设置车辆状态:6]MODEL:-:Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value<WRITE>   0
+[-1ms 设置车辆状态:8]MODEL:-:Model Root/CTRL_VEH/BrakePedal [%]/Value<WRITE>   0
+[28867ms Test_0715:25]MEAS:-:VehTrStby<READ>   0.0
