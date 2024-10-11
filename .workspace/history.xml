@@ -27,6 +27,7 @@
 	</RECENT-TBC-FILES>
 	<LAST-TBC-SAVED xsi:type="boolean">True</LAST-TBC-SAVED>
 	<RECENT-PROJECTS-PACKAGES>
+		<ELEMENT xsi:type="string">Packages\oooo.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Demo_testguide_1011.prj</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\DOIP_Examples\10 03 - ExtendedDiagnosticSessionStart.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\New_test\BasicDrive.pkg</ELEMENT>
@@ -36,6 +37,5 @@
 		<ELEMENT xsi:type="string">C:\Users\92126\Downloads\LEO_HILNI.tbc</ELEMENT>
 		<ELEMENT xsi:type="string">Configurations\TEST.tcf</ELEMENT>
 		<ELEMENT xsi:type="string">Configurations\TEST.tbc</ELEMENT>
-		<ELEMENT xsi:type="string">Configurations\TEST0517.tbc</ELEMENT>
 	</RECENT-PROJECTS-PACKAGES>
 </HISTORY-SETTINGS>
