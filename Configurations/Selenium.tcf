@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONFIGURATION format-rev="9" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+<CONFIGURATION format-rev="9" prog-version="2024.3.0.156114+c108ea21784a" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
 	<COMMON format-rev="4" xsi:type="commonData">
 		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
 	</COMMON>
@@ -10,17 +10,24 @@
 	<EXECUTION-DATA format-rev="2" xsi:type="executionData"/>
 	<MEDIA-ACCESS xsi:type="mediaAccessData">
 		<DATA dkey="selenium">
-			<DVALUE xsi:type="mediaData">
+			<DVALUE format-rev="1" xsi:type="mediaData">
 				<IMAGE-PORT xsi:type="string">IMG-DEFAULT01</IMAGE-PORT>
 				<IMAGE-FOLDER xsi:type="string"/>
-				<OCR-DATA-LIST>
-					<OCR-DATA xsi:type="ocrData">
-						<OCR-DATA-NAME xsi:type="string">eng</OCR-DATA-NAME>
-					</OCR-DATA>
-					<OCR-DATA xsi:type="ocrData">
-						<OCR-DATA-NAME xsi:type="string">deu</OCR-DATA-NAME>
-					</OCR-DATA>
-				</OCR-DATA-LIST>
+				<OCR-CONFIG xsi:type="tesseractOcrConfig">
+					<OCR-SERVICE xsi:type="string">TesseractOCR</OCR-SERVICE>
+					<OCR-PARAMETERS/>
+					<OCR-DATA-LIST>
+						<OCR-DATA xsi:type="ocrData">
+							<OCR-DATA-NAME xsi:type="string">chi_sim</OCR-DATA-NAME>
+						</OCR-DATA>
+						<OCR-DATA xsi:type="ocrData">
+							<OCR-DATA-NAME xsi:type="string">eng</OCR-DATA-NAME>
+						</OCR-DATA>
+						<OCR-DATA xsi:type="ocrData">
+							<OCR-DATA-NAME xsi:type="string">deu</OCR-DATA-NAME>
+						</OCR-DATA>
+					</OCR-DATA-LIST>
+				</OCR-CONFIG>
 			</DVALUE>
 		</DATA>
 	</MEDIA-ACCESS>

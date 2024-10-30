@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">87b99adc94cf11ef8d6534cff6f2e990</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Comment_Failed</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">8b6265d294cf11ef8ce834cff6f2e990</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Comment_Failed.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Comment_Success</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">8b628c7594cf11efb73534cff6f2e990</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Comment_Success.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

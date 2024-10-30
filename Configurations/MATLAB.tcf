@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONFIGURATION format-rev="9" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+<CONFIGURATION format-rev="9" prog-version="2024.3.0.156114+c108ea21784a" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
 	<COMMON format-rev="4" xsi:type="commonData">
 		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
 	</COMMON>
@@ -22,7 +22,6 @@
 		<DATA dkey="Engine-Control">
 			<DVALUE format-rev="3" xsi:type="ecuData">
 				<DIAGNOSTIC-DB xsi:type="string">odx_Canape/UDS-ExampleEcu.170.odx</DIAGNOSTIC-DB>
-				<DIAGNOSTIC-DB-ASSOCIATE xsi:type="string">&lt;EMPTY&gt;</DIAGNOSTIC-DB-ASSOCIATE>
 				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings"/>
 				<ECU-POSITION xsi:type="integer">1</ECU-POSITION>
 				<LOG-PORT xsi:type="string">offline</LOG-PORT>

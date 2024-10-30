@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FILTER-SETTINGS format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<PROJECT-EDITOR/>
+	<PROJECT-EDITOR>
+		<ELEMENT xsi:type="string">Designer = 'Eric'</ELEMENT>
+	</PROJECT-EDITOR>
 	<WORKSPACE-EXPLORER>
+		<ELEMENT xsi:type="string">Designer = 'Eric'</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*1017*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*101*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*Test*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*Tes*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*selenium*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*seleniu*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*seleni*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*selen*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*sele*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = &quot;*sel*&quot;</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = '*2*'</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = '2'</ELEMENT>
+		<ELEMENT xsi:type="string">NAME = '*2'</ELEMENT>
 		<ELEMENT xsi:type="string">NAME = ''</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*'Test*&quot; and NAME = &quot;*Comment'*&quot; and NAME = &quot;*=*&quot; and NAME = &quot;*'回归测试'*&quot;</ELEMENT>
-		<ELEMENT xsi:type="string">'Test Comment' = '回归测试'</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*检查*&quot;</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*TESTLAB*&quot;</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*TESTLA*&quot;</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*TESTL*&quot;</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*TEST*&quot;</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*TES*&quot;</ELEMENT>
-		<ELEMENT xsi:type="string">NAME = &quot;*SW_*&quot;</ELEMENT>
 	</WORKSPACE-EXPLORER>
 </FILTER-SETTINGS>

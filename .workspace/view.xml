@@ -13,8 +13,8 @@
 						<ELEMENT xsi:type="integer">600</ELEMENT>
 					</DIALOG-SIZE>
 					<DIALOG-POSITION>
-						<ELEMENT xsi:type="integer">54</ELEMENT>
-						<ELEMENT xsi:type="integer">212</ELEMENT>
+						<ELEMENT xsi:type="integer">572</ELEMENT>
+						<ELEMENT xsi:type="integer">186</ELEMENT>
 					</DIALOG-POSITION>
 					<DIALOG-COLUMN-WIDTH>
 						<ELEMENT xsi:type="integer">0</ELEMENT>
@@ -499,20 +499,22 @@
 						<ELEMENT xsi:type="integer">1552</ELEMENT>
 						<ELEMENT xsi:type="integer">832</ELEMENT>
 					</WIN-RECT>
-					<DEFAULT xsi:type="string">layout2|name=masterMappingView;caption=Global mapping;state=2131966;dir=1;layer=0;row=2;pos=0;prop=179898;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=380;floaty=44;floatw=400;floath=250|name=pnlMappingSet;caption=KWC test values mapping;state=2131454;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=txtLog;caption=Messages;state=2099196;dir=1;layer=0;row=3;pos=0;prop=141188;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=415;floaty=62;floatw=400;floath=250|name=editorNotebook;caption=Editor;state=4212732;dir=5;layer=3;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=1792;dir=4;layer=0;row=0;pos=0;prop=368313;bestw=300;besth=150;minw=300;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=0;row=0;pos=1;prop=107425;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=constantMonitor;caption=Global constants;state=2131967;dir=4;layer=0;row=0;pos=2;prop=179898;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,0,0)=391|dock_size(5,3,0)=197|dock_size(1,0,3)=179|</DEFAULT>
-					<PACKAGE-ALT xsi:type="string"/>
-					<PACKAGE-SWK xsi:type="string"/>
+					<DEFAULT xsi:type="string">layout2|name=masterMappingView;caption=Global mapping;state=2131967;dir=4;layer=0;row=0;pos=0;prop=10;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=237;floaty=327;floatw=400;floath=250|name=pnlMappingSet;caption=KWC test values mapping;state=2131966;dir=4;layer=1;row=0;pos=1;prop=10;bestw=201;besth=150;minw=201;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=txtLog;caption=Messages;state=2099196;dir=1;layer=1;row=0;pos=0;prop=10;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=432;floaty=28;floatw=400;floath=250|name=editorNotebook;caption=Editor;state=4212732;dir=5;layer=3;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=1792;dir=4;layer=0;row=0;pos=0;prop=58;bestw=300;besth=150;minw=300;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=0;row=0;pos=1;prop=2;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=constantMonitor;caption=Global constants;state=2131967;dir=4;layer=0;row=0;pos=2;prop=10;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,0,0)=520|dock_size(5,3,0)=197|dock_size(1,1,0)=179|</DEFAULT>
+					<PACKAGE-ALT xsi:type="string">layout2|name=masterMappingView;caption=Global mapping [ unnamed mapping ];state=2131967;dir=3;layer=0;row=0;pos=4;prop=10;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=237;floaty=327;floatw=400;floath=250|name=taiaPanel;caption=TAIA;state=2131967;dir=4;layer=0;row=0;pos=0;prop=10;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=237;floaty=327;floatw=400;floath=250|name=txtLog;caption=Messages;state=2099196;dir=3;layer=0;row=0;pos=1;prop=10;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=sbLicense;caption=;state=1468;dir=3;layer=0;row=0;pos=3;prop=0;bestw=128;besth=134;minw=220;minh=100;maxw=-1;maxh=134;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=editorNotebook;caption=Editor;state=4212732;dir=5;layer=0;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=1792;dir=4;layer=1;row=0;pos=0;prop=50;bestw=300;besth=150;minw=300;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=1;row=0;pos=1;prop=10;bestw=200;besth=200;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=constantMonitor;caption=Global constants;state=2131967;dir=3;layer=0;row=0;pos=3;prop=10;bestw=200;besth=200;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,1,0)=307</PACKAGE-ALT>
+					<PACKAGE-SWK xsi:type="string">layout2|name=masterMappingView;caption=Global mapping [ unnamed mapping ];state=2131966;dir=3;layer=0;row=0;pos=4;prop=10;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=pnlMappingSet;caption=KWC test values mapping;state=2148348;dir=4;layer=1;row=0;pos=1;prop=10;bestw=201;besth=150;minw=201;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=txtLog;caption=Messages;state=2099196;dir=3;layer=0;row=0;pos=1;prop=10;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=editorNotebook;caption=Editor;state=4212732;dir=5;layer=0;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=1792;dir=4;layer=1;row=0;pos=0;prop=50;bestw=600;besth=150;minw=600;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=1;row=0;pos=1;prop=10;bestw=200;besth=200;minw=200;minh=70;maxw=-1;maxh=-1;|name=constantMonitor;caption=Global constants;state=2131967;dir=3;layer=0;row=0;pos=3;prop=10;bestw=200;besth=200;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=sbLicense;caption=;state=1468;dir=3;layer=0;row=0;pos=3;prop=0;bestw=128;besth=134;minw=220;minh=100;maxw=-1;maxh=134;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(3,0,0)=74|dock_size(4,1,0)=460</PACKAGE-SWK>
 					<TEST-CASE-COLUMN-WIDTH>
-						<ELEMENT xsi:type="integer">60</ELEMENT>
-						<ELEMENT xsi:type="integer">369</ELEMENT>
-						<ELEMENT xsi:type="integer">396</ELEMENT>
-						<ELEMENT xsi:type="integer">130</ELEMENT>
-						<ELEMENT xsi:type="integer">212</ELEMENT>
+						<ELEMENT xsi:type="integer">100</ELEMENT>
+						<ELEMENT xsi:type="integer">319</ELEMENT>
+						<ELEMENT xsi:type="integer">100</ELEMENT>
+						<ELEMENT xsi:type="integer">100</ELEMENT>
+						<ELEMENT xsi:type="integer">100</ELEMENT>
+						<ELEMENT xsi:type="integer">457</ELEMENT>
 					</TEST-CASE-COLUMN-WIDTH>
-					<TEST-CASE-PERSPECTIVE xsi:type="string">layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=1;caption=;state=2098172;dir=3;layer=1;row=0;pos=0;prop=100000;bestw=559;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(3,1,0)=101|</TEST-CASE-PERSPECTIVE>
+					<TEST-CASE-PERSPECTIVE xsi:type="string">layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=1;caption=;state=2098172;dir=3;layer=1;row=0;pos=0;prop=100000;bestw=100;besth=150;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|dock_size(3,1,0)=156|</TEST-CASE-PERSPECTIVE>
 					<TEST-CASE-PAGELOCATION xsi:type="string">PanelTCEditor;PackageInfoPanel;PanelSignalGroupsViewer;PanelTraceAnalysis;DocViewer|VarManager;LocalMSMappingViewer</TEST-CASE-PAGELOCATION>
-					<DATA-VIEWER-PERSPECTIVE xsi:type="string">layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=198;besth=210;minw=198;minh=210;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</DATA-VIEWER-PERSPECTIVE>
+					<DATA-VIEWER-PERSPECTIVE xsi:type="string">layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=263;besth=231;minw=263;minh=231;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</DATA-VIEWER-PERSPECTIVE>
 					<DATA-VIEWER-PAGELOCATION xsi:type="string">DvWorkspace;TRCPBrowser;TraceFileBrowser;dv_utilities;dv_tooljobs</DATA-VIEWER-PAGELOCATION>
+					<DATA-VIEWER-PERSPECTIVE-ALT xsi:type="string">layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=471;besth=465;minw=471;minh=465;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|</DATA-VIEWER-PERSPECTIVE-ALT>
 					<REPORT-VIEWER-LAYOUT format-rev="4" xsi:type="reportViewerLayout">
 						<SASH-POS xsi:type="integer">250</SASH-POS>
 						<MAPPING-COLUMN-WIDTH>
@@ -2508,7 +2510,7 @@
 	</EXEC-PKG-LAYOUT>
 	<DV-TAB-POS-PERS>
 		<ELEMENT dkey="PKG___SELECTION">
-			<DVALUE xsi:type="integer">2</DVALUE>
+			<DVALUE xsi:type="integer">0</DVALUE>
 		</ELEMENT>
 	</DV-TAB-POS-PERS>
 	<VIEW-NAME xsi:type="string">PKG</VIEW-NAME>

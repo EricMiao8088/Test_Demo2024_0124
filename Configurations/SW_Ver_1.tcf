@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONFIGURATION format-rev="9" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+<CONFIGURATION format-rev="9" prog-version="2024.3.0.156114+c108ea21784a" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
 	<COMMON format-rev="4" xsi:type="commonData">
 		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
 	</COMMON>
@@ -13,9 +13,27 @@
 			<ELEMENT format-rev="1" xsi:type="reportFormat">
 				<FORMAT-NAME xsi:type="string">New EXCEL format</FORMAT-NAME>
 				<HANDLER-NAME xsi:type="string">EXCEL</HANDLER-NAME>
-				<AUTO-GENERATE xsi:type="boolean">True</AUTO-GENERATE>
 				<FILTERS xsi:type="apiFilter"/>
 				<PRE-POST-SCRIPT xsi:type="string">user.GenExcelReport2.MyReportPrePostScript</PRE-POST-SCRIPT>
+			</ELEMENT>
+			<ELEMENT format-rev="1" xsi:type="reportFormat">
+				<FORMAT-NAME xsi:type="string">New New_EXCEL format</FORMAT-NAME>
+				<HANDLER-NAME xsi:type="string">New_EXCEL</HANDLER-NAME>
+				<FILTERS xsi:type="apiFilter"/>
+				<CONFIG>
+					<ELEMENT dkey="colorResultCells">
+						<DVALUE xsi:type="string">True</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="reportName">
+						<DVALUE xsi:type="string">Test.xlsx</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="tableFrames">
+						<DVALUE xsi:type="string">(2,5,True)</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="testCaseResultStartRow">
+						<DVALUE xsi:type="string">18</DVALUE>
+					</ELEMENT>
+				</CONFIG>
 			</ELEMENT>
 		</REPORT-FORMATES>
 		<INCLUDE-APPLICATION-LOGS xsi:type="boolean">True</INCLUDE-APPLICATION-LOGS>
@@ -23,7 +41,7 @@
 	<EXECUTION-DATA format-rev="2" xsi:type="executionData"/>
 	<GLOBAL-CONSTANTS xsi:type="globalConstData">
 		<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
-			<NAME xsi:type="string">Prj</NAME>
+			<NAME xsi:type="string">Test</NAME>
 			<VALUE format-rev="2" xsi:type="valueBaseExpression">
 				<VALUE xsi:type="string">A</VALUE>
 			</VALUE>
@@ -56,8 +74,7 @@
 				<A2L-FILE xsi:type="localArtifactReference">
 					<PATH xsi:type="string">ECU_Data/Engine-Control.a2l</PATH>
 				</A2L-FILE>
-				<DIAGNOSTIC-DB xsi:type="string">C:/ET2023_1/2_ECU-TEST_Advanced/CDD/diagnostic_data.cdd</DIAGNOSTIC-DB>
-				<DIAGNOSTIC-DB-ASSOCIATE xsi:type="string">&lt;EMPTY&gt;</DIAGNOSTIC-DB-ASSOCIATE>
+				<DIAGNOSTIC-DB xsi:type="string">pdx/VCU1.01(20240930)_11.0.pdx</DIAGNOSTIC-DB>
 				<DIAGNOSTIC-SETTINGS xsi:type="diagSettings"/>
 				<ECU-POSITION xsi:type="integer">1</ECU-POSITION>
 			</DVALUE>

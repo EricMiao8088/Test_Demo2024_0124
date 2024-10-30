@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.3.0.156114+c108ea21784a" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<ATTRIBUTES>
+			<ATTRIBUTE xsi:type="attributeInst">
+				<NAME xsi:type="string">Designer</NAME>
+				<VALUE xsi:type="string">Eric</VALUE>
+			</ATTRIBUTE>
+			<ATTRIBUTE xsi:type="attributeInst">
+				<NAME xsi:type="string">Status</NAME>
+				<VALUE xsi:type="string"/>
+			</ATTRIBUTE>
+		</ATTRIBUTES>
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">loopCounter</NAME>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" out="true" xsi:type="variable">
+			<NAME xsi:type="string">brakevalue</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">BasicDrive</ID>
+			<XACCESS xsi:type="xaPackage">
+				<PATH xsi:type="string">&lt;workspace.packages&gt;/BasicDrive.pkg</PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">BrakePedal</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">Model Root/CTRL_VEH/BrakePedal [%]/Value</VARIABLE-PATH>
+				<VARIABLE-TYPE xsi:type="string">uint(32)*</VARIABLE-TYPE>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TM-INFO format-rev="1" xsi:type="testManagementInfo">
+		<TESTSCRIPT-ID xsi:type="string">1017</TESTSCRIPT-ID>
+	</TM-INFO>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="c5d4f96c-906e-49a4-83a6-946784e071e7" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="zh_CN">
+						<DVALUE xsi:type="string">步骤一：</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">zh_CN</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="555675cb-9169-403d-b20f-c314efb34813" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">BrakePedal</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">brakevalue</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="1" id="59cbc1d7-0e18-461d-a0ae-b06aaae22b40" xsi:type="tsParallelPackageCall">
+			<MAPPING-REF xsi:type="string">BasicDrive</MAPPING-REF>
+			<PARAM-ASSIGNMENTS/>
+			<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+		</TESTSTEP>
+		<TESTSTEP id="2032c004-7361-4674-81ad-92ffd76b1762" name="TsLoop" xsi:type="utility-3da58cf0-4fef-11dc-be56-0013728784ee">
+			<TESTSTEP id="57acec1e-d647-43c7-8e57-5915c588e031" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">5</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="deaa15ac-dd93-4cb4-8fc6-7be4baf414ad" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+				<CONDITION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="boolean">True</VALUE>
+				</CONDITION>
+				<THEN id="8171f93f-637d-442d-8466-9b730e64e639" xsi:type="ifThenElseNode"/>
+				<ELSE id="ba7ca14a-ae82-4f7c-948b-e5e2d045d71e" xsi:type="ifThenElseNode"/>
+			</TESTSTEP>
+			<TESTSTEP format-rev="1" id="30e56594-53cc-4aac-949a-49eec91f6f7d" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+				<COMMENT-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string"/>
+				</COMMENT-EXPRESSION>
+			</TESTSTEP>
+			<TESTSTEP id="cb014a58-691b-4639-81a5-d82e497ec572" name="TsSwitchCase" xsi:type="utility-83517ac0-9f53-11dd-9c62-001b24fa84be">
+				<TESTSTEP id="c1e0ee0d-5c0e-4c4c-b3f3-4c7d322711c2" xsi:type="caseNode">
+					<CASE-VALUE xsi:type="compareOpBaseExpression">
+						<NAME xsi:type="string">==</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">loopCounter</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</SECOND-COMPONENT>
+					</CASE-VALUE>
+					<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+				</TESTSTEP>
+				<TESTSTEP id="50b78700-0e83-4797-be00-7229b4a45d10" xsi:type="caseNode">
+					<CASE-VALUE xsi:type="compareOpBaseExpression">
+						<NAME xsi:type="string">==</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">loopCounter</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">2</VALUE>
+						</SECOND-COMPONENT>
+					</CASE-VALUE>
+					<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+				</TESTSTEP>
+				<TESTSTEP id="47b69652-f6dd-409d-9235-8767daa6e7a5" xsi:type="caseNode">
+					<CASE-VALUE xsi:type="compareOpBaseExpression">
+						<NAME xsi:type="string">==</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">loopCounter</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">3</VALUE>
+						</SECOND-COMPONENT>
+					</CASE-VALUE>
+					<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+				</TESTSTEP>
+				<TESTSTEP id="df97494e-ee89-4eea-8353-7ad11f5eeb36" xsi:type="caseNode">
+					<CASE-VALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</CASE-VALUE>
+					<IS-DEFAULT xsi:type="boolean">True</IS-DEFAULT>
+				</TESTSTEP>
+				<SWITCH-VALUE format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="boolean">True</VALUE>
+				</SWITCH-VALUE>
+			</TESTSTEP>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">loopCounter</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<LOOP-COUNT format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">5</VALUE>
+			</LOOP-COUNT>
+			<START-VALUE format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">1</VALUE>
+			</START-VALUE>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

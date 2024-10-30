@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TOOLING format-rev="3" prog-version="2024.2.0.151174+1c1d96a477d2" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+<TOOLING format-rev="3" prog-version="2024.3.0.156114+c108ea21784a" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
 	<TOOL-HOSTS>
 		<TOOL-HOST xsi:type="toolHost">
 			<URL xsi:type="string">local</URL>
@@ -15,16 +15,19 @@
 			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
 			<SETTINGS xsi:type="dynamicPropertySet">
 				<PROPERTY format-rev="1" name="MLAppAuto" propertyType="string" readonly="false" xsi:type="_property">
-					<VALUE xsi:type="string">MATLAB Desktop</VALUE>
+					<VALUE xsi:type="string">MATLAB Automation-Server</VALUE>
 				</PROPERTY>
 				<PROPERTY format-rev="1" name="MLReconnect" propertyType="string" readonly="false" xsi:type="_property">
-					<VALUE xsi:type="string">New</VALUE>
+					<VALUE xsi:type="string">Reconnect</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="MLRelease" propertyType="choiceGroup" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">R2021b</VALUE>
 				</PROPERTY>
 				<PROPERTY format-rev="1" name="ModelDir" propertyType="uri" readonly="false" xsi:type="_property">
-					<VALUE xsi:type="string">C:\ET2023_4\12_sldemo_autotrans\sldemo_autotrans\Models</VALUE>
+					<VALUE xsi:type="string">C:\ET2023_2\sldemo_autotrans\Models</VALUE>
 				</PROPERTY>
 				<PROPERTY format-rev="1" name="hideModelUi" propertyType="bool" readonly="false" xsi:type="_property">
-					<VALUE xsi:type="string">True</VALUE>
+					<VALUE xsi:type="string">False</VALUE>
 				</PROPERTY>
 			</SETTINGS>
 		</TOOL>

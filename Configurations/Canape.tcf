@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONFIGURATION format-rev="9" prog-version="2023.4.2.143901+d4a6458297f6" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
-	<COMMON xsi:type="commonData">
-		<HOST xsi:type="string">Eric</HOST>
+<CONFIGURATION format-rev="9" prog-version="2024.3.0.156114+c108ea21784a" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON format-rev="4" xsi:type="commonData">
 		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
 	</COMMON>
 	<REPORT format-rev="4" xsi:type="reportData">
